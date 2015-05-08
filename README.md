@@ -15,13 +15,13 @@ This project is an interactive character sheet for handling characters using the
 
 
 ### Abilities
-* ~~ Display Ability Scores and Modifiers ~~
-    * ~~ Implement Manual System ~~
+* ~~Display Ability Scores and Modifiers~~
+    * ~~Implement Manual System~~
     * Implement Dice Rolling System
     * Implement Point Buy System
     * Implement Dice Pool System
 * Implement bonuses from Feats & Traits
-    * ~~ Ability Modifiers ~~
+    * ~~Ability Modifiers~~
     * Check if there are any other functionality requirements
 * Implement Age Modifier
 * Implement Equipment Bonuses
@@ -30,12 +30,12 @@ This project is an interactive character sheet for handling characters using the
 * Implement Ability Damage & Healing system
 
 ### Race
-* ~~ Read & Display Races from file ~~
-* ~~ Display Racial Traits of selected race ~~
-* ~~ Display Alternate Racial Traits of selected race ~~
-* ~~ Add & Remove Alternate Racial Trait functionality ~~
+* ~~Read & Display Races from file~~
+* ~~Display Racial Traits of selected race~~
+* ~~Display Alternate Racial Traits of selected race~~
+* ~~Add & Remove Alternate Racial Trait functionality~~
 * Update JSON data file with Trait information
-    * ~~ Codify bonuses to Ability Scores ~~
+    * ~~Codify bonuses to Ability Scores~~
     * Codify bonuses to Skills
     * Codify bonus Feats
     * Codify Spell-like effects
@@ -53,7 +53,7 @@ This project is an interactive character sheet for handling characters using the
 
 ### Skills
 * Read and display skills from file
-* ~~ Apply Ability Modifiers ~~
+* ~~Apply Ability Modifiers~~
 * Set Class Skills from Class
 * Skill Rolling System
     * Show results for normal usage
