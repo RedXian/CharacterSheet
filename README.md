@@ -1,297 +1,150 @@
-# angular-seed — the seed for AngularJS apps
+# CharacterSheet — An Interactive Character Sheet for the Pathfinder RPG System
+
+This project is an interactive character sheet for handling characters using the rules from the Pathfinder RPG System as listed  http://paizo.com/pathfinderRPG/prd/.  
+
+
+## TODO List
+
+### General
+* Add Footer with the follow text.
+
+"This character sheet uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This character sheet is not published, endorsed, or specifically approved by Paizo Inc. For more information about Paizo's Community Use Policy, please visit paizo.com/communityuse. For more information about Paizo Inc. and Paizo products, please visit paizo.com."
+
+* Save Character as a browser cookies.
+* Save Character to local file system.
+
+
+### Abilities
+* ~~ Display Ability Scores and Modifiers ~~
+    * ~~ Implement Manual System ~~
+    * Implement Dice Rolling System
+    * Implement Point Buy System
+    * Implement Dice Pool System
+* Implement bonuses from Feats & Traits
+    * ~~ Ability Modifiers ~~
+    * Check if there are any other functionality requirements
+* Implement Age Modifier
+* Implement Equipment Bonuses
+* Implement Spells & Spell-like effects modifiers
+* Implement Ability Drain penalty
+* Implement Ability Damage & Healing system
+
+### Race
+* ~~ Read & Display Races from file ~~
+* ~~ Display Racial Traits of selected race ~~
+* ~~ Display Alternate Racial Traits of selected race ~~
+* ~~ Add & Remove Alternate Racial Trait functionality ~~
+* Update JSON data file with Trait information
+    * ~~ Codify bonuses to Ability Scores ~~
+    * Codify bonuses to Skills
+    * Codify bonus Feats
+    * Codify Spell-like effects
+    * Codify other Trait functionality (ie. The Human race can select a second "Heart of the ..." trait)
+
+### Class
+* Read and display classes from file
+* Implement Adding a New Class
+    * Implement Adding a Level on an existing Class
+* Update JSON Data file with Class information
+    * Codify Class Skills
+    * Codify Hit Dice
+    * Codify BAB, Saves & Spells
+    * Codify Class Features
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+### Skills
+* Read and display skills from file
+* ~~ Apply Ability Modifiers ~~
+* Set Class Skills from Class
+* Skill Rolling System
+    * Show results for normal usage
+    * Show results for
+    * Show conditional modifiers from traits, feats & class features
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+### Feats & Traits
+* Read and display feats & traits from file
+* TODO: Add more Requirements
 
+### Combat
+* Implement Initiative
+* Implement Base Attack Bonus
+* Implement Combat Maneuvers
+* Implement Weapon Attacks
+    * Unarmed
+    * One Handed
+    * Two Handed
+    * Dual Weapons
 
-## Getting Started
+* TODO: Add more Requirements
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+### Defense
+* Implement Hit Points
+    * Apply Spell Bonuses
+    * Apply Damage Reduction
+* Implement Saving Throws
+* Implement Armor Class
+* TODO: Add more Requirements
 
-### Prerequisites
+### Equipment
+* Read and display equipment from file
+* TODO: Add more Requirements
 
-You need git to clone the angular-seed repository. You can get git from
-[http://git-scm.com/](http://git-scm.com/).
+### Spells
+* Read and display spells from file
+* TODO: Add more Requirements
 
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+### Stat Block
+* Replicate Paizo's HTML design for Stat Block
+* Display Character data in stat block.
+* Print character stat block.
 
-### Clone angular-seed
+### Future Plans
+#### Action Economy System
+A system that distills the interface down to just the actions available to a character in any given circumstance (combat or out-of-combat).
+The system will have information like:
+* Hit Points
+* Visibility with adjustable light levels.
+* Character conditions (poisoned, held, exhausted, etc.)
+* Active spell effects (with timer)
+* Useable Equipment
+* Skills with their various uses.
 
-Clone the angular-seed repository using [git][git]:
+#### Multiple Characters
+#### Import from Herolab
+#### Export to Herolab
 
-```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
-```
+## OPEN GAME LICENSE Version 1.0a
 
-If you just want to start a new project without the angular-seed commit history then you can do:
+The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc ("Wizards"). All Rights Reserved.
 
-```bash
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
-```
+1. Definitions: (a) "Contributors" means the copyright and/or trademark owners who have contributed Open Game Content; (b) "Derivative Material" means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) "Distribute" means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d) "Open Game Content" means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) "Product Identity" means product and product line names, logos and identifying marks including trade dress; artifacts, creatures, characters, stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects, logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) "Trademark" means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) "Use", "Used" or "Using" means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) "You" or "Your" means the licensee in terms of this agreement.
 
-The `depth=1` tells git to only pull down one commit worth of historical data.
+2. The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License.
 
-### Install Dependencies
+3. Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.
 
-We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
-us manage and test the application.
+4. Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content.
 
-* We get the tools we depend upon via `npm`, the [node package manager][npm].
-* We get the angular code via `bower`, a [client-side code package manager][bower].
+5. Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the rights conveyed by this License.
 
-We have preconfigured `npm` to automatically run `bower` so we can simply do:
+6. Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder's name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.
 
-```
-npm install
-```
+7. Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.
 
-Behind the scenes this will also call `bower install`.  You should find that you have two new
-folders in your project.
+8. Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.
 
-* `node_modules` - contains the npm packages for the tools we need
-* `app/bower_components` - contains the angular framework files
+9. Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License.
 
-*Note that the `bower_components` folder would normally be installed in the root folder but
-angular-seed changes this location through the `.bowerrc` file.  Putting it in the app folder makes
-it easier to serve the files by a webserver.*
+10. Copy of this License: You MUST include a copy of this License with every copy of the Open Game Content You distribute.
 
-### Run the Application
+11. Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so.
 
-We have preconfigured the project with a simple development web server.  The simplest way to start
-this server is:
+12. Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected.
 
-```
-npm start
-```
+13. Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License.
 
-Now browse to the app at `http://localhost:8000/app/index.html`.
+14. Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable.
 
+15. COPYRIGHT NOTICE
 
-
-## Directory Layout
-
-```
-app/                    --> all of the source files for the application
-  app.css               --> default stylesheet
-  components/           --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
-  view1/                --> the view1 view template and logic
-    view1.html            --> the partial template
-    view1.js              --> the controller logic
-    view1_test.js         --> tests of the controller
-  view2/                --> the view2 view template and logic
-    view2.html            --> the partial template
-    view2.js              --> the controller logic
-    view2_test.js         --> tests of the controller
-  app.js                --> main application module
-  index.html            --> app layout file (the main html template file of the app)
-  index-async.html      --> just like index.html, but loads js files asynchronously
-karma.conf.js         --> config file for running unit tests with Karma
-e2e-tests/            --> end-to-end tests
-  protractor-conf.js    --> Protractor config file
-  scenarios.js          --> end-to-end scenarios to be run by Protractor
-```
-
-## Testing
-
-There are two kinds of tests in the angular-seed application: Unit tests and End to End tests.
-
-### Running Unit Tests
-
-The angular-seed app comes preconfigured with unit tests. These are written in
-[Jasmine][jasmine], which we run with the [Karma Test Runner][karma]. We provide a Karma
-configuration file to run them.
-
-* the configuration is found at `karma.conf.js`
-* the unit tests are found next to the code they are testing and are named as `..._test.js`.
-
-The easiest way to run the unit tests is to use the supplied npm script:
-
-```
-npm test
-```
-
-This script will start the Karma test runner to execute the unit tests. Moreover, Karma will sit and
-watch the source and test files for changes and then re-run the tests whenever any of them change.
-This is the recommended strategy; if your unit tests are being run every time you save a file then
-you receive instant feedback on any changes that break the expected code functionality.
-
-You can also ask Karma to do a single run of the tests and then exit.  This is useful if you want to
-check that a particular version of the code is operating as expected.  The project contains a
-predefined script to do this:
-
-```
-npm run test-single-run
-```
-
-
-### End to end testing
-
-The angular-seed app comes with end-to-end tests, again written in [Jasmine][jasmine]. These tests
-are run with the [Protractor][protractor] End-to-End test runner.  It uses native events and has
-special features for Angular applications.
-
-* the configuration is found at `e2e-tests/protractor-conf.js`
-* the end-to-end tests are found in `e2e-tests/scenarios.js`
-
-Protractor simulates interaction with our web app and verifies that the application responds
-correctly. Therefore, our web server needs to be serving up the application, so that Protractor
-can interact with it.
-
-```
-npm start
-```
-
-In addition, since Protractor is built upon WebDriver we need to install this.  The angular-seed
-project comes with a predefined script to do this:
-
-```
-npm run update-webdriver
-```
-
-This will download and install the latest version of the stand-alone WebDriver tool.
-
-Once you have ensured that the development web server hosting our application is up and running
-and WebDriver is updated, you can run the end-to-end tests using the supplied npm script:
-
-```
-npm run protractor
-```
-
-This script will execute the end-to-end tests against the application being hosted on the
-development server.
-
-
-## Updating Angular
-
-Previously we recommended that you merge in changes to angular-seed into your own fork of the project.
-Now that the angular framework library code and tools are acquired through package managers (npm and
-bower) you can use these tools instead to update the dependencies.
-
-You can update the tool dependencies by running:
-
-```
-npm update
-```
-
-This will find the latest versions that match the version ranges specified in the `package.json` file.
-
-You can update the Angular dependencies by running:
-
-```
-bower update
-```
-
-This will find the latest versions that match the version ranges specified in the `bower.json` file.
-
-
-## Loading Angular Asynchronously
-
-The angular-seed project supports loading the framework and application scripts asynchronously.  The
-special `index-async.html` is designed to support this style of loading.  For it to work you must
-inject a piece of Angular JavaScript into the HTML page.  The project has a predefined script to help
-do this.
-
-```
-npm run update-index-async
-```
-
-This will copy the contents of the `angular-loader.js` library file into the `index-async.html` page.
-You can run this every time you update the version of Angular that you are using.
-
-
-## Serving the Application Files
-
-While angular is client-side-only technology and it's possible to create angular webapps that
-don't require a backend server at all, we recommend serving the project files using a local
-webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
-sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
-etc to function properly when an html page is opened via `file://` scheme instead of `http://`.
-
-
-### Running the App during Development
-
-The angular-seed project comes preconfigured with a local development webserver.  It is a node.js
-tool called [http-server][http-server].  You can start this webserver with `npm start` but you may choose to
-install the tool globally:
-
-```
-sudo npm install -g http-server
-```
-
-Then you can start your own development web server to serve static files from a folder by
-running:
-
-```
-http-server -a localhost -p 8000
-```
-
-Alternatively, you can choose to configure your own webserver, such as apache or nginx. Just
-configure your server to serve the files under the `app/` directory.
-
-
-### Running the App in Production
-
-This really depends on how complex your app is and the overall infrastructure of your system, but
-the general rule is that all you need in production are all the files under the `app/` directory.
-Everything else should be omitted.
-
-Angular apps are really just a bunch of static html, css and js files that just need to be hosted
-somewhere they can be accessed by browsers.
-
-If your Angular app is talking to the backend server via xhr or other means, you need to figure
-out what is the best way to host the static files to comply with the same origin policy if
-applicable. Usually this is done by hosting the files by the backend server or through
-reverse-proxying the backend server(s) and webserver(s).
-
-
-## Continuous Integration
-
-### Travis CI
-
-[Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits
-to your repository and execute scripts such as building the app or running tests. The angular-seed
-project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
-tests when you push to GitHub.
-
-You will need to enable the integration between Travis and GitHub. See the Travis website for more
-instruction on how to do this.
-
-### CloudBees
-
-CloudBees have provided a CI/deployment setup:
-
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/angular-js-clickstart/master/clickstart.json">
-<img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
-
-If you run this, you will get a cloned version of this repo to start working on in a private git repo,
-along with a CI service (in Jenkins) hosted that will run unit and end to end tests in both Firefox and Chrome.
-
-
-## Contact
-
-For more information on AngularJS please check out http://angularjs.org/
-
-[git]: http://git-scm.com/
-[bower]: http://bower.io
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[protractor]: https://github.com/angular/protractor
-[jasmine]: http://jasmine.github.io
-[karma]: http://karma-runner.github.io
-[travis]: https://travis-ci.org/
-[http-server]: https://github.com/nodeapps/http-server
+Open Game License v 1.0a Copyright 2000, Wizards of the Coast, Inc.
