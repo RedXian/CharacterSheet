@@ -69,8 +69,8 @@ section {
   clear: left;
   margin: 10px;
 }
-::-webkit-scrollbar { 
-    display: none;
+::-webkit-scrollbar {
+    display: none
 }
 
 input:disabled:not(.result) {
