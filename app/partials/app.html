@@ -1,23 +1,28 @@
 <header class="header" ng-controller="CharacterController as CharacterCtrl">
-    <label>Name: </label><input type=text ng-model="character.name">
-    <label>Level: </label><input type=number disabled ng-model="character.experience">
-    <label>Experience: </label><input type=number disabled ng-model="character.experience">
+    <label>Name: </label>
+    <input type=text ng-model="character.name">
+    <label>Level: </label>
+    <input type=number disabled ng-model="character.experience">
+    <label>Experience: </label>
+    <input type=number disabled ng-model="character.experience">
 </header>
 <section class="btn-group" ng-init="tab=1">
-  <button type="button" class="btn btn-default" ng-click="tab=1">Race</button>
-  <button type="button" class="btn btn-default" ng-click="tab=2">Class</button>
-  <button type="button" class="btn btn-default" ng-click="tab=3">Abilities</button>
-  <button type="button" class="btn btn-default" ng-click="tab=4">Skills</button>
-  <button type="button" class="btn btn-default" ng-click="tab=5">Feats</button>
-  <button type="button" class="btn btn-default" ng-click="tab=6">Combat</button>
-  <button type="button" class="btn btn-default" ng-click="tab=7">Equipment</button>
-  <button type="button" class="btn btn-default" ng-click="tab=8">Personal Details</button>
-  <button type="button" class="btn btn-default" ng-click="tab=9">Stat Block</button>
+    <button type="button" class="btn btn-default" ng-click="tab=1">Race</button>
+    <button type="button" class="btn btn-default" ng-click="tab=2">Class</button>
+    <button type="button" class="btn btn-default" ng-click="tab=3">Abilities</button>
+    <button type="button" class="btn btn-default" ng-click="tab=4">Skills</button>
+    <button type="button" class="btn btn-default" ng-click="tab=5">Feats</button>
+    <button type="button" class="btn btn-default" ng-click="tab=6">Combat</button>
+    <button type="button" class="btn btn-default" ng-click="tab=7">Equipment</button>
+    <button type="button" class="btn btn-default" ng-click="tab=8">Personal Details</button>
+    <button type="button" class="btn btn-default" ng-click="tab=9">Stat Block</button>
 </section>
-<section>
-  <race-selector ng-show="tab==1"></race-selector>
-  <ability-scores ng-show="tab==3"></ability-scores>
-  <skill-list ng-show="tab==4"></skill-list>
-  <combat-section ng-show="tab==6"></combat-section>
-  <defence-section ng-show="tab==6"></defence-section>
-</section>
+<main>
+    <race-selector ng-show="tab==1"></race-selector>
+    <ability-scores ng-show="tab==3"></ability-scores>
+    <skill-list ng-show="tab==4"></skill-list>
+    <combat-section ng-show="tab==6"></combat-section>
+    <defence-section ng-show="tab==6"></defence-section>
+</main>
+<footer><p class="footer">This character sheet uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This character sheet is not published, endorsed,
+    or specifically approved by Paizo Inc. For more information about Paizo's Community Use Policy, please visit <a href="paizo.com/communityuse">paizo.com/communityuse</a>. For more information about Paizo Inc. and Paizo products, please visit <a href="paizo.com">paizo.com</a>.</p></footer>
