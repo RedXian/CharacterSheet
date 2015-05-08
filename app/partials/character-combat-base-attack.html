@@ -1,0 +1,15 @@
+<section>
+  <label>Base Attack Bonus</label>
+  <div class="calculation combat">
+    <div>
+      <input type=text class="result" disabled value="{{ getBaseAttackBonus() | signedNumber }}">
+    </div>
+    <div>=</div>
+    <div ng-repeat="bonus in getClassBonus track by $index">
+      <div>
+        <input type=text disabled value="{{ bonus.bonus | signedNumber }}">
+        <label>{{ bonus.name }} Bonus</label>
+      </div>
+      <div ng-hide="$last">+</div>
+    </div>
+</section>

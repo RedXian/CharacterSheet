@@ -1,0 +1,55 @@
+<div class="calculation skill" id="{{ skill.name }}">
+  <div>
+    <p>{{ skill.name }}
+      <button ng-click="toggleSubCategories=!toggleSubCategories" ng-show="skill.subCategory" ng-init="toggleSubCategories=false">+</button>:</p>
+  </div>
+  <div>
+    <input type="checkbox" class="result" ng-click="character.skills[skill.name].isClassSkill = !character.skills[skill.name].isClassSkill" ng-checked="character.skills[skill.name].isClassSkill">
+  </div>
+  <div>
+    <input type="checkbox" class="result" disabled ng-checked="skill.trained">
+  </div>
+  <div>
+    <input type="text" class="result" disabled value="{{ (character.skills[skill.name].isClassSkill && character.skills[skill.name].ranks ? 3:0) + character.skills[skill.name+subCat].ranks + character.abilities[skill.ability].modifier | signedNumber }}">
+    <label>Skill Bonus</label>
+  </div>
+  <div>=</div>
+  <div>
+    <input type="text" disabled value="{{ character.abilities[skill.ability].modifier | signedNumber }}">
+    <label>Ability Modifier</label>
+  </div>
+  <div ng-hide="skill.subCategory">+</div>
+  <div ng-hide="skill.subCategory">
+    <input type="number" min=0 max="{{character.level}}" ng-model="character.skills[skill.name].ranks" ng-init="character.skills[skill.name].ranks = 0">
+    <label>Skill Ranks</label>
+  </div>
+  <div ng-show="skill.armorCheckPenalty">*</div>
+</div>
+<div class="sub-category" ng-repeat="subCat in skill.subCategory">
+  <div class="calculation skill" id="{{ subCatName(skill.name, subCat) }}" ng-show="character.skills[skill.name+subCat].ranks || character.skills[skill.name+subCat].isClassSkill || toggleSubCategories">
+    <div>
+      <p>{{ skill.name }} ({{subCat}}):</p>
+    </div>
+    <div>
+      <input type="checkbox" class="result" ng-click="character.skills[skill.name+subCat].isClassSkill = !character.skills[skill.name+subCat].isClassSkill" ng-checked="character.skills[skill.name+subCat].isClassSkill">
+    </div>
+    <div>
+      <input type="checkbox" class="result" ng-checked="skill.trained">
+    </div>
+    <div>
+      <input type="text" class="result" disabled value="{{ (character.skills[skill.name+subCat].isClassSkill && character.skills[skill.name+subCat].ranks ? 3:0) + character.skills[skill.name+subCat].ranks + character.abilities[skill.ability].modifier | signedNumber }}">
+      <label>Skill Bonus</label>
+    </div>
+    <div>=</div>
+    <div>
+      <input type="text" disabled value="{{ character.abilities[skill.ability].modifier | signedNumber }}">
+      <label>Ability Modifier</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type="number" min="0" max="{{character.level}}" ng-model="character.skills[skill.name+subCat].ranks" ng-init="character.skills[skill.name+subCat].ranks = character.skills[skill.name+subCat].ranks || 0">
+      <label>Skill Ranks</label>
+    </div>
+    <div ng-show="skill.armorCheckPenalty">*</div>
+  </div>
+</div>

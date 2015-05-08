@@ -1,0 +1,37 @@
+<section>
+  <h2>Abilities</h2>
+  <div ng-show="character.traits['Ability Modifiers'].Any">
+    <select ng-model="racialBonus">
+      <option value="" selected disabled hidden>Select Stat</option>
+      <option value="{{ability.name}}" ng-repeat="ability in abilityList | orderObjectBy:'id'">{{ability.name}}</option>
+    </select>
+  </div>
+  <div ng-repeat="ability in abilityList | orderObjectBy:'id'">
+    <label>{{ ability.name }}</label>
+    <div class="calculation stat" id="{{ ability.name }}">
+      <div>
+        <input type="number" min="7" max="18" ng-model="character.abilities[ability.name].baseScore" ng-init="character.abilities[ability.name].baseScore=10">
+        <label>Base Score</label>
+      </div>
+      <div>+</div>
+      <div>
+        <input type="text" disabled value="{{ getRacialModifier(ability.name) | signedNumber}}">
+        <label>Racial Bonus</label>
+      </div>
+      <div>+</div>
+      <div>
+        <input type="text" disabled value="{{ getAgeModifier(ability.name) | signedNumber }}">
+        <label>Age Modifier</label>
+      </div>
+      <div>=</div>
+      <div>
+        <input type="number" class="result" disabled value="{{ getAdjustedScore(ability.name) }}">
+        <label>Adjusted Score</label>
+      </div>
+      <div>
+        <input type="text" class="result" disabled value="{{ getAbilityModifier(ability.name) | signedNumber }}">
+        <label>Ability Modifier</label>
+      </div>
+    </div>
+  </div>
+</section>

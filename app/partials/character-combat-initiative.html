@@ -1,0 +1,28 @@
+<section>
+  <label>Initiative</label>
+  <div class="calculation combat">
+    <div>
+      <input type=text class="result" disabled value="{{ initiative() | signedNumber }}">
+    </div>
+    <div>=</div>
+    <div>
+      <div>
+        <input type=text disabled value="{{ dexMod() | signedNumber }}">
+        <label>Dex Modifier</label>
+      </div>
+    </div>
+    <div ng-show="featBonus()">
+      <div>+</div>
+      <div>
+        <input type=number disabled value="{{ featBonus() | signedNumber }}">
+        <label>Feat Modifier</label>
+      </div>
+      <div ng-show="traitBonus()">
+        <div>+</div>
+        <div>
+          <input type=number disabled value="{{ traitBonus() | signedNumber }}">
+          <label>Trait Modifier</label>
+        </div>
+      </div>
+    </div>
+</section>

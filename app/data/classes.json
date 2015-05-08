@@ -1,0 +1,2946 @@
+{
+    "Barbarian":{
+        "type": "class",
+        "description": "For some, there is only rage. In the ways of their people, in the fury of their passion, in the howl of battle, conflict is all these brutal souls know. Savages, hired muscle, masters of vicious martial techniques, they are not soldiers or professional warriorsthey are the battle possessed, creatures of slaughter and spirits of war. Known as barbarians, these warmongers know little of training, preparation, or the rules of warfare; for them, only the moment exists, with the foes that stand before them and the knowledge that the next moment might hold their death. They possess a sixth sense in regard to danger and the endurance to weather all that might entail. These brutal warriors might rise from all walks of life, both civilized and savage, though whole societies embracing such philosophies roam the wild places of the world. Within barbarians storms the primal spirit of battle, and woe to those who face their rage.",
+        "Breaker":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Brutal Pugilist":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Drunken Brute":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Elemental Kin":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Hurler":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Invulnerable Rager":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Mounted Fury":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Savage Barbarian":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Superstitious":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Totem Warrior":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Armored Hulk":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Scarred Rager":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Sea Reaver":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Titan Mauler":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "True Primitive":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Urban Barbarian":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Wild Rager":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Feral Gnasher":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Goblin"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Hateful Rager":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source": "Core Rulebook",
+        "Role":"Barbarians excel in combat, possessing the martial prowess and fortitude to take on foes seemingly far superior to themselves. With rage granting them boldness and daring beyond that of most other warriors, barbarians charge furiously into battle and ruin all who would stand in their way.",
+        "Alignment":[
+            "NG",
+            "N",
+            "NE",
+            "CG",
+            "CN",
+            "CE"
+        ],
+        "Hit Die":"d12",
+        "Class Skills":[
+            "Acrobatics",
+            "Climb",
+            "Craft",
+            "Handle Animal",
+            "Intimidate",
+            "Knowledge (nature)",
+            "Perception",
+            "Ride",
+            "Survival",
+            "Swim"
+        ],
+        "Skill Ranks":4,
+        "level1":{
+            "bab":"+1",
+            "Fortitude":"+2",
+            "Reflex":"+0",
+            "Will":"+0",
+            "Special":[
+                "Fast Movement",
+                "Rage"
+            ]
+        },
+        "level2":{
+            "bab":"+2",
+            "Fortitude":"+3",
+            "Reflex":"+0",
+            "Will":"+0",
+            "Special":[
+                "Rage power",
+                "uncanny dodge"
+            ]
+        },
+        "level3":{
+            "bab":"+3",
+            "Fortitude":"+3",
+            "Reflex":"+1",
+            "Will":"+1",
+            "Special":[
+                "Trap sense +1"
+            ]
+        },
+        "level4":{
+            "bab":"+4",
+            "Fortitude":"+4",
+            "Reflex":"+1",
+            "Will":"+1",
+            "Special":[
+                "Rage power"
+            ]
+        },
+        "level5":{
+            "bab":"+5",
+            "Fortitude":"+4",
+            "Reflex":"+1",
+            "Will":"+1",
+            "Special":[
+                "Improved uncanny dodge"
+            ]
+        },
+        "level6":{
+            "bab":"+6\/+1",
+            "Fortitude":"+5",
+            "Reflex":"+2",
+            "Will":"+2",
+            "Special":[
+                "Rage power",
+                "Trap sense +2"
+            ]
+        },
+        "level7":{
+            "bab":"+7\/+2",
+            "Fortitude":"+5",
+            "Reflex":"+2",
+            "Will":"+2",
+            "Special":[
+                "Damage reduction 1\/"
+            ]
+        },
+        "level8":{
+            "bab":"+8\/+3",
+            "Fortitude":"+6",
+            "Reflex":"+2",
+            "Will":"+2",
+            "Special":[
+                "Rage power"
+            ]
+        },
+        "level9":{
+            "bab":"+9\/+4",
+            "Fortitude":"+6",
+            "Reflex":"+3",
+            "Will":"+3",
+            "Special":[
+                "Trap sense +3"
+            ]
+        },
+        "level10":{
+            "bab":"+10\/+5",
+            "Fortitude":"+7",
+            "Reflex":"+3",
+            "Will":"+3",
+            "Special":[
+                "Damage reduction 2\/, Rage power"
+            ]
+        },
+        "level11":{
+            "bab":"+11\/+6\/+1",
+            "Fortitude":"+7",
+            "Reflex":"+3",
+            "Will":"+3",
+            "Special":[
+                "Greater rage"
+            ]
+        },
+        "level12":{
+            "bab":"+12\/+7\/+2",
+            "Fortitude":"+8",
+            "Reflex":"+4",
+            "Will":"+4",
+            "Special":[
+                "Rage power",
+                "Trap sense +4"
+            ]
+        },
+        "level13":{
+            "bab":"+13\/+8\/+3",
+            "Fortitude":"+8",
+            "Reflex":"+4",
+            "Will":"+4",
+            "Special":[
+                "Damage reduction 3\/"
+            ]
+        },
+        "level14":{
+            "bab":"+14\/+9\/+4",
+            "Fortitude":"+9",
+            "Reflex":"+4",
+            "Will":"+4",
+            "Special":[
+                "Indomitable will",
+                "Rage power"
+            ]
+        },
+        "level15":{
+            "bab":"+15\/+10\/+5",
+            "Fortitude":"+9",
+            "Reflex":"+5",
+            "Will":"+5",
+            "Special":[
+                "Trap sense +5"
+            ]
+        },
+        "level16":{
+            "bab":"+16\/+11\/+6\/+1",
+            "Fortitude":"+10",
+            "Reflex":"+5",
+            "Will":"+5",
+            "Special":[
+                "Damage reduction 4\/, Rage power"
+            ]
+        },
+        "level17":{
+            "bab":"+17\/+12\/+7\/+2",
+            "Fortitude":"+10",
+            "Reflex":"+5",
+            "Will":"+5",
+            "Special":[
+                "Tireless rage"
+            ]
+        },
+        "level18":{
+            "bab":"+18\/+13\/+8\/+3",
+            "Fortitude":"+11",
+            "Reflex":"+6",
+            "Will":"+6",
+            "Special":[
+                "Rage power",
+                "Trap sense +6"
+            ]
+        },
+        "level19":{
+            "bab":"+19\/+14\/+9\/+4",
+            "Fortitude":"+11",
+            "Reflex":"+6",
+            "Will":"+6",
+            "Special":[
+                "Damage reduction 5\/"
+            ]
+        },
+        "level20":{
+            "bab":"+20\/+15\/+10\/+5",
+            "Fortitude":"+12",
+            "Reflex":"+6",
+            "Will":"+6",
+            "Special":[
+                "Mighty rage",
+                "Rage power"
+            ]
+        },
+        "Weapon and Armor Proficiency":"A barbarian is proficient with all simple and martial weapons, light armor, medium armor, and shields (except tower shields).",
+        "Fast Movement":{
+            "description":"A barbarian's land speed is faster than the norm for her race by +10 feet. This benefit applies only when she is wearing no armor, light armor, or medium armor, and not carrying a heavy load. Apply this bonus before modifying the barbarian's speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian's land speed.",
+            "type":"Class Feature",
+            "abiltiy Type":"Extraordinary"
+        },
+        "Age Category":"Intuitive"
+    },
+    "Bard":{
+        "type": "class",
+        "description": "Untold wonders and secrets exist for those skillful enough to discover them. Through cleverness, talent, and magic, these cunning few unravel the wiles of the world, becoming adept in the arts of persuasion, manipulation, and inspiration. Typically masters of one or many forms of artistry, bards possess an uncanny ability to know more than they should and use what they learn to keep themselves and their allies ever one step ahead of danger. Bards are quick-witted and captivating, and their skills might lead them down many paths, be they gamblers or jacks-of-all-trades, scholars or performers, leaders or scoundrels, or even all of the above. For bards, every day brings its own opportunities, adventures, and challenges, and only by bucking the odds, knowing the most, and being the best might they claim the treasures of each.",
+        "Arcane Duelist":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Archivist":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Court Bard":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Detective":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Magician":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Sandman":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Savage Skald":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Sea Singer":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Street Performer":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Animal Speaker":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Celebrity":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Demagogue":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Dirge Bard":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Geisha":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Songhealer":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Sound Striker":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Archaeologist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Daredevil":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Dervish Dancer":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Prankster":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Gnome"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Shadow Puppeteer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Wayangs"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Watersinger":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Undine"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source": "Core Rulebook",
+        "Alignment":[
+            "LG",
+            "LN",
+            "LE",
+            "NG",
+            "N",
+            "NE",
+            "CG",
+            "CN",
+            "CE"
+        ],
+        "Hit Die":"d8",
+        "Class Skills":[
+            "Acrobatics",
+            "Appraise",
+            "Bluff",
+            "Climb",
+            "Craft",
+            "Diplomacy",
+            "Disguise",
+            "Escape Artist",
+            "Intimidate",
+            "Knowledge (all)",
+            "Linguistics",
+            "Perception",
+            "Perform",
+            "Profession",
+            "Sense Motive",
+            "Sleight of Hand",
+            "Spellcraft",
+            "Stealth",
+            "Use Magic Device"
+        ],
+        "Skill Ranks":6,
+        "Age Category":"Self-Taught",
+        "level1":{
+            "bab":"+0",
+            "Fortitude":"+0",
+            "Reflex":"+2",
+            "Will":"+2",
+            "Special":[
+                "Bardic knowledge",
+                "bardic performance",
+                "cantrips,countersong",
+                "distraction",
+                "fascinate",
+                "inspire courage +1"
+            ],
+            "Spells per day":[
+                "1",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level2":{
+            "bab":"+1",
+            "Fortitude":"+0",
+            "Reflex":"+3",
+            "Will":"+3",
+            "Special":[
+                "Versatile performance",
+                "well-versed"
+            ],
+            "Spells per day":[
+                "2",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level3":{
+            "bab":"+2",
+            "Fortitude":"+1",
+            "Reflex":"+3",
+            "Will":"+3",
+            "Special":[
+                "Inspire competence +2"
+            ],
+            "Spells per day":[
+                "3",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level4":{
+            "bab":"+3",
+            "Fortitude":"+1",
+            "Reflex":"+4",
+            "Will":"+4",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "3",
+                "1",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level5":{
+            "bab":"+3",
+            "Fortitude":"+1",
+            "Reflex":"+4",
+            "Will":"+4",
+            "Special":[
+                "inspire courage +2",
+                "lore master 1\/day"
+            ],
+            "Spells per day":[
+                "4",
+                "2",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level6":{
+            "bab":"+4",
+            "Fortitude":"+2",
+            "Reflex":"+5",
+            "Will":"+5",
+            "Special":[
+                "Suggestion",
+                "Versatile performance"
+            ],
+            "Spells per day":[
+                "4",
+                "3",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level7":{
+            "bab":"+5",
+            "Fortitude":"+2",
+            "Reflex":"+5",
+            "Will":"+5",
+            "Special":[
+                "Inspire competence +3"
+            ],
+            "Spells per day":[
+                "4",
+                "3",
+                "1",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level8":{
+            "bab":"+6\/+1",
+            "Fortitude":"+2",
+            "Reflex":"+6",
+            "Will":"+6",
+            "Special":[
+                "Dirge of doom"
+            ],
+            "Spells per day":[
+                "4",
+                "4",
+                "2",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level9":{
+            "bab":"+6\/+1",
+            "Fortitude":"+3",
+            "Reflex":"+6",
+            "Will":"+6",
+            "Special":[
+                "Inspire greatness"
+            ],
+            "Spells per day":[
+                "5",
+                "4",
+                "3",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level10":{
+            "bab":"+7\/+2",
+            "Fortitude":"+3",
+            "Reflex":"+7",
+            "Will":"+7",
+            "Special":[
+                "Jack-of-all-trades",
+                "Versatile performance"
+            ],
+            "Spells per day":[
+                "5",
+                "4",
+                "3",
+                "1",
+                "",
+                ""
+            ]
+        },
+        "level11":{
+            "bab":"+8\/+3",
+            "Fortitude":"+3",
+            "Reflex":"+7",
+            "Will":"+7",
+            "Special":[
+                "Inspire competence +4",
+                "inspire courage +3",
+                "lore master 2\/day"
+            ],
+            "Spells per day":[
+                "5",
+                "4",
+                "4",
+                "2",
+                "",
+                ""
+            ]
+        },
+        "level12":{
+            "bab":"+9\/+4",
+            "Fortitude":"+4",
+            "Reflex":"+8",
+            "Will":"+8",
+            "Special":[
+                "Soothing performance"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "4",
+                "3",
+                "",
+                ""
+            ]
+        },
+        "level13":{
+            "bab":"+9\/+4",
+            "Fortitude":"+4",
+            "Reflex":"+8",
+            "Will":"+8",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "4",
+                "3",
+                "1",
+                ""
+            ]
+        },
+        "level14":{
+            "bab":"+10\/+5",
+            "Fortitude":"+4",
+            "Reflex":"+9",
+            "Will":"+9",
+            "Special":[
+                "Frightening tune",
+                "Versatile performance"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "4",
+                "4",
+                "2",
+                ""
+            ]
+        },
+        "level15":{
+            "bab":"+11\/+6\/+1",
+            "Fortitude":"+5",
+            "Reflex":"+9",
+            "Will":"+9",
+            "Special":[
+                "Inspire competence +5",
+                "inspire heroics"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "4",
+                "3",
+                ""
+            ]
+        },
+        "level16":{
+            "bab":"+12\/+7\/+2",
+            "Fortitude":"+5",
+            "Reflex":"+10",
+            "Will":"+10",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "4",
+                "3",
+                "1"
+            ]
+        },
+        "level17":{
+            "bab":"+12\/+7\/+2",
+            "Fortitude":"+5",
+            "Reflex":"+10",
+            "Will":"+10",
+            "Special":[
+                "inspire courage +4",
+                "lore master 3\/day"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "4",
+                "4",
+                "2"
+            ]
+        },
+        "level18":{
+            "bab":"+13\/+8\/+3",
+            "Fortitude":"+6",
+            "Reflex":"+11",
+            "Will":"+11",
+            "Special":[
+                "Mass suggestion",
+                "Versatile performance"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "5",
+                "4",
+                "3"
+            ]
+        },
+        "level19":{
+            "bab":"+14\/+9\/+4",
+            "Fortitude":"+6",
+            "Reflex":"+11",
+            "Will":"+11",
+            "Special":[
+                "Inspire competence +6"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "5",
+                "5",
+                "4"
+            ]
+        },
+        "level20":{
+            "bab":"+15\/+10\/+5",
+            "Fortitude":"+6",
+            "Reflex":"+12",
+            "Will":"+12",
+            "Special":[
+                "Deadly performance"
+            ],
+            "Spells per day":[
+                "5",
+                "5",
+                "5",
+                "5",
+                "5",
+                "5"
+            ]
+        }
+    },
+    "Cleric":{
+        "type": "class",
+        "description": "In faith and the miracles of the divine, many find a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and influence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conflict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.",
+        "Cloistered Cleric":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Separatist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Theologian":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Undead Lord Cleric":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Crusader":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Divine Strategist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Evangelist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Merciful Healer":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Demonic Apostle":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Drow"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Fiendish Vessel":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Tiefling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Forgemaster":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Dwarf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":[
+            "Core Rulebook",
+            "Core Rulebook"
+        ],
+        "role":"",
+        "Alignment":[
+
+        ],
+        "Hit Die":"d8",
+        "Class Skills":[
+            "Appraise",
+            "Craft",
+            "Diplomacy",
+            "Heal",
+            "Knowledge (arcana)",
+            "Knowledge (history)",
+            "Knowledge (nobility)",
+            "Knowledge (planes)",
+            "Knowledge (religion)",
+            "Linguistics",
+            "Profession",
+            "Sense Motive"
+        ],
+        "Skill Ranks":2,
+        "level1":{
+            "bab":"+0",
+            "Fortitude":"+2",
+            "Reflex":"+0",
+            "Will":"+2",
+            "Special":[
+                "Aura",
+                "channel energy 1d6,domains",
+                "orisons"
+            ],
+            "Spells per day":[
+                "3",
+                "1+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level2":{
+            "bab":"+1",
+            "Fortitude":"+3",
+            "Reflex":"+0",
+            "Will":"+3",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "2+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level3":{
+            "bab":"+2",
+            "Fortitude":"+3",
+            "Reflex":"+1",
+            "Will":"+3",
+            "Special":[
+                "Channel energy 2d6"
+            ],
+            "Spells per day":[
+                "4",
+                "2+1",
+                "1+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level4":{
+            "bab":"+3",
+            "Fortitude":"+4",
+            "Reflex":"+1",
+            "Will":"+4",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "3+1",
+                "2+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level5":{
+            "bab":"+3",
+            "Fortitude":"+4",
+            "Reflex":"+1",
+            "Will":"+4",
+            "Special":[
+                "Channel energy 3d6"
+            ],
+            "Spells per day":[
+                "4",
+                "3+1",
+                "2+1",
+                "1+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level6":{
+            "bab":"+4",
+            "Fortitude":"+5",
+            "Reflex":"+2",
+            "Will":"+5",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "3+1",
+                "3+1",
+                "2+1",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level7":{
+            "bab":"+5",
+            "Fortitude":"+5",
+            "Reflex":"+2",
+            "Will":"+5",
+            "Special":[
+                "Channel energy 4d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level8":{
+            "bab":"+6\/+1",
+            "Fortitude":"+6",
+            "Reflex":"+2",
+            "Will":"+6",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level9":{
+            "bab":"+6\/+1",
+            "Fortitude":"+6",
+            "Reflex":"+3",
+            "Will":"+6",
+            "Special":[
+                "Channel energy 5d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level10":{
+            "bab":"+7\/+2",
+            "Fortitude":"+7",
+            "Reflex":"+3",
+            "Will":"+7",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level11":{
+            "bab":"+8\/+3",
+            "Fortitude":"+7",
+            "Reflex":"+3",
+            "Will":"+7",
+            "Special":[
+                "Channel energy 6d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level12":{
+            "bab":"+9\/+4",
+            "Fortitude":"+8",
+            "Reflex":"+4",
+            "Will":"+8",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1",
+                "",
+                "",
+                ""
+            ]
+        },
+        "level13":{
+            "bab":"+9\/+4",
+            "Fortitude":"+8",
+            "Reflex":"+4",
+            "Will":"+8",
+            "Special":[
+                "Channel energy 7d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1",
+                "",
+                ""
+            ]
+        },
+        "level14":{
+            "bab":"+10\/+5",
+            "Fortitude":"+9",
+            "Reflex":"+4",
+            "Will":"+9",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1",
+                "",
+                ""
+            ]
+        },
+        "level15":{
+            "bab":"+11\/+6\/+1",
+            "Fortitude":"+9",
+            "Reflex":"+5",
+            "Will":"+9",
+            "Special":[
+                "Channel energy 8d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1",
+                ""
+            ]
+        },
+        "level16":{
+            "bab":"+12\/+7\/+2",
+            "Fortitude":"+10",
+            "Reflex":"+5",
+            "Will":"+10",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1",
+                ""
+            ]
+        },
+        "level17":{
+            "bab":"+12\/+7\/+2",
+            "Fortitude":"+10",
+            "Reflex":"+5",
+            "Will":"+10",
+            "Special":[
+                "Channel energy 9d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "2+1",
+                "1+1"
+            ]
+        },
+        "level18":{
+            "bab":"+13\/+8\/+3",
+            "Fortitude":"+11",
+            "Reflex":"+6",
+            "Will":"+11",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1",
+                "2+1"
+            ]
+        },
+        "level19":{
+            "bab":"+14\/+9\/+4",
+            "Fortitude":"+11",
+            "Reflex":"+6",
+            "Will":"+11",
+            "Special":[
+                "Channel energy 10d6"
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "3+1",
+                "3+1"
+            ]
+        },
+        "level20":{
+            "bab":"+15\/+10\/+5",
+            "Fortitude":"+12",
+            "Reflex":"+6",
+            "Will":"+12",
+            "Special":[
+
+            ],
+            "Spells per day":[
+                "4",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1",
+                "4+1"
+            ]
+        },
+        "Age Category":"Trained"
+    },
+    "Druid":{
+        "type":"class",
+        "description":"The druid is a worshiper of all things natural\u2014a spellcaster, a friend to animals, and a skilled shapechanger.",
+        "Aquatic Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Arctic Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Blight Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Cave Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Desert Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Jungle Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Mountain Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Plains Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Swamp Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Urban Druid":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Dragon Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Menhir Savant":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Mooncaller":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Pack Lord":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Reincarnated Druid":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Saurian Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Shark Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Storm Druid":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Ape Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Bat Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Boar Shaman":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "World Walker":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Feral Child":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Human"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Naga Aspirant":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Nagaji"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Sky Druid":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Sylph"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Treesinger":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Undine Adept":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Undine"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Fighter":{
+        "type":"class",
+        "description":"Brave and stalwart, the fighter is a master of all manner of arms and armor.",
+        "Archer":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Crossbowman":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Free Hand Fighter":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Mobile Fighter":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Phalanx Soldier":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Polearm Master":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Roughrider":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Savage Warrior":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Shielded Fighter":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Two-Handed Fighter":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Two-Weapon Warrior":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Weapon Master":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Armor Master":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Brawler":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Cad":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Dragoon":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Gladiator":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Tactician":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Thunderstriker":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Tower Shield Specialist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Unarmed Fighter":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Unbreakable":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Airborne Ambusher":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Strix"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Cavern Sniper":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Drow"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Dirty Fighter":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Monk":{
+        "type":"class",
+        "description":"A student of martial arts, the monk trains his body to be his greatest weapon and defense.",
+        "Drunken Master":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Hungry Ghost Monk":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Ki Mystic":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Monk of the Empty Hand":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Monk of the Four Winds":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Monk of the Healing Hand":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Monk of the Lotus":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Monk of the Sacred Mountain":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Weapon Adept":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Zen Archer":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Qinggong monk":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Flowing monk":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Maneuver master":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Martial artist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Master of many styles":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Sensei":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Sohei":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Tetori":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Gray Disciple":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Duergar"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Ironskin Monk":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Hobgoblin"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Nimble Guardian":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Catfolk"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Student Of Stone":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Oread"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Treetop Monk":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Vanara"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Underfoot Adept":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Halfling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Wanderer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Human"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Paladin":{
+        "type":"class",
+        "description":"The paladin is the knight in shining armor, a devoted follower of law and good.",
+        "Divine Defender":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Hospitaler":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Sacred Servant":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Shining Knight":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Undead Scourge":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Warrior of the Holy Light":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Oathbound Paladin":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Divine Hunter":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Empyreal Knight":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Holy Gun":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Holy tactician":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Knight of the Sepulcher":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Sacred Shield":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Redeemer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Stonelord":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Dwarf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Tranquil Guardian":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Aasimar"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Ranger":{
+        "type":"class",
+        "description":"A tracker and hunter, the ranger is a creature of the wild and of tracking down his favored foes.",
+        "Beast Master":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Guide":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Horse Lord":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Infiltrator":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Shapeshifter":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Skirmisher":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Spirit Ranger":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Urban Ranger":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Trapper":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Battle Scout":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Deep Walker":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Falconer":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Trophy Hunter":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Warden":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Wild Stalker":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Dusk Stalker":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Fetchling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Wave Warden":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Merfolk"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Wild Shadow":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Rogue":{
+        "type":"class",
+        "description":"The rogue is a thief and a scout, an opportunist capable of delivering brutal strikes against unwary foes.",
+        "Acrobat":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Burglar":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Cutpurse":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Investigator":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Poisoner":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Rake":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Scout":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Sniper":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Spy":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Swashbuckler":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Thug":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Trapsmith":{
+            "type":"archetype",
+            "source":"Advanced Player's Guide"
+        },
+        "Bandit":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Chameleon":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Charlatan":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Driver":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Knife Master":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Pirate":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Roof Runner":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Sanctified Rogue":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Survivalist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Filcher":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Halfling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Skulking Slayer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Cat Burglar":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Catfolk"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Deadly Courtesan":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Vishkanya"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Eldritch Raider":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Gillman"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Kitsune Trickster":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Kitsune"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Swordmaster":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Tengu"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Sorcerer":{
+        "type":"class",
+        "description":"The spellcasting sorcerer is born with an innate knack for magic and has strange, eldritch powers.",
+        "Aberrant":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Abyssal":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Arcane":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Celestial":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Elemental":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Fey":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Infernal":{
+            "type":"archetype",
+            "source":"Core Rulebook"
+        },
+        "Undead":{
+            "type":"bloodlines",
+            "source":"Core Rulebook"
+        },
+        "Accursed":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Djinni":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Efreeti":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Maestro":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Marid":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Rakshasa":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Shaitan":{
+            "type":"bloodlines",
+            "source":"Ultimate Magic"
+        },
+        "Aquatic":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Boreal":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Deepearth":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Dreamspun":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Protean":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Serpentine":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Shadow":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Starsoul":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Stormborn":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Verdant":{
+            "type":"bloodlines",
+            "source":"Advanced Player's Guide"
+        },
+        "Kobold Sorcerer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Kobold"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Imperious":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Human"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Crossblooded":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Wildblooded":{
+            "type":"archetype",
+            "Anarchic":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Aerial":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Bedrock":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Brutal":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Empyreal":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Envenomed":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Groveborn":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Karmic":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Linnorm":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Pit-Touched":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Primal":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Rime-Blooded":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Sage":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Sanguine":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Seaborn":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Sylvan":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Umbral":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Visionary":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Void-Touched":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "Warped":{
+                "type":"bloodlines",
+                "source":"Ultimate Magic"
+            },
+            "source":"Ultimate Magic"
+        },
+        "Wishcrafter":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Ifrits"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Wizard":{
+        "type":"class",
+        "description":"The wizard masters magic through constant study that gives him incredible magical power.",
+        "Scrollmaster Wizard":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Arcane Bomber":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Siege Mage":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Spellslinger":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Cruoromancer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Dhampir"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Spellbinder":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Wind Listener":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Sylph"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Core Rulebook"
+    },
+    "Alchemist":{
+        "type":"class",
+        "description":"The alchemist is the master of alchemy, using extracts to grant him great power, mutagens to enhance his form, and bombs to destroy his enemies.",
+        "Chirurgeon":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Clone Master":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Internal Alchemist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Mindchemist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Preservationist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Psychonaut":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Reanimator":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Vivisectionist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Beastmorph":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Ragechemist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Bogborn Alchemist":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Grippli"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Bramble Brewer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Deep Bomber":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Svirfneblin"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Fire Bomber":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Goblin"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Plague Bringer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Ratfolk"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Saboteur":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Gnome"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Cavalier":{
+        "type":"class",
+        "description":"Mounted upon his mighty steed, the cavalier is a brave warrior, using his wit, charm, and strength at arms to rally his companions and achieve his goals.",
+        "Beast Rider":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Emissary":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Gendarme":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Honor guard":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Luring cavalier":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Musketeer":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Standard bearer":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Strategist":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Fell Rider":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Hobgoblin"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Order of the Paw":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Halfling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Inquisitor":{
+        "type":"class",
+        "description":"Scourge of the unfaithful and hunter of horrors, the inquisitor roots out the enemies of her faith with grim conviction and an array of divine blessings.",
+        "Exorcist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Heretic":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Infiltrator":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Preacher":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Sin Eater":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Iconoclast":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Spellbreaker":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Witch Hunter":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Exarch":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Dwarf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Immolator":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Ifrit"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Kinslayer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Dhampir"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Oracle":{
+        "type":"class",
+        "description":"Drawing upon divine mysteries, the oracle channels divine power through her body and soul, but at a terrible price.",
+        "Dual-cursed Oracle":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Enlightened Philosopher":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Planar Oracle":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Possessed Oracle":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Seer":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Stargazer":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Community Guardian":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Halfling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Ancient Lorekeeper":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Purifier":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Aasimar"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Reincarnated Oracle":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Samsaran"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Shigenjo":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Tengus"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Summoner":{
+        "type":"class",
+        "description":"Bonded to a mysterious creature called an eidolon, the summoner focuses his power on strengthing that connection and enhancing his strange, otherworldy companion.",
+        "Broodmaster":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Evolutionist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Master Summoner":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Synthesist":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Blood God Disciple":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Shadow Caller":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Fetchling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Shaitan Binder":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Oread"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Wild Caller":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Witch":{
+        "type":"class",
+        "description":"Lurking on the fringe of civilization, the witch makes a powerful connection with a patron that grants her strange and mysterious powers through a special familiar.",
+        "Beast-bonded":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Gravewalker":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Hedge Witch":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Sea Witch":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Bonded Witch":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Half-Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Dreamweaver":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Changeling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Scarred Witch Doctor":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Orc"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Advanced Player's Guide"
+    },
+    "Gunslinger":{
+        "type":"class",
+        "Gun Tank":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Musket Master":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Mysterious Stranger":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Pistolero":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Buccaneer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Human"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Bushwhacker":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Kobold"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Experimental Gunsmith":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Gnome"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Gulch Gunner":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Ratfolk"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Ultimate Combat"
+    },
+    "Ninja":{
+        "type":"class",
+        "source":"Ultimate Combat"
+    },
+    "Samurai":{
+        "type":"class",
+        "source":"Ultimate Combat"
+    },
+    "Magus":{
+        "type":"class",
+        "Bladebound":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Hexcrafter":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Spellblade":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Staff Magus":{
+            "type":"archetype",
+            "source":"Ultimate Magic"
+        },
+        "Kensai":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Myrmidarch":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Skirnir":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Soul Forger":{
+            "type":"archetype",
+            "source":"Ultimate Combat"
+        },
+        "Elemental Knight":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Suli"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Fiend Flayer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Tiefling"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "Spell Dancer":{
+            "type":"archetype",
+            "requirements":[
+                {
+                    "race":"Elf"
+                }
+            ],
+            "source":"Advanced Race Guide"
+        },
+        "source":"Ultimate Magic"
+    },
+    "Arcanist":{
+        "type":"class",
+        "description":"Blending the power of the sorcerer with the versatility of the wizard, the arcanist draws upon a reservoir of power to bend magic to her will.",
+        "source":"Advanced Class Guide"
+    },
+    "Bloodrager":{
+        "type":"class",
+        "description":"Fusing the frenzy of the barbarian with the bloodline might of the sorcerer, the bloodrager calls upon innate power to give himself extraordinary abilities.",
+        "source":"Advanced Class Guide"
+    },
+    "Brawler":{
+        "type":"class",
+        "description":"Focusing on hand-to-hand combat, the brawler mixes the martial artistry of the monk with the specialist training of the fighter.",
+        "source":"Advanced Class Guide"
+    },
+    "Hunter":{
+        "type":"class",
+        "description":"Though both the druid and ranger can have animal companions, the hunter takes this bond to the next level, forming a deadly duo with her savage ally.",
+        "source":"Advanced Class Guide"
+    },
+    "Investigator":{
+        "type":"class",
+        "description":"With the rogue's cunning complemented by the alchemist's magical talent, the investigator is a peerless problem solver.",
+        "source":"Advanced Class Guide"
+    },
+    "Shaman":{
+        "type":"class",
+        "description":"Calling on the divine power of the oracle and the hexes of a witch, the shaman communes with her spirit animal to unleash doom upon her foes.",
+        "source":"Advanced Class Guide"
+    },
+    "Skald":{
+        "type":"class",
+        "description":"Sharing fury through song and deed, the skald takes the rage that lives in the heart of the barbarian and inspires it in others using the performances of the bard.",
+        "source":"Advanced Class Guide"
+    },
+    "Slayer":{
+        "type":"class",
+        "description":"Mixing the precise strikes of the rogue with the special training of the ranger, the slayer hunts down his foes with ruthless efficiency.",
+        "source":"Advanced Class Guide"
+    },
+    "Swashbuckler":{
+        "type":"class",
+        "description":"Combining the prowess of the fighter with the determination of the gunslinger, the swashbuckler is an acrobatic melee combatant.",
+        "source":"Advanced Class Guide"
+    },
+    "Warpriest":{
+        "type":"class",
+        "description":"Blending the cleric's divine might and the fighter's martial skills, the warpriest brings the fight to the enemies of his faith.",
+        "source":"Advanced Class Guide"
+    },
+    "Battle Herald":{
+        "type":"Prestige Class",
+        "description":"A veteran whose masterful tactics and air of command inspire allies to greater feats of heroism.",
+        "source":"Core Rulebook"
+    },
+    "Holy Vindicator":{
+        "type":"Prestige Class",
+        "description":"A pious warrior who spreads religion at the edge of a sword.",
+        "source":"Core Rulebook"
+    },
+    "Horizon Walker":{
+        "type":"Prestige Class",
+        "description":"A scout and wanderer comfortable in even the strangest terrain.",
+        "source":"Core Rulebook"
+    },
+    "Master Chymist":{
+        "type":"Prestige Class",
+        "description":"An alchemist whose mutagens create an alternate, brutish personality.",
+        "source":"Core Rulebook"
+    },
+    "Master Spy":{
+        "type":"Prestige Class",
+        "description":"An espionage expert specializing in disguises and striking swiftly from the shadows.",
+        "source":"Core Rulebook"
+    },
+    "Nature Warden":{
+        "type":"Prestige Class",
+        "description":"A master of the wilderness bonded spiritually to a fearsome animal companion.",
+        "source":"Core Rulebook"
+    },
+    "Rage Prophet":{
+        "type":"Prestige Class",
+        "description":"A bold and barbaric champion who embraces otherworldly powers in order to perfect the art of combat.",
+        "source":"Core Rulebook"
+    },
+    "Stalwart Defender":{
+        "type":"Prestige Class",
+        "description":"A master of defending territory and holding the line at all costs.",
+        "source":"Core Rulebook"
+    },
+    "Adept":{
+        "type":"NPC Class",
+        "source":"Core Rulebook"
+    },
+    "Aristocrat":{
+        "type":"NPC Class",
+        "source":"Core Rulebook"
+    },
+    "Commoner":{
+        "type":"NPC Class",
+        "source":"Core Rulebook"
+    },
+    "Expert":{
+        "type":"NPC Class",
+        "source":"Core Rulebook"
+    },
+    "Warrior":{
+        "type":"NPC Class",
+        "source":"Core Rulebook"
+    }
+}

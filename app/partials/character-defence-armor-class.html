@@ -1,0 +1,20 @@
+<section>
+  <strong>Armor Class</strong>
+  <input type=checkbox ng-model="flatfoot" ng-change="touch=false">
+  <strong>Flat-Footed AC</strong>
+  <input type=checkbox ng-model="touch" ng-change="flatfoot=false">
+  <strong>Touch AC</strong>
+  <div class="calculation defence">
+    <div>
+      <div class="glyphicon" ng-class="{'glyphicon-eye-close' : !verbose, 'glyphicon-eye-open': verbose}" aria-hidden="true" ng-click="verbose=!verbose" ng-model="verbose"></div>
+      <input type=number class="result" disabled value="{{ calculateAC() }}">
+    </div>
+    <div>= 10 +</div>
+    <div ng-repeat="bonus in bonuses" ng-if="verbose || bonus.value() > 0">
+      <div>
+        <input type=text disabled value="{{ bonus.value() | signedNumber }}">
+        <label>{{ bonus.name }}</label>
+      </div>
+      <div ng-hide="$last">+</div>
+    </div>
+</section>

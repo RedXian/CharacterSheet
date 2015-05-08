@@ -1,0 +1,24 @@
+<section>
+  <label>Hit Points</label>
+  <div class="calculation defence">
+    <div>
+      <input type=number min="{{ minHP }}" max="{{ maxHP() }}" ng-model="currentHP">
+      <label>Current HP</label>
+    </div>
+    <div>/</div>
+    <div>
+      <input type=text class="result" disabled value="{{ maxHP() }}">
+      <label>Max HP</label>
+    </div>
+    <div>
+      <input type=text disabled value="{{ conModifier() | signedNumber }}">
+      <label>Con Bonus</label>
+    </div>
+    <div ng-repeat="class in classBonusArray">
+      <span ng-show="$first">(</span>
+      <span ng-hide="$first">+</span>{{ class.level }}d{{ class.hitdie }}
+      <span ng-show="$last && conBonusHP()">+{{ conBonusHP() }}</span>
+      <span ng-show="$last">)</span>
+    </div>
+  </div>
+</section>

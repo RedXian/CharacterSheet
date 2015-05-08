@@ -1,0 +1,49 @@
+<section>
+  <label>Combat Maneuver Defence</label>
+  <div class="calculation combat">
+    <div>
+      <input type=text class="result" disabled value="{{ getManueverDefence() | signedNumber }}">
+    </div>
+    <div>= 10 +</div>
+    <div>
+      <input type=text disabled value="{{ baseAttackBonus() | signedNumber }}">
+      <label>Base Attack Bonus</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type=text disabled value="{{ strMod() | signedNumber }}">
+      <label>Str Modifier</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type=text disabled value="{{ dexMod() | signedNumber }}">
+      <label>Dex Modifier</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type=text disabled value="{{ getSizeModifer() | signedNumber }}">
+      <label>Size Modifier</label>
+    </div>
+  </div>
+  <label>Combat Maneuver Bonus</label>
+  <div class="calculation combat">
+    <div>
+      <input type=text class="result" disabled value="{{ getManueverBonus() | signedNumber }}">
+    </div>
+    <div>=</div>
+    <div>
+      <input type=text disabled value="{{ baseAttackBonus() | signedNumber }}">
+      <label>Base Attack Bonus</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type=text disabled value="{{ strMod() | signedNumber }}">
+      <label>Str Modifier</label>
+    </div>
+    <div>+</div>
+    <div>
+      <input type=text disabled value="{{ getSizeModifer() | signedNumber }}">
+      <label>Size Modifier</label>
+    </div>
+  </div>
+</section>
