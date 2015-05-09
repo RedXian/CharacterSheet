@@ -2,18 +2,18 @@
     <aside style="float:left">
         <h2 style="float:left">Level</h2>
         <div>
-            <div style="float:left;clear:left;" ng-repeat="clss in character.classes">
+            <div style="float:left;clear:left;" ng-repeat="aClass in character.classes | orderBy: 'level'">
                 <p>
-                    <button>-</button>{{clss.name}}:{{clss.level}}
-                    <button>+</button>
+                    <button ng-click="character.removeClass(aClass.name)">-</button>{{aClass.name}}:{{aClass.level}}
+                    <button ng-show="newLevelAvailable()" ng-click="character.addClass(aClass.name)">+</button>
                 </p>
             </div>
         </div>
-        <button ng-click="">Add New Class</button>
+        <button ng-show="newLevelAvailable()" ng-click="addClassList=true" ng-init="addClassList=false">Add New Class</button>
     </aside>
-    <aside style="float:left">
+    <aside ng-show="addClassList" style="float:left">
         <h2 style="float:left">Class</h2>
-        <select style="float:left;clear:left;" size="43" ng-model="selectedClass" ng-change="character.setClass(selectedClass)" ng-options="clss.name group by clss.source for clss in classes | filter:{type:'Class'}:true">
+        <select style="float:left;clear:left;" size="43" ng-model="selectedClass" ng-change="character.addClass(selectedClass.name);toggleClassList=false" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
             <option value="" selected disabled hidden>Select Class</option>
         </select>
     </aside>

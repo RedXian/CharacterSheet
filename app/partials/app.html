@@ -2,9 +2,9 @@
     <label>Name: </label>
     <input type=text ng-model="character.name">
     <label>Level: </label>
-    <input type=number disabled ng-model="character.experience">
+    <input type=text disabled value="{{character.level('Medium')}}">
     <label>Experience: </label>
-    <input type=number disabled ng-model="character.experience">
+    <input type=number ng-model="character.experience">
 </header>
 <section class="btn-group" ng-init="tab=1">
     <button type="button" class="btn btn-default" ng-click="tab=1">Race</button>

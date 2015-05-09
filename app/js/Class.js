@@ -31,6 +31,11 @@ angular.module("characterSheet.classes", [])
                 });
 
                 $scope.character = CharacterFactory;
+
+                $scope.newLevelAvailable = function () {
+                  // Need to add check for max class level
+                  return $scope.character.level("Medium") > $scope.character.getClassLevels();
+                };
             }
         };
     });

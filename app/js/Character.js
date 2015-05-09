@@ -2,36 +2,88 @@ angular.module("characterSheet.character", [])
     .factory("CharacterFactory", function() {
         var character = {
             name: "nameless",
-            experience: 1,
-            level: 1,
-            abilities: {
-                Strength: {
-                    // id: 1,
-                    // name: "Strength"
-                },
-                Dexterity: {
-                    // id: 2,
-                    // name: "Dexterity"
-                },
-                Constitution: {
-                    // id: 3,
-                    // name: "Constitution"
-                },
-                Intelligence: {
-                    // id: 4,
-                    // name: "Intelligence"
-                },
-                Wisdom: {
-                    id: 5,
-                    name: "Wisdom"
-                },
-                Charisma: {
-                    id: 6,
-                    name: "Charisma"
-                }
-            },
+            experience: 0,
+            abilities: {},
+            classes: {},
             skills: {},
             traits: {},
+            level: function(track) {
+                var advancement = {
+                    "Slow": [0,
+                        3000,
+                        7500,
+                        14000,
+                        23000,
+                        35000,
+                        53000,
+                        77000,
+                        115000,
+                        160000,
+                        235000,
+                        330000,
+                        475000,
+                        665000,
+                        955000,
+                        1350000,
+                        1900000,
+                        2700000,
+                        3850000,
+                        5350000
+                    ],
+                    "Medium": [0,
+                        2000,
+                        5000,
+                        9000,
+                        15000,
+                        23000,
+                        35000,
+                        51000,
+                        75000,
+                        105000,
+                        155000,
+                        220000,
+                        315000,
+                        445000,
+                        635000,
+                        890000,
+                        1300000,
+                        1800000,
+                        2550000,
+                        3600000
+                    ],
+                    "Fast": [0,
+                        1300,
+                        3300,
+                        6000,
+                        10000,
+                        15000,
+                        23000,
+                        34000,
+                        50000,
+                        71000,
+                        105000,
+                        145000,
+                        210000,
+                        295000,
+                        425000,
+                        600000,
+                        850000,
+                        1200000,
+                        1700000,
+                        2400000
+                    ]
+                };
+
+                if (!track) {
+                    track = "Medium";
+                };
+                for (var i = advancement[track].length-1; i > 0; i--) {
+                    if (character.experience >= advancement[track][i]) {
+                        return i+1;
+                    }
+                }
+                return 1;
+            },
 
             setRace: function(race) {
                 delete character.race;
@@ -53,11 +105,38 @@ angular.module("characterSheet.character", [])
                         }
                     } else character.race[key] = element;
                 }
+            },
+            addClass: function(aClass) {
+                if (character.classes[aClass]) {
+                    character.classes[aClass].level++;
+                } else {
+                    character.classes[aClass] = {
+                        name: aClass,
+                        level: 1
+                    };
+                };
+            },
+            removeClass: function(aClass) {
+                if (character.classes[aClass].level == 1) {
+                    delete character.classes[aClass];
+                } else {
+                    character.classes[aClass].level--;
+                }
+            },
+            getClassLevels: function() {
+                var totalLevels = 0;
+                for (var key in character.classes) {
+                    totalLevels += character.classes[key].level;
+                }
+                return totalLevels;
             }
+
         };
+
+
 
         return character;
     })
-.controller('CharacterController', function($scope, CharacterFactory) {
-    $scope.character = CharacterFactory;
-});
+    .controller('CharacterController', function($scope, CharacterFactory) {
+        $scope.character = CharacterFactory;
+    });
