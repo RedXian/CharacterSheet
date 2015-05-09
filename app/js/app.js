@@ -6,6 +6,7 @@
     ['characterSheet.character',
     'characterSheet.skills',
     'characterSheet.races',
+    'characterSheet.classes',
     'characterSheet.abilities',
     'characterSheet.combat',
     'characterSheet.defence']);

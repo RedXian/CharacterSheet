@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "CharacterSheet",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "An interactive character sheet for the Pathfinder RPG System",
+  "repository": "https://github.com/RedXian/CharacterSheet/",
   "license": "MIT",
   "devDependencies": {
     "karma": "~0.10",
