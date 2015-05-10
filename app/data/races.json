@@ -1022,7 +1022,8 @@
         "Skilled": {
             "name": "Skilled",
             "type": "Racial Trait",
-            "description": "Humans gain an additional skill rank at first level and one additional rank whenever they gain a level."
+            "description": "Humans gain an additional skill rank at first level and one additional rank whenever they gain a level.",
+            "skillsPerLevel": "1"
         },
         "Adoptive Parentage": {
             "name": "Adoptive Parentage",

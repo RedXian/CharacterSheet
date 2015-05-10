@@ -95,7 +95,7 @@
       "CN",
       "CE"
     ],
-    "Hit Die": "d12",
+    "Hit Die": "12",
     "Class Skills": [
       "Acrobatics",
       "Climb",
@@ -108,7 +108,7 @@
       "Survival",
       "Swim"
     ],
-    "Skill Ranks": 4,
+    "skillsPerLevel": "4",
     "level1": {
       "bab": "+1",
       "Fortitude": "+2",

@@ -12,10 +12,12 @@ angular.module("characterSheet.classes", [])
             });
             return deferred.promise;
         };
-        factory.getClasses = function() {
+        factory.getClass = function(aClass) {
             var deferred = $q.defer();
             $http.get('data/classes.json').success(function(data) {
-                deferred.resolve(data);
+                if (data.name == aClass) {
+                    deferred.resolve(data);
+                }
             });
             return deferred.promise;
         };
@@ -26,15 +28,26 @@ angular.module("characterSheet.classes", [])
             restrict: 'E',
             templateUrl: "partials/character-class-selector.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
+                $scope.addClassList = false;
+                $scope.selectedClass = "none";
+
                 ClassFactory.getClassList().then(function(data) {
                     $scope.classes = data;
                 });
 
                 $scope.character = CharacterFactory;
 
-                $scope.newLevelAvailable = function () {
-                  // Need to add check for max class level
-                  return $scope.character.level("Medium") > $scope.character.getClassLevels();
+                $scope.addClass = function(className) {
+                    $scope.addClassList = false;
+                    CharacterFactory.addClass(className);
+                    $scope.selectedClass = "none";
+                };
+
+
+
+                $scope.newLevelAvailable = function() {
+                    // Need to add check for max class levels for Prestige Classes.
+                    return $scope.character.level("Medium") > $scope.character.getClassLevels();
                 };
             }
         };

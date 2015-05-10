@@ -1,20 +1,18 @@
 <section>
     <aside style="float:left">
         <h2 style="float:left">Level</h2>
-        <div>
-            <div style="float:left;clear:left;" ng-repeat="aClass in character.classes | orderBy: 'level'">
-                <p>
-                    <button ng-click="character.removeClass(aClass.name)">-</button>{{aClass.name}}:{{aClass.level}}
-                    <button ng-show="newLevelAvailable()" ng-click="character.addClass(aClass.name)">+</button>
-                </p>
-            </div>
+        <div ng-repeat="aClass in character.classes | orderBy: 'level'">
+
+                <input type=radio name="favoredClass" ng-model="favoredClass" style="float:left;clear:left;" ng-value="aClass.name">
+                <button ng-click="character.removeClass(aClass.name)">-</button>{{aClass.name}}:{{aClass.level}}
+                <button ng-show="newLevelAvailable()" ng-click="character.addClass(aClass.name)">+</button>
         </div>
-        <button ng-show="newLevelAvailable()" ng-click="addClassList=true" ng-init="addClassList=false">Add New Class</button>
+        <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addClassList=true" ng-init="addClassList=false">Add New Class</button>
     </aside>
     <aside ng-show="addClassList" style="float:left">
         <h2 style="float:left">Class</h2>
-        <select style="float:left;clear:left;" size="43" ng-model="selectedClass" ng-change="character.addClass(selectedClass.name);toggleClassList=false" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
-            <option value="" selected disabled hidden>Select Class</option>
+        <select style="float:left;clear:left;" size="43" ng-model="selectedClass" ng-change="addClass(selectedClass.name)" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
+            <option value="none" disabled hidden>Select Class</option>
         </select>
     </aside>
 </section>

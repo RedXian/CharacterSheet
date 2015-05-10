@@ -1,5 +1,5 @@
 <section>
-  <h2>Skills</h2>
+  <h2>Skills - {{getSkillsPointsSpent()}}/{{getMaxSkillsPoints()}}</h2>
   <div ng-repeat="skill in skills | orderBy:['name']">
     <div class="calculation skill" id="{{ skill.name }}">
       <div>
@@ -7,7 +7,7 @@
           <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !toggle, 'glyphicon-triangle-bottom' : toggle }" ng-click="toggle=!toggle" ng-show="skill.subCategory" ng-init="toggleSubCategories=false"></span>:</p>
       </div>
       <div>
-        <input type="checkbox" class="result" ng-click="character.skills[skill.name].isClassSkill = !character.skills[skill.name].isClassSkill" ng-checked="isClassSkill(skill.name)">
+        <input type="checkbox" class="result" disabled ng-checked="isClassSkill(skill.name)">
       </div>
       <div>
         <input type="checkbox" class="result" disabled ng-checked="skill.trained">
@@ -23,21 +23,21 @@
       </div>
       <div ng-hide="skill.subCategory">+</div>
       <div ng-hide="skill.subCategory">
-        <input type="number" min=0 max="{{ character.level }}" ng-model="character.skills[skill.name].ranks" ng-init="character.skills[skill.name].ranks = 0">
+        <input type="number" min=0 max="{{ maxRanks(skill.name) }}" ng-model="character.skills[skill.name].ranks" ng-init="character.skills[skill.name].ranks = 0">
         <label>Ranks</label>
       </div>
       <div ng-show="skill.armorCheckPenalty">*</div>
     </div>
     <div class="sub-category" ng-repeat="subCat in skill.subCategory">
-      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || character.skills[subCatName(skill.name,subCat)].isClassSkill || toggle">
+      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || isClassSkill(subCatName(skill.name,subCat)) || toggle">
       <div>
         <p>{{ skill.name }}<span> ({{ subCat }})</span>:</p>
       </div>
       <div>
-        <input type="checkbox" class="result" ng-click="character.skills[subCatName(skill.name,subCat)].isClassSkill = !character.skills[subCatName(skill.name,subCat)].isClassSkill" ng-checked="character.skills[subCatName(skill.name,subCat)].isClassSkill">
+        <input type="checkbox" class="result" disabledng-checked="isClassSkill(skill.name)">
       </div>
       <div>
-        <input type="checkbox" class="result" ng-checked="skill.trained">
+        <input type="checkbox" class="result" disabled ng-checked="skill.trained">
       </div>
       <div>
           <input type="text" class="result" disabled value="{{ skillBonus(skill, subCat) | signedNumber }}">
@@ -50,7 +50,7 @@
       </div>
       <div>+</div>
       <div>
-        <input type="number" min="0" max="{{character.level}}" ng-model="character.skills[subCatName(skill.name,subCat)].ranks" ng-init="character.skills[subCatName(skill.name,subCat)].ranks = character.skills[subCatName(skill.name,subCat)].ranks || 0">
+        <input type="number" min="0" max="{{ maxRanks(subCatName(skill.name,subCat)) }}" ng-model="character.skills[subCatName(skill.name,subCat)].ranks" ng-init="character.skills[subCatName(skill.name,subCat)].ranks = character.skills[subCatName(skill.name,subCat)].ranks || 0">
         <label>Ranks</label>
       </div>
       <div ng-show="skill.armorCheckPenalty">*</div>

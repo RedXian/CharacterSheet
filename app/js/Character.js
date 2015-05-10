@@ -133,8 +133,6 @@ angular.module("characterSheet.character", [])
 
         };
 
-
-
         return character;
     })
     .controller('CharacterController', function($scope, CharacterFactory) {

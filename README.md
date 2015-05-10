@@ -40,9 +40,9 @@ This project is an interactive character sheet for handling characters using the
     * Codify other Trait functionality (ie. The Human race can select a second "Heart of the ..." trait)
 
 ### Class
-* Read and display classes from file
-* Implement Adding a New Class
-    * Implement Adding a Level on an existing Class
+* ~~Read and display classes from file~~
+* ~~Implement Adding a New Class~~
+    * ~~Implement Adding a Level on an existing Class~~
 * Update JSON Data file with Class information
     * Codify Class Skills
     * Codify Hit Dice
@@ -64,9 +64,9 @@ This project is an interactive character sheet for handling characters using the
 * TODO: Add more Requirements
 
 ### Combat
-* Implement Initiative
-* Implement Base Attack Bonus
-* Implement Combat Maneuvers
+* ~~Implement Initiative~~
+* ~~Implement Base Attack Bonus~~
+* ~~Implement Combat Maneuvers~~
 * Implement Weapon Attacks
     * Unarmed
     * One Handed
@@ -76,11 +76,11 @@ This project is an interactive character sheet for handling characters using the
 * TODO: Add more Requirements
 
 ### Defense
-* Implement Hit Points
+* ~~Implement Hit Points~~
     * Apply Spell Bonuses
     * Apply Damage Reduction
-* Implement Saving Throws
-* Implement Armor Class
+* ~~Implement Saving Throws~~
+* ~~Implement Armor Class~~
 * TODO: Add more Requirements
 
 ### Equipment
