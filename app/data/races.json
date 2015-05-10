@@ -728,11 +728,14 @@
             "name": "Elven Immunities",
             "type": "Racial Trait",
             "description": "Half-elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects."
+            "Saving Throws": { "name": "All", "value": "2", "versus": ["enchantment spells and effects"]},
+            "Immunity": ["magic sleep effects"]
         },
         "Keen Senses": {
             "name": "Keen Senses",
             "type": "Racial Trait",
-            "description": "Half-elves receive a +2 racial bonus on Perception skill checks."
+            "description": "Half-elves receive a +2 racial bonus on Perception skill checks.",
+            "Perception": "2"
         },
         "Multitalented": {
             "name": "Multitalented",
@@ -950,6 +953,7 @@
             "name": "Skilled",
             "type": "Alternate Racial Trait",
             "description": "Second- and third-generation half-orcs often favor their human heritage more than their orc heritage. Half-orcs with this trait gain 1 additional skill rank per level.",
+            "skillsPerLevel": "1",
             "replaces": ["Darkvision"]
         },
         "Toothy": {
