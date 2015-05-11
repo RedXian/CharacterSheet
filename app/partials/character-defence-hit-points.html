@@ -14,11 +14,9 @@
       <input type=text disabled value="{{ conModifier() | signedNumber }}">
       <label>Con Bonus</label>
     </div>
-    <div ng-repeat="class in classBonusArray">
-      <span ng-show="$first">(</span>
-      <span ng-hide="$first">+</span>{{ class.level }}d{{ class.hitdie }}
-      <span ng-show="$last && conBonusHP()">+{{ conBonusHP() }}</span>
-      <span ng-show="$last">)</span>
-    </div>
+    <div ng-show="classBonusArray()" ng-bind="'(' + classBonusArray() + ')'"></div>
+    <!-- <div ng-repeat="class in classBonusArray()">
+      <span ng-show="$first">(</span><span ng-hide="$first">+</span>{{ class.level + "d" + class.hitDie }}<span ng-show="$last && conBonusHP()">+{{ conBonusHP() }}</span><span ng-show="$last">)</span>
+    </div> -->
   </div>
 </section>

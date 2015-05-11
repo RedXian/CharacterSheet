@@ -44,8 +44,8 @@ This project is an interactive character sheet for handling characters using the
 * ~~Implement Adding a New Class~~
     * ~~Implement Adding a Level on an existing Class~~
 * Update JSON Data file with Class information
-    * Codify Class Skills
-    * Codify Hit Dice
+    * ~~Codify Class Skills~~
+    * ~~Codify Hit Dice~~
     * Codify BAB, Saves & Spells
     * Codify Class Features
 
@@ -54,9 +54,9 @@ This project is an interactive character sheet for handling characters using the
 * ~~Apply Ability Modifiers~~
 * Set Class Skills from Class
 * Skill Rolling System
-    * Show results for normal usage
-    * Show results for
-    * Show conditional modifiers from traits, feats & class features
+    * Show results for generic usage
+    * Show results for additional usage
+    * Show conditional modifiers from traits, feats & class features in calculation.
 
 
 ### Feats & Traits

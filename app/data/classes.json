@@ -95,7 +95,7 @@
       "CN",
       "CE"
     ],
-    "Hit Die": "12",
+    "hitDie": "12",
     "Class Skills": [
       "Acrobatics",
       "Climb",
@@ -417,7 +417,7 @@
       "CN",
       "CE"
     ],
-    "Hit Die": "d8",
+    "hitDie": "8",
     "Class Skills": [
       "Acrobatics",
       "Appraise",
@@ -439,7 +439,7 @@
       "Stealth",
       "Use Magic Device"
     ],
-    "Skill Ranks": 6,
+    "skillsPerLevel": "6",
     "Age Category": "Self-Taught",
     "level1": {
       "bab": "+0",
@@ -858,10 +858,8 @@
       "Core Rulebook"
     ],
     "role": "",
-    "Alignment": [
-
-    ],
-    "Hit Die": "d8",
+    "Alignment": [],
+    "hitDie": "8",
     "Class Skills": [
       "Appraise",
       "Craft",
@@ -876,7 +874,7 @@
       "Profession",
       "Sense Motive"
     ],
-    "Skill Ranks": 2,
+    "skillsPerLevel": "2",
     "level1": {
       "bab": "+0",
       "Fortitude": "+2",

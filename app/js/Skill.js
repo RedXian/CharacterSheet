@@ -134,6 +134,7 @@ angular.module("characterSheet.skills", [])
             var classList = $scope.character.classes;
 
             for (var key in classList) {
+                if (classes[classList[key].name]["Class Skills"]){
                 var classSkills = classes[classList[key].name]["Class Skills"];
                 if (category) {
                     if (classSkills.indexOf(skill + " (all)") > -1 || classSkills.indexOf(category) > -1 || classSkills.indexOf(skill) > -1) {
@@ -142,19 +143,27 @@ angular.module("characterSheet.skills", [])
                 } else if (classSkills.indexOf(skill) > -1) {
                     return true;
                 }
-            }
+            }   else {console.log("Class Skills missing for " +classList[key].name);}
+        };
             return false;
         };
 
         $scope.getMaxSkillsPoints = function() {
             var classList = $scope.character.classes;
             var points = 0;
+
+            //skill points granted from Classes
             for (var key in classList) {
-                points += (parseInt(classes[classList[key].name].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier) * classList[key].level;
+                if (classes[classList[key].name].skillsPerLevel) {
+                points += (parseInt(classes[classList[key].name].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier)
+                    * classList[key].level;
+                } else { console.log("skillsPerLevel missing for " +classList[key].name);};
             };
+
+            // Skills points granted from Traits
             for (var key in CharacterFactory.traits) {
                 if (CharacterFactory.traits[key].skillsPerLevel) {
-                    points += parseInt(CharacterFactory.traits[key].skillsPerLevel);
+                    points += parseInt(CharacterFactory.traits[key].skillsPerLevel * CharacterFactory.level());
                 }
             };
             return points;
@@ -195,8 +204,9 @@ angular.module("characterSheet.skills", [])
                 }
                 result += CharacterFactory.skills[skillName].ranks;
             }
-
+            if (CharacterFactory.abilities[skill.ability]) {
             result += CharacterFactory.abilities[skill.ability].modifier;
+        };
 
             return result;
         };
