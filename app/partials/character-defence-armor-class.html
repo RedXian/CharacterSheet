@@ -10,7 +10,7 @@
       <input type=number class="result" disabled value="{{ calculateAC() }}">
     </div>
     <div>= 10 +</div>
-    <div ng-repeat="bonus in bonuses" ng-if="verbose || bonus.value() > 0">
+    <div ng-repeat="bonus in acBonusArray" ng-if="verbose || bonus.value() > 0">
       <div>
         <input type=text disabled value="{{ bonus.value() | signedNumber }}">
         <label>{{ bonus.name }}</label>

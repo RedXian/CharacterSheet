@@ -63,13 +63,13 @@ angular.module("characterSheet.defence", [])
                         array[aClass.name] = aClass;
                         array[aClass.name].hitDie = classes[aClass.name].hitDie;
                     };
+
                     if ($scope.conBonusHP() > 0) {
                         hitDiceArray.push($scope.conBonusHP().toString());
                     };
 
                     console.log(hitDiceArray);
-                    return hitDiceArray.join("+")
-                        // return array;
+                    return hitDiceArray.join("+");
                 };
 
                 $scope.minHP = -CharacterFactory.abilities.Constitution.adjustedScore;
@@ -106,7 +106,7 @@ angular.module("characterSheet.defence", [])
             restrict: 'E',
             templateUrl: "partials/character-defence-armor-class.html",
             controller: function($scope, CharacterFactory) {
-                $scope.bonuses = [{
+                $scope.acBonusArray = [{
                     value: function() {
                         return $scope.flatfoot ? 0 : CharacterFactory.abilities.Dexterity.modifier;
                     },
