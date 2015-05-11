@@ -73,9 +73,8 @@ angular.module("characterSheet.character", [])
                     ]
                 };
 
-                if (!track) {
-                    track = "Medium";
-                };
+                track = track ? track : "Medium";
+
                 for (var i = advancement[track].length-1; i > 0; i--) {
                     if (character.experience >= advancement[track][i]) {
                         return i+1;
@@ -105,6 +104,7 @@ angular.module("characterSheet.character", [])
                     } else character.race[key] = element;
                 }
             },
+
             addClass: function(aClass) {
                 if (character.classes[aClass]) {
                     character.classes[aClass].level++;
@@ -115,6 +115,7 @@ angular.module("characterSheet.character", [])
                     };
                 };
             },
+
             removeClass: function(aClass) {
                 if (character.classes[aClass].level == 1) {
                     delete character.classes[aClass];
@@ -122,12 +123,23 @@ angular.module("characterSheet.character", [])
                     character.classes[aClass].level--;
                 }
             },
+
             getClassLevels: function() {
                 var totalLevels = 0;
                 for (var key in character.classes) {
                     totalLevels += character.classes[key].level;
                 }
                 return totalLevels;
+            },
+
+            showClassAndLevels: function () {
+              var classAndLevels = [];
+              for (var key in character.classes) {
+                classAndLevels.push(character.classes[key].name + " " + character.classes[key].level);
+              };
+
+              return !classAndLevels === null ? 'none' : classAndLevels.join(' / ');
+
             }
 
         };
