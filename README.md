@@ -37,7 +37,7 @@ This project is an interactive character sheet for handling characters using the
     * Codify bonuses to Skills
     * Codify bonus Feats
     * Codify Spell-like effects
-    * Codify other unusual Trait functionality (ie. The Human race can select a second "Heart of the ..." trait)
+    * Codify other Trait functionality (ie. The Human race can select a second "Heart of the ..." trait)
 
 ### Class
 * ~~Read and display classes from file~~
@@ -46,28 +46,27 @@ This project is an interactive character sheet for handling characters using the
 * Update JSON Data file with Class information
     * ~~Codify Class Skills~~
     * ~~Codify Hit Dice~~
-    * Codify BAB progression
-    * Codify Saving throw progression
-    * Codify spell progression
+    * Codify BAB, Saves & Spells
     * Codify Class Features
 
 ### Skills
 * Read and display skills from file
 * ~~Apply Ability Modifiers~~
-* ~~Set Class Skills from Class~~
+* Set Class Skills from Class
 * Skill Rolling System
     * Show results for generic usage
     * Show results for additional usage
     * Show conditional modifiers from traits, feats & class features in calculation.
+
 
 ### Feats & Traits
 * Read and display feats & traits from file
 * TODO: Add more Requirements
 
 ### Combat
-* Implement Initiative
-* Implement Base Attack Bonus
-* Implement Combat Maneuvers
+* ~~Implement Initiative~~
+* ~~Implement Base Attack Bonus~~
+* ~~Implement Combat Maneuvers~~
 * Implement Weapon Attacks
     * Unarmed
     * One Handed
