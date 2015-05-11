@@ -4,6 +4,12 @@ body {
   font-size: 14px;
   font-family: 'Lato', sans;
   background: #fffdf8 url('http://paizo.com/pathfinderRPG/prd/include/bg-new.png') top left no-repeat;
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 p {

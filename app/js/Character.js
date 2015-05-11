@@ -1,8 +1,7 @@
 angular.module("characterSheet.character", [])
     .factory("CharacterFactory", function() {
         var character = {
-            name: "nameless",
-            experience: 0,
+            experience: 200000000,
             abilities: {},
             classes: {},
             skills: {},
