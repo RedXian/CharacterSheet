@@ -707,12 +707,12 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Half-elves have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
             "type": "Racial Trait",
-            "description": "Half-elves can see twice as far as humans in conditions of dim light. See Additional Rules."
+            "description": "Half-elves can see twice as far as humans in conditions of dim light."
         },
         "Adaptability": {
             "name": "Adaptability",
