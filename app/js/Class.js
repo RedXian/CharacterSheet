@@ -1,6 +1,6 @@
 angular.module("characterSheet.classes", [])
     .factory("ClassFactory", function($http, $q) {
-        var factory = {}
+        var factory = {};
         factory.getClassList = function() {
             var deferred = $q.defer();
             $http.get('data/classes.json').success(function(data) {
@@ -12,12 +12,10 @@ angular.module("characterSheet.classes", [])
             });
             return deferred.promise;
         };
-        factory.getClass = function(aClass) {
+        factory.getClasses = function() {
             var deferred = $q.defer();
             $http.get('data/classes.json').success(function(data) {
-                if (data.name == aClass) {
-                    deferred.resolve(data);
-                }
+                deferred.resolve(data);
             });
             return deferred.promise;
         };
@@ -30,7 +28,7 @@ angular.module("characterSheet.classes", [])
             controller: function($scope, CharacterFactory, ClassFactory) {
                 $scope.addClassList = false;
                 $scope.selectedClass = "none";
-
+                $scope.classes = {};
                 ClassFactory.getClassList().then(function(data) {
                     $scope.classes = data;
                 });

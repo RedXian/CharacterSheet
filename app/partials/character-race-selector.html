@@ -14,7 +14,7 @@
     <span ng-show="trait.default">
       <strong>Starting Languages:</strong> {{ trait.default | serialComma }}. </span>
     <span ng-show="trait.list">
-      <strong>Language list:</strong> {{ trait.list | serialComma }}. </span>
+      <strong>Language list:</strong> {{ trait.list | serialComma : 'or' }}. </span>
   </div>
 
   <div ng-repeat="trait in listAlternateRacialTraits() | filter: elligibleRacialTraits">

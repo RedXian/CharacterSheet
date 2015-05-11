@@ -121,26 +121,36 @@ angular.module("characterSheet.skills", [])
         $scope.character = CharacterFactory;
         $scope.skills = SkillFactory;
 
-        $scope.isClassSkill = function(skill, category) {
-            var classes = CharacterFactory.classes;
-            if (category) {skill += " (" + category + ")";}
+        var classes = {};
+        ClassFactory.getClasses().then(function(data) {
+            classes = data;
+        });
 
-            for (var key in classes) {
-              ClassFactory.getClass(classes[key].name).then(function(data) {
-                  var classSkills = data;
-              });
-                if (classSkills["Class Skills"].indexOf(skill) > -1)
-                    return true;
+        $scope.isClassSkill = function(skill, category) {
+            if (category) {
+                category = skill + " (" + category.toLowerCase() + ")";
             };
+
+            var classList = $scope.character.classes;
+
+            for (var key in classList) {
+                var classSkills = classes[classList[key].name]["Class Skills"];
+                if (category) {
+                    if (classSkills.indexOf(skill + " (all)") > -1 || classSkills.indexOf(category) > -1 || classSkills.indexOf(skill) > -1) {
+                        return true;
+                    }
+                } else if (classSkills.indexOf(skill) > -1) {
+                    return true;
+                }
+            }
             return false;
-            // return $scope.character.skills[skill].isClassSkill;
         };
 
         $scope.getMaxSkillsPoints = function() {
-            var classes = CharacterFactory.classes;
+            var classList = $scope.character.classes;
             var points = 0;
-            for (var key in classes) {
-                points += (classes[key].skillsPerLevel + CharacterFactory.abilities.Intelligence.modifier) * classes[key].level
+            for (var key in classList) {
+                points += (parseInt(classes[classList[key].name].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier) * classList[key].level;
             };
             for (var key in CharacterFactory.traits) {
                 if (CharacterFactory.traits[key].skillsPerLevel) {
@@ -169,21 +179,29 @@ angular.module("characterSheet.skills", [])
         }
 
         $scope.skillBonus = function(skill, category) {
+            var result = 0;
+
             if (!category) {
                 var skillName = skill.name
             } else {
                 var skillName = $scope.subCatName(skill.name, category);
             }
-            var result = 0;
+
             if (CharacterFactory.skills[skillName]) {
-                result = ($scope.isClassSkill(skillName) && CharacterFactory.skills[skillName].ranks) ? 3 : 0;
+                if (category) {
+                    result += ($scope.isClassSkill(skill.name, category) && CharacterFactory.skills[skillName].ranks) ? 3 : 0;
+                } else {
+                    result += ($scope.isClassSkill(skill.name) && CharacterFactory.skills[skillName].ranks) ? 3 : 0;
+                }
                 result += CharacterFactory.skills[skillName].ranks;
             }
+
             result += CharacterFactory.abilities[skill.ability].modifier;
+
             return result;
         };
 
         $scope.subCatName = function(skill, category) {
-            return skill.toLowerCase() + category.charAt(0).toUpperCase() + category.substr(1).toLowerCase();
+            return skill.name + " (" + category.toLowerCase() + ")";
         };
     });

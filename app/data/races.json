@@ -727,8 +727,8 @@
         "Elven Immunities": {
             "name": "Elven Immunities",
             "type": "Racial Trait",
-            "description": "Half-elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects."
-            "Saving Throws": { "name": "All", "value": "2", "versus": ["enchantment spells and effects"]},
+            "description": "Half-elves are immune to magic sleep effects and get a +2 racial saving throw bonus against enchantment spells and effects.",
+            "Saving Throws": { "throw": "All", "value": "2", "versus": ["enchantment spells and effects"]},
             "Immunity": ["magic sleep effects"]
         },
         "Keen Senses": {

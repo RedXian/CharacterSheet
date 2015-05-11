@@ -4,7 +4,7 @@
     <div class="calculation skill" id="{{ skill.name }}">
       <div>
         <p>{{ skill.name }}
-          <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !toggle, 'glyphicon-triangle-bottom' : toggle }" ng-click="toggle=!toggle" ng-show="skill.subCategory" ng-init="toggleSubCategories=false"></span>:</p>
+          <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !toggle, 'glyphicon-triangle-bottom' : toggle }" ng-click="toggle=!toggle" ng-show="skill.subCategory" ng-init="toggle=false"></span>:</p>
       </div>
       <div>
         <input type="checkbox" class="result" disabled ng-checked="isClassSkill(skill.name)">
@@ -29,12 +29,12 @@
       <div ng-show="skill.armorCheckPenalty">*</div>
     </div>
     <div class="sub-category" ng-repeat="subCat in skill.subCategory">
-      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || isClassSkill(subCatName(skill.name,subCat)) || toggle">
+      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || ( isClassSkill(skill.name, subCat) && !isClassSkill(skill.name)) || toggle">
       <div>
         <p>{{ skill.name }}<span> ({{ subCat }})</span>:</p>
       </div>
       <div>
-        <input type="checkbox" class="result" disabledng-checked="isClassSkill(skill.name)">
+        <input type="checkbox" class="result" disabled ng-checked="isClassSkill(skill.name, subCat)">
       </div>
       <div>
         <input type="checkbox" class="result" disabled ng-checked="skill.trained">
