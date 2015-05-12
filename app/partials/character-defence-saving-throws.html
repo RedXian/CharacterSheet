@@ -6,10 +6,10 @@
             <label>Save Bonus</label>
         </div>
         <div>=</div>
-        <div ng-repeat="aClass in classBonusArray">
+        <div ng-repeat="aClass in getClassBonuses(save.name)">
             <div ng-hide="$first">+</div>
             <div>
-                <input type=text disabled value="{{ aClass[save.name] | signedNumber }}">
+                <input type=text disabled value="{{ aClass.bonus | signedNumber }}">
                 <label>{{ aClass.name }} Bonus</label>
             </div>
             <div ng-show="$last">+</div>

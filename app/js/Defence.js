@@ -20,30 +20,17 @@ angular.module("characterSheet.defence", [])
                     { name: "Fortitude", ability: "Constitution" },
                     { name: "Reflex", ability: "Dexterity" },
                     { name: "Will", ability: "Wisdom"}];
-                $scope.classBonusArray = [{
-                    name: "Class1",
-                    level: 2,
-                    Fortitude: 2,
-                    Reflex: 0,
-                    Will: 1
-                }, {
-                    name: "Class2",
-                    level: 2,
-                    Fortitude: 0,
-                    Reflex: 2,
-                    Will: 1
-                }];
+
                 //Need to populate ClassJSON to support this format.
                 $scope.getClassBonuses = function(bonus) {
                     var classBonuses = [];
-                    for (var key in character.classes) {
-                        var aClass = character.classes[key];
-                        classBonuses = {
+                    for (var key in $scope.character.classes) {
+                        var aClass = $scope.character.classes[key];
+                        classBonuses.push({
                             name: aClass.name,
-                            bonus: classes[aClass.name].progressions[bonus][aClass.level - 1];
-                        };
+                            bonus: classes[aClass.name].progression[bonus][aClass.level - 1]
+                        });
                     }
-
                     return classBonuses;
                 };
 
@@ -53,8 +40,9 @@ angular.module("characterSheet.defence", [])
 
                 $scope.getSaveTotal = function(save) {
                     var total = $scope.getModifier(save.ability);
-                    for (var i = 0; i < $scope.classBonusArray.length; i++) {
-                        total += $scope.classBonusArray[i][save.name];
+                    var classBonuses = $scope.getClassBonuses(save.name);
+                    for (var i = 0; i < classBonuses.length; i++) {
+                        total += classBonuses[i].bonus;
                     }
                     return total;
                 };

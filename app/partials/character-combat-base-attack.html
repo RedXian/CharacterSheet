@@ -5,10 +5,10 @@
       <input type=text class="result" disabled value="{{ getBaseAttackBonus() | signedNumber }}">
     </div>
     <div>=</div>
-    <div ng-repeat="bonus in getClassBonus track by $index">
+    <div ng-repeat="aClass in getBABClassBonuses()">
       <div>
-        <input type=text disabled value="{{ bonus.bonus | signedNumber }}">
-        <label>{{ bonus.name }} Bonus</label>
+        <input type=text disabled value="{{ aClass.bonus | signedNumber }}">
+        <label>{{ aClass.name }} Bonus</label>
       </div>
       <div ng-hide="$last">+</div>
     </div>

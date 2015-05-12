@@ -4,14 +4,14 @@
         <div style="float:left:clear:left" ng-repeat="aClass in character.classes | orderBy: 'level'">
             <input type=radio name="favoredClass" ng-model="favoredClass" style="float:left;clear:left;" ng-value="aClass.name">
             <div class="glyphicon glyphicon-minus" ng-click="character.removeClass(aClass.name)"></div>{{aClass.name}}:{{aClass.level}}
-            <div class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="character.addClass(aClass.name)"></div>
+            <div class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass.name)"></div>
         </div>
         <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addClassList=!addClassList" ng-init="addClassList=false">Add New Class</button>
     </aside>
     <aside ng-show="addClassList" style="float:left">
         <h2 style="float:left">Class</h2>
         <select style="float:left;clear:left;" size="43" ng-model="selectedClass" ng-change="addClass(selectedClass.name)" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
-            <option value="" selected disabled hidden>Select Class</option>
+            <option value="?" disabled hidden>Select Class</option>
         </select>
     </aside>
 </section>

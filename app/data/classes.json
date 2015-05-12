@@ -109,188 +109,114 @@
       "Swim"
     ],
     "skillsPerLevel": "4",
+    "progression": {
+      "BAB": ["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10",	"11",	"12",	"13",	"14",	"15",	"16",	"17",	"18",	"19",	"20"],
+      "Fortitude": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"],
+      "Reflex": ["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+      "Will": ["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"]
+    },
     "level1": {
-      "bab": "+1",
-      "Fortitude": "+2",
-      "Reflex": "+0",
-      "Will": "+0",
       "Special": [
         "Fast Movement",
         "Rage"
       ]
     },
     "level2": {
-      "bab": "+2",
-      "Fortitude": "+3",
-      "Reflex": "+0",
-      "Will": "+0",
       "Special": [
         "Rage power",
         "uncanny dodge"
       ]
     },
     "level3": {
-      "bab": "+3",
-      "Fortitude": "+3",
-      "Reflex": "+1",
-      "Will": "+1",
       "Special": [
         "Trap sense +1"
       ]
     },
     "level4": {
-      "bab": "+4",
-      "Fortitude": "+4",
-      "Reflex": "+1",
-      "Will": "+1",
       "Special": [
         "Rage power"
       ]
     },
     "level5": {
-      "bab": "+5",
-      "Fortitude": "+4",
-      "Reflex": "+1",
-      "Will": "+1",
       "Special": [
         "Improved uncanny dodge"
       ]
     },
     "level6": {
-      "bab": "+6\/+1",
-      "Fortitude": "+5",
-      "Reflex": "+2",
-      "Will": "+2",
       "Special": [
         "Rage power",
         "Trap sense +2"
       ]
     },
     "level7": {
-      "bab": "+7\/+2",
-      "Fortitude": "+5",
-      "Reflex": "+2",
-      "Will": "+2",
       "Special": [
         "Damage reduction 1\/"
       ]
     },
     "level8": {
-      "bab": "+8\/+3",
-      "Fortitude": "+6",
-      "Reflex": "+2",
-      "Will": "+2",
       "Special": [
         "Rage power"
       ]
     },
     "level9": {
-      "bab": "+9\/+4",
-      "Fortitude": "+6",
-      "Reflex": "+3",
-      "Will": "+3",
       "Special": [
         "Trap sense +3"
       ]
     },
     "level10": {
-      "bab": "+10\/+5",
-      "Fortitude": "+7",
-      "Reflex": "+3",
-      "Will": "+3",
       "Special": [
         "Damage reduction 2\/", "Rage power"
       ]
     },
     "level11": {
-      "bab": "+11\/+6\/+1",
-      "Fortitude": "+7",
-      "Reflex": "+3",
-      "Will": "+3",
       "Special": [
         "Greater rage"
       ]
     },
     "level12": {
-      "bab": "+12\/+7\/+2",
-      "Fortitude": "+8",
-      "Reflex": "+4",
-      "Will": "+4",
       "Special": [
         "Rage power",
         "Trap sense +4"
       ]
     },
     "level13": {
-      "bab": "+13\/+8\/+3",
-      "Fortitude": "+8",
-      "Reflex": "+4",
-      "Will": "+4",
       "Special": [
         "Damage reduction 3\/"
       ]
     },
     "level14": {
-      "bab": "+14\/+9\/+4",
-      "Fortitude": "+9",
-      "Reflex": "+4",
-      "Will": "+4",
       "Special": [
         "Indomitable will",
         "Rage power"
       ]
     },
     "level15": {
-      "bab": "+15\/+10\/+5",
-      "Fortitude": "+9",
-      "Reflex": "+5",
-      "Will": "+5",
       "Special": [
         "Trap sense +5"
       ]
     },
     "level16": {
-      "bab": "+16\/+11\/+6\/+1",
-      "Fortitude": "+10",
-      "Reflex": "+5",
-      "Will": "+5",
       "Special": [
         "Damage reduction 4\/, Rage power"
       ]
     },
     "level17": {
-      "bab": "+17\/+12\/+7\/+2",
-      "Fortitude": "+10",
-      "Reflex": "+5",
-      "Will": "+5",
       "Special": [
         "Tireless rage"
       ]
     },
     "level18": {
-      "bab": "+18\/+13\/+8\/+3",
-      "Fortitude": "+11",
-      "Reflex": "+6",
-      "Will": "+6",
       "Special": [
         "Rage power",
         "Trap sense +6"
       ]
     },
     "level19": {
-      "bab": "+19\/+14\/+9\/+4",
-      "Fortitude": "+11",
-      "Reflex": "+6",
-      "Will": "+6",
       "Special": [
         "Damage reduction 5\/"
       ]
     },
     "level20": {
-      "bab": "+20\/+15\/+10\/+5",
-      "Fortitude": "+12",
-      "Reflex": "+6",
-      "Will": "+6",
       "Special": [
         "Mighty rage",
         "Rage power"
@@ -440,12 +366,14 @@
       "Use Magic Device"
     ],
     "skillsPerLevel": "6",
+    "progression": {
+      "BAB": ["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7",	"8",	"9",	"9",	"10",	"11", "12", "12", "13", "14", "15"],
+      "Fortitude": ["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+      "Reflex": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"],
+      "Will": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11", "12"]
+    },
     "Age Category": "Self-Taught",
     "level1": {
-      "bab": "+0",
-      "Fortitude": "+0",
-      "Reflex": "+2",
-      "Will": "+2",
       "Special": [
         "Bardic knowledge",
         "bardic performance",
@@ -464,10 +392,6 @@
       ]
     },
     "level2": {
-      "bab": "+1",
-      "Fortitude": "+0",
-      "Reflex": "+3",
-      "Will": "+3",
       "Special": [
         "Versatile performance",
         "well-versed"
@@ -482,10 +406,6 @@
       ]
     },
     "level3": {
-      "bab": "+2",
-      "Fortitude": "+1",
-      "Reflex": "+3",
-      "Will": "+3",
       "Special": [
         "Inspire competence +2"
       ],
@@ -499,12 +419,7 @@
       ]
     },
     "level4": {
-      "bab": "+3",
-      "Fortitude": "+1",
-      "Reflex": "+4",
-      "Will": "+4",
       "Special": [
-
       ],
       "Spells per day": [
         "3",
@@ -516,10 +431,6 @@
       ]
     },
     "level5": {
-      "bab": "+3",
-      "Fortitude": "+1",
-      "Reflex": "+4",
-      "Will": "+4",
       "Special": [
         "inspire courage +2",
         "lore master 1\/day"
@@ -534,10 +445,6 @@
       ]
     },
     "level6": {
-      "bab": "+4",
-      "Fortitude": "+2",
-      "Reflex": "+5",
-      "Will": "+5",
       "Special": [
         "Suggestion",
         "Versatile performance"
@@ -552,10 +459,6 @@
       ]
     },
     "level7": {
-      "bab": "+5",
-      "Fortitude": "+2",
-      "Reflex": "+5",
-      "Will": "+5",
       "Special": [
         "Inspire competence +3"
       ],
@@ -569,10 +472,6 @@
       ]
     },
     "level8": {
-      "bab": "+6\/+1",
-      "Fortitude": "+2",
-      "Reflex": "+6",
-      "Will": "+6",
       "Special": [
         "Dirge of doom"
       ],
@@ -586,10 +485,6 @@
       ]
     },
     "level9": {
-      "bab": "+6\/+1",
-      "Fortitude": "+3",
-      "Reflex": "+6",
-      "Will": "+6",
       "Special": [
         "Inspire greatness"
       ],
@@ -603,10 +498,6 @@
       ]
     },
     "level10": {
-      "bab": "+7\/+2",
-      "Fortitude": "+3",
-      "Reflex": "+7",
-      "Will": "+7",
       "Special": [
         "Jack-of-all-trades",
         "Versatile performance"
@@ -621,10 +512,6 @@
       ]
     },
     "level11": {
-      "bab": "+8\/+3",
-      "Fortitude": "+3",
-      "Reflex": "+7",
-      "Will": "+7",
       "Special": [
         "Inspire competence +4",
         "inspire courage +3",
@@ -640,10 +527,6 @@
       ]
     },
     "level12": {
-      "bab": "+9\/+4",
-      "Fortitude": "+4",
-      "Reflex": "+8",
-      "Will": "+8",
       "Special": [
         "Soothing performance"
       ],
@@ -657,10 +540,6 @@
       ]
     },
     "level13": {
-      "bab": "+9\/+4",
-      "Fortitude": "+4",
-      "Reflex": "+8",
-      "Will": "+8",
       "Special": [
 
       ],
@@ -674,10 +553,6 @@
       ]
     },
     "level14": {
-      "bab": "+10\/+5",
-      "Fortitude": "+4",
-      "Reflex": "+9",
-      "Will": "+9",
       "Special": [
         "Frightening tune",
         "Versatile performance"
@@ -692,10 +567,6 @@
       ]
     },
     "level15": {
-      "bab": "+11\/+6\/+1",
-      "Fortitude": "+5",
-      "Reflex": "+9",
-      "Will": "+9",
       "Special": [
         "Inspire competence +5",
         "inspire heroics"
@@ -710,12 +581,7 @@
       ]
     },
     "level16": {
-      "bab": "+12\/+7\/+2",
-      "Fortitude": "+5",
-      "Reflex": "+10",
-      "Will": "+10",
       "Special": [
-
       ],
       "Spells per day": [
         "5",
@@ -727,10 +593,6 @@
       ]
     },
     "level17": {
-      "bab": "+12\/+7\/+2",
-      "Fortitude": "+5",
-      "Reflex": "+10",
-      "Will": "+10",
       "Special": [
         "inspire courage +4",
         "lore master 3\/day"
@@ -745,10 +607,6 @@
       ]
     },
     "level18": {
-      "bab": "+13\/+8\/+3",
-      "Fortitude": "+6",
-      "Reflex": "+11",
-      "Will": "+11",
       "Special": [
         "Mass suggestion",
         "Versatile performance"
@@ -763,10 +621,6 @@
       ]
     },
     "level19": {
-      "bab": "+14\/+9\/+4",
-      "Fortitude": "+6",
-      "Reflex": "+11",
-      "Will": "+11",
       "Special": [
         "Inspire competence +6"
       ],
@@ -780,10 +634,6 @@
       ]
     },
     "level20": {
-      "bab": "+15\/+10\/+5",
-      "Fortitude": "+6",
-      "Reflex": "+12",
-      "Will": "+12",
       "Special": [
         "Deadly performance"
       ],
@@ -875,6 +725,12 @@
       "Sense Motive"
     ],
     "skillsPerLevel": "2",
+    "progression": {
+      "BAB": ["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7",	"8",	"9",	"9",	"10",	"11", "12", "12", "13", "14", "15"],
+      "Fortitude": ["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+      "Reflex": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"],
+      "Will": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11", "12"]
+    },
     "level1": {
       "bab": "+0",
       "Fortitude": "+2",
@@ -1425,6 +1281,12 @@
         "race": "Undine"
       }],
       "source": "Advanced Race Guide"
+    },
+    "progression": {
+      "BAB": ["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7",	"8",	"9",	"9",	"10",	"11", "12", "12", "13", "14", "15"],
+      "Fortitude": ["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+      "Reflex": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"],
+      "Will": ["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11", "12"]
     },
     "source": "Core Rulebook"
   },

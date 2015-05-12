@@ -31,27 +31,41 @@ angular.module("characterSheet.combat", [])
         return {
             restrict: 'E',
             templateUrl: "partials/character-combat-base-attack.html",
-            controller: function($scope, CharacterFactory) {
-                var classBonusArray = [{name: "Class1", bonus:1}, {name: "Class2", bonus:2}];
+            controller: function($scope, CharacterFactory, ClassFactory) {
+                var classes = {};
+                ClassFactory.getClasses().then(function(data) {
+                    classes = data;
+                });
 
-                $scope.getClassBonus = classBonusArray;
+                $scope.getBABClassBonuses = function() {
+                    var classBonuses = [];
+                    for (var key in $scope.character.classes) {
+                        var aClass = $scope.character.classes[key];
+                        classBonuses.push({
+                            name: aClass.name,
+                            bonus: classes[aClass.name].progression.BAB[aClass.level - 1]
+                        });
+                    }
+                    return classBonuses;
+                }
 
                 $scope.getBaseAttackBonus = function() {
                     var bonus = 0;
-                    for (var i = 0; i < classBonusArray.length; i++) {
-                        bonus += classBonusArray[i].bonus;
+                    var classBonuses = $scope.getBABClassBonuses();
+                    for (var i = 0; i < classBonuses.length; i++) {
+                        bonus += classBonuses[i].bonus;
                     };
-                    CharacterFactory.baseAttackBonus = bonus;
+                    ClassFactory.baseAttackBonus = bonus;
                     return bonus;
                 };
             }
-        };
+        }
     }).directive("combatManeuvers", function() {
         return {
             restrict: 'E',
             templateUrl: "partials/character-combat-maneuvers.html",
             controller: function($scope, CharacterFactory) {
-                $scope.baseAttackBonus = function () {
+                $scope.baseAttackBonus = function() {
                     return CharacterFactory.baseAttackBonus;
                 }
 
@@ -67,11 +81,11 @@ angular.module("characterSheet.combat", [])
                     return 0;
                 };
 
-                $scope.getManueverDefence = function () {
+                $scope.getManueverDefence = function() {
                     return 10 + $scope.strMod() + $scope.dexMod() + $scope.getSizeModifer() + $scope.baseAttackBonus();
                 }
 
-                $scope.getManueverBonus = function () {
+                $scope.getManueverBonus = function() {
                     return $scope.strMod() + $scope.getSizeModifer() + $scope.baseAttackBonus();
                 }
 
