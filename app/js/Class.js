@@ -27,7 +27,8 @@ angular.module("characterSheet.classes", [])
             templateUrl: "partials/character-class-selector.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
                 $scope.addClassList = false;
-                // $scope.selectedClass = "";
+                $scope.selectedClass = "";
+
                 $scope.classes = {};
                 ClassFactory.getClassList().then(function(data) {
                     $scope.classes = data;
@@ -38,11 +39,8 @@ angular.module("characterSheet.classes", [])
                 $scope.addClass = function(className) {
                     $scope.addClassList = false;
                     CharacterFactory.addClass(className);
-                    console.log("Class Added");
-                    // $scope.selectedClass = "";
+                    $scope.selectedClass = "";
                 };
-
-
 
                 $scope.newLevelAvailable = function() {
                     // Need to add check for max class levels for Prestige Classes.

@@ -28,7 +28,7 @@ angular.module("characterSheet.defence", [])
                         var aClass = $scope.character.classes[key];
                         classBonuses.push({
                             name: aClass.name,
-                            bonus: classes[aClass.name].progression[bonus][aClass.level - 1]
+                            bonus: parseInt(classes[aClass.name].progression[bonus][aClass.level - 1])
                         });
                     }
                     return classBonuses;

@@ -43,7 +43,7 @@ angular.module("characterSheet.combat", [])
                         var aClass = $scope.character.classes[key];
                         classBonuses.push({
                             name: aClass.name,
-                            bonus: classes[aClass.name].progression.BAB[aClass.level - 1]
+                            bonus: parseInt(classes[aClass.name].progression.BAB[aClass.level - 1])
                         });
                     }
                     return classBonuses;
@@ -55,7 +55,7 @@ angular.module("characterSheet.combat", [])
                     for (var i = 0; i < classBonuses.length; i++) {
                         bonus += classBonuses[i].bonus;
                     };
-                    ClassFactory.baseAttackBonus = bonus;
+                    CharacterFactory.baseAttackBonus = bonus;
                     return bonus;
                 };
             }
