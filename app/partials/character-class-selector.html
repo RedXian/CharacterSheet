@@ -10,7 +10,7 @@
     </aside>
     <aside ng-show="addClassList" style="float:left">
         <h2 style="float:left">Class</h2>
-        <select style="float:left;clear:left;" size="38" ng-model="selectedClass" ng-change="addClass(selectedClass.name)" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
+        <select style="float:left;clear:left;" size="38" ng-model="selectedClass" ng-change="addClass(selectedClass.name)" ng-options="aClass.name group by aClass.source for aClass in classes">
             <option value="?" ng-selected="addClassList" ng-hide="true" disabled hidden>Select Class</option>
         </select>
     </aside>

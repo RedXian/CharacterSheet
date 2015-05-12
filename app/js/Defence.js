@@ -16,16 +16,22 @@ angular.module("characterSheet.defence", [])
                     classes = data;
                 });
 
-                $scope.saves = [
-                    { name: "Fortitude", ability: "Constitution" },
-                    { name: "Reflex", ability: "Dexterity" },
-                    { name: "Will", ability: "Wisdom"}];
+                $scope.saves = [{
+                    name: "Fortitude",
+                    ability: "Constitution"
+                }, {
+                    name: "Reflex",
+                    ability: "Dexterity"
+                }, {
+                    name: "Will",
+                    ability: "Wisdom"
+                }];
 
                 //Need to populate ClassJSON to support this format.
                 $scope.getClassBonuses = function(bonus) {
                     var classBonuses = [];
-                    for (var key in $scope.character.classes) {
-                        var aClass = $scope.character.classes[key];
+                    for (var key in CharacterFactory.classes) {
+                        var aClass = CharacterFactory.classes[key];
                         classBonuses.push({
                             name: aClass.name,
                             bonus: parseInt(classes[aClass.name].progression[bonus][aClass.level - 1])
@@ -35,7 +41,7 @@ angular.module("characterSheet.defence", [])
                 };
 
                 $scope.getModifier = function(ability) {
-                    return $scope.character.abilities[ability].modifier | 0;
+                    return CharacterFactory.abilities[ability].modifier | 0;
                 };
 
                 $scope.getSaveTotal = function(save) {
@@ -59,14 +65,11 @@ angular.module("characterSheet.defence", [])
                 });
 
                 $scope.classBonusArray = function() {
-                    var array = {};
                     var hitDiceArray = [];
 
                     for (var key in CharacterFactory.classes) {
                         var aClass = CharacterFactory.classes[key];
                         hitDiceArray.push(aClass.level + "d" + classes[aClass.name].hitDie);
-                        array[aClass.name] = aClass;
-                        array[aClass.name].hitDie = classes[aClass.name].hitDie;
                     };
 
                     if ($scope.conBonusHP() > 0) {
@@ -75,12 +78,9 @@ angular.module("characterSheet.defence", [])
                     return hitDiceArray.join("+");
                 };
 
-                $scope.minHP = -CharacterFactory.abilities.Constitution.adjustedScore;
+                $scope.minHP = -CharacterFactory.abilities.Constitution.adjustedScore | -10;
 
                 $scope.conModifier = function() {
-                    // if (CharacterFactory.abilities.Constitution.modifier) {
-                    //     return CharacterFactory.abilities.Constitution.modifier;
-                    // };
                     return CharacterFactory.abilities.Constitution.modifier | 0;
                 };
 

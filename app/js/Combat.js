@@ -10,7 +10,7 @@ angular.module("characterSheet.combat", [])
             templateUrl: "partials/character-combat-initiative.html",
             controller: function($scope, CharacterFactory) {
                 $scope.dexMod = function() {
-                    return CharacterFactory.abilities.Dexterity.modifier;
+                    return CharacterFactory.abilities.Dexterity.modifier | 0;
                 };
 
                 $scope.featBonus = function() {
@@ -52,6 +52,7 @@ angular.module("characterSheet.combat", [])
                 $scope.getBaseAttackBonus = function() {
                     var bonus = 0;
                     var classBonuses = $scope.getBABClassBonuses();
+
                     for (var i = 0; i < classBonuses.length; i++) {
                         bonus += classBonuses[i].bonus;
                     };
@@ -70,11 +71,11 @@ angular.module("characterSheet.combat", [])
                 }
 
                 $scope.strMod = function() {
-                    return CharacterFactory.abilities.Strength.modifier;
+                    return CharacterFactory.abilities.Strength.modifier | 0;
                 };
 
                 $scope.dexMod = function() {
-                    return CharacterFactory.abilities.Dexterity.modifier;
+                    return CharacterFactory.abilities.Dexterity.modifier | 0;
                 };
 
                 $scope.getSizeModifer = function() {
