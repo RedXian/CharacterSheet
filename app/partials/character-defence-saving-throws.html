@@ -1,19 +1,22 @@
 <section ng-repeat="save in saves">
-  <label>{{ save.name }}</label>
-  <div class="calculation saves">
-    <div>
-      <input type=text class="result" disabled value="{{ getSaveTotal(save) | signedNumber }}">
-      <label>Save Bonus</label>
+    <label>{{ save.name }}</label>
+    <div class="calculation saves">
+        <div>
+            <input type=text class="result" disabled value="{{ getSaveTotal(save) | signedNumber }}">
+            <label>Save Bonus</label>
+        </div>
+        <div>=</div>
+        <div ng-repeat="aClass in classBonusArray">
+            <div ng-hide="$first">+</div>
+            <div>
+                <input type=text disabled value="{{ aClass[save.name] | signedNumber }}">
+                <label>{{ aClass.name }} Bonus</label>
+            </div>
+            <div ng-show="$last">+</div>
+        </div>
+        <div>
+            <input type=text disabled value="{{ getModifier(save.ability) | signedNumber }}">
+            <label>{{ save.ability | limitTo:3 }} Modifier</label>
+        </div>
     </div>
-    <div>=</div>
-    <div ng-repeat="class in classBonusArray">
-      <input type=text disabled value="{{ class[save.name] | signedNumber }}">
-      <label>{{ class.name }} Base Save</label>
-    </div>
-    <div>+</div>
-    <div>
-      <input type=text disabled value="{{ abilities[save.ability].modifier | signedNumber }}">
-      <label>{{ save.ability | limitTo:3 }} Modifier</label>
-    </div>
-  </div>
 </section>
