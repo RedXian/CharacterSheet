@@ -46,7 +46,7 @@ angular.module("characterSheet.defence", [])
 
                 $scope.getSaveTotal = function(save) {
                     var total = $scope.getModifier(save.ability);
-                    var characterClasses = function () { return CharacterFactory.classes;};
+                    var characterClasses = CharacterFactory.classes;
                     for (var key in characterClasses) {
                         total += parseInt(characterClasses.progression.BAB[aClass.level - 1]);
                     }
