@@ -2,14 +2,14 @@
     'use strict';
 
     // Declare app level module which depends on views, and components
-    var app = angular.module('characterSheet',
-    ['characterSheet.character',
-    'characterSheet.skills',
-    'characterSheet.races',
-    'characterSheet.classes',
-    'characterSheet.abilities',
-    'characterSheet.combat',
-    'characterSheet.defence']);
+    var app = angular.module('characterSheet', ['characterSheet.character',
+        'characterSheet.skills',
+        'characterSheet.races',
+        'characterSheet.classes',
+        'characterSheet.abilities',
+        'characterSheet.combat',
+        'characterSheet.defence'
+    ]);
 
     app.filter('signedNumber', function() {
         return function(input) {
@@ -45,6 +45,31 @@
                 return list.join(", ");
             }
             return "none";
-        }
+        };
+    });
+
+    app.filter('BAB', function () {
+        return function(bonus) {
+            var temp=[];
+            while (bonus >= 0) {
+                temp.push("\u002B" + bonus);
+                bonus -= 5;
+            }
+            return temp.join("/");
+        };
+    })
+
+    app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory) {
+        $scope.character = CharacterFactory;
+
+        $scope.races = [];
+        RaceFactory.getRaceList().then(function(data) {
+            $scope.races = data;
+        });
+
+        $scope.classes = [];
+        ClassFactory.getClassList().then(function(data) {
+            $scope.classes = data;
+        });
     });
 })();

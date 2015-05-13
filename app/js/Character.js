@@ -106,21 +106,19 @@ angular.module("characterSheet.character", [])
             },
 
             addClass: function(aClass) {
-                if (character.classes[aClass]) {
-                    character.classes[aClass].level++;
+                if (character.classes[aClass.name]) {
+                    character.classes[aClass.name].level++;
                 } else {
-                    character.classes[aClass] = {
-                        name: aClass,
-                        level: 1
-                    };
+                    character.classes[aClass.name] = aClass;
+                    character.classes[aClass.name].level = 1;
                 };
             },
 
             removeClass: function(aClass) {
-                if (character.classes[aClass].level == 1) {
-                    delete character.classes[aClass];
+                if (character.classes[aClass.name].level == 1) {
+                    delete character.classes[aClass.name];
                 } else {
-                    character.classes[aClass].level--;
+                    character.classes[aClass.name].level--;
                 }
             },
 
@@ -139,9 +137,7 @@ angular.module("characterSheet.character", [])
               };
 
               return !classAndLevels === null ? 'none' : classAndLevels.join(' / ');
-
-            }
-
+          }
         };
 
         return character;

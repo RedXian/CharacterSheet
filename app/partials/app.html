@@ -1,12 +1,20 @@
 <header class="header" ng-controller="CharacterController as CharacterCtrl">
-    <label>Name: </label>
-    <input type=text ng-model="character.name" placeholder="nameless">
-    <label>Class/Level: </label>
-    <input style="width:200px" type=text disabled value="{{ character.showClassAndLevels() }}">  
-    <label>Character Level: </label>
-    <input type=text disabled value="{{character.level('Medium')}}">
-    <label>Experience: </label>
-    <input type=number ng-model="character.experience">
+    <div style="float:left;">
+        <label>Name: </label>
+        <input type=text ng-model="character.name" placeholder="nameless">
+    </div>
+    <div style="float:left;">
+        <label>Character Level: </label>
+        <input type=text disabled value="{{character.level('Medium')}}">
+    </div>
+    <div style="float:left;">
+        <label>Experience: </label>
+        <input type=number ng-model="character.experience">
+    </div>
+    <div style="float:left;clear:left;">
+        <label>Class/Level: </label>
+        <input style="width:400px" type=text disabled value="{{ character.showClassAndLevels() }}">
+    </div>
 </header>
 <section class="btn-group" ng-init="tab=1">
     <button type="button" class="btn btn-default" ng-click="tab=1">Race</button>
@@ -30,6 +38,5 @@
 <footer>
     <p class="footer">This character sheet uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This character sheet is not published, endorsed,
         or specifically approved by Paizo Inc. For more information about Paizo's Community Use Policy, please visit <a href="paizo.com/communityuse">paizo.com/communityuse</a>. For more information about Paizo Inc. and Paizo products, please visit
-        <a
-        href="paizo.com">paizo.com</a>.</p>
+        <a href="paizo.com">paizo.com</a>.</p>
 </footer>

@@ -29,16 +29,16 @@ angular.module("characterSheet.classes", [])
                 $scope.addClassList = false;
                 $scope.selectedClass = "";
 
-                $scope.classes = {};
-                ClassFactory.getClassList().then(function(data) {
-                    $scope.classes = data;
-                });
+                // $scope.classes = {};
+                // ClassFactory.getClassList().then(function(data) {
+                //     $scope.classes = data;
+                // });
 
                 $scope.character = CharacterFactory;
 
-                $scope.addClass = function(className) {
+                $scope.addClass = function(aClass) {
                     $scope.addClassList = false;
-                    CharacterFactory.addClass(className);
+                    CharacterFactory.addClass(aClass);
                     $scope.selectedClass = "";
                 };
 

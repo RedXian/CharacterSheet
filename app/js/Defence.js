@@ -11,11 +11,6 @@ angular.module("characterSheet.defence", [])
             controller: function($scope, CharacterFactory, ClassFactory) {
                 $scope.character = CharacterFactory;
 
-                var classes = {};
-                ClassFactory.getClasses().then(function(data) {
-                    classes = data;
-                });
-
                 $scope.saves = [{
                     name: "Fortitude",
                     ability: "Constitution"
@@ -27,14 +22,19 @@ angular.module("characterSheet.defence", [])
                     ability: "Wisdom"
                 }];
 
+                $scope.getClassBonus = function (aClass, bonus) {
+                    return parseInt(aClass.progression[bonus][aClass.level - 1]);
+                };
+
                 //Need to populate ClassJSON to support this format.
                 $scope.getClassBonuses = function(bonus) {
                     var classBonuses = [];
-                    for (var key in CharacterFactory.classes) {
-                        var aClass = CharacterFactory.classes[key];
+                    var characterClasses = function () { return CharacterFactory.classes;};
+                    for (var key in characterClasses) {
+                        var aClass = characterClasses[key];
                         classBonuses.push({
                             name: aClass.name,
-                            bonus: parseInt(classes[aClass.name].progression[bonus][aClass.level - 1])
+                            bonus: parseInt(aClass.progression[bonus][aClass.level - 1])
                         });
                     }
                     return classBonuses;
@@ -46,9 +46,9 @@ angular.module("characterSheet.defence", [])
 
                 $scope.getSaveTotal = function(save) {
                     var total = $scope.getModifier(save.ability);
-                    var classBonuses = $scope.getClassBonuses(save.name);
-                    for (var i = 0; i < classBonuses.length; i++) {
-                        total += classBonuses[i].bonus;
+                    var characterClasses = function () { return CharacterFactory.classes;};
+                    for (var key in characterClasses) {
+                        total += parseInt(characterClasses.progression.BAB[aClass.level - 1]);
                     }
                     return total;
                 };
@@ -59,21 +59,18 @@ angular.module("characterSheet.defence", [])
             restrict: 'E',
             templateUrl: "partials/character-defence-hit-points.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
-                var classes = {};
-                ClassFactory.getClasses().then(function(data) {
-                    classes = data;
-                });
+                $scope.character = CharacterFactory;
 
                 $scope.classBonusArray = function() {
                     var hitDiceArray = [];
 
                     for (var key in CharacterFactory.classes) {
                         var aClass = CharacterFactory.classes[key];
-                        hitDiceArray.push(aClass.level + "d" + classes[aClass.name].hitDie);
+                        hitDiceArray.push(aClass.level + "d" + aClass.hitDie);
                     };
 
                     if ($scope.conBonusHP() > 0) {
-                        hitDiceArray.push($scope.conBonusHP().toString());
+                        hitDiceArray.push($scope.conBonusHP());
                     };
                     return hitDiceArray.join("+");
                 };
@@ -91,7 +88,7 @@ angular.module("characterSheet.defence", [])
                 $scope.maxHP = function() {
                     var hp = $scope.conBonusHP();
                     for (var key in CharacterFactory.classes) {
-                        hp += parseInt(classes[CharacterFactory.classes[key].name].hitDie) * CharacterFactory.classes[key].level;
+                        hp += parseInt(CharacterFactory.classes[key].hitDie) * CharacterFactory.classes[key].level;
                     };
                     return hp;
                 };
@@ -142,7 +139,6 @@ angular.module("characterSheet.defence", [])
 
                 $scope.flatfoot = false;
                 $scope.touch = false;
-
 
                 $scope.calculateAC = function() {
                     var AC = 10;
