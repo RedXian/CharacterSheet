@@ -117,14 +117,9 @@ angular.module("characterSheet.skills", [])
             controller: 'SkillController',
             controllerAs: 'skillCtrl'
         };
-    }).controller('SkillController', function($scope, CharacterFactory, SkillFactory, ClassFactory) {
+    }).controller('SkillController', function($scope, CharacterFactory, SkillFactory) {
         $scope.character = CharacterFactory;
         $scope.skills = SkillFactory;
-
-        var classes = {};
-        ClassFactory.getClasses().then(function(data) {
-            classes = data;
-        });
 
         $scope.isClassSkill = function(skill, category) {
             if (category) {
@@ -134,17 +129,19 @@ angular.module("characterSheet.skills", [])
             var classList = $scope.character.classes;
 
             for (var key in classList) {
-                if (classes[classList[key].name]["Class Skills"]){
-                var classSkills = classes[classList[key].name]["Class Skills"];
-                if (category) {
-                    if (classSkills.indexOf(skill + " (all)") > -1 || classSkills.indexOf(category) > -1 || classSkills.indexOf(skill) > -1) {
+                if (classList[key]["Class Skills"]) {
+                    var classSkills = classList[key]["Class Skills"];
+                    if (category) {
+                        if (classSkills.indexOf(skill + " (all)") > -1 || classSkills.indexOf(category) > -1 || classSkills.indexOf(skill) > -1) {
+                            return true;
+                        }
+                    } else if (classSkills.indexOf(skill) > -1) {
                         return true;
                     }
-                } else if (classSkills.indexOf(skill) > -1) {
-                    return true;
+                } else {
+                    console.log("Class Skills missing for " + classList[key].name);
                 }
-            }   else {console.log("Class Skills missing for " +classList[key].name);}
-        };
+            };
             return false;
         };
 
@@ -154,10 +151,11 @@ angular.module("characterSheet.skills", [])
 
             //skill points granted from Classes
             for (var key in classList) {
-                if (classes[classList[key].name].skillsPerLevel) {
-                points += (parseInt(classes[classList[key].name].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier)
-                    * classList[key].level;
-                } else { console.log("skillsPerLevel missing for " +classList[key].name);};
+                if (classList[key].skillsPerLevel) {
+                    points += (parseInt(classList[key].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier) * classList[key].level;
+                } else {
+                    console.log("skillsPerLevel missing for " + classList[key].name);
+                };
             };
 
             // Skills points granted from Traits
@@ -205,8 +203,8 @@ angular.module("characterSheet.skills", [])
                 result += CharacterFactory.skills[skillName].ranks;
             }
             if (CharacterFactory.abilities[skill.ability]) {
-            result += CharacterFactory.abilities[skill.ability].modifier;
-        };
+                result += CharacterFactory.abilities[skill.ability].modifier;
+            };
 
             return result;
         };

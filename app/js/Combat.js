@@ -38,22 +38,8 @@ angular.module("characterSheet.combat", [])
                     return parseInt(aClass.progression.BAB[aClass.level - 1]);
                 };
 
-                $scope.getBABClassBonuses = function() {
-                    var classBonuses = [];
-                    for (var key in $scope.character.classes) {
-                        var aClass = $scope.character.classes[key];
-                        classBonuses.push({
-                            name: aClass.name,
-                            bonus: parseInt(aClass.progression.BAB[aClass.level - 1])
-                        });
-                    }
-                    return classBonuses;
-                }
-
                 $scope.getBaseAttackBonus = function() {
                     var bonus = 0;
-                    var classBonuses = $scope.getBABClassBonuses();
-
                     for (var key in CharacterFactory.classes) {
                         bonus += $scope.getClassBABBonus(CharacterFactory.classes[key]);
                     };
