@@ -22,14 +22,16 @@ angular.module("characterSheet.defence", [])
                     ability: "Wisdom"
                 }];
 
-                $scope.getClassBonus = function (aClass, bonus) {
+                $scope.getClassBonus = function(aClass, bonus) {
                     return parseInt(aClass.progression[bonus][aClass.level - 1]);
                 };
 
                 //Need to populate ClassJSON to support this format.
                 $scope.getClassBonuses = function(bonus) {
                     var classBonuses = [];
-                    var characterClasses = function () { return CharacterFactory.classes;};
+                    var characterClasses = function() {
+                        return CharacterFactory.classes;
+                    };
                     for (var key in characterClasses) {
                         var aClass = characterClasses[key];
                         classBonuses.push({
@@ -132,7 +134,25 @@ angular.module("characterSheet.defence", [])
                     name: "Dodge Bonus"
                 }, {
                     value: function() {
-                        return 1;
+                        sizeObject = {
+                            "Fine": -8,
+                            "Diminutive": -4,
+                            "Tiny": -2,
+                            "Small": -1,
+                            "Medium": 0,
+                            "Large": 1,
+                            "Huge": 2,
+                            "Gargantuan": 4,
+                            "Huge": 8
+                        };
+                        var size = "Medium";
+                        for (var key in CharacterFactory.traits) {
+                            if (CharacterFactory.traits[key].Size) {
+                                size = CharacterFactory.traits[key].Size;
+                            }
+                        }
+
+                        return sizeObject[size];
                     },
                     name: "Size Modifier"
                 }];

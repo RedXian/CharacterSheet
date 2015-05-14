@@ -67,7 +67,25 @@ angular.module("characterSheet.combat", [])
                 };
 
                 $scope.getSizeModifer = function() {
-                    return 0;
+                    sizeObject = {
+                        "Fine": -8,
+                        "Diminutive": -4,
+                        "Tiny": -2,
+                        "Small": -1,
+                        "Medium": 0,
+                        "Large": 1,
+                        "Huge": 2,
+                        "Gargantuan": 4,
+                        "Huge": 8
+                    };
+                    var size = "Medium";
+                    for (var key in CharacterFactory.traits) {
+                        if (CharacterFactory.traits[key].Size) {
+                            size = CharacterFactory.traits[key].Size;
+                        }
+                    }
+
+                    return -sizeObject[size];
                 };
 
                 $scope.getManueverDefence = function() {

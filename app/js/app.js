@@ -8,7 +8,8 @@
         'characterSheet.classes',
         'characterSheet.abilities',
         'characterSheet.combat',
-        'characterSheet.defence'
+        'characterSheet.defence',
+        'characterSheet.personal'
     ]);
 
     app.filter('signedNumber', function() {

@@ -21,7 +21,7 @@
             "name": "Slow and Steady",
             "type": "Racial Trait",
             "description": "Dwarves have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -192,11 +192,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "125 years",
-            "Old": "188 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 2d% years"
+        "agingEffects": {
+            "Middle Age": "125",
+            "Old": "188",
+            "Venerable": "250",
+            "maximumAge": "450"
         }
     },
     "Elf": {
@@ -221,7 +221,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Elves have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -353,11 +353,11 @@
                 "Weight Modifier": "3 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "175 years",
-            "Old": "263 years",
-            "Venerable": "350 years",
-            "Maximum Age": "350 + 4d% years"
+        "agingEffects": {
+            "Middle Age": "175",
+            "Old": "263",
+            "Venerable": "350",
+            "maximumAge": "350 + 4d% years"
         }
     },
     "Gnome": {
@@ -380,7 +380,7 @@
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Gnomes have a base speed of 20 feet.",
-            "Speed": "feet 20"
+            "Speed": "20"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -519,11 +519,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "100 years",
-            "Old": "150 years",
-            "Venerable": "200 years",
-            "Maximum Age": "200 + 3d% years"
+        "agingEffects": {
+            "Middle Age": "100",
+            "Old": "150",
+            "Venerable": "200",
+            "maximumAge": "200 + 3d% years"
         }
     },
     "Halfling": {
@@ -548,7 +548,7 @@
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Halflings have a base speed of 20 feet.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Fearless": {
             "name": "Fearless",
@@ -680,11 +680,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "50 years",
-            "Old": "75 years",
-            "Venerable": "100 years",
-            "Maximum Age": "100 + 5d20 years"
+        "agingEffects": {
+            "Middle Age": "50",
+            "Old": "75",
+            "Venerable": "100",
+            "maximumAge": "100 + 5d20 years"
         }
     },
     "Half-elf": {
@@ -823,11 +823,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "62 years",
-            "Old": "93 years",
-            "Venerable": "125 years",
-            "Maximum Age": "125 + 3d20 years"
+        "agingEffects": {
+            "Middle Age": "62",
+            "Old": "93",
+            "Venerable": "125",
+            "maximumAge": "185"
         }
     },
     "Half-orc": {
@@ -850,7 +850,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Half-orcs have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -989,11 +989,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "30 years",
-            "Old": "45 years",
-            "Venerable": "60 years",
-            "Maximum Age": "60 + 2d10 years"
+        "agingEffects": {
+            "Middle Age": "30",
+            "Old": "45",
+            "Venerable": "60",
+            "maximumAge": "80"
         }
     },
     "Human": {
@@ -1016,7 +1016,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Humans have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Bonus Feat": {
             "name": "Bonus Feat",
@@ -1145,11 +1145,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Aasimar": {
@@ -1178,7 +1178,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Aasimars have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1227,11 +1227,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Catfolk": {
@@ -1261,7 +1261,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Catfolk have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -1310,11 +1310,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "80"
         }
     },
     "Dhampir": {
@@ -1344,7 +1344,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Dhampirs have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Senses": {
             "name": "Senses",
@@ -1408,11 +1408,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "175 years",
-            "Old": "263 years",
-            "Venerable": "350 years",
-            "Maximum Age": "350 + 4d% years"
+        "agingEffects": {
+            "Middle Age": "175",
+            "Old": "263",
+            "Venerable": "350",
+            "maximumAge": "750"
         }
     },
     "Drow": {
@@ -1442,7 +1442,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Drow have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1511,11 +1511,11 @@
                 "Weight Modifier": "3 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "175 years",
-            "Old": "263 years",
-            "Venerable": "350 years",
-            "Maximum Age": "350 + 4d% years"
+        "agingEffects": {
+            "Middle Age": "175",
+            "Old": "263",
+            "Venerable": "350",
+            "maximumAge": "750"
         }
     },
     "Fetchling": {
@@ -1545,7 +1545,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Fetchlings have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1604,11 +1604,11 @@
                 "Weight Modifier": "3 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "62 years",
-            "Old": "93 years",
-            "Venerable": "125 years",
-            "Maximum Age": "125 + 3d20 years"
+        "agingEffects": {
+            "Middle Age": "62",
+            "Old": "93",
+            "Venerable": "125",
+            "maximumAge": "185"
         }
     },
     "Goblin": {
@@ -1638,7 +1638,7 @@
             "name": "Fast",
             "type": "Racial Trait",
             "description": "Goblins are fast for their size, and have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1677,11 +1677,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 + 1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Hobgoblin": {
@@ -1710,7 +1710,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Hobgoblins have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1749,11 +1749,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "30 years",
-            "Old": "45 years",
-            "Venerable": "60 years",
-            "Maximum Age": "60 + 2d10 years"
+        "agingEffects": {
+            "Middle Age": "30",
+            "Old": "45",
+            "Venerable": "60",
+            "maximumAge": "80"
         }
     },
     "Ifrit": {
@@ -1783,7 +1783,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Ifrits have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1832,11 +1832,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Kobold": {
@@ -1866,7 +1866,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Kobolds have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1915,11 +1915,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 + 1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Orc": {
@@ -1950,7 +1950,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Orcs have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1999,11 +1999,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 + 1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Oread": {
@@ -2033,7 +2033,7 @@
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Oreads have a base speed of 20 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2082,11 +2082,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Ratfolk": {
@@ -2116,7 +2116,7 @@
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Ratfolk have a base speed of 20 feet.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2165,11 +2165,11 @@
                 "Weight Modifier": "3 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 + 1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Sylph": {
@@ -2199,7 +2199,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Sylphs have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2248,11 +2248,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Tengu": {
@@ -2282,7 +2282,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Tengus have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Senses": {
             "name": "Senses",
@@ -2336,11 +2336,11 @@
                 "Weight Modifier": "3 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 year",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Tiefling": {
@@ -2370,7 +2370,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Tieflings have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2424,11 +2424,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Undine": {
@@ -2458,8 +2458,8 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Undines have a base speed of 30 feet on land. They also have a swim speed of 30 feet, can move in water without making Swim checks, and always treat Swim as a class skill.",
-            "Speed": "30 feet",
-            "Swim": "30 feet"
+            "Speed": "30",
+            "Swim": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2508,11 +2508,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Changeling": {
@@ -2542,7 +2542,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Changelings have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Hag Racial Trait": {
             "name": "Hag Racial Trait",
@@ -2604,11 +2604,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Duergar": {
@@ -2638,7 +2638,7 @@
             "name": "Slow and Steady",
             "type": "Racial Trait",
             "description": "Duergar have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Superior Darkvision": {
             "name": "Superior Darkvision",
@@ -2692,11 +2692,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "125 years",
-            "Old": "188 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 2d% years"
+        "agingEffects": {
+            "Middle Age": "125",
+            "Old": "188",
+            "Venerable": "250",
+            "maximumAge": "450"
         }
     },
     "Gillman": {
@@ -2726,8 +2726,8 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Gillmen have a base speed of 30 feet on land. As aquatic creatures, they also have a swim speed of 30 feet, can move in water without making Swim checks, and always treat Swim as a class skill.",
-            "Speed": "30 feet",
-            "Swim": "30 feet"
+            "Speed": "30",
+            "Swim": "30"
         },
         "Amphibious": {
             "name": "Amphibious",
@@ -2771,11 +2771,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "62 years",
-            "Old": "93 years",
-            "Venerable": "125 years",
-            "Maximum Age": "125 + 3d20 years"
+        "agingEffects": {
+            "Middle Age": "62",
+            "Old": "93",
+            "Venerable": "125",
+            "maximumAge": "185"
         }
     },
     "Grippli": {
@@ -2805,7 +2805,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Gripplis have a base speed of 30 feet and a climb speed of 20 feet.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2854,11 +2854,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 + 1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Kitsune": {
@@ -2888,7 +2888,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Kitsune have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision (Ex)": {
             "type": "Racial Trait",
@@ -2941,11 +2941,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
+        "agingEffects": {
             "Middle Age": "32 year",
-            "Old": "50 years",
-            "Venerable": "65 years",
-            "Maximum Age": "65 + 3d12 years"
+            "Old": "50",
+            "Venerable": "65",
+            "maximumAge": "101"
         }
     },
     "Merfolk": {
@@ -2971,7 +2971,7 @@
             "type": "Racial Trait",
             "description": "Merfolk have a base speed of 5 feet. They have a swim speed of 50 feet.",
             "Speed": "5 feet",
-            "Swim": "50 feet"
+            "Swim": "50"
         },
         "Aquatic": {
             "name": "Aquatic",
@@ -3025,11 +3025,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Nagaji": {
@@ -3059,7 +3059,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Nagaji have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3108,11 +3108,11 @@
                 "Weight Modifier": "7 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "60 years",
-            "Old": "90 years",
-            "Venerable": "120 years",
-            "Maximum Age": "120 + 3d20 years"
+        "agingEffects": {
+            "Middle Age": "60",
+            "Old": "90",
+            "Venerable": "120",
+            "maximumAge": "180"
         }
     },
     "Samsaran": {
@@ -3137,7 +3137,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Samsarans have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision (Ex)": {
             "name": "Low-Light Vision (Ex)",
@@ -3186,11 +3186,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "150 years",
-            "Old": "200 years",
-            "Venerable": "250 years",
-            "Maximum Age": "250 + 6d% years"
+        "agingEffects": {
+            "Middle Age": "150",
+            "Old": "200",
+            "Venerable": "250",
+            "maximumAge": "850"
         }
     },
     "Strix": {
@@ -3219,8 +3219,8 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Strix have a base speed of 30 feet on land. They also have a fly speed of 60 feet (average).",
-            "Speed": "30 feet",
-            "Fly": "60 feet"
+            "Speed": "30",
+            "Fly": "60"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3274,11 +3274,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "20 years",
-            "Old": "30 years",
-            "Venerable": "40 years",
-            "Maximum Age": "40 +1d20 years"
+        "agingEffects": {
+            "Middle Age": "20",
+            "Old": "30",
+            "Venerable": "40",
+            "maximumAge": "60"
         }
     },
     "Suli": {
@@ -3308,7 +3308,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Sulis have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3357,11 +3357,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Svirfneblin": {
@@ -3455,11 +3455,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "100 years",
-            "Old": "150 years",
-            "Venerable": "200 years",
-            "Maximum Age": "200 + 3d% years"
+        "agingEffects": {
+            "Middle Age": "100",
+            "Old": "150",
+            "Venerable": "200",
+            "maximumAge": "500"
         }
     },
     "Vanara": {
@@ -3489,8 +3489,8 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Vanaras have a base speed of 30 feet and a Climb speed of 30 feet.",
-            "Speed": "30 feet",
-            "Climb": "30 feet"
+            "Speed": "30",
+            "Climb": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3534,11 +3534,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "30 years",
-            "Old": "45 years",
-            "Venerable": "60 years",
-            "Maximum Age": "60 + 2d10 years"
+        "agingEffects": {
+            "Middle Age": "30",
+            "Old": "45",
+            "Venerable": "60",
+            "maximumAge": "80"
         }
     },
     "Vishkanya": {
@@ -3568,7 +3568,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Vishkanyas have a base speed of 30 feet.",
-            "Speed": "30 feet"
+            "Speed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3637,11 +3637,11 @@
                 "Weight Modifier": "5 lbs."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "35 years",
-            "Old": "53 years",
-            "Venerable": "70 years",
-            "Maximum Age": "70 + 2d20 years"
+        "agingEffects": {
+            "Middle Age": "35",
+            "Old": "53",
+            "Venerable": "70",
+            "maximumAge": "110"
         }
     },
     "Wayang": {
@@ -3671,7 +3671,7 @@
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Wayangs have a base speed of 20 feet.",
-            "Speed": "20 feet"
+            "Speed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -3731,11 +3731,11 @@
                 "Weight Modifier": "1 lb."
             }
         },
-        "Aging Effects": {
-            "Middle Age": "100 years",
-            "Old": "150 years",
-            "Venerable": "200 years",
-            "Maximum Age": "200 + 1d% years"
+        "agingEffects": {
+            "Middle Age": "100",
+            "Old": "150",
+            "Venerable": "200",
+            "maximumAge": "300"
         }
     }
 }

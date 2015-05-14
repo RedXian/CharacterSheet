@@ -1,11 +1,30 @@
 angular.module("characterSheet.abilities", [])
     .factory("AbilityFactory", function() {
-        var abilityNames = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"];
+        var abilityNames = [{
+            name: "Strength",
+            type: "Physical"
+        }, {
+            name: "Dexterity",
+            type: "Physical"
+        }, {
+            name: "Constitution",
+            type: "Physical"
+        }, {
+            name: "Intelligence",
+            type: "Mental"
+        }, {
+            name: "Wisdom",
+            type: "Mental"
+        }, {
+            name: "Charisma",
+            type: "Mental"
+        }];
         var abilities = {};
         for (var ability in abilityNames) {
-            abilities[abilityNames[ability]] = {
+            abilities[abilityNames[ability].name] = {
                 id: ability,
-                name: abilityNames[ability]
+                type: abilityNames[ability].type,
+                name: abilityNames[ability].name
             };
         };
         return abilities;
@@ -23,8 +42,8 @@ angular.module("characterSheet.abilities", [])
                 var modifier = 0;
                 try {
                     var abilityMods = $scope.character.traits["Ability Modifiers"];
-                    if (abilityMods[ability]) {
-                        modifier = abilityMods[ability];
+                    if (abilityMods[ability.name]) {
+                        modifier = abilityMods[ability.name];
                     } else if (abilityMods.Any && ability == $scope.racialBonus) {
                         modifier = abilityMods.Any;
                     }
@@ -36,17 +55,32 @@ angular.module("characterSheet.abilities", [])
             };
 
             $scope.getAgeModifier = function(ability) {
-                return 0;
+                var age = CharacterFactory.getAgingEffect();
+                var modifier = 0;
+                switch (age) {
+                    case "Adulthood":
+                        break;
+                    case "Middle Age":
+                        modifier = 1;
+                        break;
+                    case "Old":
+                        modifier = 2;
+                        break;
+                    case "Venerable":
+                        modifier = 3;
+                        break;
+                }
+                return (ability.type == "Physical") ? -modifier : modifier;
             };
 
             $scope.getAdjustedScore = function(ability) {
-                $scope.character.abilities[ability].adjustedScore = $scope.character.abilities[ability].baseScore + $scope.getRacialModifier(ability) + $scope.getAgeModifier(ability);
-                return $scope.character.abilities[ability].adjustedScore;
+                $scope.character.abilities[ability.name].adjustedScore = $scope.character.abilities[ability.name].baseScore + $scope.getRacialModifier(ability.name) + $scope.getAgeModifier(ability);
+                return $scope.character.abilities[ability.name].adjustedScore;
             };
 
             $scope.getAbilityModifier = function(ability) {
-                $scope.character.abilities[ability].modifier = Math.floor($scope.getAdjustedScore(ability) / 2) - 5;
-                return $scope.character.abilities[ability].modifier;
+                $scope.character.abilities[ability.name].modifier = Math.floor($scope.getAdjustedScore(ability) / 2) - 5;
+                return $scope.character.abilities[ability.name].modifier;
             }
 
 

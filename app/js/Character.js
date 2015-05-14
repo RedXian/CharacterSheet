@@ -75,9 +75,9 @@ angular.module("characterSheet.character", [])
 
                 track = track ? track : "Medium";
 
-                for (var i = advancement[track].length-1; i > 0; i--) {
+                for (var i = advancement[track].length - 1; i > 0; i--) {
                     if (character.experience >= advancement[track][i]) {
-                        return i+1;
+                        return i + 1;
                     }
                 }
                 return 1;
@@ -87,14 +87,14 @@ angular.module("characterSheet.character", [])
                 delete character.race;
                 character.race = {};
 
+
                 // remove all Racial Traits
                 for (var key in character.traits) {
-
                     if (character.traits[key].type.indexOf("Racial Trait") > -1) {
                         delete character.traits[character.traits[key].name];
                     }
                 };
-
+                // Add Race Elements
                 for (var key in race) {
                     var element = race[key];
                     if (element.type) {
@@ -102,6 +102,25 @@ angular.module("characterSheet.character", [])
                             character.traits[key] = element;
                         }
                     } else character.race[key] = element;
+                };
+
+                //Set Age Groups
+                character.race.ageGroups = [];
+                for (var i = character.race.Age.Adulthood; i <= character.race.agingEffects.maximumAge; i++) {
+                    var group = "Adulthood";
+                    if (i >= parseInt(character.race.agingEffects["Middle Age"])) {
+                        group = "Middle Age";
+                        if (i >= parseInt(character.race.agingEffects.Old)) {
+                            group = "Old Age";
+                            if (i >= parseInt(character.race.agingEffects.Venerable)) {
+                                group = "Venerable";
+                            }
+                        }
+                    }
+                    character.race.ageGroups.push({
+                        age: i,
+                        group: group
+                    });
                 }
             },
 
@@ -130,14 +149,29 @@ angular.module("characterSheet.character", [])
                 return totalLevels;
             },
 
-            showClassAndLevels: function () {
-              var classAndLevels = [];
-              for (var key in character.classes) {
-                classAndLevels.push(character.classes[key].name + " " + character.classes[key].level);
-              };
+            showClassAndLevels: function() {
+                var classAndLevels = [];
+                for (var key in character.classes) {
+                    classAndLevels.push(character.classes[key].name + " " + character.classes[key].level);
+                };
 
-              return !classAndLevels === null ? 'none' : classAndLevels.join(' / ');
-          }
+                return !classAndLevels === null ? 'none' : classAndLevels.join(' / ');
+            },
+            getAgingEffect: function() {
+                var ageGroup = "Adulthood";
+                if (character.race) {
+                    if (character.age >= parseInt(character.race.agingEffects["Middle Age"])) {
+                        ageGroup = "Middle Age";
+                        if (character.age >= parseInt(character.race.agingEffects["Old"])) {
+                            ageGroup = "Old";
+                            if (character.age >= parseInt(character.race.agingEffects["Venerable"])) {
+                                ageGroup = "Venerable";
+                            }
+                        }
+                    }
+                }
+                return ageGroup;
+            }
         };
 
         return character;
