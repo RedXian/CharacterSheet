@@ -165,6 +165,8 @@ angular.module("characterSheet.skills", [])
                     points += parseInt(CharacterFactory.traits[key].skillsPerLevel * CharacterFactory.level());
                 }
             };
+
+            // Need to Added any Favored Class bonuses.
             return points;
         };
 
