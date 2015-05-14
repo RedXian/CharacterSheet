@@ -152,7 +152,8 @@ angular.module("characterSheet.skills", [])
             //skill points granted from Classes
             for (var key in classList) {
                 if (classList[key].skillsPerLevel) {
-                    points += (parseInt(classList[key].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier) * classList[key].level;
+                    var skillsPerLevel = parseInt(classList[key].skillsPerLevel) + CharacterFactory.abilities.Intelligence.modifier;
+                    points += (skillsPerLevel > 0 ? skillsPerLevel : 1) * classList[key].level;
                 } else {
                     console.log("skillsPerLevel missing for " + classList[key].name);
                 };
