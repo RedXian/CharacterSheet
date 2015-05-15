@@ -208,7 +208,7 @@ angular.module("characterSheet.skills", [])
             if (CharacterFactory.abilities[skill.ability]) {
                 result += CharacterFactory.abilities[skill.ability].modifier;
             };
-
+            CharacterFactory.skills[skillName].bonus= result;
             return result;
         };
 

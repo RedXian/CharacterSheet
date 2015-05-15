@@ -6,6 +6,7 @@ angular.module("characterSheet.statBlock", [])
             controller: function ($scope, CharacterFactory, AbilityFactory, SkillFactory) {
                 $scope.abilities = AbilityFactory;
                 $scope.character = CharacterFactory;
+                $scope.skills = SkillFactory;
             }
         };
     });
