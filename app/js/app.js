@@ -2,14 +2,17 @@
     'use strict';
 
     // Declare app level module which depends on views, and components
-    var app = angular.module('characterSheet', ['characterSheet.character',
+    var app = angular.module('characterSheet', [
+        'characterSheet.character',
         'characterSheet.skills',
         'characterSheet.races',
         'characterSheet.classes',
         'characterSheet.abilities',
         'characterSheet.combat',
         'characterSheet.defence',
-        'characterSheet.personal'
+        'characterSheet.personal',
+        'characterSheet.statBlock',
+        'characterSheet.roller'
     ]);
 
     app.filter('signedNumber', function() {
@@ -56,9 +59,25 @@
                 temp.push("\u002B" + bonus);
                 bonus -= 5;
             }
-            return temp.join("/");
+            return temp.join("\u2044");
         };
-    })
+    });
+
+    app.filter('displayClassAndLevels', function() {
+        return function (classes) {
+                var output = [];
+                for (var key in classes) {
+                    output.push(classes[key].name + " " + classes[key].level);
+                };
+                return output.length > 0 ? output.join(' \u2044 ') : 'none';
+        };
+    });
+
+    app.filter('movement', function() {
+        return function(speed){
+            return speed ? speed + " feet (" + Math.round(speed / 5, 0) + " squares)" : "\u2014";
+        };
+    });
 
     app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory) {
         $scope.character = CharacterFactory;

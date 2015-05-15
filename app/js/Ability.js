@@ -1,4 +1,4 @@
-angular.module("characterSheet.abilities", [])
+angular.module("characterSheet.abilities", ['characterSheet.roller'])
     .factory("AbilityFactory", function() {
         var abilityNames = [{
             name: "Strength",
@@ -34,16 +34,23 @@ angular.module("characterSheet.abilities", [])
     return {
         restrict: 'E',
         templateUrl: "partials/character-ability-score.html",
-        controller: function($scope, CharacterFactory, AbilityFactory) {
+        controller: function($scope, CharacterFactory, AbilityFactory, RollerFactory) {
             $scope.character = CharacterFactory;
             $scope.abilityList = AbilityFactory;
+
+            $scope.roll = function(notation) {
+                for (var key in $scope.abilityList) {
+                    var roll = RollerFactory.getResult(notation);
+                     $scope.character.abilities[$scope.abilityList[key].name].baseScore = roll[roll.length-1].value;
+                 }
+            };
 
             $scope.getRacialModifier = function(ability) {
                 var modifier = 0;
                 try {
                     var abilityMods = $scope.character.traits["Ability Modifiers"];
-                    if (abilityMods[ability.name]) {
-                        modifier = abilityMods[ability.name];
+                    if (abilityMods[ability]) {
+                        modifier = abilityMods[ability];
                     } else if (abilityMods.Any && ability == $scope.racialBonus) {
                         modifier = abilityMods.Any;
                     }
@@ -82,7 +89,6 @@ angular.module("characterSheet.abilities", [])
                 $scope.character.abilities[ability.name].modifier = Math.floor($scope.getAdjustedScore(ability) / 2) - 5;
                 return $scope.character.abilities[ability.name].modifier;
             }
-
 
             $scope.getPointBuyCost = function(score) {
                 return [-4, -2, -1, 0, 1, 2, 3, 5, 7, 10, 13, 17][score - 7];

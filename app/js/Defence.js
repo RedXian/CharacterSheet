@@ -52,6 +52,7 @@ angular.module("characterSheet.defence", [])
                         var aClass = CharacterFactory.classes[key];
                         total += parseInt(aClass.progression[save.name][aClass.level - 1]);
                     }
+                    CharacterFactory.saves[save] = total;
                     return total;
                 };
             }

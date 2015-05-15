@@ -1,5 +1,7 @@
 <section>
     <h2>Abilities</h2>
+    <div><label>Roll 3d6</label><button ng-click="roll('3d6')" class="glyphicon glyphicon-repeat"></div>
+        <div><label>Roll 4d6 discard lowest</label><button ng-click="roll('4d6-L')" class="glyphicon glyphicon-repeat"></div>
     <div ng-show="character.traits['Ability Modifiers'].Any">
         <select ng-model="racialBonus">
             <option value="" selected disabled hidden>Select Stat</option>
@@ -10,7 +12,7 @@
         <label>{{ ability.name }}</label>
         <div class="calculation stat" id="{{ ability.name }}">
             <div>
-                <input type="number" min="7" max="18" ng-model="character.abilities[ability.name].baseScore" ng-init="character.abilities[ability.name].baseScore=10">
+                <input type="number" min="3" max="18" ng-model="character.abilities[ability.name].baseScore" ng-init="character.abilities[ability.name].baseScore=10">
                 <label>Base Score</label>
             </div>
             <div>+</div>

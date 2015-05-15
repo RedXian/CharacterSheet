@@ -15,13 +15,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Dwarves are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Slow and Steady": {
             "name": "Slow and Steady",
             "type": "Racial Trait",
             "description": "Dwarves have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -180,16 +180,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 9 in.",
-                "Base Weight": "150 lbs.",
+                "baseHeight": "3 ft. 9 in.",
+                "baseWeight": "150 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "3 ft. 7 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "3 ft. 7 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -207,21 +207,21 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Elves are nimble, both in body and mind, but their form is frail.",
-            "Dexterity": "+2",
-            "Intelligence": "+2",
+            "Dexterity": "2",
+            "Intelligence": "2",
             "Constitution": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Elves are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Elves have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -341,16 +341,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "100 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "100 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             }
         },
         "agingEffects": {
@@ -366,21 +366,21 @@
         "description": "Expatriates of the strange land of fey, these small folk have a reputation for flighty and eccentric behavior. Many gnomes are whimsical artisans and tinkers, creating strange devices powered by magic, alchemy, and their quirky imagination. Gnomes have an insatiable need for new experiences that often gets them in trouble.",
         "Ability Modifiers": {
             "description": "Gnomes are physically weak but surprisingly hardy, and their attitude makes them naturally agreeable.",
-            "Constitution": "+2",
-            "Charisma": "+2",
-            "Strength": "+2"
+            "Constitution": "2",
+            "Charisma": "2",
+            "Strength": "2"
         },
         "Small": {
             "name": "Small",
             "type": "Racial Trait",
             "description": "Gnomes are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Gnomes have a base speed of 20 feet.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -507,16 +507,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 0 in.",
-                "Base Weight": "35 lbs.",
+                "baseHeight": "3 ft. 0 in.",
+                "baseWeight": "35 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 10 in.",
-                "Base Weight": "30 lbs.",
+                "baseHeight": "2 ft. 10 in.",
+                "baseWeight": "30 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -534,21 +534,21 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Halflings are nimble and strong-willed, but their small stature makes them weaker than other races.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Strength": "-2"
         },
         "Small": {
             "name": "Small",
             "type": "Racial Trait",
             "description": "Halflings are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty to their Combat Maneuver Bonus and Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Halflings have a base speed of 20 feet.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Fearless": {
             "name": "Fearless",
@@ -668,16 +668,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "2 ft. 8 in.",
-                "Base Weight": "30 lbs.",
+                "baseHeight": "2 ft. 8 in.",
+                "baseWeight": "30 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 6 in.",
-                "Base Weight": "25 lbs.",
+                "baseHeight": "2 ft. 6 in.",
+                "baseWeight": "25 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -695,19 +695,19 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Half-elf characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
-            "Any": "+2"
+            "Any": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Half-elves are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Half-elves have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -811,16 +811,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 0 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 0 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -838,19 +838,19 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Half-orc characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
-            "Any": "+2"
+            "Any": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Half-orcs are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Half-orcs have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -977,16 +977,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "150 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "150 lbs.",
                 "Modifier": "2d12",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d12",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -1004,19 +1004,19 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Human characters get a +2 bonus to one ability score of their choice at creation to represent their varied nature.",
-            "Any": "+2"
+            "Any": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Humans are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Humans have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Bonus Feat": {
             "name": "Bonus Feat",
@@ -1133,16 +1133,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1160,8 +1160,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Aasimars are insightful, confident, and personable.",
-            "Wisdom": "+2",
-            "Charisma": "+2"
+            "Wisdom": "2",
+            "Charisma": "2"
         },
         "Native Outsider": {
             "name": "Native Outsider",
@@ -1172,13 +1172,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Aasimars are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Aasimars have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1215,16 +1215,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 0 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 0 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1242,8 +1242,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Catfolk are sociable and agile, but often lack common sense.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Wisdom": "2"
         },
         "Catfolk": {
@@ -1255,13 +1255,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Catfolk are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Catfolk have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -1298,16 +1298,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1325,8 +1325,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Dhampirs are fast and seductive, but their racial bond to the undead impedes their mortal vigor.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Constitution": "2"
         },
         "Dhampir": {
@@ -1338,13 +1338,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Dhampirs are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Dhampirs have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Senses": {
             "name": "Senses",
@@ -1396,16 +1396,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1423,8 +1423,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Drow are nimble and manipulative.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Constitution": "2"
         },
         "Elf": {
@@ -1436,13 +1436,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Drow are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Drow have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1499,16 +1499,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "100 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "100 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             }
         },
         "agingEffects": {
@@ -1526,8 +1526,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Fetchlings are quick and forceful, but often strange and easily distracted by errant thoughts.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Wisdom": "2"
         },
         "Native Outsider": {
@@ -1539,13 +1539,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Fetchlings are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Fetchlings have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1592,16 +1592,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "80 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "80 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             }
         },
         "agingEffects": {
@@ -1619,7 +1619,7 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Goblins are fast, but weak and unpleasant to be around.",
-            "Dexterity": "+4",
+            "Dexterity": "4",
             "Strength": "2",
             "Charisma": "2"
         },
@@ -1632,13 +1632,13 @@
             "name": "Small",
             "type": "Racial Trait",
             "description": "Goblins are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty to their CMB and CMD, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Fast": {
             "name": "Fast",
             "type": "Racial Trait",
             "description": "Goblins are fast for their size, and have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1665,16 +1665,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "2 ft. 8 in.",
-                "Base Weight": "30 lbs.",
+                "baseHeight": "2 ft. 8 in.",
+                "baseWeight": "30 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 6 in.",
-                "Base Weight": "25 lbs.",
+                "baseHeight": "2 ft. 6 in.",
+                "baseWeight": "25 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -1692,8 +1692,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Hobgoblins are fast and hardy.",
-            "Dexterity": "+2",
-            "Constitution": "+2"
+            "Dexterity": "2",
+            "Constitution": "2"
         },
         "Goblinoid": {
             "name": "Goblinoid",
@@ -1704,13 +1704,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Hobgoblins are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Hobgoblins have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1737,16 +1737,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 2 in.",
-                "Base Weight": "165 lbs.",
+                "baseHeight": "4 ft. 2 in.",
+                "baseWeight": "165 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 0 in.",
-                "Base Weight": "145 lbs.",
+                "baseHeight": "4 ft. 0 in.",
+                "baseWeight": "145 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1764,8 +1764,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Ifrits are passionate and quick, but impetuous and destructive.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Wisdom": "2"
         },
         "Native Outsider": {
@@ -1777,13 +1777,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Ifrits are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Ifrits have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1820,16 +1820,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 0 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 0 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -1847,7 +1847,7 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Kobolds are fast but weak.",
-            "Dexterity": "+2",
+            "Dexterity": "2",
             "Strength": "4",
             "Constitution": "2"
         },
@@ -1860,13 +1860,13 @@
             "name": "Small",
             "type": "Racial Trait",
             "description": "Kobolds are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty on their combat maneuver checks and to Combat Maneuver Defense, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Kobolds have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1903,16 +1903,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "2 ft. 6 in.",
-                "Base Weight": "25 lbs.",
+                "baseHeight": "2 ft. 6 in.",
+                "baseWeight": "25 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 4 in.",
-                "Base Weight": "20 lbs.",
+                "baseHeight": "2 ft. 4 in.",
+                "baseWeight": "20 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -1930,7 +1930,7 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Orcs are brutal and savage.",
-            "Strength": "+4",
+            "Strength": "4",
             "Intelligence": "2",
             "Wisdom": "2",
             "Charisma": "2"
@@ -1944,13 +1944,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Orcs are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Orcs have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -1987,16 +1987,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 1 in.",
-                "Base Weight": "160 lbs.",
+                "baseHeight": "5 ft. 1 in.",
+                "baseWeight": "160 lbs.",
                 "Modifier": "2d12",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 9 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 9 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d12",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -2014,8 +2014,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Oreads are strong, solid, stable, and stoic.",
-            "Strength": "+2",
-            "Wisdom": "+2",
+            "Strength": "2",
+            "Wisdom": "2",
             "Charisma": "2"
         },
         "Native Outsider": {
@@ -2027,13 +2027,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Oreads are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Oreads have a base speed of 20 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2070,16 +2070,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 0 in.",
-                "Base Weight": "150 lbs.",
+                "baseHeight": "4 ft. 0 in.",
+                "baseWeight": "150 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "3 ft. 9 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "3 ft. 9 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -2097,8 +2097,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Ratfolk are agile and clever, yet physically weak.",
-            "Dexterity": "+2",
-            "Intelligence": "+2",
+            "Dexterity": "2",
+            "Intelligence": "2",
             "Strength": "2"
         },
         "Ratfolk": {
@@ -2110,13 +2110,13 @@
             "name": "Small",
             "type": "Racial Trait",
             "description": "Ratfolk are Small and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty on combat maneuver checks and to their CMD, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Ratfolk have a base speed of 20 feet.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2153,16 +2153,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 7 in.",
-                "Base Weight": "65 lbs.",
+                "baseHeight": "3 ft. 7 in.",
+                "baseWeight": "65 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             },
             "female": {
-                "Base Height": "3 ft. 4 in.",
-                "Base Weight": "50 lbs.",
+                "baseHeight": "3 ft. 4 in.",
+                "baseWeight": "50 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             }
         },
         "agingEffects": {
@@ -2180,8 +2180,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Sylphs are quick and insightful, but slight and delicate.",
-            "Dexterity": "+2",
-            "Intelligence": "+2",
+            "Dexterity": "2",
+            "Intelligence": "2",
             "Constitution": "2"
         },
         "Native Outsider": {
@@ -2193,13 +2193,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Sylphs are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Sylphs have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2236,16 +2236,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 0 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "5 ft. 0 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2263,8 +2263,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Tengus are fast and observant, but relatively fragile and delicate.",
-            "Dexterity": "+2",
-            "Wisdom": "+2",
+            "Dexterity": "2",
+            "Wisdom": "2",
             "Constitution": "2"
         },
         "Tengu": {
@@ -2276,13 +2276,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Tengus are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Tengus have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Senses": {
             "name": "Senses",
@@ -2324,16 +2324,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 0 in.",
-                "Base Weight": "65 lbs.",
+                "baseHeight": "4 ft. 0 in.",
+                "baseWeight": "65 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             },
             "female": {
-                "Base Height": "3 ft. 10 in.",
-                "Base Weight": "55 lbs.",
+                "baseHeight": "3 ft. 10 in.",
+                "baseWeight": "55 lbs.",
                 "Modifier": "2d6",
-                "Weight Modifier": "3 lbs."
+                "weightModifier": "3 lbs."
             }
         },
         "agingEffects": {
@@ -2351,8 +2351,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Tieflings are quick in body and mind, but are inherently strange and unnerving.",
-            "Dexterity": "+2",
-            "Intelligence": "+2",
+            "Dexterity": "2",
+            "Intelligence": "2",
             "Charisma": "2"
         },
         "Native Outsider": {
@@ -2364,13 +2364,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Tieflings are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Tieflings have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2412,16 +2412,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2439,8 +2439,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Undines are both perceptive and agile, but tend to adapt rather than match force with force.",
-            "Dexterity": "+2",
-            "Wisdom": "+2",
+            "Dexterity": "2",
+            "Wisdom": "2",
             "Strength": "2"
         },
         "Native Outsider": {
@@ -2452,13 +2452,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Undines are Medium creatures and receive no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Undines have a base speed of 30 feet on land. They also have a swim speed of 30 feet, can move in water without making Swim checks, and always treat Swim as a class skill.",
-            "Speed": "30",
+            "baseSpeed": "30",
             "Swim": "30"
         },
         "Darkvision": {
@@ -2496,16 +2496,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2523,15 +2523,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Changelings are frail, but are clever and comely.",
-            "Wisdom": "+2",
-            "Charisma": "+2",
+            "Wisdom": "2",
+            "Charisma": "2",
             "Constitution": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Changelings are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Humanoid": {
             "name": "Humanoid",
@@ -2542,7 +2542,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Changelings have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Hag Racial Trait": {
             "name": "Hag Racial Trait",
@@ -2592,16 +2592,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 2 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 2 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 2 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 2 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2619,15 +2619,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Duergar are hearty and observant, but also belligerent.",
-            "Constitution": "+2",
-            "Wisdom": "+2",
+            "Constitution": "2",
+            "Wisdom": "2",
             "Charisma": "4"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Duergar are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Dwarf": {
             "name": "Dwarf",
@@ -2638,7 +2638,7 @@
             "name": "Slow and Steady",
             "type": "Racial Trait",
             "description": "Duergar have a base speed of 20 feet, but their speed is never modified by armor or encumbrance.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Superior Darkvision": {
             "name": "Superior Darkvision",
@@ -2680,16 +2680,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 9 in.",
-                "Base Weight": "150 lbs.",
+                "baseHeight": "3 ft. 9 in.",
+                "baseWeight": "150 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "3 ft. 7 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "3 ft. 7 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -2707,15 +2707,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Gillmen are vigorous and beautiful, but their domination by the aboleths has made them weak-willed.",
-            "Constitution": "+2",
-            "Charisma": "+2",
+            "Constitution": "2",
+            "Charisma": "2",
             "Wisdom": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Gillmen are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Aquatic": {
             "name": "Aquatic",
@@ -2726,7 +2726,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Gillmen have a base speed of 30 feet on land. As aquatic creatures, they also have a swim speed of 30 feet, can move in water without making Swim checks, and always treat Swim as a class skill.",
-            "Speed": "30",
+            "baseSpeed": "30",
             "Swim": "30"
         },
         "Amphibious": {
@@ -2759,16 +2759,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2786,15 +2786,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Gripplis are nimble and alert, but spindly.",
-            "Dexterity": "+2",
-            "Wisdom": "+2",
+            "Dexterity": "2",
+            "Wisdom": "2",
             "Strength": "2"
         },
         "Small": {
             "name": "Small",
             "type": "Racial Trait",
             "description": "Gripplis are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty to their CMB and CMD, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Grippli": {
             "name": "Grippli",
@@ -2805,7 +2805,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Gripplis have a base speed of 30 feet and a climb speed of 20 feet.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -2842,16 +2842,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "1 ft. 7 in.",
-                "Base Weight": "25 lbs.",
+                "baseHeight": "1 ft. 7 in.",
+                "baseWeight": "25 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "1 ft. 5 in.",
-                "Base Weight": "20 lbs.",
+                "baseHeight": "1 ft. 5 in.",
+                "baseWeight": "20 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -2869,15 +2869,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Kitsune are agile and companionable, but tend to be physically weak.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Strength": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Kitsune are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Kitsune": {
             "name": "Kitsune",
@@ -2888,7 +2888,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Kitsune have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision (Ex)": {
             "type": "Racial Trait",
@@ -2929,16 +2929,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "100 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "100 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -2956,21 +2956,21 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Merfolk are graceful, hale, and beautiful.",
-            "Dexterity": "+2",
-            "Constitution": "+2",
-            "Charisma": "+2"
+            "Dexterity": "2",
+            "Constitution": "2",
+            "Charisma": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Merfolk are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Merfolk have a base speed of 5 feet. They have a swim speed of 50 feet.",
-            "Speed": "5 feet",
+            "baseSpeed": "5 feet",
             "Swim": "50"
         },
         "Aquatic": {
@@ -3013,16 +3013,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 10 in.",
-                "Base Weight": "145 lbs.",
+                "baseHeight": "5 ft. 10 in.",
+                "baseWeight": "145 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 8 in.",
-                "Base Weight": "135 lbs.",
+                "baseHeight": "5 ft. 8 in.",
+                "baseWeight": "135 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3040,15 +3040,15 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Nagaji are strong and have forceful personalities, but tend to ignore logic and mock scholastic pursuits.",
-            "Strength": "+2",
-            "Charisma": "+2",
+            "Strength": "2",
+            "Charisma": "2",
             "Intelligence": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Nagaji are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Reptilian": {
             "name": "Reptilian",
@@ -3059,7 +3059,7 @@
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Nagaji have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3096,16 +3096,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 9 in.",
-                "Base Weight": "180 lbs.",
+                "baseHeight": "5 ft. 9 in.",
+                "baseWeight": "180 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 6 in.",
-                "Base Weight": "160 lbs.",
+                "baseHeight": "5 ft. 6 in.",
+                "baseWeight": "160 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "7 lbs."
+                "weightModifier": "7 lbs."
             }
         },
         "agingEffects": {
@@ -3123,21 +3123,21 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Samsarans are insightful and strong-minded, but their bodies tend to be frail.",
-            "Intelligence": "+2",
-            "Wisdom": "+2",
+            "Intelligence": "2",
+            "Wisdom": "2",
             "Constitution": "2"
         },
         "Medium": {
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Samsarans are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Samsarans have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision (Ex)": {
             "name": "Low-Light Vision (Ex)",
@@ -3174,16 +3174,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 6 in.",
-                "Base Weight": "110 lbs.",
+                "baseHeight": "5 ft. 6 in.",
+                "baseWeight": "110 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3201,7 +3201,7 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Strix are swift and elusive, but tend to be stubborn and swift to anger.",
-            "Dexterity": "+2",
+            "Dexterity": "2",
             "Charisma": "-2"
         },
         "Strix": {
@@ -3213,13 +3213,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Strix are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Strix have a base speed of 30 feet on land. They also have a fly speed of 60 feet (average).",
-            "Speed": "30",
+            "baseSpeed": "30",
             "Fly": "60"
         },
         "Low-Light Vision": {
@@ -3262,16 +3262,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 4 in.",
-                "Base Weight": "125 lbs.",
+                "baseHeight": "5 ft. 4 in.",
+                "baseWeight": "125 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 2 in.",
-                "Base Weight": "115 lbs.",
+                "baseHeight": "5 ft. 2 in.",
+                "baseWeight": "115 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3289,8 +3289,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Sulis are brawny and charming, but slow-witted.",
-            "Strength": "+2",
-            "Charisma": "+2",
+            "Strength": "2",
+            "Charisma": "2",
             "Intelligence": "2"
         },
         "Native Outsider": {
@@ -3302,13 +3302,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Sulis are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Sulis have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3345,16 +3345,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 10 in.",
-                "Base Weight": "120 lbs.",
+                "baseHeight": "4 ft. 10 in.",
+                "baseWeight": "120 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 5 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "4 ft. 5 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d10",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3373,8 +3373,8 @@
             "type": "Racial Trait",
             "description": "Svirfneblin are fast and observant but relatively weak and emotionally distant.",
             "Strength": "2",
-            "Dexterity": "+2",
-            "Wisdom": "+2",
+            "Dexterity": "2",
+            "Wisdom": "2",
             "Charisma": "4"
         },
         "Gnome": {
@@ -3386,7 +3386,7 @@
             "name": "Small",
             "type": "Racial Trait",
             "description": "Svirfneblin are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty to their CMB and CMD, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Defensive Training": {
             "name": "Defensive Training",
@@ -3443,16 +3443,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 0 in.",
-                "Base Weight": "35 lbs.",
+                "baseHeight": "3 ft. 0 in.",
+                "baseWeight": "35 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 10 in.",
-                "Base Weight": "30 lbs.",
+                "baseHeight": "2 ft. 10 in.",
+                "baseWeight": "30 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {
@@ -3470,8 +3470,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Vanaras are agile and insightful, but are also rather mischievous.",
-            "Dexterity": "+2",
-            "Wisdom": "+2",
+            "Dexterity": "2",
+            "Wisdom": "2",
             "Charisma": "2"
         },
         "Vanara": {
@@ -3483,13 +3483,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Vanaras are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Vanaras have a base speed of 30 feet and a Climb speed of 30 feet.",
-            "Speed": "30",
+            "baseSpeed": "30",
             "Climb": "30"
         },
         "Low-Light Vision": {
@@ -3522,16 +3522,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "4 ft. 8 in.",
-                "Base Weight": "105 lbs.",
+                "baseHeight": "4 ft. 8 in.",
+                "baseWeight": "105 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "4 ft. 2 in.",
-                "Base Weight": "90 lbs.",
+                "baseHeight": "4 ft. 2 in.",
+                "baseWeight": "90 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3549,8 +3549,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Vishkanyas are graceful and elegant, but they are often irrational.",
-            "Dexterity": "+2",
-            "Charisma": "+2",
+            "Dexterity": "2",
+            "Charisma": "2",
             "Wisdom": "2"
         },
         "Vishkanya": {
@@ -3562,13 +3562,13 @@
             "name": "Medium",
             "type": "Racial Trait",
             "description": "Vishkanyas are Medium creatures and have no bonuses or penalties due to their size.",
-            "Size": "Medium"
+            "size": "Medium"
         },
         "Normal Speed": {
             "name": "Normal Speed",
             "type": "Racial Trait",
             "description": "Vishkanyas have a base speed of 30 feet.",
-            "Speed": "30"
+            "baseSpeed": "30"
         },
         "Low-Light Vision": {
             "name": "Low-Light Vision",
@@ -3625,16 +3625,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "5 ft. 3 in.",
-                "Base Weight": "85 lbs.",
+                "baseHeight": "5 ft. 3 in.",
+                "baseWeight": "85 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             },
             "female": {
-                "Base Height": "5 ft. 1 in.",
-                "Base Weight": "75 lbs.",
+                "baseHeight": "5 ft. 1 in.",
+                "baseWeight": "75 lbs.",
                 "Modifier": "2d8",
-                "Weight Modifier": "5 lbs."
+                "weightModifier": "5 lbs."
             }
         },
         "agingEffects": {
@@ -3652,8 +3652,8 @@
             "name": "Ability Modifiers",
             "type": "Racial Trait",
             "description": "Wayang are nimble and cagey, but their perception of the world is clouded by shadows.",
-            "Dexterity": "+2",
-            "Intelligence": "+2",
+            "Dexterity": "2",
+            "Intelligence": "2",
             "Wisdom": "2"
         },
         "Wayang": {
@@ -3665,13 +3665,13 @@
             "name": "Small",
             "type": "Racial Trait",
             "description": "Wayangs are Small creatures and gain a +1 size bonus to their AC, a +1 size bonus on attack rolls, a 1 penalty on their CMB and to CMD, and a +4 size bonus on Stealth checks.",
-            "Size": "Small"
+            "size": "Small"
         },
         "Slow Speed": {
             "name": "Slow Speed",
             "type": "Racial Trait",
             "description": "Wayangs have a base speed of 20 feet.",
-            "Speed": "20"
+            "baseSpeed": "20"
         },
         "Darkvision": {
             "name": "Darkvision",
@@ -3719,16 +3719,16 @@
         },
         "HeightWeight": {
             "male": {
-                "Base Height": "3 ft. 0 in.",
-                "Base Weight": "35 lbs.",
+                "baseHeight": "3 ft. 0 in.",
+                "baseWeight": "35 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             },
             "female": {
-                "Base Height": "2 ft. 10 in.",
-                "Base Weight": "30 lbs.",
+                "baseHeight": "2 ft. 10 in.",
+                "baseWeight": "30 lbs.",
                 "Modifier": "2d4",
-                "Weight Modifier": "1 lb."
+                "weightModifier": "1 lb."
             }
         },
         "agingEffects": {

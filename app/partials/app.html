@@ -13,7 +13,7 @@
     </div>
     <div style="float:left;clear:left;">
         <label>Class/Level: </label>
-        <input style="width:400px" type=text disabled value="{{ character.showClassAndLevels() }}">
+        <input style="width:400px" type=text disabled value="{{ character.classes | displayClassAndLevels }}">
     </div>
 </header>
 <section class="btn-group" ng-init="tab=1">
@@ -35,6 +35,7 @@
     <combat-section ng-hide="tab!=6"></combat-section>
     <defence-section ng-hide="tab!=6"></defence-section>
     <personal-details ng-hide="tab!=8"></personal-details>
+    <stat-block ng-hide="tab!=9"></stat-block>
 </main>
 <footer>
     <p class="footer">This character sheet uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This character sheet is not published, endorsed,

@@ -52,18 +52,18 @@
     </div>
     <div>
         <label>Walk Speed:</label>
-        <input type=text value="{{ getMovementSpeed('Walk') }}" disabled>
+        <input type=text value="{{ getMovementSpeed('baseSpeed') | movement }}" disabled>
     </div>
     <div>
         <label>Swim Speed:</label>
-        <input type=text value="{{ getMovementSpeed('Swim') }}" disabled>
+        <input type=text value="{{ getMovementSpeed('Swim') | movement}}" disabled>
     </div>
     <div>
         <label>Fly Speed:</label>
-        <input type=text value="{{ getMovementSpeed('Fly') }}" disabled>
+        <input type=text value="{{ getMovementSpeed('Fly') | movement}}" disabled>
     </div>
     <div>
         <label>Climb Speed:</label>
-        <input type=text value="{{ getMovementSpeed('Climb') }}" disabled>
+        <input type=text value="{{ getMovementSpeed('Climb') | movement}}" disabled>
     </div>
 </aside>

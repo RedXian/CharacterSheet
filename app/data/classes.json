@@ -4,7 +4,7 @@
         "type": "Class",
         "description": "For some, there is only rage. In the ways of their people, in the fury of their passion, in the howl of battle, conflict is all these brutal souls know. Savages, hired muscle, masters of vicious martial techniques, they are not soldiers or professional warriorsthey are the battle possessed, creatures of slaughter and spirits of war. Known as barbarians, these warmongers know little of training, preparation, or the rules of warfare; for them, only the moment exists, with the foes that stand before them and the knowledge that the next moment might hold their death. They possess a sixth sense in regard to danger and the endurance to weather all that might entail. These brutal warriors might rise from all walks of life, both civilized and savage, though whole societies embracing such philosophies roam the wild places of the world. Within barbarians storms the primal spirit of battle, and woe to those who face their rage.",
         "hitDie": "12",
-        "Class Skills": [
+        "classSkills": [
             "Acrobatics", "Climb", "Craft", "Handle Animal", "Intimidate", "Knowledge (nature)", "Perception", "Ride", "Survival", "Swim"
         ],
         "skillsPerLevel": "4",
@@ -129,23 +129,23 @@
         },
         "source": "Core Rulebook",
         "Role": "Barbarians excel in combat, possessing the martial prowess and fortitude to take on foes seemingly far superior to themselves. With rage granting them boldness and daring beyond that of most other warriors, barbarians charge furiously into battle and ruin all who would stand in their way.",
-        "Alignment": [
+        "alignmentRestrictions": [
             "NG", "N", "NE", "CG", "CN", "CE"
         ],
         "Weapon and Armor Proficiency": "A barbarian is proficient with all simple and martial weapons, light armor, medium armor, and shields (except tower shields).",
         "Fast Movement": {
             "description": "A barbarian's land speed is faster than the norm for her race by +10 feet. This benefit applies only when she is wearing no armor, light armor, or medium armor, and not carrying a heavy load. Apply this bonus before modifying the barbarian's speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian's land speed.",
             "type": "Class Feature",
-            "abiltiy Type": "Extraordinary"
+            "abilityType": "Extraordinary"
         },
-        "Age Category": "Intuitive"
+        "ageCategory": "Intuitive"
     },
     "Bard": {
         "name": "Bard",
         "type": "Class",
         "description": "Untold wonders and secrets exist for those skillful enough to discover them. Through cleverness, talent, and magic, these cunning few unravel the wiles of the world, becoming adept in the arts of persuasion, manipulation, and inspiration. Typically masters of one or many forms of artistry, bards possess an uncanny ability to know more than they should and use what they learn to keep themselves and their allies ever one step ahead of danger. Bards are quick-witted and captivating, and their skills might lead them down many paths, be they gamblers or jacks-of-all-trades, scholars or performers, leaders or scoundrels, or even all of the above. For bards, every day brings its own opportunities, adventures, and challenges, and only by bucking the odds, knowing the most, and being the best might they claim the treasures of each.",
         "hitDie": "8",
-        "Class Skills": [
+        "classSkills": [
             "Acrobatics", "Appraise", "Bluff", "Climb", "Craft", "Diplomacy", "Disguise", "Escape Artist", "Intimidate", "Knowledge (all)", "Linguistics", "Perception", "Perform", "Profession", "Sense Motive", "Sleight of Hand", "Spellcraft", "Stealth", "Use Magic Device"
         ],
         "skillsPerLevel": "6",
@@ -326,17 +326,17 @@
             "source": "Advanced Race Guide"
         },
         "source": "Core Rulebook",
-        "Alignment": [
+        "alignmentRestrictions": [
             "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE"
         ],
-        "Age Category": "Self-Taught"
+        "ageCategory": "Self-Taught"
     },
     "Cleric": {
         "name": "Cleric",
         "type": "Class",
         "description": "In faith and the miracles of the divine, many find a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and influence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conflict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.",
         "hitDie": "8",
-        "Class Skills": [
+        "classSkills": [
             "Appraise", "Craft", "Diplomacy", "Heal", "Knowledge (arcana)", "Knowledge (history)", "Knowledge (nobility)", "Knowledge (planes)", "Knowledge (religion)", "Linguistics", "Profession", "Sense Motive"
         ],
         "skillsPerLevel": "2",
@@ -469,14 +469,14 @@
         },
         "source": ["Core Rulebook"],
         "role": "",
-        "Age Category": "Trained"
+        "ageCategory": "Trained"
     },
     "Druid": {
         "name": "Druid",
         "type": "Class",
         "description": "The druid is a worshiper of all things natural—a spellcaster, a friend to animals, and a skilled shapechanger.",
         "hitDie": "8",
-        "Class Skills": [
+        "classSkills": [
             "Climb", "Craft", "Fly", "Handle Animal", "Heal", "Knowledge (geography)", "Knowledge (nature)", "Perception", "Profession", "Ride", "Spellcraft", "Survival", "Swim"
         ],
         "skillsPerLevel": "4",
@@ -704,7 +704,7 @@
         "type": "Class",
         "description": "Brave and stalwart, the fighter is a master of all manner of arms and armor.",
         "hitDie": "10",
-        "Class Skills": [
+        "classSkills": [
             "Climb", "Craft", "Handle Animal", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (engineering)", "Profession", "Ride", "Survival", "Swim"
         ],
         "skillsPerLevel": "2",
@@ -869,7 +869,7 @@
         "type": "Class",
         "description": "A student of martial arts, the monk trains his body to be his greatest weapon and defense.",
         "hitDie": "8",
-        "Class Skills": [
+        "classSkills": [
             "Acrobatics", "Climb", "Craft", "Escape Artist", "Intimidate", "Knowledge (history)", "Knowledge (religion)", "Perception", "Perform", "Profession", "Ride", "Sense Motive", "Stealth", "Swim"
         ],
         "skillsPerLevel": "4",
@@ -1054,7 +1054,7 @@
         "type": "Class",
         "description": "The paladin is the knight in shining armor, a devoted follower of law and good.",
         "hitDie": "10",
-        "Class Skills": [
+        "classSkills": [
             "Craft", "Diplomacy", "Handle Animal", "Heal", "Knowledge (nobility)", "Knowledge (religion)", "Profession", "Ride", "Sense Motive", "Spellcraft"
         ],
         "skillsPerLevel": "2",
@@ -1205,7 +1205,7 @@
         "type": "Class",
         "description": "A tracker and hunter, the ranger is a creature of the wild and of tracking down his favored foes.",
         "hitDie": "10",
-        "Class Skills": [
+        "classSkills": [
             "Climb", "Craft", "Handle Animal", "Heal", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (geography)", "Knowledge (nature)", "Perception", "Profession", "Ride", "Spellcraft", "Stealth", "Survival", "Swim"
         ],
         "skillsPerLevel": "6",
@@ -1366,7 +1366,7 @@
         "type": "Class",
         "description": "The rogue is a thief and a scout, an opportunist capable of delivering brutal strikes against unwary foes.",
         "hitDie": "8",
-        "Class Skills": [
+        "classSkills": [
             "Acrobatics", "Appraise", "Bluff", "Climb", "Craft", "Diplomacy", "Disable Device", "Disguise", "Escape Artist", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (local)", "Linguistics", "Perception", "Perform", "Profession", "Sense Motive", "Sleight of Hand", "Stealth", "Swim", "Use Magic Device"
         ],
         "skillsPerLevel": "8",
@@ -1566,7 +1566,7 @@
         "type": "Class",
         "description": "The spellcasting sorcerer is born with an innate knack for magic and has strange, eldritch powers.",
         "hitDie": "6",
-        "Class Skills": [
+        "classSkills": [
             "Appraise", "Bluff", "Craft", "Fly", "Intimidate", "Knowledge (arcana)", "Profession", "Spellcraft", "Use Magic Device"
         ],
         "skillsPerLevel": "2",
@@ -1892,7 +1892,7 @@
         "type": "Class",
         "description": "The wizard masters magic through constant study that gives him incredible magical power.",
         "hitDie": "6",
-        "Class Skills": [
+        "classSkills": [
             "Appraise", "Craft", "Fly", "Knowledge (all)", "Linguistics", "Profession", "Spellcraft"
         ],
         "skillsPerLevel": "2",

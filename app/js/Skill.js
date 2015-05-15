@@ -129,8 +129,8 @@ angular.module("characterSheet.skills", [])
             var classList = $scope.character.classes;
 
             for (var key in classList) {
-                if (classList[key]["Class Skills"]) {
-                    var classSkills = classList[key]["Class Skills"];
+                if (classList[key].classSkills) {
+                    var classSkills = classList[key].classSkills;
                     if (category) {
                         if (classSkills.indexOf(skill + " (all)") > -1 || classSkills.indexOf(category) > -1 || classSkills.indexOf(skill) > -1) {
                             return true;

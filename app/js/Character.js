@@ -148,15 +148,6 @@ angular.module("characterSheet.character", [])
                 }
                 return totalLevels;
             },
-
-            showClassAndLevels: function() {
-                var classAndLevels = [];
-                for (var key in character.classes) {
-                    classAndLevels.push(character.classes[key].name + " " + character.classes[key].level);
-                };
-
-                return !classAndLevels === null ? 'none' : classAndLevels.join(' / ');
-            },
             getAgingEffect: function() {
                 var ageGroup = "Adulthood";
                 if (character.race) {
