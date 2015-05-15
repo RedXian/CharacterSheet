@@ -1,0 +1,7 @@
+<p class="stat-block-1">
+    <b>AC</b> {{armor.armorClass()}}, touch {{armor.touchAC()}}, flat-footed {{armor.flatFooted()}}
+    <span ng-repeat="armor in armor.bonuses | filter:{value:'!0'}">
+        <span ng-if="$first"> (</span>{{ armor.value | signedNumber }}{{" " + armor.name }}
+        <span ng-if="!$last">,</span>
+        <span ng-if="$last">)</span>
+    </span>; never surprised or flat-footed</p>

@@ -1,0 +1,17 @@
+<aside class="stat-block">
+  <div>
+    <p class="stat-block-title">{{ character.name }}
+        <span class="stat-block-cr">CR{{ 0 }}</span>
+    </p>
+    <p class="stat-block-1"><b>XP</b> {{ character.experience }}</p>
+    <div ng-repeat="class in character.classes">
+        <p class="stat-block-1"><b><span ng-show="$first">{{ character.race.name }}</span> {{ class.name }}</b> {{ class.level }}</p>
+    </div>
+    <p class="stat-block-1">{{ character.alignment }} {{ character.race.size }} {{ character.race.subType }}</p>
+    <p class="stat-block-1"><b>Init</b> {{ character.initiative | signedNumber }}; <b>Senses</b> Perception {{ character.skills.Perception.bonus | signedNumber }}</p>
+    <p class="stat-block-1"><b>Aura</b> </p>
+  </div>
+  <stat-block-defence></stat-block-defence>
+  <stat-block-offence></stat-block-offence>
+  <stat-block-statistics></stat-block-statistics>
+</aside>

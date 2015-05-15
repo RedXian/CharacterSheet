@@ -1,234 +1,190 @@
 @CHARSET"ISO-8859-1";
 @import url(fonts.googleapis.com/css?family=Lato:400, 700, 400italic, 700italic|PT+Serif:400, 700, 400italic, 700italic);
 body {
-    font-size: 14px;
-    font-family: 'Lato', sans;
-    background: #fffdf8 url('http://paizo.com/pathfinderRPG/prd/include/bg-new.png') top left no-repeat;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-size: 14px;
+  font-family: 'Lato', sans;
+  background: #fffdf8 url('http://paizo.com/pathfinderRPG/prd/include/bg-new.png') top left no-repeat;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
 p {
-    font-family: 'Lato', sans;
-    line-height: 1.4em;
-    margin: 15px 0;
+  font-family: 'Lato', sans;
+  line-height: 1.4em;
+  margin: 15px 0;
 }
-
 input {
-    border-radius: 5px;
+  border-radius: 5px;
 }
-
-h1,
-h2,
-h3 {
-    text-transform: uppercase;
-    font: normal 32px 'PT Serif', serif;
-    margin: 30px 0 0 0;
+h1, h2, h3 {
+  text-transform: uppercase;
+  font: normal 32px 'PT Serif', serif;
+  margin: 30px 0 0 0;
 }
-
-h1,
-h2 {
-    text-transform: uppercase;
+h1, h2 {
+  text-transform: uppercase;
 }
-
 div {
-    vertical-align: top;
+  vertical-align: top;
 }
-
-h1 + p,
-h2 + p,
-h3 + p {
-    margin: 5px 0 10px 0;
+h1 + p, h2 + p, h3 + p {
+  margin: 5px 0 10px 0;
 }
-
 hr {
-    margin: 5px auto;
-    border: 0;
-    border-top: 1px solid #bbb;
+  margin: 5px auto;
+  border: 0;
+  border-top: 1px solid #bbb;
 }
-
-input[type=text],
-input[type=number],
-select,
-label {
-    font-family: 'Lato', sans;
+input[type=text], input[type=number], select, label {
+  font-family: 'Lato', sans;
 }
-
 main {
-    width: 100%;
-    height: 780px;
-    overflow: scroll;
+  width: 100%;
+  height: 780px;
+  overflow: scroll;
 }
-
 footer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
-
 .footer {
-    font-size: smaller;
-    font-weight: normal;
-    padding: 0;
-    margin: 0;
-    width: 800px;
+  font-size: smaller;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  width: 800px;
 }
-
 sup {
-    line-height: 0;
+  line-height: 0;
 }
-
-label,
-p {
-    font-weight: bold;
-    width: 200px;
-    bottom: 100%;
-    left: 0;
+label, p {
+  font-weight: bold;
+  width: 200px;
+  bottom: 100%;
+  left: 0;
 }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
 }
-
-input[type=number]:disabled::-webkit-inner-spin-button,
-input[type=number]:disabled::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type=number]:disabled::-webkit-inner-spin-button, input[type=number]:disabled::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
 section {
-    float: left;
-    clear: left;
-    margin: 10px;
+  float: left;
+  clear: left;
+  margin: 10px;
 }
-
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 input:disabled:not(.result) {
-    outline: none;
-    border: none;
-    text-align: center;
-    background: none;
-    width: 35px;
-    border-bottom: 1px solid black;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: none;
+  width: 35px;
+  border-bottom: 1px solid black;
 }
-
 input[type=text]:not(.result) {
-    outline: none;
-    border: none;
-    background: none;
-    border-bottom: 1px solid black;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
 }
-
-input[type=text],
-input[type=number] {
-    width: 40px;
-    text-align: center;
+input[type=text], input[type=number] {
+  width: 40px;
+  text-align: center;
 }
-
 .calculation * {
-    display: inline-table;
-    text-align: center;
+  display: inline-table;
+  text-align: center;
 }
-
 .calculation label {
-    display: block;
-    text-transform: uppercase;
-    font-size: 8px;
-    width: auto;
-    text-align: top;
-    top: 100%;
-    max-width: 44px;
+  display: block;
+  text-transform: uppercase;
+  font-size: 8px;
+  width: auto;
+  text-align: top;
+  top: 100%;
+  max-width: 44px;
 }
-
 .skill * {
-    display: inline-table;
-    text-align: initial;
+  display: inline-table;
+  text-align: initial;
 }
-
 .skill p {
-    display: inline-block;
-    font-size: 12px;
-    font-weight: normal;
-    width: 151px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  width: 151px;
 }
-
 .header label, .personal label {
-    border-radius: 0;
-    width: auto;
+  border-radius: 0;
+  width: auto;
 }
-
 .header input, .personal input, .personal input:disabled {
-    text-align: left;
-    border-radius: 0;
-    width: 200px;
+  text-align: left;
+  border-radius: 0;
+  width: 200px;
 }
-
 /* Stat Blocks */
+
 .monster-header {
-	font: normal 36px 'PT Serif', serif;
-	font-variant: small-caps;
-	font-weight: 600;
-	margin: 20px 0 10px 0;
+  font: normal 36px 'PT Serif', serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
 }
-
 .stat-block-title, .stat-block-breaker {
-	font: normal 16px 'Lato', sans-serif;
-	text-transform: uppercase;
+  font: normal 16px 'Lato', sans-serif;
+  text-transform: uppercase;
 }
-
 .stat-block-title {
-	font-weight: bold;
-	letter-spacing: 1px;
-	background-color: black;
-	color: white;
-	margin: 25px 0 5px 0;
-	padding: 2px 0 2px 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  margin: 25px 0 5px 0;
+  padding: 2px 0 2px 5px;
 }
-
 .stat-block-breaker {
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	margin: 8px 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 8px 0;
 }
-
 .flavor-text {
-	font-style: italic;
+  font-style: italic;
 }
-
+.stat-block * {
+  width: 100%;
+}
 .stat-block, .stat-block-1, .stat-block-2 {
-	font: normal 13px 'Lato', sans-serif;
-	line-height: 1.5em;
-	margin: 5px 0;
-    width: 100%;
+  font: normal 13px 'Lato', sans-serif;
+  line-height: 1.5em;
+  margin: 5px 0;
+  width: 100%;
 }
-
 .stat-block-2 {
-	text-indent: 25px;
+  text-indent: 25px;
 }
-
 .stat-block-xp {
-	font: normal 14px 'Lato', sans-serif;
-	font-weight: bold;
-	margin: 0;
+  font: normal 14px 'Lato', sans-serif;
+  font-weight: bold;
+  margin: 0;
 }
-
 .stat-block-cr {
-	float: right;
-	padding: 0 5px 0 0;
+  float: right;
+  padding: 0 5px 0 0;
 }
-
 .stat-block-rp {
-	padding: 0 0 0 10px;
-	font-weight: bold;
-	font-style: italic;
+  padding: 0 0 0 10px;
+  font-weight: bold;
+  font-style: italic;
 }

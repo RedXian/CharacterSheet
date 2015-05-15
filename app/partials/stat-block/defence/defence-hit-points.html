@@ -1,0 +1,6 @@
+<p class="stat-block-1">
+    <b>hp</b> {{ 0 }} (
+    <span ng-repeat="class in character.classes">
+        <span ng-hide="$first">+</span>{{class.level}}d{{class.hitDie}}
+        <span ng-show="$last">+{{ parseInt(character.level()) * character.abilities.Constitition.modifier }}</span>
+    </span>)</p>
