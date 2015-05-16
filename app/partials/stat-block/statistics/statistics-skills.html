@@ -1,0 +1,6 @@
+<p class="stat-block-1">
+    <b>Skills </b>
+    <span ng-repeat="skill in skills" ng-if="character.skills[skill.name].ranks"><a href="/pathfinderRPG/prd/skills/{{skill.name}}.html#{{skill.name}}">{{skill.name}}</a> {{ character.skills[skill.name].bonus || signedNumber }}
+        <span ng-hide="$last">,</span>
+    </span>
+</p>

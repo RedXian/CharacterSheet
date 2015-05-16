@@ -1,24 +1,5 @@
-<div>
-    <p class="stat-block-breaker">Defense</p>
-    <defence-armor-class>
-        <p class="stat-block-1"><b>AC</b> {{armor.armorClass()}}, touch {{armor.touchAC()}}, flat-footed {{armor.flatFooted()}}
-            <span ng-repeat="armor in armor.bonuses | filter:{value:'!0'}">
-                <span ng-if="$first"> (</span>{{ armor.value | signedNumber }}{{" " + armor.name }}
-                <span ng-if="!$last">,</span>
-                <span ng-if="$last">)</span>
-            </span>; never surprised or flat-footed</p>
-    </defence-armor-class>
-    <defence-hit-points>
-        <p class="stat-block-1"><b>hp</b> {{ 0 }} (
-            <span ng-repeat="class in character.classes">
-                <span ng-hide="$first">+</span>{{class.level}}d{{class.hitDie}}
-                <span ng-show="$last">+{{ parseInt(character.level()) * character.abilities.Constitition.modifier }}</span>
-            </span>)</p>
-    </defence-hit-points>
-    <defence-saving-throws>
-        <p class="stat-block-1"><b>Fort </b> 0,<b> Ref </b> 0 ,<b> Will </b> 0 ; vs. <b></b></p>
-    </defence-saving-throws>
-    <defence-defensive-abilities>
-        <p class="stat-block-1"><b>Defensive Abilities</b> ; <b>DR</b> X (X points); <b>Immune</b> </p>
-    </defence-defensive-abilities>
-</div>
+<p class="stat-block-breaker">Defense</p>
+<defence-armor-class></defence-armor-class>
+<defence-hit-points></defence-hit-points>
+<defence-saving-throws></defence-saving-throws>
+<defence-defensive-abilities></defence-defensive-abilities>

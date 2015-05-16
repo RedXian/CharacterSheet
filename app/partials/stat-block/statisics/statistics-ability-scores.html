@@ -1,7 +1,0 @@
-<statistics-ability-scores>
-    <p class="stat-block-1">
-        <span ng-repeat="ability in abilities"><b>{{ability.name | limitTo:3}}</b> {{ character.abilities[ability.name].adjustedScore}}
-            <span ng-hide="$last">,</span>
-        </span>
-    </p>
-</statistics-ability-scores>

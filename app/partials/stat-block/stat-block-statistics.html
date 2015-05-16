@@ -1,39 +1,8 @@
-<div>
-    <p class="stat-block-breaker">Statistics</p>
-    <statistics-ability-scores>
-        <p class="stat-block-1">
-            <span ng-repeat="ability in abilities"><b>{{ability.name | limitTo:3}}</b> {{ character.abilities[ability.name].adjustedScore}}
-                <span ng-hide="$last">,</span>
-            </span>
-        </p>
-    </statistics-ability-scores>
-    <statistics-base-attack>
-        <p class="stat-block-1"><b>Base Atk</b> +16; <b>CMB</b> +19; <b>CMD</b> 34</p>
-    </statistics-base-attack>
-    <statistics-feats>
-        <p class="stat-block-1" ng-show="character.traits | filter:{type:'Trait'}:false"><b>Feats </b>
-            <span ng-repeat="trait in character.traits | filter:{type:'Trait'}:false">{{ trait.name }}
-                <span ng-hide="$last">,</span>
-            </span>
-        </p>
-    </statistics-feats>
-    <statistics-skills>
-        <p class="stat-block-1"><b>Skills </b>
-            <span ng-repeat="skill in skills" ng-if="character.skills[skill.name].ranks"><a href="/pathfinderRPG/prd/skills/{{skill.name}}.html#{{skill.name}}">{{skill.name}}</a> {{ character.skills[skill.name].bonus || signedNumber }}
-                <span ng-hide="$last">,</span>
-            </span>
-        </p>
-    </statistics-skills>
-    <statistics-languages>
-        <p class="stat-block-1"><b>Languages</b> Abyssal, Common, Draconic, Dwarven, Elven, Giant, Goblin, Ignan, Infernal</p>
-    </statistics-languages>
-    <statistics-special-qualities>
-        <p class="stat-block-1"><b>SQ</b> arcane bond (<i>+2 longsword</i>), diverse training</p>
-    </statistics-special-qualities>
-    <statistics-gear>
-        <p class="stat-block-1"><b>Combat Gear</b> <i>wand of <a href="/pathfinderRPG/prd/spells/invisibility.html#invisibility-greater" >greater invisibility</a></i> (15 charges), <i>wand of <a href="/pathfinderRPG/prd/spells/seeInvisibility.html#see-invisibility" >see invisibility</a></i>            (10 charges); <b>Other Gear</b> <i>+5 moderate <a href="/pathfinderRPG/prd/magicItems/armor.html#armor-fortification" >fortification</a> mithral full plate</i>, <i>+3 longsword</i>, <i><a href="/pathfinderRPG/prd/magicItems/wondrousItems.html#amulet-of-natural-armor" >amulet of natural armor</a> +5</i>,
-            <i><a href="/pathfinderRPG/prd/magicItems/wondrousItems.html#belt-of-physical-might" >belt of physical might</a> +4 </i>(Str, Con), <i><a href="/pathfinderRPG/prd/magicItems/wondrousItems.html#cloak-of-resistance" >cloak of resistance</a> +3</i>,
-            <i><a href="/pathfinderRPG/prd/magicItems/wondrousItems.html#headband-of-vast-intelligence" >headband of vast intelligence</a> +6</i>, <i><a href="/pathfinderRPG/prd/magicItems/rings.html#ring-of-protection" >ring of protection</a> +4</i>,
-            granite and diamond dust (worth 500 gp), iron sheet and gold dust (worth 50 gp), 3,585 gp</p>
-    </statistics-gear>
-</div>
+<p class="stat-block-breaker">Statistics</p>
+<statistics-ability-scores></statistics-ability-scores>
+<statistics-base-attack></statistics-base-attack>
+<statistics-feats></statistics-feats>
+<statistics-skills></statistics-skills>
+<statistics-languages></statistics-languages>
+<statistics-special-qualities></statistics-special-qualities>
+<statistics-gear></statistics-gear>

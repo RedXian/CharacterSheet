@@ -1,48 +1,8 @@
-<div>
-    <p class="stat-block-breaker">Offense</p>
-    <offence-speed>
-        <p class="stat-block-1"><b>Speed</b> {{ character.speed }} ft.</p>
-    </offence-speed>
-    <offence-melee>
-        <p class="stat-block-1"><b>Melee</b><i>+1 <a href="/pathfinderRPG/prd/magicItems/weapons.html#weapons-holy" >holy</a> lance</i> +24/+19/+14/+9 (1d8+7/19–20/×3) or</p>
-        <p class="stat-block-2"><i>+1 heavy mace</i> +23/+18/+13/+8 (1d8+7)</p>
-    </offence-melee>
-    <offence-ranged>
-        <p class="stat-block-1"><b>Ranged</b> mwk light crossbow +5 (1d8/19–20)</p>
-    </offence-ranged>
-    <offence-special-attacks>
-        <p class="stat-block-1"><b>Special Attacks</b> intense spells (+4 damage), spell critical</p>
-    </offence-special-attacks>
-    <offence-spell-like-abilities>
-        <p class="stat-block-1"><b>Evoker Spell-Like Abilities</b> (CL 17th; concentration +25)</p>
-        <p class="stat-block-2">At will&mdash;elemental wall (8 rounds/day)</p>
-        <p class="stat-block-2">11/day&mdash;force missile (1d4+4)</p>
-    </offence-spell-like-abilities>
-    <offence-spells-prepared ng-repeat="class in character.classes">
-        <p class="stat-block-1"><b>Evoker Spells Prepared</b> (CL 17th; concentration +25, arcane spell failure 25%)</p>
-        <spell-levels ng-repeat="level in class.spellsPrepared">
-            <p class="stat-block-2">9th&mdash;<i><a href="/pathfinderRPG/prd/spells/meteorSwarm.html#meteor-swarm" >meteor swarm</a></i>, <i><a href="/pathfinderRPG/prd/spells/timeStop.html#time-stop" >time stop</a></i></p>
-            <p class="stat-block-2">8th&mdash;<i><a href="/pathfinderRPG/prd/spells/charmMonster.html#charm-monster-mass" >mass charm monster</a></i> (DC 26), <i><a href="/pathfinderRPG/prd/spells/mindBlank.html#mind-blank" >mind blank</a></i>, quickened<i> <a href="/pathfinderRPG/prd/spells/phantasmalKiller.html#phantasmal-killer" >phantasmal killer</a>, <a href="/pathfinderRPG/prd/spells/polarRay.html#polar-ray" >polar ray</a></i></p>
-            <p class="stat-block-2">7th&mdash;<i><a href="/pathfinderRPG/prd/spells/banishment.html#banishment" >banishment</a></i> (DC 25), quickened<i> <a href="/pathfinderRPG/prd/spells/fireball.html#fireball" >fireball</a> </i>(2), <i><a href="/pathfinderRPG/prd/spells/holdPerson.html#hold-person-mass" >mass hold person</a></i>                (DC 25), <i><a href="/pathfinderRPG/prd/spells/reverseGravity.html#reverse-gravity" >reverse gravity</a></i></p>
-            <p class="stat-block-2">6th&mdash;<i><a href="/pathfinderRPG/prd/spells/chainLightning.html#chain-lightning" >chain lightning</a></i> (DC 24), <i><a href="/pathfinderRPG/prd/spells/disintegrate.html#disintegrate" >disintegrate</a></i> (DC 24), quickened<i> <a href="/pathfinderRPG/prd/spells/glitterdust.html#glitterdust" >glitterdust</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/dispelMagic.html#dispel-magic-greater" >greater dispel magic</a></i>, stilled<i> <a href="/pathfinderRPG/prd/spells/teleport.html#teleport" >teleport</a></i>, <i><a href="/pathfinderRPG/prd/spells/wallOfIron.html#wall-of-iron" >wall of iron</a></i></p>
-            <p class="stat-block-2">5th&mdash;<i><a href="/pathfinderRPG/prd/spells/cloudkill.html#cloudkill" >cloudkill</a> </i>(DC 23), stilled<i> <a href="/pathfinderRPG/prd/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>, <i><a href="/pathfinderRPG/prd/spells/interposingHand.html#interposing-hand" >interposing hand</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/teleport.html#teleport" >teleport</a></i>, <i><a href="/pathfinderRPG/prd/spells/wallOfForce.html#wall-of-force" >wall of force</a> </i>(2)</p>
-            <p class="stat-block-2">4th&mdash;<i><a href="/pathfinderRPG/prd/spells/beastShape.html#beast-shape-ii" >beast shape II</a></i>, <i><a href="/pathfinderRPG/prd/spells/confusion.html#confusion" >confusion</a></i> (DC 22), <i><a href="/pathfinderRPG/prd/spells/dimensionDoor.html#dimension-door" >dimension door</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/fireShield.html#fire-shield" >fire shield</a></i>, stilled<i> <a href="/pathfinderRPG/prd/spells/fireball.html#fireball" >fireball</a></i>, <i><a href="/pathfinderRPG/prd/spells/stoneskin.html#stoneskin" >stoneskin</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/wallOfIce.html#wall-of-ice" >wall of ice</a></i> (DC 22)</p>
-            <p class="stat-block-2">3rd&mdash;<i><a href="/pathfinderRPG/prd/spells/dispelMagic.html#dispel-magic" >dispel magic</a></i> (2), <i><a href="/pathfinderRPG/prd/spells/fireball.html#fireball" >fireball</a></i> (2, DC 21), <i><a href="/pathfinderRPG/prd/spells/fly.html" >fly</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/lightningBolt.html#lightning-bolt" >lightning bolt</a></i> (2, DC 21)</p>
-            <p class="stat-block-2">2nd&mdash;<i><a href="/pathfinderRPG/prd/spells/acidArrow.html#acid-arrow" >acid arrow</a></i> (2), <i><a href="/pathfinderRPG/prd/spells/darkvision.html#darkvision" >darkvision</a></i>, <i><a href="/pathfinderRPG/prd/spells/invisibility.html#invisibility" >invisibility</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/mirrorImage.html#mirror-image" >mirror image</a></i>, <i><a href="/pathfinderRPG/prd/spells/scorchingRay.html#scorching-ray" >scorching ray</a></i>, <i><a href="/pathfinderRPG/prd/spells/web.html#web" >web</a></i>                (DC 20)</p>
-            <p class="stat-block-2">1st&mdash;<i><a href="/pathfinderRPG/prd/spells/featherFall.html#feather-fall" >feather fall</a></i>, <i><a href="/pathfinderRPG/prd/spells/magicMissile.html#magic-missile" >magic missile</a></i> (4), <i><a href="/pathfinderRPG/prd/spells/mount.html#mount" >mount</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/shield.html#shield" >shield</a></i></p>
-            <p class="stat-block-2">0 (at will)&mdash;<i><a href="/pathfinderRPG/prd/spells/detectMagic.html#detect-magic" >detect magic</a></i>, <i><a href="/pathfinderRPG/prd/spells/light.html#light" >light</a></i>, <i><a href="/pathfinderRPG/prd/spells/mageHand.html#mage-hand" >mage hand</a></i>,
-                <i><a href="/pathfinderRPG/prd/spells/message.html#message" >message</a></i></p>
-        </spell-levels>
-    </offence-spells-prepared>
-</div>
-<offence-opposition-schools>
-    <p class="stat-block-2"><b>Opposition Schools</b> divination, necromancy</p>
-</offence-opposition-schools>
-</div>
+<p class="stat-block-breaker">Offense</p>
+<offence-speed></offence-speed>
+<offence-melee></offence-melee>
+<offence-ranged></offence-ranged>
+<offence-special-attacks></offence-special-attacks>
+<offence-spell-like-abilities></offence-spell-like-abilities>
+<offence-spells-prepared ng-repeat="class in character.classes"></offence-spells-prepared>
+<offence-opposition-schools></offence-opposition-schools>

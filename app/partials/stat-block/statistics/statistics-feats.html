@@ -1,0 +1,6 @@
+<p class="stat-block-1" ng-show="character.traits | filter:{type:'Trait'}:false">
+    <b>Feats </b>
+    <span ng-repeat="trait in character.traits | filter:{type:'Trait'}:false">{{ trait.name }}
+        <span ng-hide="$last">,</span>
+    </span>
+</p>
