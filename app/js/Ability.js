@@ -41,8 +41,8 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
             $scope.roll = function(notation) {
                 for (var key in $scope.abilityList) {
                     var roll = RollerFactory.getResult(notation);
-                     $scope.character.abilities[$scope.abilityList[key].name].baseScore = roll[roll.length-1].value;
-                 }
+                    $scope.character.abilities[$scope.abilityList[key].name].baseScore = roll[roll.length - 1].value;
+                }
             };
 
             $scope.getRacialModifier = function(ability) {
@@ -65,8 +65,6 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
                 var age = CharacterFactory.getAgingEffect();
                 var modifier = 0;
                 switch (age) {
-                    case "Adulthood":
-                        break;
                     case "Middle Age":
                         modifier = 1;
                         break;
@@ -75,6 +73,8 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
                         break;
                     case "Venerable":
                         modifier = 3;
+                        break;
+                    default:
                         break;
                 }
                 return (ability.type == "Physical") ? -modifier : modifier;

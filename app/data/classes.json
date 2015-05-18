@@ -2681,6 +2681,66 @@
         "description": "Blending the cleric's divine might and the fighter's martial skills, the warpriest brings the fight to the enemies of his faith.",
         "source": "Advanced Class Guide"
     },
+    "Arcane Archer": {
+        "name": "Arcane Archer",
+        "type": "Presige Class",
+        "description": "An arcane spellcaster who draws upon ancient elven traditions to infuse his arrows with potent magical power.",
+        "source": "Core Rulebook"
+    },
+    "Arcane Trickster": {
+        "name": "Arcane Trickster",
+        "type": "Presige Class",
+        "description": "A troublemaker and a scoundrel who uses arcane magic to enhance her thievery and trickery.",
+        "source": "Core Rulebook"
+    },
+    "Assassin": {
+        "name": "Assassin",
+        "type": "Presige Class",
+        "description": "A remorseless murderer who kills for money and the sheer thrill of death-dealing.",
+        "source": "Core Rulebook"
+    },
+    "Dragon Disciple": {
+        "name": "Dragon Disciple",
+        "type": "Presige Class",
+        "description": "An arcane spellcaster who has embraced his latent draconic heritage and, over the course of training and devotion, undergoes a partial transformation into a dragon.",
+        "source": "Core Rulebook"
+    },
+    "Duelist": {
+        "name": "Duelist",
+        "type": "Presige Class",
+        "description": "A swashbuckling swordfighter who relies upon grace, poise, and acrobatics to win the day.",
+        "source": "Core Rulebook"
+    },
+    "Eldritch Knight": {
+        "name": "Eldritch Knight",
+        "type": "Presige Class",
+        "description": "An arcane spellcaster who augments his magical skills with combat to create a deadly combination of weapons and magic.",
+        "source": "Core Rulebook"
+    },
+    "Loremaster": {
+        "name": "Loremaster",
+        "type": "Presige Class",
+        "description": "A spellcaster who devotes his life to research and rumination upon the mysteries of the world.",
+        "source": "Core Rulebook"
+    },
+    "Mystic Theurge": {
+        "name": "Mystic Theurge",
+        "type": "Presige Class",
+        "description": "Equally devoted to divine and arcane magic, the mystic theurge combines both magical traditions into one incredibly diverse class.",
+        "source": "Core Rulebook"
+    },
+    "Pathfinder Chronicler": {
+        "name": "Pathfinder Chronicler",
+        "type": "Presige Class",
+        "description": "An explorer at heart, the Pathfinder chronicler travels to distant, exotic lands to expand her knowledge of the world.",
+        "source": "Core Rulebook"
+    },
+    "Shadowdancer": {
+        "name": "Shadowdancer",
+        "type": "Presige Class",
+        "description": "A mysterious adventurer who walks the boundaries between the real world and the realm of shadows, and who can command shadows to do her bidding.",
+        "source": "Core Rulebook"
+    },
     "Battle Herald": {
         "name": "Battle Herald",
         "type": "Prestige Class",
