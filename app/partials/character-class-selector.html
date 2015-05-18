@@ -2,16 +2,31 @@
     <aside style="float:left">
         <h2 style="clear:left">Level</h2>
         <div style="float:left:clear:left" ng-repeat="aClass in character.classes">
-            <input type=radio name="favoredClass" ng-model="favoredClass" style="float:left;clear:left;" ng-value="aClass.name">
-            <div class="glyphicon glyphicon-minus" ng-click="character.removeClass(aClass)"></div>{{aClass.name + " : " + aClass.level}}
+            <input type=radio name="favoredClass" ng-model="favoredClass" style="float:left;clear:left;">
+            <div class="glyphicon glyphicon-minus" ng-click="removeClass(aClass)"></div>{{displayClassAndLevel(aClass)}}
             <div class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass)"></div>
         </div>
-        <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addClassList=!addClassList">Add New Class</button>
+        <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
     </aside>
     <aside ng-show="addClassList" style="float:left">
         <h2 style="float:left">Class</h2>
-        <select style="float:left;clear:left;" size="38" ng-model="selectedClass" ng-change="addClass(selectedClass)" ng-options="aClass.name group by aClass.source for aClass in classes | filter:{type:'Class'}:true">
-            <option value="?" ng-selected="addClassList" ng-hide="true" disabled hidden>Select Class</option>
+        <select style="float:left;clear:left;" size="38" ng-model="selectedClass" ng-change="addClass(selectedClass)" ng-options="aClass.name group by aClass.source for aClass in classList | filter:availableClasses()">
+            <option value="" selected hidden>Select Class</option>
         </select>
+    </aside>
+    <aside ng-show="newClassSelected" style="float:left">
+        <h2 style="float:left">Archetypes</h2>
+        <select style="float:left;clear:left;" size="38" ng-model="selectedArchetype" ng-change="addClassAndArchetype()" ng-options="archetype.name group by archetype.source for archetype in archetypeList">
+            <option value="" hidden selected>Select Archetype</option>
+        </select>
+    </aside>
+    <aside ng-show="newClassSelected" style="float:left">
+        <h2 style="float:left">Archetypes</h2>
+        <div ng-repeat="source in archetypeList2">
+        <label>{{source.name}}</label>
+        <p ng-repeat="archetype in source.list">{{archetype.name}}</p>
+        <!-- <select size="{{archetypeList.length}}" ng-model="selectedArchetype" ng-change="addClassAndArchetype()" ng-options="archetype.name group by archetype.source for archetype in archetypeList">
+            <option value="" hidden selected>Select Archetype</option>
+        </select> -->
     </aside>
 </section>

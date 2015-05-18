@@ -44,8 +44,8 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
     $scope.roll = function(notation) {
         for (var key in $scope.abilityList) {
             var roll = RollerFactory.getResult(notation);
-             $scope.character.abilities[$scope.abilityList[key].name].baseScore = roll[roll.length-1].value;
-         }
+            $scope.character.abilities[$scope.abilityList[key].name].baseScore = roll[roll.length - 1].value;
+        }
     };
 
     $scope.getRacialModifier = function(ability) {

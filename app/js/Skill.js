@@ -1,125 +1,26 @@
 angular.module("characterSheet.skills", [])
-    .factory("SkillFactory", function() {
-        var skills = [{
-            name: "Acrobatics",
-            trained: true,
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Appraise",
-            trained: true,
-            ability: "Intelligence"
-        }, {
-            name: "Bluff",
-            trained: true,
-            ability: "Charisma"
-        }, {
-            name: "Climb",
-            trained: true,
-            ability: "Strength",
-            armorCheckPenalty: true
-        }, {
-            name: "Craft",
-            subCategory: ["alchemy", "armor", "baskets", "books", "bows", "calligraphy", "carpentry", "cloth", "clothing", "glass", "jewelry", "leather", "locks", "paintings", "pottery", "sculptures", "ships", "shoes", "stonemasonry", "traps", "weapons"],
-            trained: true,
-            ability: "Intelligence"
-        }, {
-            name: "Diplomacy",
-            trained: true,
-            ability: "Charisma"
-        }, {
-            name: "Disable Device",
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Disguise",
-            trained: true,
-            ability: "Charisma"
-        }, {
-            name: "Escape Artist",
-            trained: true,
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Fly",
-            trained: true,
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Handle Animal",
-            ability: "Charisma"
-        }, {
-            name: "Heal",
-            trained: true,
-            ability: "Wisdom"
-        }, {
-            name: "Intimidate",
-            trained: true,
-            ability: "Charisma"
-        }, {
-            name: "Knowledge",
-            subCategory: ["arcana", "dungeoneering", "engineering", "geography", "history", "local", "nature", "nobility", "planes", "religion"],
-            ability: "Intelligence"
-        }, {
-            name: "Linguistics",
-            ability: "Intelligence"
-        }, {
-            name: "Perception",
-            trained: true,
-            ability: "Wisdom"
-        }, {
-            name: "Perform",
-            trained: true,
-            ability: "Charisma"
-        }, {
-            name: "Profession",
-            subCategory: ["architect", "baker", "barrister", "brewer", "butcher", "clerk", "cook", "courtesan", "driver", "engineer", "farmer", "fisherman", "gambler", "gardener", "herbalist", "innkeeper", "librarian", "merchant", "midwife", "miller", "miner", "porter", "sailor", "scribe", "shepherd", "stable master", "soldier", "tanner", "trapper", "woodcutter"],
-            ability: "Wisdom"
-        }, {
-            name: "Ride",
-            trained: true,
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Sense Motive",
-            trained: true,
-            ability: "Wisdom"
-        }, {
-            name: "Sleight of Hand",
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Spellcraft",
-            ability: "Intelligence"
-        }, {
-            name: "Stealth",
-            trained: true,
-            ability: "Dexterity",
-            armorCheckPenalty: true
-        }, {
-            name: "Survival",
-            trained: true,
-            ability: "Wisdom"
-        }, {
-            name: "Swim",
-            trained: true,
-            ability: "Strength",
-            armorCheckPenalty: true
-        }, {
-            name: "Use Magic Device",
-            ability: "Charisma"
-        }];
-        return skills;
-    }).directive("skillList", function() {
+    .factory("SkillFactory", function($q, $http) {
+        var factory = {
+            getSkillList: function() {
+                var deferred = $q.defer();
+                $http.get('data/skills.json').success(function(data) {
+                    deferred.resolve(data);
+                });
+                return deferred.promise;
+            }
+        };
+        return factory;
+    })
+    .directive("skillList", function() {
         return {
             restrict: 'E',
             templateUrl: "partials/character-skill-list.html",
             controller: 'SkillController',
             controllerAs: 'skillCtrl'
         };
-    }).controller('SkillController', function($scope, CharacterFactory, SkillFactory) {
+    })
+    .controller('SkillController', function($scope, CharacterFactory, SkillFactory) {
         $scope.character = CharacterFactory;
-        $scope.skills = SkillFactory;
 
         $scope.isClassSkill = function(skill, category) {
             if (category) {
@@ -127,7 +28,6 @@ angular.module("characterSheet.skills", [])
             };
 
             var classList = $scope.character.classes;
-
             for (var key in classList) {
                 if (classList[key].classSkills) {
                     var classSkills = classList[key].classSkills;
@@ -158,22 +58,19 @@ angular.module("characterSheet.skills", [])
                     console.log("skillsPerLevel missing for " + classList[key].name);
                 };
             };
-
             // Skills points granted from Traits
             for (var key in CharacterFactory.traits) {
                 if (CharacterFactory.traits[key].skillsPerLevel) {
                     points += parseInt(CharacterFactory.traits[key].skillsPerLevel * CharacterFactory.level());
                 }
             };
-
-            // Need to Added any Favored Class bonuses.
+            // Need to add any Favored Class bonuses.
             return points;
         };
 
         $scope.getSkillsPointsSpent = function() {
-            var characterSkills = CharacterFactory.skills;
+            var characterSkills = ($scope.character.skills);
             var spent = 0;
-
             for (var key in characterSkills) {
                 spent += characterSkills[key].ranks;
             };
@@ -208,6 +105,7 @@ angular.module("characterSheet.skills", [])
             if (CharacterFactory.abilities[skill.ability]) {
                 result += CharacterFactory.abilities[skill.ability].modifier;
             };
+            // CharacterFactory.skills[skillName].bonus = result;
             return result;
         };
 

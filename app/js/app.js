@@ -79,17 +79,23 @@
         };
     });
 
-    app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory) {
+    app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory, SkillFactory) {
         $scope.character = CharacterFactory;
 
-        $scope.races = [];
+        $scope.raceList = [];
         RaceFactory.getRaceList().then(function(data) {
-            $scope.races = data;
+            $scope.raceList = data;
         });
 
-        $scope.classes = [];
+        $scope.classList = [];
         ClassFactory.getClassList().then(function(data) {
-            $scope.classes = data;
+            $scope.classList = data;
         });
+
+        $scope.skillList = [];
+        SkillFactory.getSkillList().then(function(data) {
+            $scope.skillList = data;
+        });
+
     });
 })();

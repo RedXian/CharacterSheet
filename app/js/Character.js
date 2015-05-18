@@ -124,20 +124,32 @@ angular.module("characterSheet.character", [])
                 }
             },
 
-            addClass: function(aClass) {
+            addClass: function(aClass, archetype) {
+
                 if (character.classes[aClass.name]) {
                     character.classes[aClass.name].level++;
                 } else {
-                    character.classes[aClass.name] = aClass;
+                    character.classes[aClass.name] = {};
+                    for (var key in aClass) {
+                        var element = aClass[key];
+                        if (element.type !== "Archetype") {
+                            character.classes[aClass.name][key] = element;
+                        } else {
+                            if (element.name === archetype.name) {
+                                character.classes[aClass.name][key] = element;
+                            }
+                        }
+                    };
+                    // character.classes[aClass.name] = aClass;
                     character.classes[aClass.name].level = 1;
                 };
             },
 
             removeClass: function(aClass) {
-                if (character.classes[aClass.name].level == 1) {
-                    delete character.classes[aClass.name];
+                if (character.classes[aClass].level == 1) {
+                    delete character.classes[aClass];
                 } else {
-                    character.classes[aClass.name].level--;
+                    character.classes[aClass].level--;
                 }
             },
 

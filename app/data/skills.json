@@ -1,109 +1,142 @@
 {
-    "name": "Acrobatics",
-    "trained": "true",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Appraise",
-    "trained": "true",
-    "ability": "Intelligence"
-  }, {
-    "name": "Bluff",
-    "trained": "true",
-    "ability": "Charisma"
-  }, {
-    "name": "Climb",
-    "trained": "true",
-    "ability": "Strength",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Craft",
-    "subCategory": ["alchemy", "armor", "baskets", "books", "bows", "calligraphy", "carpentry", "cloth", "clothing", "glass", "jewelry", "leather", "locks", "paintings", "pottery", "sculptures", "ships", "shoes", "stonemasonry", "traps", "weapons"],
-    "trained": "true",
-    "ability": "Intelligence"
-  }, {
-    "name": "Diplomacy",
-    "trained": "true",
-    "ability": "Charisma"
-  }, {
-    "name": "Disable Device",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Disguise",
-    "trained": "true",
-    "ability": "Charisma"
-  }, {
-    "name": "Escape Artist",
-    "trained": "true",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Fly",
-    "trained": "true",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Handle Animal",
-    "ability": "Charisma"
-  }, {
-    "name": "Heal",
-    "trained": "true",
-    "ability": "Wisdom"
-  }, {
-    "name": "Intimidate",
-    "trained": "true",
-    "ability": "Charisma"
-  }, {
-    "name": "Knowledge",
-    "subCategory": ["arcana", "dungeoneering", "engineering", "geography", "history", "local", "nature", "nobility", "planes", "religion"],
-    "ability": "Intelligence"
-  }, {
-    "name": "Linguistics",
-    "ability": "Intelligence"
-  }, {
-    "name": "Perception",
-    "trained": "true",
-    "ability": "Wisdom"
-  }, {
-    "name": "Perform",
-    "trained": "true",
-    "ability": "Charisma"
-  }, {
-    "name": "Profession",
-    "subCategory": ["architect", "baker", "barrister", "brewer", "butcher", "clerk", "cook", "courtesan", "driver", "engineer", "farmer", "fisherman", "gambler", "gardener", "herbalist", "innkeeper", "librarian", "merchant", "midwife", "miller", "miner", "porter", "sailor", "scribe", "shepherd", "stable master", "soldier", "tanner", "trapper", "woodcutter"],
-    "ability": "Wisdom"
-  }, {
-    "name": "Ride",
-    "trained": "true",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Sense Motive",
-    "trained": "true",
-    "ability": "Wisdom"
-  }, {
-    "name": "Sleight of Hand",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Spellcraft",
-    "ability": "Intelligence"
-  }, {
-    "name": "Stealth",
-    "trained": "true",
-    "ability": "Dexterity",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Survival",
-    "trained": "true",
-    "ability": "Wisdom"
-  }, {
-    "name": "Swim",
-    "trained": "true",
-    "ability": "Strength",
-    "armorCheckPenalty": "true"
-  }, {
-    "name": "Use Magic Device",
-    "ability": "Charisma"
-  }
+    "Acrobatics": {
+        "name": "Acrobatics",
+        "trained": "true",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Appraise": {
+        "name": "Appraise",
+        "trained": "true",
+        "ability": "Intelligence"
+    },
+    "Bluff": {
+        "name": "Bluff",
+        "trained": "true",
+        "ability": "Charisma"
+    },
+    "Climb": {
+        "name": "Climb",
+        "trained": "true",
+        "ability": "Strength",
+        "armorCheckPenalty": "true"
+    },
+    "Craft": {
+        "name": "Craft",
+        "subCategory": [
+            "alchemy", "armor", "baskets", "books", "bows", "calligraphy", "carpentry", "cloth", "clothing", "glass", "jewelry", "leather", "locks", "paintings", "pottery", "sculptures", "ships", "shoes", "stonemasonry", "traps", "weapons"
+        ],
+        "trained": "true",
+        "ability": "Intelligence"
+    },
+    "Diplomacy": {
+        "name": "Diplomacy",
+        "trained": "true",
+        "ability": "Charisma"
+    },
+    "Disable Device": {
+        "name": "Disable Device",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Disguise": {
+        "name": "Disguise",
+        "trained": "true",
+        "ability": "Charisma"
+    },
+    "Escape Artist": {
+        "name": "Escape Artist",
+        "trained": "true",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Fly": {
+        "name": "Fly",
+        "trained": "true",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Handle Animal": {
+        "name": "Handle Animal",
+        "ability": "Charisma"
+    },
+    "Heal": {
+        "name": "Heal",
+        "trained": "true",
+        "ability": "Wisdom"
+    },
+    "Intimidate": {
+        "name": "Intimidate",
+        "trained": "true",
+        "ability": "Charisma"
+    },
+    "Knowledge": {
+        "name": "Knowledge",
+        "subCategory": [
+            "arcana", "dungeoneering", "engineering", "geography", "history", "local", "nature", "nobility", "planes", "religion"
+        ],
+        "ability": "Intelligence"
+    },
+    "Linguistics": {
+        "name": "Linguistics",
+        "ability": "Intelligence"
+    },
+    "Perception": {
+        "name": "Perception",
+        "trained": "true",
+        "ability": "Wisdom"
+    },
+    "Perform": {
+        "name": "Perform",
+        "trained": "true",
+        "ability": "Charisma"
+    },
+    "Profession": {
+        "name": "Profession",
+        "subCategory": [
+            "architect", "baker", "barrister", "brewer", "butcher", "clerk", "cook", "courtesan", "driver", "engineer", "farmer", "fisherman", "gambler", "gardener", "herbalist", "innkeeper", "librarian", "merchant", "midwife", "miller", "miner", "porter", "sailor", "scribe", "shepherd", "stable master", "soldier", "tanner", "trapper", "woodcutter"
+        ],
+        "ability": "Wisdom"
+    },
+    "Ride": {
+        "name": "Ride",
+        "trained": "true",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Sense Motive": {
+        "name": "Sense Motive",
+        "trained": "true",
+        "ability": "Wisdom"
+    },
+    "Sleight of Hand": {
+        "name": "Sleight of Hand",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Spellcraft": {
+        "name": "Spellcraft",
+        "ability": "Intelligence"
+    },
+    "Stealth": {
+        "name": "Stealth",
+        "trained": "true",
+        "ability": "Dexterity",
+        "armorCheckPenalty": "true"
+    },
+    "Survival": {
+        "name": "Survival",
+        "trained": "true",
+        "ability": "Wisdom"
+    },
+    "Swim": {
+        "name": "Swim",
+        "trained": "true",
+        "ability": "Strength",
+        "armorCheckPenalty": "true"
+    },
+    "Use Magic Device": {
+        "name": "Use Magic Device",
+        "ability": "Charisma"
+    }
+}
