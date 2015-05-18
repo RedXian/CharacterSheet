@@ -14,7 +14,7 @@
             <option value="{{ability.name}}" ng-repeat="ability in abilityList | orderObjectBy:'id'">{{ability.name}}</option>
         </select>
     </div>
-    <div ng-hide="bonusAbilityPoints()==0">
+    <div ng-show="bonusAbilityPoints()">
         <p>
             <strong>Bonus Points: </strong>{{ pointsSpent() + "/" + bonusAbilityPoints() }}</p>
     </div>
