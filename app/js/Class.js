@@ -26,10 +26,7 @@ angular.module("characterSheet.classes", [])
             restrict: 'E',
             templateUrl: "partials/character-class-selector.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
-                $scope.addClassList = false;
                 $scope.newClassSelected = false;
-                $scope.selectedClass = "";
-                $scope.selectedArchetype = "";
 
                 $scope.character = CharacterFactory;
 
@@ -43,8 +40,22 @@ angular.module("characterSheet.classes", [])
                     return aClass.name + (archetype.length ? (" (" + archetype + ")") : " ") + ": " + aClass.level;
                 };
 
+                $scope.addNewClassButton = function() {
+                    $scope.newClassSelected = false;
+                    $scope.addClassList = true;
+                    $scope.selectedClass = "";
+                }
+
+                $scope.removeClass = function (aClass) {
+                    $scope.addClassList = false;
+                    $scope.newClassSelected = false;
+                    CharacterFactory.removeClass(aClass.name);
+                };
+
                 $scope.addClass = function(aClass) {
-                    $scope.archetypeList = [{name:"No Archetype"}];
+                    $scope.archetypeList = [{
+                        name: "No Archetype"
+                    }];
                     for (var key in aClass) {
                         if (aClass[key].type == "Archetype") {
                             $scope.archetypeList.push(aClass[key])
@@ -54,9 +65,11 @@ angular.module("characterSheet.classes", [])
                     // If is a new class and it has archetypes, display the archtype list.
                     if ($scope.archetypeList.length > 0 && !aClass.level) {
                         $scope.newClassSelected = aClass.level ? false : true;
+                        $scope.selectedArchetype = "";
                     } else {
-                        $scope.addClassList = false;
                         CharacterFactory.addClass(aClass);
+                        $scope.addClassList = false;
+                        $scope.newClassSelected = false;
                     }
                 };
 

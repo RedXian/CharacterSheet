@@ -146,10 +146,10 @@ angular.module("characterSheet.character", [])
             },
 
             removeClass: function(aClass) {
-                if (character.classes[aClass.name].level == 1) {
-                    delete character.classes[aClass.name];
+                if (character.classes[aClass].level == 1) {
+                    delete character.classes[aClass];
                 } else {
-                    character.classes[aClass.name].level--;
+                    character.classes[aClass].level--;
                 }
             },
 
