@@ -29,7 +29,7 @@
       <div ng-show="skill.armorCheckPenalty">*</div>
     </div>
     <div class="sub-category" ng-repeat="subCat in skill.subCategory">
-      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || ( isClassSkill(skill.name, subCat) && !isClassSkill(skill.name)) || toggle">
+      <div class="calculation skill" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || ( isClassSkill(skill.name, subCat) && !isClassSkill(skill.name)) || toggle">
       <div>
         <p>{{ skill.name }}<span> ({{ subCat }})</span>:</p>
       </div>
@@ -50,7 +50,7 @@
       </div>
       <div>+</div>
       <div>
-        <input type="number" min="0" max="{{ maxRanks(subCatName(skill.name,subCat)) }}" ng-model="character.skills[subCatName(skill.name,subCat)].ranks" ng-init="character.skills[subCatName(skill.name,subCat)].ranks = character.skills[subCatName(skill.name,subCat)].ranks || 0">
+        <input type="number" min="0" max="{{ maxRanks(subCatName(skill,subCat)) }}" ng-model="character.skills[subCatName(skill,subCat)].ranks" ng-init="character.skills[subCatName(skill,subCat)].ranks = character.skills[subCatName(skill,subCat)].ranks || 0">
         <label>Ranks</label>
       </div>
       <div ng-show="skill.armorCheckPenalty">*</div>

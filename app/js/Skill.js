@@ -194,7 +194,7 @@ angular.module("characterSheet.skills", [])
             if (!category) {
                 var skillName = skill.name
             } else {
-                var skillName = $scope.subCatName(skill.name, category);
+                var skillName = $scope.subCatName(skill, category);
             }
 
             if (CharacterFactory.skills[skillName]) {
@@ -208,11 +208,23 @@ angular.module("characterSheet.skills", [])
             if (CharacterFactory.abilities[skill.ability]) {
                 result += CharacterFactory.abilities[skill.ability].modifier;
             };
-            CharacterFactory.skills[skillName] = {bonus: result};
             return result;
         };
 
         $scope.subCatName = function(skill, category) {
             return skill.name + " (" + category.toLowerCase() + ")";
         };
+
+        $scope.skillFilter = function() {
+            return function(item, skill) {
+              var skillName = "";
+              if (skill) {
+                  console.log(skill);
+                  skillName = $scope.subCatName(skill, item);
+              } else {
+                  skillName = item.name;
+              }
+                return CharacterFactory.skills[skillName].ranks > 0 ? true : false;
+            }
+        }
     });
