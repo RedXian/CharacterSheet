@@ -1,7 +1,13 @@
 <section>
     <h2>Abilities</h2>
-    <div><label>Roll 3d6</label><button ng-click="roll('3d6')" class="glyphicon glyphicon-repeat"></div>
-        <div><label>Roll 4d6 discard lowest</label><button ng-click="roll('4d6-L')" class="glyphicon glyphicon-repeat"></div>
+    <div>
+        <label style="width:50px">Roll</label>
+        <select ng-model="rollType" ng-init="rollType='4d6-L'">
+            <option value="3d6">3d6</option>
+            <option value="4d6-L">4d6 discard lowest</option>
+        </select>
+        <button ng-click="roll(rollType)" class="glyphicon glyphicon-repeat">
+    </div>
     <div ng-show="character.traits['Ability Modifiers'].Any">
         <select ng-model="racialBonus">
             <option value="" selected disabled hidden>Select Stat</option>

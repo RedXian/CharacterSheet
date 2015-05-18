@@ -56,14 +56,19 @@ angular.module("characterSheet.classes", [])
                     $scope.archetypeList = [{
                         name: "No Archetype"
                     }];
+
+                    $scope.archetypeList2 = {};
+
                     for (var key in aClass) {
                         if (aClass[key].type == "Archetype") {
                             $scope.archetypeList.push(aClass[key])
+                            if (!$scope.archetypeList2[aClass[key].source]) {$scope.archetypeList2[aClass[key].source] = {name:aClass[key].source, list: []}};
+                            $scope.archetypeList2[aClass[key].source].list.push(aClass[key]);
                         }
                     }
 
                     // If is a new class and it has archetypes, display the archtype list.
-                    if ($scope.archetypeList.length > 0 && !aClass.level) {
+                    if ($scope.archetypeList.length > 1 && !aClass.level) {
                         $scope.newClassSelected = aClass.level ? false : true;
                         $scope.selectedArchetype = "";
                     } else {

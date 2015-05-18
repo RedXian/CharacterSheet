@@ -20,4 +20,13 @@
             <option value="" hidden selected>Select Archetype</option>
         </select>
     </aside>
+    <aside ng-show="newClassSelected" style="float:left">
+        <h2 style="float:left">Archetypes</h2>
+        <div ng-repeat="source in archetypeList2">
+        <label>{{source.name}}</label>
+        <p ng-repeat="archetype in source.list">{{archetype.name}}</p>
+        <!-- <select size="{{archetypeList.length}}" ng-model="selectedArchetype" ng-change="addClassAndArchetype()" ng-options="archetype.name group by archetype.source for archetype in archetypeList">
+            <option value="" hidden selected>Select Archetype</option>
+        </select> -->
+    </aside>
 </section>

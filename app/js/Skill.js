@@ -1,6 +1,6 @@
 angular.module("characterSheet.skills", [])
     .factory("SkillFactory", function($q, $http) {
-        var skills = {
+        var factory = {
             getSkillList: function() {
                 var deferred = $q.defer();
                 $http.get('data/skills.json').success(function(data) {
@@ -9,7 +9,7 @@ angular.module("characterSheet.skills", [])
                 return deferred.promise;
             }
         };
-        return skills;
+        return factory;
     })
     .directive("skillList", function() {
         return {
@@ -58,22 +58,19 @@ angular.module("characterSheet.skills", [])
                     console.log("skillsPerLevel missing for " + classList[key].name);
                 };
             };
-
             // Skills points granted from Traits
             for (var key in CharacterFactory.traits) {
                 if (CharacterFactory.traits[key].skillsPerLevel) {
                     points += parseInt(CharacterFactory.traits[key].skillsPerLevel * CharacterFactory.level());
                 }
             };
-
             // Need to add any Favored Class bonuses.
             return points;
         };
 
         $scope.getSkillsPointsSpent = function() {
-            var characterSkills = CharacterFactory.skills;
+            var characterSkills = ($scope.character.skills);
             var spent = 0;
-
             for (var key in characterSkills) {
                 spent += characterSkills[key].ranks;
             };
@@ -94,7 +91,7 @@ angular.module("characterSheet.skills", [])
             if (!category) {
                 var skillName = skill.name
             } else {
-                var skillName = $scope.subCatName(skill.name, category);
+                var skillName = $scope.subCatName(skill, category);
             }
 
             if (CharacterFactory.skills[skillName]) {
@@ -108,9 +105,7 @@ angular.module("characterSheet.skills", [])
             if (CharacterFactory.abilities[skill.ability]) {
                 result += CharacterFactory.abilities[skill.ability].modifier;
             };
-            CharacterFactory.skills[skillName] = {
-                bonus: result
-            };
+            // CharacterFactory.skills[skillName].bonus = result;
             return result;
         };
 

@@ -129,7 +129,7 @@ angular.module("characterSheet.character", [])
                 if (character.classes[aClass.name]) {
                     character.classes[aClass.name].level++;
                 } else {
-                    character.classes[aClass.name] ={};
+                    character.classes[aClass.name] = {};
                     for (var key in aClass) {
                         var element = aClass[key];
                         if (element.type !== "Archetype") {

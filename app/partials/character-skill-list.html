@@ -1,5 +1,5 @@
 <section>
-  <h2>Skills - {{getSkillsPointsSpent()}}/{{getMaxSkillsPoints()}}</h2>
+  <h2>Skills - {{getSkillsPointsSpent() + "/" + getMaxSkillsPoints()}}</h2>
   <div ng-repeat="skill in skillList | orderBy:['name']">
     <div class="calculation skill" id="{{ skill.name }}">
       <div>
@@ -29,7 +29,7 @@
       <div ng-show="skill.armorCheckPenalty">*</div>
     </div>
     <div class="sub-category" ng-repeat="subCat in skill.subCategory">
-      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name,subCat)].ranks || ( isClassSkill(skill.name, subCat) && !isClassSkill(skill.name)) || toggle">
+      <div class="calculation skill" id="{{ skill.name + subCat }}" ng-show="character.skills[subCatName(skill.name, subCat)].ranks || ( isClassSkill(skill.name, subCat) && !isClassSkill(skill.name)) || toggle">
       <div>
         <p>{{ skill.name }}<span> ({{ subCat }})</span>:</p>
       </div>
