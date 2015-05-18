@@ -27,20 +27,49 @@ angular.module("characterSheet.classes", [])
             templateUrl: "partials/character-class-selector.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
                 $scope.addClassList = false;
+                $scope.newClassSelected = false;
                 $scope.selectedClass = "";
+                $scope.selectedArchetype = "";
 
                 $scope.character = CharacterFactory;
 
+                $scope.displayClassAndLevel = function(aClass) {
+                    var archetype = "";
+                    for (var key in aClass) {
+                        if (aClass[key].type === "Archetype") {
+                            archetype = aClass[key].name;
+                        }
+                    }
+                    return aClass.name + (archetype.length ? (" (" + archetype + ")") : " ") + ": " + aClass.level;
+                };
+
                 $scope.addClass = function(aClass) {
+                    $scope.archetypeList = [{name:"No Archetype"}];
+                    for (var key in aClass) {
+                        if (aClass[key].type == "Archetype") {
+                            $scope.archetypeList.push(aClass[key])
+                        }
+                    }
+
+                    // If is a new class and it has archetypes, display the archtype list.
+                    if ($scope.archetypeList.length > 0 && !aClass.level) {
+                        $scope.newClassSelected = aClass.level ? false : true;
+                    } else {
+                        $scope.addClassList = false;
+                        CharacterFactory.addClass(aClass);
+                    }
+                };
+
+                $scope.addClassAndArchetype = function() {
+                    CharacterFactory.addClass($scope.selectedClass, $scope.selectedArchetype);
                     $scope.addClassList = false;
-                    CharacterFactory.addClass(aClass);
-                    $scope.selectedClass = "";
+                    $scope.newClassSelected = false;
+
                 };
 
                 $scope.availableClasses = function() {
                     return function(item) {
                         // Check if item is a class.
-                        console.log(item);
                         if (item.type === "Class") {
                             // Check if Class has already been selected.
                             for (var key in $scope.character.classes) {

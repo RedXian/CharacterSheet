@@ -95,7 +95,6 @@
         $scope.skillList = [];
         SkillFactory.getSkillList().then(function(data) {
             $scope.skillList = data;
-            console.log(data);
         });
 
     });
