@@ -15,14 +15,15 @@ This project is an interactive character sheet for handling characters using the
 ### Abilities
 * ~~Display Ability Scores and Modifiers~~
     * ~~Implement Manual System~~
-    * Implement Dice Rolling System
+    * ~~Implement Dice Rolling System~~
     * Implement Point Buy System
     * Implement Dice Pool System
 * Implement bonuses from Feats & Traits
     * ~~Ability Modifiers~~
     * Check if there are any other functionality requirements
-* Implement Age Modifier
+* ~~Implement Age Modifier~~
 * Implement Equipment Bonuses
+* ~~Implement Level bonuses~~
 * Implement Spells & Spell-like effects modifiers
 * Implement Ability Drain penalty
 * Implement Ability Damage & Healing system
@@ -46,13 +47,13 @@ This project is an interactive character sheet for handling characters using the
 * Update JSON Data file with Class information
     * ~~Codify Class Skills~~
     * ~~Codify Hit Dice~~
-    * Codify BAB progression
-    * Codify Saving throw progression
+    * ~~Codify BAB progression~~
+    * ~~Codify Saving throw progression~~
     * Codify spell progression
     * Codify Class Features
 
 ### Skills
-* Read and display skills from file
+* ~~Read and display skills from file~~
 * ~~Apply Ability Modifiers~~
 * ~~Set Class Skills from Class~~
 * Skill Rolling System
@@ -65,9 +66,9 @@ This project is an interactive character sheet for handling characters using the
 * TODO: Add more Requirements
 
 ### Combat
-* Implement Initiative
-* Implement Base Attack Bonus
-* Implement Combat Maneuvers
+* ~~Implement Initiative~~
+* ~~Implement Base Attack Bonus~~
+* ~~Implement Combat Maneuvers~~
 * Implement Weapon Attacks
     * Unarmed
     * One Handed
@@ -93,9 +94,9 @@ This project is an interactive character sheet for handling characters using the
 * TODO: Add more Requirements
 
 ### Stat Block
-* Replicate Paizo's HTML design for Stat Block
+* ~~Replicate Paizo's HTML design for Stat Block~~
 * Display Character data in stat block.
-* Print character stat block.
+* Print character as stat block.
 
 ### Future Plans
 #### Action Economy System

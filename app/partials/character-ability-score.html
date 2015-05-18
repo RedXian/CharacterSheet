@@ -14,6 +14,10 @@
             <option value="{{ability.name}}" ng-repeat="ability in abilityList | orderObjectBy:'id'">{{ability.name}}</option>
         </select>
     </div>
+    <div ng-hide="bonusAbilityPoints()==0">
+        <p>
+            <strong>Bonus Points: </strong>{{ pointsSpent() + "/" + bonusAbilityPoints() }}</p>
+    </div>
     <div ng-repeat="ability in abilityList | orderObjectBy:'id'">
         <label>{{ ability.name }}</label>
         <div class="calculation stat" id="{{ ability.name }}">
@@ -21,9 +25,14 @@
                 <input type="number" min="3" max="18" ng-model="character.abilities[ability.name].baseScore" ng-init="character.abilities[ability.name].baseScore=10">
                 <label>Base Score</label>
             </div>
-            <div>+</div>
-            <div>
-                <input type="text" disabled value="{{ getRacialModifier(ability) | signedNumber}}">
+            <div ng-show="bonusAbilityPoints()">
+                <div>+</div>
+                <input type="number" min="0" max="{{ pointsLeft(ability) }}" ng-model="character.abilities[ability.name].bonusPoints" ng-init="character.abilities[ability.name].bonusPoints=0">
+                <label>Bonus Points</label>
+            </div>
+            <div ng-show="character.race">
+                <div>+</div>
+                <input type="text" disabled value="{{ getRacialModifier(ability.name) | signedNumber}}">
                 <label>Racial Bonus</label>
             </div>
             <div ng-show="getAgeModifier(ability)">
@@ -33,8 +42,8 @@
                     <label>Age Modifier</label>
                 </div>
             </div>
-            <div>=</div>
             <div>
+                <div>=</div>
                 <input type="number" class="result" disabled value="{{ getAdjustedScore(ability) }}">
                 <label>Adjusted Score</label>
             </div>
