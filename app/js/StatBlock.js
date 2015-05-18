@@ -2,7 +2,10 @@ angular.module("characterSheet.statBlock", [])
     .directive("statBlock", function() {
         return {
             restrict: 'E',
-            templateUrl: "partials/stat-block.html"
+            templateUrl: "partials/stat-block.html",
+            controller: function ($scope, CharacterFactory) {
+                $scope.character = CharacterFactory;
+            }
         };
     })
     .directive("statBlockDefence", function() {
@@ -23,10 +26,11 @@ angular.module("characterSheet.statBlock", [])
             templateUrl: "partials/stat-block/stat-block-statistics.html"
         }
     })
-    .directive("statisticsAbilityScore", function() {
+    .directive("statisticsAbilityScores", function() {
         return {
             restrict: 'E',
-            templateUrl: "partials/stat-block/statistics/statistics-ability-scores.html"
+            templateUrl: "partials/stat-block/statistics/statistics-ability-scores.html",
+            controller: 'AbilityController'
         }
     })
     .directive("statisticsFeats", function() {
@@ -50,7 +54,8 @@ angular.module("characterSheet.statBlock", [])
     .directive("statisticsSkills", function() {
         return {
             restrict: 'E',
-            templateUrl: "partials/stat-block/statistics/statistics-skills.html"
+            templateUrl: "partials/stat-block/statistics/statistics-skills.html",
+            controller: 'SkillController'
         }
     })
     .directive("statisticsSpecialQualities", function() {
@@ -74,7 +79,7 @@ angular.module("characterSheet.statBlock", [])
     .directive("offenceOppositionSchools", function() {
         return {
             restrict: 'E',
-            templateUrl: "partials/stat-block/offence/offence-opposition-school.html"
+            templateUrl: "partials/stat-block/offence/offence-opposition-schools.html"
         }
     })
     .directive("offenceSpecialAttacks", function() {

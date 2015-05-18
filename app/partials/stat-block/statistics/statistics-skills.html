@@ -1,6 +1,15 @@
 <p class="stat-block-1">
-    <b>Skills </b>
-    <span ng-repeat="skill in skills" ng-if="character.skills[skill.name].ranks"><a href="/pathfinderRPG/prd/skills/{{skill.name}}.html#{{skill.name}}">{{skill.name}}</a> {{ character.skills[skill.name].bonus || signedNumber }}
-        <span ng-hide="$last">,</span>
+    <span ng-repeat="skill in skills | orderBy:['name'] | filter:skillFilter()">
+        <b ng-if="$first">Skills</b>
+        <span ng-if="!$first">,</span>
+        <span ng-if="!skill.subCategory">
+            <a target="_blank" href="http://paizo.com/pathfinderRPG/prd/skills/{{skill.name}}.html#{{skill.name}}">{{ skill.name }}</a>{{ skillBonus(skill) | signedNumber }}
+        </span>
+        <span ng-repeat="subCat in skill.subCategory | filter:skillFilter(skill)">
+            <span><a target="_blank" href="http://paizo.com/pathfinderRPG/prd/skills/{{skill.name}}.html#{{skill.name}}">{{ subCatName(skill, subCat) }}</a> {{ skillBonus(skill, subCat) | signedNumber }}</span>
+            <span ng-if="!$last">,</span>
+        </span>
+
+
     </span>
 </p>
