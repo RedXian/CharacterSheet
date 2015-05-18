@@ -2682,41 +2682,49 @@
         "source": "Advanced Class Guide"
     },
     "Battle Herald": {
+        "name": "Battle Herald",
         "type": "Prestige Class",
         "description": "A veteran whose masterful tactics and air of command inspire allies to greater feats of heroism.",
         "source": "Core Rulebook"
     },
     "Holy Vindicator": {
+        "name": "Holy Vindicator",
         "type": "Prestige Class",
         "description": "A pious warrior who spreads religion at the edge of a sword.",
         "source": "Core Rulebook"
     },
     "Horizon Walker": {
+        "name": "Horizon Walker",
         "type": "Prestige Class",
         "description": "A scout and wanderer comfortable in even the strangest terrain.",
         "source": "Core Rulebook"
     },
     "Master Chymist": {
+        "name": "Master Chymist",
         "type": "Prestige Class",
         "description": "An alchemist whose mutagens create an alternate, brutish personality.",
         "source": "Core Rulebook"
     },
     "Master Spy": {
+        "name": "Master Spy",
         "type": "Prestige Class",
         "description": "An espionage expert specializing in disguises and striking swiftly from the shadows.",
         "source": "Core Rulebook"
     },
     "Nature Warden": {
+        "name": "Nature Warden",
         "type": "Prestige Class",
         "description": "A master of the wilderness bonded spiritually to a fearsome animal companion.",
         "source": "Core Rulebook"
     },
     "Rage Prophet": {
+        "name": "Rage Prophet",
         "type": "Prestige Class",
         "description": "A bold and barbaric champion who embraces otherworldly powers in order to perfect the art of combat.",
         "source": "Core Rulebook"
     },
     "Stalwart Defender": {
+        "name": "Stalwart Defender",
         "type": "Prestige Class",
         "description": "A master of defending territory and holding the line at all costs.",
         "source": "Core Rulebook"

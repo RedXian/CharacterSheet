@@ -29,11 +29,6 @@ angular.module("characterSheet.classes", [])
                 $scope.addClassList = false;
                 $scope.selectedClass = "";
 
-                // $scope.classes = {};
-                // ClassFactory.getClassList().then(function(data) {
-                //     $scope.classes = data;
-                // });
-
                 $scope.character = CharacterFactory;
 
                 $scope.addClass = function(aClass) {
@@ -41,6 +36,23 @@ angular.module("characterSheet.classes", [])
                     CharacterFactory.addClass(aClass);
                     $scope.selectedClass = "";
                 };
+
+                $scope.availableClasses = function() {
+                    return function(item) {
+                        // Check if item is a class.
+                        console.log(item);
+                        if (item.type === "Class") {
+                            // Check if Class has already been selected.
+                            for (var key in $scope.character.classes) {
+                                if ($scope.character.classes[key].name == item.name) {
+                                    return false;
+                                }
+                            }
+                            return true;
+                        }
+                        return false;
+                    }
+                }
 
                 $scope.newLevelAvailable = function() {
                     // Need to add check for max class levels for Prestige Classes.

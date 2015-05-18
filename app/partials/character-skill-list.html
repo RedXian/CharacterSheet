@@ -1,6 +1,6 @@
 <section>
   <h2>Skills - {{getSkillsPointsSpent()}}/{{getMaxSkillsPoints()}}</h2>
-  <div ng-repeat="skill in skills | orderBy:['name']">
+  <div ng-repeat="skill in skillList | orderBy:['name']">
     <div class="calculation skill" id="{{ skill.name }}">
       <div>
         <p>{{ skill.name }}
