@@ -72,11 +72,9 @@ angular.module("characterSheet.classes", [])
 
                 $scope.toggleFavoredClass = function (aClass) {
                     if (aClass.favoredClass) {
-                        console.log("Removing Favored Class")
-                        console.log(CharacterFactory.removeFavoredClass(aClass));
+                        CharacterFactory.removeFavoredClass(aClass);
                     } else {
-                        console.log("Removing Favored Class")
-                        console.log(CharacterFactory.addFavoredClass(aClass));
+                        CharacterFactory.addFavoredClass(aClass);
                     }
                 };
 
