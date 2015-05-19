@@ -4,6 +4,7 @@ angular.module("characterSheet.character", [])
             experience: 200000000,
             abilities: {},
             classes: {},
+            favoredClasses: 1,
             skills: {},
             traits: {},
             level: function(track) {
@@ -87,7 +88,6 @@ angular.module("characterSheet.character", [])
                 delete character.race;
                 character.race = {};
 
-
                 // remove all Racial Traits
                 for (var key in character.traits) {
                     if (character.traits[key].type.indexOf("Racial Trait") > -1) {
@@ -125,7 +125,6 @@ angular.module("characterSheet.character", [])
             },
 
             addClass: function(aClass, archetype) {
-
                 if (character.classes[aClass.name]) {
                     character.classes[aClass.name].level++;
                 } else {
@@ -135,14 +134,56 @@ angular.module("characterSheet.character", [])
                         if (element.type !== "Archetype") {
                             character.classes[aClass.name][key] = element;
                         } else {
-                            if (element.name === archetype.name) {
+                            if (archetype && element.name == archetype.name) {
                                 character.classes[aClass.name][key] = element;
                             }
                         }
                     };
-                    // character.classes[aClass.name] = aClass;
                     character.classes[aClass.name].level = 1;
+                    character.addFavoredClass(aClass);
                 };
+            },
+
+            addFavoredClass: function(aClass) {
+                var favoredClassCount = 0;
+                if (character.classes[aClass.name]) {
+                    for (var key in character.classes) {
+                        if (character.classes[key].favoredClass) {
+                            favoredClassCount++;
+                        }
+                    }
+
+                    var maxFavoredClasses = character.favoredClasses;
+                    for (var key in character.traits) {
+                        if (character.traits[key].favoredClass) {
+                            maxFavoredClasses += parseInt(character.traits[key].favoredClass);
+                        }
+                    }
+                    if (favoredClassCount < maxFavoredClasses) {
+                        character.classes[aClass.name].favoredClass = true;
+                        return true;
+                    }
+                }
+                return false;
+            },
+
+            getFavoredClassLevels: function() {
+                var total = 0;
+                for (var key in character.classes) {
+                    if (character.classes[key].favoredClass) {
+                        total += character.classes[key].level;
+                    }
+                }
+                console.log(total);
+                return total;
+            },
+
+            removeFavoredClass: function(aClass) {
+                if (character.classes[aClass.name].favoredClass) {
+                    delete character.classes[aClass.name].favoredClass;
+                    return true;
+                }
+                return false;
             },
 
             removeClass: function(aClass) {

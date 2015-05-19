@@ -2,7 +2,7 @@
 
   <aside style="float:left">
     <h2 style="float:left">Race</h2>
-    <select style="float:left;clear:left;" id="race" size="43" ng-model="selectedRace" ng-change="character.setRace(selectedRace)" ng-options="race.name group by race.source for race in raceList">
+    <select style="float:left;clear:left;" id="race" size="43" ng-model="selectedRace" ng-change="character.setRace(selectedRace)" ng-options="race.name group by race.source.name for race in raceList">
       <option value="" selected disabled hidden>Select Race</option>
     </select>
   </aside>

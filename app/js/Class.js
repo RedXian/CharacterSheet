@@ -26,9 +26,14 @@ angular.module("characterSheet.classes", [])
             restrict: 'E',
             templateUrl: "partials/character-class-selector.html",
             controller: function($scope, CharacterFactory, ClassFactory) {
-                $scope.newClassSelected = false;
-
                 $scope.character = CharacterFactory;
+                $scope.newClassSelected = false;
+                $scope.addClassList = true;
+                $scope.selectedClass = {};
+                $scope.selectedArchetype = {};
+                $scope.classSourceList = [];
+                $scope.archetypeSourceList = [];
+                $scope.archetypeList = [];
 
                 $scope.displayClassAndLevel = function(aClass) {
                     var archetype = "";
@@ -44,45 +49,86 @@ angular.module("characterSheet.classes", [])
                     $scope.newClassSelected = false;
                     $scope.addClassList = true;
                     $scope.selectedClass = "";
+                    $scope.classSourceList = [];
+                    for (var key in $scope.classList) {
+                        if ($scope.classSourceList.indexOf($scope.classList[key].source) <= -1) {
+                            $scope.classSourceList.push($scope.classList[key].source);
+                        };
+                    }
+                };
+
+                $scope.isFavoredClass = function (aClass) {
+                    return CharacterFactory.classes[aClass.name].favoredClass;
+                };
+
+                $scope.favoredClassLevelBonuses = function() {
+                    var maxLevels = CharacterFactory.getFavoredClassLevels();
+                    var favoredArray = [];
+                    for(var i = 0; i < maxLevels; i++) {
+                        favoredArray = {"name": "Favored Level " + i, bonus: 0};
+                    }
+                    return favoredArray;
                 }
 
-                $scope.removeClass = function (aClass) {
+                $scope.toggleFavoredClass = function (aClass) {
+                    if (aClass.favoredClass) {
+                        console.log("Removing Favored Class")
+                        console.log(CharacterFactory.removeFavoredClass(aClass));
+                    } else {
+                        console.log("Removing Favored Class")
+                        console.log(CharacterFactory.addFavoredClass(aClass));
+                    }
+                };
+
+                $scope.removeClass = function(aClass) {
                     $scope.addClassList = false;
                     $scope.newClassSelected = false;
                     CharacterFactory.removeClass(aClass.name);
                 };
 
                 $scope.addClass = function(aClass) {
-                    $scope.archetypeList = [{
-                        name: "No Archetype"
-                    }];
+                    console.log("adding " + aClass.name);
+                    CharacterFactory.addClass(aClass);
+                    $scope.addClassList = false;
+                    $scope.newClassSelected = false;
+                };
 
-                    $scope.archetypeList2 = {};
+                $scope.addClassAndArchetype = function(aClass, archetype) {
+                    console.log("adding " + aClass.name + (archetype ? (" with " + archetype.name) : ""));
+                    CharacterFactory.addClass(aClass, archetype);
+                    $scope.addClassList = false;
+                    $scope.newClassSelected = false;
+                };
+
+                $scope.setSelectedClass = function(aClass) {
+                    $scope.selectedClass = aClass;
+                    $scope.newClassSelected = true;
+
+                    // Generate Archetype List
+                    $scope.archetypeSourceList = [];
+                    $scope.archetypeList = [];
 
                     for (var key in aClass) {
                         if (aClass[key].type == "Archetype") {
-                            $scope.archetypeList.push(aClass[key])
-                            if (!$scope.archetypeList2[aClass[key].source]) {$scope.archetypeList2[aClass[key].source] = {name:aClass[key].source, list: []}};
-                            $scope.archetypeList2[aClass[key].source].list.push(aClass[key]);
+                            if ($scope.archetypeSourceList.indexOf(aClass[key].source) <= -1) {
+                                $scope.archetypeSourceList.push(aClass[key].source);
+                            };
+                            $scope.archetypeList.push(aClass[key]);
                         }
-                    }
-
-                    // If is a new class and it has archetypes, display the archtype list.
-                    if ($scope.archetypeList.length > 1 && !aClass.level) {
-                        $scope.newClassSelected = aClass.level ? false : true;
-                        $scope.selectedArchetype = "";
-                    } else {
-                        CharacterFactory.addClass(aClass);
-                        $scope.addClassList = false;
-                        $scope.newClassSelected = false;
                     }
                 };
 
-                $scope.addClassAndArchetype = function() {
-                    CharacterFactory.addClass($scope.selectedClass, $scope.selectedArchetype);
-                    $scope.addClassList = false;
-                    $scope.newClassSelected = false;
+                $scope.hasArchetypes = function(aClass) {
+                    for (var key in aClass) {
+                        if (aClass[key].type === "Archetype") {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
 
+                $scope.setSelectedArchetype = function(archetype) {
+                    $scope.selectedArchetype = archetype;
                 };
 
                 $scope.availableClasses = function() {

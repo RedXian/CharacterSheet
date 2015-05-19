@@ -171,7 +171,7 @@
             "default": ["Common", "Dwarven"],
             "list": ["Giant", "Gnome", "Goblin", "Orc", "Terran", "Undercommon"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "40",
             "Intuitive": "+3d6",
@@ -332,7 +332,7 @@
             "default": ["Common", "Elven"],
             "list": ["Celestial", "Draconic", "Gnoll", "Gnome", "Goblin", "Orc", "Sylvan"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "110",
             "Intuitive": "+4d6",
@@ -498,7 +498,7 @@
             "default": ["Common", "Gnome", "Sylvan"],
             "list": ["Draconic", "Dwarven", "Elven", "Giant", "Goblin", "Orc"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "40",
             "Intuitive": "+4d6",
@@ -659,7 +659,7 @@
             "default": ["Common", "Halfling"],
             "list": ["Dwarven", "Elven", "Gnome", "Goblin"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "20",
             "Intuitive": "+2d4",
@@ -740,7 +740,8 @@
         "Multitalented": {
             "name": "Multitalented",
             "type": "Racial Trait",
-            "description": "Half-elves choose two favored classes at first level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes. See Classes for more information about favored classes."
+            "description": "Half-elves choose two favored classes at first level and gain +1 hit point or +1 skill point whenever they take a level in either one of those classes. See Classes for more information about favored classes.",
+            "favoredClass": "+1"
         },
         "Ancestral Arms": {
             "name": "Ancestral Arms",
@@ -802,7 +803,7 @@
             "default": ["Common", "Elven"],
             "list": ["Aboleth", "Abyssal", "Aklo", "Aquan", "Auran", "Boggard", "Catfolk", "Celestial", "Draconic", "Drow Sign Language", "Dwarven", "D'ziriak (understanding only,  cannot speak)", "Human Dialect", "Giant", "Gnoll", "Gnome", "Goblin", "Grippli", "Halfling", "Ignan", "Infernal", "Orc", "Sylvan", "Tengu", "Terran", "Undercommon"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "20",
             "Intuitive": "+1d6",
@@ -968,7 +969,7 @@
             "default": ["Common", "Orc"],
             "list": ["Abyssal", "Draconic", "Giant", "Gnoll", "Goblin"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "14",
             "Intuitive": "+1d4",
@@ -1124,7 +1125,7 @@
             "default": ["Common"],
             "list": ["Aboleth", "Abyssal", "Aklo", "Aquan", "Auran", "Boggard", "Catfolk", "Celestial", "Draconic", "Drow Sign Language", "Dwarven", "D'ziriak (understanding only, cannot speak)", "Human Dialect", "Giant", "Gnoll", "Gnome", "Goblin", "Grippli", "Halfling", "Ignan", "Infernal", "Orc", "Sylvan", "Tengu", "Terran", "Undercommon"]
         },
-        "source": "Core Rulebook",
+        "source": { "name": "Core Rulebook", "date": "August 2009"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -1206,7 +1207,7 @@
             "default": ["Common", "Celestial"],
             "list": ["Draconic", "Dwarven", "Elven", "Gnome", "Halfling", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -1289,7 +1290,7 @@
             "default": ["Common", "Catfolk"],
             "list": ["Elven", "Gnoll", "Gnome", "Goblin", "Halfling", "Orc", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -1387,7 +1388,7 @@
             "default": ["Common"],
             "list": ["Aboleth", "Abyssal", "Aklo", "Aquan", "Auran", "Boggard", "Catfolk", "Celestial", "Draconic", "Drow Sign Language", "Dwarven", "D'ziriak (understanding only, cannot speak)", "Human Dialect", "Giant", "Gnoll", "Gnome", "Goblin", "Grippli", "Halfling", "Ignan", "Infernal", "Orc", "Sylvan", "Tengu", "Terran", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "110",
             "Intuitive": "+4d6",
@@ -1490,7 +1491,7 @@
             "default": ["Elven", "Undercommon"],
             "list": ["Abyssal", "Aklo", "Aquan", "Common", "Draconic", "Drow Sign Language", "Gnome", "Goblin"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "110",
             "Intuitive": "+4d6",
@@ -1583,7 +1584,7 @@
             "default": ["Common"],
             "list": ["Aklo", "Aquan", "Auran", "Draconic", "D'ziriak (understanding only, cannot speak)", "Ignan", "Terran", "any regional human tongue"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "20",
             "Intuitive": "+1d6",
@@ -1656,7 +1657,7 @@
             "default": ["Goblin"],
             "list": ["Common", "Draconic", "Dwarven", "Gnoll", "Gnome", "Halfling", "Orc"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -1728,7 +1729,7 @@
             "default": ["Common", "Goblin"],
             "list": ["Draconic", "Dwarven", "Infernal", "Giant", "Orc"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "14",
             "Intuitive": "+1d4",
@@ -1811,7 +1812,7 @@
             "default": ["Common", "Ignan"],
             "list": ["Aquan", "Auran", "Dwarven", "Elven", "Gnome", "Halfling", "Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -1894,7 +1895,7 @@
             "default": ["Draconic"],
             "list": ["Common", "Dwarven", "Gnome", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -1978,7 +1979,7 @@
             "default": ["Common", "Orc"],
             "list": ["Dwarven", "Giant", "Gnoll", "Goblin", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -2061,7 +2062,7 @@
             "default": ["Common, Terran"],
             "list": ["Aquan", "Auran", "Dwarven", "Elven", "Gnome", "Halfling", "Ignan", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -2144,7 +2145,7 @@
             "default": ["Common"],
             "list": ["Aklo", "Draconic", "Dwarven", "Gnoll", "Gnome", "Goblin", "Halfling", "Orc", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -2227,7 +2228,7 @@
             "default": ["Common", "Auran"],
             "list": ["Aquan", "Dwarven", "Elven", "Gnome", "Halfling", "Ignan", "Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -2315,7 +2316,7 @@
             "default": ["Tengus begin play speaking Common and Tengu"],
             "list": [" Tengus with high Intelligence scores can choose any languages they want (except for secret languages, such as Druidic)"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -2403,7 +2404,7 @@
             "default": ["Tieflings begin play speaking Common and either Abyssal or Infernal"],
             "list": [" Tieflings with high intelligence scores can choose from the following: Abyssal, Draconic, Dwarven, Elven, Gnome, Goblin, Halfling, Infernal, and Orc"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -2487,7 +2488,7 @@
             "default": ["Common", "Aquan"],
             "list": ["Auran", "Dwarven", "Elven", "Gnome", "Halfling", "Ignan", "Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -2583,7 +2584,7 @@
             "default": ["Changelings begin play speaking Common and the primary language of their host society"],
             "list": [" Changelings with high Intelligence scores can choose from the following: Aklo, Draconic, Dwarven, Elven, Giant, Gnoll, Goblin, and Orc"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -2671,7 +2672,7 @@
             "default": ["Common", "Dwarven", "Undercommon"],
             "list": ["Aklo", "Draconic", "Giant", "Goblin", "Orc", "Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "40",
             "Intuitive": "+3d6",
@@ -2750,7 +2751,7 @@
             "default": ["Common", "Aboleth"],
             "list": ["Aklo", "Aquan", "Draconic", "Elven"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "20",
             "Intuitive": "+1d6",
@@ -2833,7 +2834,7 @@
             "default": ["Common", "Grippli"],
             "list": ["Boggard", "Draconic", "Elven", "Gnome", "Goblin", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -2920,7 +2921,7 @@
             "default": ["Common", "Sylvan"],
             "list": ["any human language", "Aklo", "Celestial", "Elven", "Gnome", "Tengu"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -3004,7 +3005,7 @@
             "default": ["Common", "Aquan"],
             "list": ["Aboleth", "Aklo", "Draconic", "Elven", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -3087,7 +3088,7 @@
             "default": ["Common", "Draconic"],
             "list": ["any human tongue", "Abyssal", "Aklo", "Celestial", "Draconic", "Giant", "Infernal", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "20",
             "Intuitive": "+1d6",
@@ -3165,7 +3166,7 @@
             "default": ["Common", "Samsaran"],
             "list": ["any human language", "Abyssal", "Aquan", "Auran", "Celestial", "Draconic", "Giant", "Ignan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "60",
             "Intuitive": "+4d6",
@@ -3253,7 +3254,7 @@
             "default": ["Strix"],
             "list": ["Auran", "Common", "Draconic", "Giant", "Gnome", "Goblin", "Infernal"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "12",
             "Intuitive": "+1d4",
@@ -3336,7 +3337,7 @@
             "default": ["Common", "one elemental language (Aquan, Auran, Ignan, or Terran)"],
             "list": ["Aquan", "Auran", "Draconic", "Ignan", "Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -3434,7 +3435,7 @@
             "default": ["Gnome", "Undercommon"],
             "list": ["Aklo", "Common", "Draconic", "Dwarven", "Elven", "Giant", "Goblin", "Orc", "and Terran"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "40",
             "Intuitive": "+4d6",
@@ -3513,7 +3514,7 @@
             "default": ["Common", "Vanaran"],
             "list": ["Aklo", "Celestial", "Elven", "Gnome", "Goblin", "Sylvan"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "14",
             "Intuitive": "+1d4",
@@ -3616,7 +3617,7 @@
             "default": ["Common", "Vishkanya"],
             "list": ["Aklo", "Draconic", "Elven", "Goblin", "Sylvan", "Undercommon"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "15",
             "Intuitive": "+1d4",
@@ -3710,7 +3711,7 @@
             "default": ["Common", "Wayang"],
             "list": ["any human language", "Abyssal", "Aklo", "Draconic", "Goblin", "Infernal", "Nagaji", "Samsaran", "Tengu"]
         },
-        "source": "Advanced Race Guide",
+        "source": { "name": "Advanced Race Guide", "date": "August 2014"},
         "Age": {
             "Adulthood": "40",
             "Intuitive": "+4d6",

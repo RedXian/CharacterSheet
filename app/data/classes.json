@@ -25,87 +25,138 @@
         "Breaker": {
             "name": "Breaker",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Brutal Pugilist": {
             "name": "Brutal Pugilist",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Drunken Brute": {
             "name": "Drunken Brute",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Elemental Kin": {
             "name": "Elemental Kin",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Hurler": {
             "name": "Hurler",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Invulnerable Rager": {
             "name": "Invulnerable Rager",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Mounted Fury": {
             "name": "Mounted Fury",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Savage Barbarian": {
             "name": "Savage Barbarian",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Superstitious": {
             "name": "Superstitious",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Totem Warrior": {
             "name": "Totem Warrior",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Armored Hulk": {
             "name": "Armored Hulk",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Scarred Rager": {
             "name": "Scarred Rager",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Sea Reaver": {
             "name": "Sea Reaver",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Titan Mauler": {
             "name": "Titan Mauler",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "True Primitive": {
             "name": "True Primitive",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Urban Barbarian": {
             "name": "Urban Barbarian",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Wild Rager": {
             "name": "Wild Rager",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Feral Gnasher": {
             "name": "Feral Gnasher",
@@ -115,7 +166,10 @@
                     "race": "Goblin"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Hateful Rager": {
             "name": "Hateful Rager",
@@ -125,9 +179,15 @@
                     "race": "Half-orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook",
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        },
         "Role": "Barbarians excel in combat, possessing the martial prowess and fortitude to take on foes seemingly far superior to themselves. With rage granting them boldness and daring beyond that of most other warriors, barbarians charge furiously into battle and ruin all who would stand in their way.",
         "alignmentRestrictions": [
             "NG", "N", "NE", "CG", "CN", "CE"
@@ -203,97 +263,154 @@
         "Arcane Duelist": {
             "name": "Arcane Duelist",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Archivist": {
             "name": "Archivist",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Court Bard": {
             "name": "Court Bard",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Detective": {
             "name": "Detective",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Magician": {
             "name": "Magician",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Sandman": {
             "name": "Sandman",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Savage Skald": {
             "name": "Savage Skald",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Sea Singer": {
             "name": "Sea Singer",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Street Performer": {
             "name": "Street Performer",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Animal Speaker": {
             "name": "Animal Speaker",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Celebrity": {
             "name": "Celebrity",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Demagogue": {
             "name": "Demagogue",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Dirge Bard": {
             "name": "Dirge Bard",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Geisha": {
             "name": "Geisha",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Songhealer": {
             "name": "Songhealer",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Sound Striker": {
             "name": "Sound Striker",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Archaeologist": {
             "name": "Archaeologist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Daredevil": {
             "name": "Daredevil",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Dervish Dancer": {
             "name": "Dervish Dancer",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Prankster": {
             "name": "Prankster",
@@ -303,7 +420,10 @@
                     "race": "Gnome"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Shadow Puppeteer": {
             "name": "Shadow Puppeteer",
@@ -313,7 +433,10 @@
                     "race": "Wayangs"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Watersinger": {
             "name": "Watersinger",
@@ -323,9 +446,15 @@
                     "race": "Undine"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook",
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        },
         "alignmentRestrictions": [
             "LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE"
         ],
@@ -400,42 +529,66 @@
         "Cloistered Cleric": {
             "name": "Cloistered Cleric",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Separatist": {
             "name": "Separatist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Theologian": {
             "name": "Theologian",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Undead Lord Cleric": {
             "name": "Undead Lord Cleric",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Crusader": {
             "name": "Crusader",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Divine Strategist": {
             "name": "Divine Strategist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Evangelist": {
             "name": "Evangelist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Merciful Healer": {
             "name": "Merciful Healer",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Demonic Apostle": {
             "name": "Demonic Apostle",
@@ -445,7 +598,10 @@
                     "race": "Drow"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Fiendish Vessel": {
             "name": "Fiendish Vessel",
@@ -455,7 +611,10 @@
                     "race": "Tiefling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Forgemaster": {
             "name": "Forgemaster",
@@ -465,9 +624,15 @@
                     "race": "Dwarf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": ["Core Rulebook"],
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        },
         "role": "",
         "ageCategory": "Trained"
     },
@@ -540,112 +705,178 @@
         "Aquatic Druid": {
             "name": "Aquatic Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Arctic Druid": {
             "name": "Arctic Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Blight Druid": {
             "name": "Blight Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Cave Druid": {
             "name": "Cave Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Desert Druid": {
             "name": "Desert Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Jungle Druid": {
             "name": "Jungle Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Mountain Druid": {
             "name": "Mountain Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Plains Druid": {
             "name": "Plains Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Swamp Druid": {
             "name": "Swamp Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Urban Druid": {
             "name": "Urban Druid",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Dragon Shaman": {
             "name": "Dragon Shaman",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Menhir Savant": {
             "name": "Menhir Savant",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Mooncaller": {
             "name": "Mooncaller",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Pack Lord": {
             "name": "Pack Lord",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Reincarnated Druid": {
             "name": "Reincarnated Druid",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Saurian Shaman": {
             "name": "Saurian Shaman",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Shark Shaman": {
             "name": "Shark Shaman",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Storm Druid": {
             "name": "Storm Druid",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Ape Shaman": {
             "name": "Ape Shaman",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Bat Shaman": {
             "name": "Bat Shaman",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Boar Shaman": {
             "name": "Boar Shaman",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "World Walker": {
             "name": "World Walker",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Feral Child": {
             "name": "Feral Child",
@@ -655,7 +886,10 @@
                     "race": "Human"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Naga Aspirant": {
             "name": "Naga Aspirant",
@@ -665,7 +899,10 @@
                     "race": "Nagaji"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Sky Druid": {
             "name": "Sky Druid",
@@ -675,7 +912,10 @@
                     "race": "Sylph"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Treesinger": {
             "name": "Treesinger",
@@ -685,7 +925,10 @@
                     "race": "Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Undine Adept": {
             "name": "Undine Adept",
@@ -695,9 +938,15 @@
                     "race": "Undine"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Fighter": {
         "name": "Fighter",
@@ -725,112 +974,178 @@
         "Archer": {
             "name": "Archer",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Crossbowman": {
             "name": "Crossbowman",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Free Hand Fighter": {
             "name": "Free Hand Fighter",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Mobile Fighter": {
             "name": "Mobile Fighter",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Phalanx Soldier": {
             "name": "Phalanx Soldier",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Polearm Master": {
             "name": "Polearm Master",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Roughrider": {
             "name": "Roughrider",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Savage Warrior": {
             "name": "Savage Warrior",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Shielded Fighter": {
             "name": "Shielded Fighter",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Two-Handed Fighter": {
             "name": "Two-Handed Fighter",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Two-Weapon Warrior": {
             "name": "Two-Weapon Warrior",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Weapon Master": {
             "name": "Weapon Master",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Armor Master": {
             "name": "Armor Master",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Brawler": {
             "name": "Brawler",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Cad": {
             "name": "Cad",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Dragoon": {
             "name": "Dragoon",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Gladiator": {
             "name": "Gladiator",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Tactician": {
             "name": "Tactician",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Thunderstriker": {
             "name": "Thunderstriker",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Tower Shield Specialist": {
             "name": "Tower Shield Specialist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Unarmed Fighter": {
             "name": "Unarmed Fighter",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Unbreakable": {
             "name": "Unbreakable",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Airborne Ambusher": {
             "name": "Airborne Ambusher",
@@ -840,7 +1155,10 @@
                     "race": "Strix"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Cavern Sniper": {
             "name": "Cavern Sniper",
@@ -850,7 +1168,10 @@
                     "race": "Drow"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Dirty Fighter": {
             "name": "Dirty Fighter",
@@ -860,9 +1181,15 @@
                     "race": "Orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Monk": {
         "name": "Monk",
@@ -890,92 +1217,146 @@
         "Drunken Master": {
             "name": "Drunken Master",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Hungry Ghost Monk": {
             "name": "Hungry Ghost Monk",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Ki Mystic": {
             "name": "Ki Mystic",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Monk of the Empty Hand": {
             "name": "Monk of the Empty Hand",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Monk of the Four Winds": {
             "name": "Monk of the Four Winds",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Monk of the Healing Hand": {
             "name": "Monk of the Healing Hand",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Monk of the Lotus": {
             "name": "Monk of the Lotus",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Monk of the Sacred Mountain": {
             "name": "Monk of the Sacred Mountain",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Weapon Adept": {
             "name": "Weapon Adept",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Zen Archer": {
             "name": "Zen Archer",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Qinggong monk": {
             "name": "Qinggong monk",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Flowing monk": {
             "name": "Flowing monk",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Maneuver master": {
             "name": "Maneuver master",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Martial artist": {
             "name": "Martial artist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Master of many styles": {
             "name": "Master of many styles",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Sensei": {
             "name": "Sensei",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Sohei": {
             "name": "Sohei",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Tetori": {
             "name": "Tetori",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Gray Disciple": {
             "name": "Gray Disciple",
@@ -985,7 +1366,10 @@
                     "race": "Duergar"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Ironskin Monk": {
             "name": "Ironskin Monk",
@@ -995,7 +1379,10 @@
                     "race": "Hobgoblin"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Nimble Guardian": {
             "name": "Nimble Guardian",
@@ -1005,7 +1392,10 @@
                     "race": "Catfolk"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Student Of Stone": {
             "name": "Student Of Stone",
@@ -1015,7 +1405,10 @@
                     "race": "Oread"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Treetop Monk": {
             "name": "Treetop Monk",
@@ -1025,7 +1418,10 @@
                     "race": "Vanara"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Underfoot Adept": {
             "name": "Underfoot Adept",
@@ -1035,7 +1431,10 @@
                     "race": "Halfling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Wanderer": {
             "name": "Wanderer",
@@ -1045,9 +1444,15 @@
                     "race": "Human"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Paladin": {
         "name": "Paladin",
@@ -1106,67 +1511,106 @@
         "Divine Defender": {
             "name": "Divine Defender",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Hospitaler": {
             "name": "Hospitaler",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Sacred Servant": {
             "name": "Sacred Servant",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Shining Knight": {
             "name": "Shining Knight",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Undead Scourge": {
             "name": "Undead Scourge",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Warrior of the Holy Light": {
             "name": "Warrior of the Holy Light",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Oathbound Paladin": {
             "name": "Oathbound Paladin",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Divine Hunter": {
             "name": "Divine Hunter",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Empyreal Knight": {
             "name": "Empyreal Knight",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Holy Gun": {
             "name": "Holy Gun",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Holy tactician": {
             "name": "Holy tactician",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Knight of the Sepulcher": {
             "name": "Knight of the Sepulcher",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Sacred Shield": {
             "name": "Sacred Shield",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Redeemer": {
             "name": "Redeemer",
@@ -1176,7 +1620,10 @@
                     "race": "Half-Orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Stonelord": {
             "name": "Stonelord",
@@ -1186,7 +1633,10 @@
                     "race": "Dwarf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Tranquil Guardian": {
             "name": "Tranquil Guardian",
@@ -1196,9 +1646,15 @@
                     "race": "Aasimar"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Ranger": {
         "name": "Ranger",
@@ -1257,77 +1713,122 @@
         "Beast Master": {
             "name": "Beast Master",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Guide": {
             "name": "Guide",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Horse Lord": {
             "name": "Horse Lord",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Infiltrator": {
             "name": "Infiltrator",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Shapeshifter": {
             "name": "Shapeshifter",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Skirmisher": {
             "name": "Skirmisher",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Spirit Ranger": {
             "name": "Spirit Ranger",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Urban Ranger": {
             "name": "Urban Ranger",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Trapper": {
             "name": "Trapper",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Battle Scout": {
             "name": "Battle Scout",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Deep Walker": {
             "name": "Deep Walker",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Falconer": {
             "name": "Falconer",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Trophy Hunter": {
             "name": "Trophy Hunter",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Warden": {
             "name": "Warden",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Wild Stalker": {
             "name": "Wild Stalker",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Dusk Stalker": {
             "name": "Dusk Stalker",
@@ -1337,7 +1838,10 @@
                     "race": "Fetchling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Wave Warden": {
             "name": "Wave Warden",
@@ -1347,7 +1851,10 @@
                     "race": "Merfolk"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Wild Shadow": {
             "name": "Wild Shadow",
@@ -1357,9 +1864,15 @@
                     "race": "Half-Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Rogue": {
         "name": "Rogue",
@@ -1387,107 +1900,170 @@
         "Acrobat": {
             "name": "Acrobat",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Burglar": {
             "name": "Burglar",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Cutpurse": {
             "name": "Cutpurse",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Investigator": {
             "name": "Investigator",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Poisoner": {
             "name": "Poisoner",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Rake": {
             "name": "Rake",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Scout": {
             "name": "Scout",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Sniper": {
             "name": "Sniper",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Spy": {
             "name": "Spy",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Swashbuckler": {
             "name": "Swashbuckler",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Thug": {
             "name": "Thug",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Trapsmith": {
             "name": "Trapsmith",
             "type": "Archetype",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Bandit": {
             "name": "Bandit",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Chameleon": {
             "name": "Chameleon",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Charlatan": {
             "name": "Charlatan",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Driver": {
             "name": "Driver",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Knife Master": {
             "name": "Knife Master",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Pirate": {
             "name": "Pirate",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Roof Runner": {
             "name": "Roof Runner",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Sanctified Rogue": {
             "name": "Sanctified Rogue",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Survivalist": {
             "name": "Survivalist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Filcher": {
             "name": "Filcher",
@@ -1497,7 +2073,10 @@
                     "race": "Halfling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Skulking Slayer": {
             "name": "Skulking Slayer",
@@ -1507,7 +2086,10 @@
                     "race": "Half-Orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Cat Burglar": {
             "name": "Cat Burglar",
@@ -1517,7 +2099,10 @@
                     "race": "Catfolk"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Deadly Courtesan": {
             "name": "Deadly Courtesan",
@@ -1527,7 +2112,10 @@
                     "race": "Vishkanya"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Eldritch Raider": {
             "name": "Eldritch Raider",
@@ -1537,7 +2125,10 @@
                     "race": "Gillman"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Kitsune Trickster": {
             "name": "Kitsune Trickster",
@@ -1547,7 +2138,10 @@
                     "race": "Kitsune"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Swordmaster": {
             "name": "Swordmaster",
@@ -1557,9 +2151,15 @@
                     "race": "Tengu"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Sorcerer": {
         "name": "Sorcerer",
@@ -1666,104 +2266,179 @@
         },
         "Aberrant": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Abyssal": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Arcane": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Celestial": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Elemental": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Fey": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Infernal": {
             "name": "Infernal",
             "type": "Archetype",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Undead": {
             "type": "bloodlines",
-            "source": "Core Rulebook"
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
         },
         "Accursed": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Djinni": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Efreeti": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Maestro": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Marid": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Rakshasa": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Shaitan": {
             "type": "bloodlines",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Aquatic": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Boreal": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Deepearth": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Dreamspun": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Protean": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Serpentine": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Shadow": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Starsoul": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Stormborn": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Verdant": {
             "type": "bloodlines",
-            "source": "Advanced Player's Guide"
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
         },
         "Kobold Sorcerer": {
             "name": "Kobold Sorcerer",
@@ -1773,7 +2448,10 @@
                     "race": "Kobold"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Imperious": {
             "name": "Imperious",
@@ -1783,97 +2461,166 @@
                     "race": "Human"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Crossblooded": {
             "name": "Crossblooded",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Wildblooded": {
             "name": "Wildblooded",
             "type": "Archetype",
             "Anarchic": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Aerial": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Bedrock": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Brutal": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Empyreal": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Envenomed": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Groveborn": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Karmic": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Linnorm": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Pit-Touched": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Primal": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Rime-Blooded": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Sage": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Sanguine": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Seaborn": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Sylvan": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Umbral": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Visionary": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Void-Touched": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
             "Warped": {
                 "type": "bloodlines",
-                "source": "Ultimate Magic"
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
             },
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Wishcrafter": {
             "name": "Wishcrafter",
@@ -1883,9 +2630,15 @@
                     "race": "Ifrits"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Wizard": {
         "name": "Wizard",
@@ -1956,22 +2709,34 @@
         "Scrollmaster Wizard": {
             "name": "Scrollmaster Wizard",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Arcane Bomber": {
             "name": "Arcane Bomber",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Siege Mage": {
             "name": "Siege Mage",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Spellslinger": {
             "name": "Spellslinger",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Cruoromancer": {
             "name": "Cruoromancer",
@@ -1981,7 +2746,10 @@
                     "race": "Dhampir"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Spellbinder": {
             "name": "Spellbinder",
@@ -1991,7 +2759,10 @@
                     "race": "Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Wind Listener": {
             "name": "Wind Listener",
@@ -2001,9 +2772,15 @@
                     "race": "Sylph"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Alchemist": {
         "name": "Alchemist",
@@ -2012,52 +2789,82 @@
         "Chirurgeon": {
             "name": "Chirurgeon",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Clone Master": {
             "name": "Clone Master",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Internal Alchemist": {
             "name": "Internal Alchemist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Mindchemist": {
             "name": "Mindchemist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Preservationist": {
             "name": "Preservationist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Psychonaut": {
             "name": "Psychonaut",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Reanimator": {
             "name": "Reanimator",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Vivisectionist": {
             "name": "Vivisectionist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Beastmorph": {
             "name": "Beastmorph",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Ragechemist": {
             "name": "Ragechemist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Bogborn Alchemist": {
             "name": "Bogborn Alchemist",
@@ -2067,7 +2874,10 @@
                     "race": "Grippli"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Bramble Brewer": {
             "name": "Bramble Brewer",
@@ -2077,7 +2887,10 @@
                     "race": "Half-Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Deep Bomber": {
             "name": "Deep Bomber",
@@ -2087,7 +2900,10 @@
                     "race": "Svirfneblin"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Fire Bomber": {
             "name": "Fire Bomber",
@@ -2097,7 +2913,10 @@
                     "race": "Goblin"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Plague Bringer": {
             "name": "Plague Bringer",
@@ -2107,7 +2926,10 @@
                     "race": "Ratfolk"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Saboteur": {
             "name": "Saboteur",
@@ -2117,9 +2939,15 @@
                     "race": "Gnome"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Cavalier": {
         "name": "Cavalier",
@@ -2128,42 +2956,66 @@
         "Beast Rider": {
             "name": "Beast Rider",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Emissary": {
             "name": "Emissary",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Gendarme": {
             "name": "Gendarme",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Honor guard": {
             "name": "Honor guard",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Luring cavalier": {
             "name": "Luring cavalier",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Musketeer": {
             "name": "Musketeer",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Standard bearer": {
             "name": "Standard bearer",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Strategist": {
             "name": "Strategist",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Fell Rider": {
             "name": "Fell Rider",
@@ -2173,7 +3025,10 @@
                     "race": "Hobgoblin"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Order of the Paw": {
             "name": "Order of the Paw",
@@ -2183,9 +3038,15 @@
                     "race": "Halfling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Inquisitor": {
         "name": "Inquisitor",
@@ -2194,42 +3055,66 @@
         "Exorcist": {
             "name": "Exorcist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Heretic": {
             "name": "Heretic",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Infiltrator": {
             "name": "Infiltrator",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Preacher": {
             "name": "Preacher",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Sin Eater": {
             "name": "Sin Eater",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Iconoclast": {
             "name": "Iconoclast",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Spellbreaker": {
             "name": "Spellbreaker",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Witch Hunter": {
             "name": "Witch Hunter",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Exarch": {
             "name": "Exarch",
@@ -2239,7 +3124,10 @@
                     "race": "Dwarf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Immolator": {
             "name": "Immolator",
@@ -2249,7 +3137,10 @@
                     "race": "Ifrit"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Kinslayer": {
             "name": "Kinslayer",
@@ -2259,9 +3150,15 @@
                     "race": "Dhampir"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Oracle": {
         "name": "Oracle",
@@ -2270,32 +3167,50 @@
         "Dual-cursed Oracle": {
             "name": "Dual-cursed Oracle",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Enlightened Philosopher": {
             "name": "Enlightened Philosopher",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Planar Oracle": {
             "name": "Planar Oracle",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Possessed Oracle": {
             "name": "Possessed Oracle",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Seer": {
             "name": "Seer",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Stargazer": {
             "name": "Stargazer",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Community Guardian": {
             "name": "Community Guardian",
@@ -2305,7 +3220,10 @@
                     "race": "Halfling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Ancient Lorekeeper": {
             "name": "Ancient Lorekeeper",
@@ -2315,7 +3233,10 @@
                     "race": "Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Purifier": {
             "name": "Purifier",
@@ -2325,7 +3246,10 @@
                     "race": "Aasimar"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Reincarnated Oracle": {
             "name": "Reincarnated Oracle",
@@ -2335,7 +3259,10 @@
                     "race": "Samsaran"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Shigenjo": {
             "name": "Shigenjo",
@@ -2345,9 +3272,15 @@
                     "race": "Tengus"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Summoner": {
         "name": "Summoner",
@@ -2356,22 +3289,34 @@
         "Broodmaster": {
             "name": "Broodmaster",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Evolutionist": {
             "name": "Evolutionist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Master Summoner": {
             "name": "Master Summoner",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Synthesist": {
             "name": "Synthesist",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Blood God Disciple": {
             "name": "Blood God Disciple",
@@ -2381,7 +3326,10 @@
                     "race": "Half-Orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Shadow Caller": {
             "name": "Shadow Caller",
@@ -2391,7 +3339,10 @@
                     "race": "Fetchling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Shaitan Binder": {
             "name": "Shaitan Binder",
@@ -2401,7 +3352,10 @@
                     "race": "Oread"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Wild Caller": {
             "name": "Wild Caller",
@@ -2411,9 +3365,15 @@
                     "race": "Half-Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Witch": {
         "name": "Witch",
@@ -2422,22 +3382,34 @@
         "Beast-bonded": {
             "name": "Beast-bonded",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Gravewalker": {
             "name": "Gravewalker",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Hedge Witch": {
             "name": "Hedge Witch",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Sea Witch": {
             "name": "Sea Witch",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Bonded Witch": {
             "name": "Bonded Witch",
@@ -2447,7 +3419,10 @@
                     "race": "Half-Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Dreamweaver": {
             "name": "Dreamweaver",
@@ -2457,7 +3432,10 @@
                     "race": "Changeling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Scarred Witch Doctor": {
             "name": "Scarred Witch Doctor",
@@ -2467,9 +3445,15 @@
                     "race": "Orc"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Advanced Player's Guide"
+        "source": {
+            "name": "Advanced Player's Guide",
+            "date": "2010-09-01"
+        }
     },
     "Gunslinger": {
         "name": "Gunslinger",
@@ -2477,22 +3461,34 @@
         "Gun Tank": {
             "name": "Gun Tank",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Musket Master": {
             "name": "Musket Master",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Mysterious Stranger": {
             "name": "Mysterious Stranger",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Pistolero": {
             "name": "Pistolero",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Buccaneer": {
             "name": "Buccaneer",
@@ -2502,7 +3498,10 @@
                     "race": "Human"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Bushwhacker": {
             "name": "Bushwhacker",
@@ -2512,7 +3511,10 @@
                     "race": "Kobold"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Experimental Gunsmith": {
             "name": "Experimental Gunsmith",
@@ -2522,7 +3524,10 @@
                     "race": "Gnome"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Gulch Gunner": {
             "name": "Gulch Gunner",
@@ -2532,19 +3537,31 @@
                     "race": "Ratfolk"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Ultimate Combat"
+        "source": {
+            "name": "Ultimate Combat",
+            "date": "2011-09-01"
+        }
     },
     "Ninja": {
         "name": "Ninja",
         "type": "Class",
-        "source": "Ultimate Combat"
+        "source": {
+            "name": "Ultimate Combat",
+            "date": "2011-09-01"
+        }
     },
     "Samurai": {
         "name": "Samurai",
         "type": "Class",
-        "source": "Ultimate Combat"
+        "source": {
+            "name": "Ultimate Combat",
+            "date": "2011-09-01"
+        }
     },
     "Magus": {
         "name": "Magus",
@@ -2552,42 +3569,66 @@
         "Bladebound": {
             "name": "Bladebound",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Hexcrafter": {
             "name": "Hexcrafter",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Spellblade": {
             "name": "Spellblade",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Staff Magus": {
             "name": "Staff Magus",
             "type": "Archetype",
-            "source": "Ultimate Magic"
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
         },
         "Kensai": {
             "name": "Kensai",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Myrmidarch": {
             "name": "Myrmidarch",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Skirnir": {
             "name": "Skirnir",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Soul Forger": {
             "name": "Soul Forger",
             "type": "Archetype",
-            "source": "Ultimate Combat"
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
         },
         "Elemental Knight": {
             "name": "Elemental Knight",
@@ -2597,7 +3638,10 @@
                     "race": "Suli"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Fiend Flayer": {
             "name": "Fiend Flayer",
@@ -2607,7 +3651,10 @@
                     "race": "Tiefling"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
         "Spell Dancer": {
             "name": "Spell Dancer",
@@ -2617,201 +3664,306 @@
                     "race": "Elf"
                 }
             ],
-            "source": "Advanced Race Guide"
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
         },
-        "source": "Ultimate Magic"
+        "source": {
+            "name": "Ultimate Magic",
+            "date": "2011-04-01"
+        }
     },
     "Arcanist": {
         "name": "Arcanist",
         "type": "Class",
         "description": "Blending the power of the sorcerer with the versatility of the wizard, the arcanist draws upon a reservoir of power to bend magic to her will.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Bloodrager": {
         "name": "Bloodrager",
         "type": "Class",
         "description": "Fusing the frenzy of the barbarian with the bloodline might of the sorcerer, the bloodrager calls upon innate power to give himself extraordinary abilities.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Brawler": {
         "name": "Brawler",
         "type": "Class",
         "description": "Focusing on hand-to-hand combat, the brawler mixes the martial artistry of the monk with the specialist training of the fighter.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Hunter": {
         "name": "Hunter",
         "type": "Class",
         "description": "Though both the druid and ranger can have animal companions, the hunter takes this bond to the next level, forming a deadly duo with her savage ally.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Investigator": {
         "name": "Investigator",
         "type": "Class",
         "description": "With the rogue's cunning complemented by the alchemist's magical talent, the investigator is a peerless problem solver.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Shaman": {
         "name": "Shaman",
         "type": "Class",
         "description": "Calling on the divine power of the oracle and the hexes of a witch, the shaman communes with her spirit animal to unleash doom upon her foes.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Skald": {
         "name": "Skald",
         "type": "Class",
         "description": "Sharing fury through song and deed, the skald takes the rage that lives in the heart of the barbarian and inspires it in others using the performances of the bard.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Slayer": {
         "name": "Slayer",
         "type": "Class",
         "description": "Mixing the precise strikes of the rogue with the special training of the ranger, the slayer hunts down his foes with ruthless efficiency.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Swashbuckler": {
         "name": "Swashbuckler",
         "type": "Class",
         "description": "Combining the prowess of the fighter with the determination of the gunslinger, the swashbuckler is an acrobatic melee combatant.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Warpriest": {
         "name": "Warpriest",
         "type": "Class",
         "description": "Blending the cleric's divine might and the fighter's martial skills, the warpriest brings the fight to the enemies of his faith.",
-        "source": "Advanced Class Guide"
+        "source": {
+            "name": "Advanced Class Guide",
+            "date": "2014-09-01"
+        }
     },
     "Arcane Archer": {
         "name": "Arcane Archer",
         "type": "Presige Class",
         "description": "An arcane spellcaster who draws upon ancient elven traditions to infuse his arrows with potent magical power.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Arcane Trickster": {
         "name": "Arcane Trickster",
         "type": "Presige Class",
         "description": "A troublemaker and a scoundrel who uses arcane magic to enhance her thievery and trickery.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Assassin": {
         "name": "Assassin",
         "type": "Presige Class",
         "description": "A remorseless murderer who kills for money and the sheer thrill of death-dealing.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Dragon Disciple": {
         "name": "Dragon Disciple",
         "type": "Presige Class",
         "description": "An arcane spellcaster who has embraced his latent draconic heritage and, over the course of training and devotion, undergoes a partial transformation into a dragon.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Duelist": {
         "name": "Duelist",
         "type": "Presige Class",
         "description": "A swashbuckling swordfighter who relies upon grace, poise, and acrobatics to win the day.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Eldritch Knight": {
         "name": "Eldritch Knight",
         "type": "Presige Class",
         "description": "An arcane spellcaster who augments his magical skills with combat to create a deadly combination of weapons and magic.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Loremaster": {
         "name": "Loremaster",
         "type": "Presige Class",
         "description": "A spellcaster who devotes his life to research and rumination upon the mysteries of the world.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Mystic Theurge": {
         "name": "Mystic Theurge",
         "type": "Presige Class",
         "description": "Equally devoted to divine and arcane magic, the mystic theurge combines both magical traditions into one incredibly diverse class.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Pathfinder Chronicler": {
         "name": "Pathfinder Chronicler",
         "type": "Presige Class",
         "description": "An explorer at heart, the Pathfinder chronicler travels to distant, exotic lands to expand her knowledge of the world.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Shadowdancer": {
         "name": "Shadowdancer",
         "type": "Presige Class",
         "description": "A mysterious adventurer who walks the boundaries between the real world and the realm of shadows, and who can command shadows to do her bidding.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Battle Herald": {
         "name": "Battle Herald",
         "type": "Prestige Class",
         "description": "A veteran whose masterful tactics and air of command inspire allies to greater feats of heroism.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Holy Vindicator": {
         "name": "Holy Vindicator",
         "type": "Prestige Class",
         "description": "A pious warrior who spreads religion at the edge of a sword.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Horizon Walker": {
         "name": "Horizon Walker",
         "type": "Prestige Class",
         "description": "A scout and wanderer comfortable in even the strangest terrain.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Master Chymist": {
         "name": "Master Chymist",
         "type": "Prestige Class",
         "description": "An alchemist whose mutagens create an alternate, brutish personality.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Master Spy": {
         "name": "Master Spy",
         "type": "Prestige Class",
         "description": "An espionage expert specializing in disguises and striking swiftly from the shadows.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Nature Warden": {
         "name": "Nature Warden",
         "type": "Prestige Class",
         "description": "A master of the wilderness bonded spiritually to a fearsome animal companion.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Rage Prophet": {
         "name": "Rage Prophet",
         "type": "Prestige Class",
         "description": "A bold and barbaric champion who embraces otherworldly powers in order to perfect the art of combat.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Stalwart Defender": {
         "name": "Stalwart Defender",
         "type": "Prestige Class",
         "description": "A master of defending territory and holding the line at all costs.",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Adept": {
         "name": "Adept",
         "type": "NPC Class",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Aristocrat": {
         "name": "Aristocrat",
         "type": "NPC Class",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Commoner": {
         "name": "Commoner",
         "type": "NPC Class",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Expert": {
         "name": "Expert",
         "type": "NPC Class",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     },
     "Warrior": {
         "name": "Warrior",
         "type": "NPC Class",
-        "source": "Core Rulebook"
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
     }
 }
