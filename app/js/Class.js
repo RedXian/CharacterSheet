@@ -28,12 +28,14 @@ angular.module("characterSheet.classes", [])
             controller: function($scope, CharacterFactory, ClassFactory) {
                 $scope.character = CharacterFactory;
                 $scope.newClassSelected = false;
-                $scope.addClassList = true;
+                $scope.addClassList = false;
                 $scope.selectedClass = {};
                 $scope.selectedArchetype = {};
                 $scope.classSourceList = [];
                 $scope.archetypeSourceList = [];
                 $scope.archetypeList = [];
+
+                $scope.favoredBonusSelection = [{name:"+1 Skill Point", value: "Skill"}, {name:"+1 Hit Point", value: "HP"}];
 
                 $scope.displayClassAndLevel = function(aClass) {
                     var archetype = "";
@@ -61,15 +63,6 @@ angular.module("characterSheet.classes", [])
                     return CharacterFactory.classes[aClass.name].favoredClass;
                 };
 
-                $scope.favoredClassLevelBonuses = function() {
-                    var maxLevels = CharacterFactory.getFavoredClassLevels();
-                    var favoredArray = [];
-                    for(var i = 0; i < maxLevels; i++) {
-                        favoredArray = {"name": "Favored Level " + i, bonus: 0};
-                    }
-                    return favoredArray;
-                }
-
                 $scope.toggleFavoredClass = function (aClass) {
                     if (aClass.favoredClass) {
                         CharacterFactory.removeFavoredClass(aClass);
@@ -85,14 +78,12 @@ angular.module("characterSheet.classes", [])
                 };
 
                 $scope.addClass = function(aClass) {
-                    console.log("adding " + aClass.name);
                     CharacterFactory.addClass(aClass);
                     $scope.addClassList = false;
                     $scope.newClassSelected = false;
                 };
 
                 $scope.addClassAndArchetype = function(aClass, archetype) {
-                    console.log("adding " + aClass.name + (archetype ? (" with " + archetype.name) : ""));
                     CharacterFactory.addClass(aClass, archetype);
                     $scope.addClassList = false;
                     $scope.newClassSelected = false;

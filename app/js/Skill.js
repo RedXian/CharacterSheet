@@ -64,6 +64,11 @@ angular.module("characterSheet.skills", [])
                     points += parseInt(CharacterFactory.traits[key].skillsPerLevel * CharacterFactory.level());
                 }
             };
+
+            for (var i = 0; i < CharacterFactory.favoredClassLevelBonuses.length; i++) {
+                points += (CharacterFactory.favoredClassLevelBonuses[i].value=="Skill")? 1 : 0;
+            };
+
             // Need to add any Favored Class bonuses.
             return points;
         };
@@ -117,7 +122,6 @@ angular.module("characterSheet.skills", [])
             return function(item, skill) {
               var skillName = "";
               if (skill) {
-                  console.log(skill);
                   skillName = $scope.subCatName(skill, item);
               } else {
                   skillName = item.name;

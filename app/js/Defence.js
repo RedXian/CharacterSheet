@@ -66,16 +66,22 @@ angular.module("characterSheet.defence", [])
 
                 $scope.classBonusArray = function() {
                     var hitDiceArray = [];
-
                     for (var key in CharacterFactory.classes) {
                         var aClass = CharacterFactory.classes[key];
                         hitDiceArray.push(aClass.level + "d" + aClass.hitDie);
                     };
 
-                    if ($scope.conBonusHP() > 0) {
-                        hitDiceArray.push($scope.conBonusHP());
+                    var conBonus = $scope.conBonusHP();
+                    if (conBonus > 0) {
+                        hitDiceArray.push(conBonus);
                     };
-                    return hitDiceArray.join("+");
+
+                    var favoredBonus = $scope.favoredBonusHP();
+                    if (favoredBonus > 0) {
+                        hitDiceArray.push(favoredBonus);
+                    };
+
+                    return hitDiceArray.join('+');
                 };
 
                 $scope.minHP = -CharacterFactory.abilities.Constitution.adjustedScore | -10;
@@ -84,12 +90,20 @@ angular.module("characterSheet.defence", [])
                     return CharacterFactory.abilities.Constitution.modifier | 0;
                 };
 
+                $scope.favoredBonusHP = function() {
+                    var bonus = 0;
+                    for (var i = 0; i < CharacterFactory.favoredClassLevelBonuses.length; i++) {
+                        bonus += (CharacterFactory.favoredClassLevelBonuses[i].value=="HP")? 1 : 0;
+                    };
+                    return bonus;
+                }
+
                 $scope.conBonusHP = function() {
                     return CharacterFactory.level() * $scope.conModifier();
                 }
 
                 $scope.maxHP = function() {
-                    var hp = $scope.conBonusHP();
+                    var hp = $scope.conBonusHP() + $scope.favoredBonusHP();
                     for (var key in CharacterFactory.classes) {
                         hp += parseInt(CharacterFactory.classes[key].hitDie) * CharacterFactory.classes[key].level;
                     };

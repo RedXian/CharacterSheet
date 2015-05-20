@@ -7,23 +7,13 @@
             <div class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass)"></div>
         </div>
         <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
-        <div>
-            <strong>{{ getFavoredClassLevels() }} Favored Class Bonus</strong>
-            <div ng-repeat="favoredLevel in favoredClassLevelBonuses()">
-                <select ng-model="favoredLevel.bonus">
-                    <option value="">Select One</option>
-                    <option value="1">+1 Skill Point</option>
-                    <option value="2">+1 Hit Point</option>
+            <div style="float:left;clear:left;" ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
+                <strong style="float:left;clear:left;" ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Class Bonus</strong>
+                <select style="float:left;clear:left;" ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
+                    <option hidden>Select Bonus</option>
                 </select>
-            </div>
         </div>
     </aside>
-    <!-- <aside ng-show="addClassList" style="float:left">
-        <h2 style="float:left">Class</h2>
-        <select style="float:left;clear:left;" size="38" ng-model="selectedClass" ng-change="addClass(selectedClass)" ng-options="aClass.name group by aClass.source.name for aClass in classList | filter:availableClasses()">
-            <option value="" selected hidden>Select Class</option>
-        </select>
-    </aside> -->
     <aside ng-show="addClassList" style="float:left">
         <h2 style="clear:left">Class</h2>
         <ul ng-repeat="classSource in classSourceList | orderBy:'date' | unique:'name'">
@@ -36,13 +26,6 @@
 
         </ul>
     </aside>
-
-    <!-- <aside ng-show="newClassSelected" style="float:left">
-        <h2 style="float:left">Archetypes</h2>
-        <select style="float:left;clear:left;" size="38" ng-model="selectedArchetype" ng-change="addClassAndArchetype()" ng-options="archetype.name group by archetype.source for archetype in archetypeList">
-            <option value="" hidden selected>Select Archetype</option>
-        </select>
-    </aside> -->
     <aside ng-show="newClassSelected" style="float:left">
         <h2 style="clear:left">Archetypes</h2>
         <ul>

@@ -5,6 +5,7 @@ angular.module("characterSheet.character", [])
             abilities: {},
             classes: {},
             favoredClasses: 1,
+            favoredClassLevelBonuses: [],
             skills: {},
             traits: {},
             level: function(track) {
@@ -127,6 +128,9 @@ angular.module("characterSheet.character", [])
             addClass: function(aClass, archetype) {
                 if (character.classes[aClass.name]) {
                     character.classes[aClass.name].level++;
+                    if (character.classes[aClass.name].favoredClass) {
+                        character.favoredClassLevelBonuses.push("");
+                    }
                 } else {
                     character.classes[aClass.name] = {};
                     for (var key in aClass) {
@@ -161,6 +165,9 @@ angular.module("characterSheet.character", [])
                     }
                     if (favoredClassCount < maxFavoredClasses) {
                         character.classes[aClass.name].favoredClass = true;
+                        for (var i = 0; i < character.classes[aClass.name].level; i++) {
+                            character.favoredClassLevelBonuses.push("");
+                        }
                         return true;
                     }
                 }
@@ -174,24 +181,29 @@ angular.module("characterSheet.character", [])
                         total += character.classes[key].level;
                     }
                 }
-                console.log(total);
                 return total;
             },
 
             removeFavoredClass: function(aClass) {
                 if (character.classes[aClass.name].favoredClass) {
                     delete character.classes[aClass.name].favoredClass;
+                    for (var i = 0; i < character.classes[aClass.name].level; i++) {
+                        character.favoredClassLevelBonuses.pop();
+                    }
                     return true;
                 }
                 return false;
             },
 
-            removeClass: function(aClass) {
-                if (character.classes[aClass].level == 1) {
-                    delete character.classes[aClass];
+            removeClass: function(aClassName) {
+                if (character.classes[aClassName].favoredClass) {
+                    character.favoredClassLevelBonuses.pop();
+                };
+                if (character.classes[aClassName].level == 1) {
+                    delete character.classes[aClassName];
                 } else {
-                    character.classes[aClass].level--;
-                }
+                    character.classes[aClassName].level--;
+                };
             },
 
             getClassLevels: function() {
