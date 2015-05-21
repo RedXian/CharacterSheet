@@ -1,180 +1,204 @@
 {
-    "Cleric": {
-        "name": "Cleric",
-        "type": "Class",
-        "description": "<p>In faith and the miracles of the divine, many find a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and influence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conflict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.</p>",
-        "hitDie": "8",
-        "classSkills": [
-            "Appraise", "Craft", "Diplomacy", "Heal", "Knowledge (arcana)", "Knowledge (history)", "Knowledge (nobility)", "Knowledge (planes)", "Knowledge (religion)", "Linguistics", "Profession", "Sense Motive"
+  "Cleric": {
+    "name": "Cleric",
+    "type": "Class",
+    "description": "<p>In faith and the miracles of the divine, many find a greater purpose. Called to serve powers beyond most mortal understanding, all priests preach wonders and provide for the spiritual needs of their people. Clerics are more than mere priests, though; these emissaries of the divine work the will of their deities through strength of arms and the magic of their gods. Devoted to the tenets of the religions and philosophies that inspire them, these ecclesiastics quest to spread the knowledge and influence of their faith. Yet while they might share similar abilities, clerics prove as different from one another as the divinities they serve, with some offering healing and redemption, others judging law and truth, and still others spreading conflict and corruption. The ways of the cleric are varied, yet all who tread these paths walk with the mightiest of allies and bear the arms of the gods themselves.</p>",
+    "hitDie": "8",
+    "classSkills": [
+      "Appraise", "Craft", "Diplomacy", "Heal", "Knowledge (arcana)", "Knowledge (history)", "Knowledge (nobility)", "Knowledge (planes)", "Knowledge (religion)", "Linguistics", "Profession", "Sense Motive"
+    ],
+    "skillsPerLevel": "2",
+    "progression": {
+      "BAB": [
+        "0", "1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9", "10", "11", "12", "12", "13", "14", "15"
+      ],
+      "Fortitude": [
+        "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+      ],
+      "Reflex": [
+        "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+      ],
+      "Will": [
+        "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+      ],
+      "spellsPerDay": [
+        [
+          "3", "1+1"
         ],
-        "skillsPerLevel": "2",
-        "progression": {
-            "BAB": [
-                "0", "1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9", "10", "11", "12", "12", "13", "14", "15"
-            ],
-            "Fortitude": [
-                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
-            ],
-            "Reflex": [
-                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
-            ],
-            "Will": [
-                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
-            ],
-            "spellsPerDay": [
-                [
-                    "3", "1+1"
-                ], [
-                    "4", "2+1"
-                ], [
-                    "4", "2+1", "1+1"
-                ], [
-                    "4", "3+1", "2+1"
-                ], [
-                    "4", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1"
-                ], [
-                    "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1"
-                ]
-            ]
-        },
-        "archetypes": {
-            "Cloistered Cleric": {
-                "name": "Cloistered Cleric",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Magic",
-                    "date": "2011-04-01"
-                }
-            },
-            "Separatist": {
-                "name": "Separatist",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Magic",
-                    "date": "2011-04-01"
-                }
-            },
-            "Theologian": {
-                "name": "Theologian",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Magic",
-                    "date": "2011-04-01"
-                }
-            },
-            "Undead Lord Cleric": {
-                "name": "Undead Lord Cleric",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Magic",
-                    "date": "2011-04-01"
-                }
-            },
-            "Crusader": {
-                "name": "Crusader",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Combat",
-                    "date": "2011-09-01"
-                }
-            },
-            "Divine Strategist": {
-                "name": "Divine Strategist",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Combat",
-                    "date": "2011-09-01"
-                }
-            },
-            "Evangelist": {
-                "name": "Evangelist",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Combat",
-                    "date": "2011-09-01"
-                }
-            },
-            "Merciful Healer": {
-                "name": "Merciful Healer",
-                "type": "Archetype",
-                "source": {
-                    "name": "Ultimate Combat",
-                    "date": "2011-09-01"
-                }
-            },
-            "Demonic Apostle": {
-                "name": "Demonic Apostle",
-                "type": "Archetype",
-                "requirements": [
-                    {
-                        "race": "Drow"
-                    }
-                ],
-                "source": {
-                    "name": "Advanced Race Guide",
-                    "date": "2014-09-01"
-                }
-            },
-            "Fiendish Vessel": {
-                "name": "Fiendish Vessel",
-                "type": "Archetype",
-                "requirements": [
-                    {
-                        "race": "Tiefling"
-                    }
-                ],
-                "source": {
-                    "name": "Advanced Race Guide",
-                    "date": "2014-09-01"
-                }
-            },
-            "Forgemaster": {
-                "name": "Forgemaster",
-                "type": "Archetype",
-                "requirements": [
-                    {
-                        "race": "Dwarf"
-                    }
-                ],
-                "source": {
-                    "name": "Advanced Race Guide",
-                    "date": "2014-09-01"
-                }
-            }
-        },
+        [
+          "4", "2+1"
+        ],
+        [
+          "4", "2+1", "1+1"
+        ],
+        [
+          "4", "3+1", "2+1"
+        ],
+        [
+          "4", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "2+1", "1+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1", "2+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "3+1", "3+1"
+        ],
+        [
+          "4", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1", "4+1"
+        ]
+      ]
+    },
+    "archetypes": {
+      "Cloistered Cleric": {
+        "name": "Cloistered Cleric",
+        "type": "Archetype",
+        "description": "<p></p>",
         "source": {
-            "name": "Core Rulebook",
-            "date": "2009-08-01"
-        },
-        "role": "<p></p>",
-        "ageCategory": "Trained"
-    }
+          "name": "Ultimate Magic",
+          "date": "2011-04-01"
+        }
+      },
+      "Separatist": {
+        "name": "Separatist",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Magic",
+          "date": "2011-04-01"
+        }
+      },
+      "Theologian": {
+        "name": "Theologian",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Magic",
+          "date": "2011-04-01"
+        }
+      },
+      "Undead Lord Cleric": {
+        "name": "Undead Lord Cleric",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Magic",
+          "date": "2011-04-01"
+        }
+      },
+      "Crusader": {
+        "name": "Crusader",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Combat",
+          "date": "2011-09-01"
+        }
+      },
+      "Divine Strategist": {
+        "name": "Divine Strategist",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Combat",
+          "date": "2011-09-01"
+        }
+      },
+      "Evangelist": {
+        "name": "Evangelist",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Combat",
+          "date": "2011-09-01"
+        }
+      },
+      "Merciful Healer": {
+        "name": "Merciful Healer",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "source": {
+          "name": "Ultimate Combat",
+          "date": "2011-09-01"
+        }
+      },
+      "Demonic Apostle": {
+        "name": "Demonic Apostle",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "requirements": [{
+          "race": "Drow"
+        }],
+        "source": {
+          "name": "Advanced Race Guide",
+          "date": "2014-09-01"
+        }
+      },
+      "Fiendish Vessel": {
+        "name": "Fiendish Vessel",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "requirements": [{
+          "race": "Tiefling"
+        }],
+        "source": {
+          "name": "Advanced Race Guide",
+          "date": "2014-09-01"
+        }
+      },
+      "Forgemaster": {
+        "name": "Forgemaster",
+        "type": "Archetype",
+        "description": "<p></p>",
+        "requirements": [{
+          "race": "Dwarf"
+        }],
+        "source": {
+          "name": "Advanced Race Guide",
+          "date": "2014-09-01"
+        }
+      }
+    },
+    "source": {
+      "name": "Core Rulebook",
+      "date": "2009-08-01"
+    },
+    "role": "<p></p>",
+    "ageCategory": "Trained"
+  }
 }
