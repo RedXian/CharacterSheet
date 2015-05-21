@@ -20,6 +20,7 @@ angular.module("characterSheet.skills", [])
         };
     })
     .controller('SkillController', function($scope, CharacterFactory, SkillFactory) {
+        //TODO: Some Classes can select X class skills.  Need to factor for that.
         $scope.character = CharacterFactory;
 
         $scope.isClassSkill = function(skill, category) {

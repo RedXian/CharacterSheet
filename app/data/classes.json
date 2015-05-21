@@ -5225,6 +5225,15 @@
         "name": "Battle Herald",
         "type": "Prestige Class",
         "description": "A veteran whose masterful tactics and air of command inspire allies to greater feats of heroism.",
+        "hitDie":"10",
+        "classSkills":["Bluff", "Craft", "Diplomacy", "Handle Animal", "Heal", "Intimidate", "Knowledge (engineering)", "Knowledge (history)", "Knowledge (local)", "Knowledge (nobility)", "Perception", "Profession", "Ride", "Sense Motive"],
+        "skillsPerLevel":"4",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5234,6 +5243,15 @@
         "name": "Holy Vindicator",
         "type": "Prestige Class",
         "description": "A pious warrior who spreads religion at the edge of a sword.",
+        "hitDie":"10",
+        "classSkills":["Climb", "Heal", "Intimidate", "Knowledge (planes)", "Knowledge (religion)", "Ride", "Sense Motive", "Spellcraft", "Swim"],
+        "skillsPerLevel":"2",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5243,6 +5261,15 @@
         "name": "Horizon Walker",
         "type": "Prestige Class",
         "description": "A scout and wanderer comfortable in even the strangest terrain.",
+        "hitDie":"10",
+        "classSkills":["Climb", "Diplomacy", "Handle Animal", "Knowledge (geography)", "Knowledge (nature)", "Knowledge (the planes)", "Linguistics", "Perception", "Stealth", "Survival", "Swim"],
+        "skillsPerLevel":"6",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5252,6 +5279,15 @@
         "name": "Master Chymist",
         "type": "Prestige Class",
         "description": "An alchemist whose mutagens create an alternate, brutish personality.",
+        "hitDie":"10",
+        "classSkills":["Acrobatics", "Climb", "Escape Artist", "Intimidate", "Knowledge (dungeoneering)", "Sense Motive", "Stealth", "Swim"],
+        "skillsPerLevel":"2",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Will":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5261,6 +5297,15 @@
         "name": "Master Spy",
         "type": "Prestige Class",
         "description": "An espionage expert specializing in disguises and striking swiftly from the shadows.",
+        "hitDie":"8",
+        "classSkills":["Bluff", "Diplomacy", "Disable Device", "Disguise", "Escape Artist", "Knowledge (all)", "Linguistics", "Perception", "Sense Motive", "Sleight of Hand", "Stealth", "Use Magic Device"],
+        "skillsPerLevel":"6",
+        "progression":{
+        	"BAB":["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7"],
+        	"Fortitude":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Reflex":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5270,6 +5315,15 @@
         "name": "Nature Warden",
         "type": "Prestige Class",
         "description": "A master of the wilderness bonded spiritually to a fearsome animal companion.",
+        "hitDie":"8",
+        "classSkills":["Climb", "Handle Animal", "Heal", "Knowledge (geography)", "Knowledge (nature)", "Perception", "Ride", "Sense Motive", "Survival", "Swim"],
+        "skillsPerLevel":"4",
+        "progression":{
+        	"BAB":["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5279,6 +5333,15 @@
         "name": "Rage Prophet",
         "type": "Prestige Class",
         "description": "A bold and barbaric champion who embraces otherworldly powers in order to perfect the art of combat.",
+        "hitDie":"10",
+        "classSkills":["Climb", "Heal", "Intimidate", "Knowledge (history)", "Knowledge (religion)", "Sense Motive", "Spellcraft", "Swim"],
+        "skillsPerLevel":"4",
+        "progression":{
+        	"BAB":["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5288,6 +5351,16 @@
         "name": "Stalwart Defender",
         "type": "Prestige Class",
         "description": "A master of defending territory and holding the line at all costs.",
+        "hitDie":"12",
+        "classSkills":["Acrobatics", "Climb", "Intimidate", "Perception", "Sense Motive"],
+        "skillsPerLevel":"2",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10"],
+        	"Fortitude":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"Reflex":["0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3"],
+        	"Will":["1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5"],
+        	"acBonus":["1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5333,6 +5406,15 @@
     "Aristocrat": {
         "name": "Aristocrat",
         "type": "NPC Class",
+        "hitDie":"8",
+        "classSkills":["Appraise", "Bluff", "Craft", "Diplomacy", "Disguise", "Handle Animal", "Intimidate", "Knowledge (all skills taken individually)", "Linguistics", "Perception", "Perform", "Profession", "Ride", "Sense Motive", "Swim", "Survival"],
+        "skillsPerLevel":"4",
+        "progression":{
+        	"BAB":["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7",	"8",	"9",	"9",	"10",	"11",	"12",	"12",	"13",	"14",	"15"],
+        	"Fortitude":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Reflex":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Will":["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5341,6 +5423,15 @@
     "Commoner": {
         "name": "Commoner",
         "type": "NPC Class",
+        "hitDie":"6",
+        "classSkills":["Climb", "Craft", "Handle Animal", "Perception", "Profession", "Ride", "Swim"],
+        "skillsPerLevel":"2",
+        "progression":{
+        	"BAB":["0",	"1",	"1",	"2",	"2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10"],
+        	"Fortitude":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Reflex":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Will":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5349,6 +5440,15 @@
     "Expert": {
         "name": "Expert",
         "type": "NPC Class",
+        "hitDie":"8",
+        "classSkills": "10",
+        "skillsPerLevel":"6",
+        "progression":{
+        	"BAB":["0",	"1",	"2",	"3",	"3",	"4",	"5",	"6",	"6",	"7",	"8",	"9",	"9",	"10",	"11",	"12",	"12",	"13",	"14",	"15"],
+        	"Fortitude":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Reflex":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Will":["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"]
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"
@@ -5357,6 +5457,15 @@
     "Warrior": {
         "name": "Warrior",
         "type": "NPC Class",
+        "hitDie":"10",
+        "classSkills":["Climb", "Craft", "Handle Animal", "Intimidate", "Profession", "Ride", "Swim"],
+        "skillsPerLevel":"2",
+        "progression":{
+        	"BAB":["1",	"2",	"3",	"4",	"5",	"6",	"7",	"8",	"9",	"10",	"11",	"12",	"13",	"14",	"15",	"16",	"17",	"18",	"19",	"20"],
+        	"Fortitude":["2",	"3",	"3",	"4",	"4",	"5",	"5",	"6",	"6",	"7",	"7",	"8",	"8",	"9",	"9",	"10",	"10",	"11",	"11",	"12"],
+        	"Reflex":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        	"Will":["0",	"0",	"1",	"1",	"1",	"2",	"2",	"2",	"3",	"3",	"3",	"4",	"4",	"4",	"5",	"5",	"5",	"6",	"6",	"6"],
+        },
         "source": {
             "name": "Core Rulebook",
             "date": "2009-08-01"

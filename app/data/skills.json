@@ -88,6 +88,9 @@
     },
     "Perform": {
         "name": "Perform",
+        "subCategory": [
+            "act", "comedy", "dance", "keyboard instruments", "oratory", "percussion instruments", "string instruments", "wind instruments", "sing"
+        ],
         "trained": "true",
         "ability": "Charisma"
     },
