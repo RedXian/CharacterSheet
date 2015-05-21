@@ -1,0 +1,143 @@
+{    "Wizard": {
+        "name": "Wizard",
+        "type": "Class",
+        "description": "The wizard masters magic through constant study that gives him incredible magical power.",
+        "hitDie": "6",
+        "classSkills": [
+            "Appraise", "Craft", "Fly", "Knowledge (all)", "Linguistics", "Profession", "Spellcraft"
+        ],
+        "skillsPerLevel": "2",
+        "progression": {
+            "BAB": [
+                "0", "1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10"
+            ],
+            "Fortitude": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Reflex": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Will": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "spellsPerDay": [
+                [
+                    "3", "1"
+                ], [
+                    "4", "2"
+                ], [
+                    "4", "2", "1"
+                ], [
+                    "4", "3", "2"
+                ], [
+                    "4", "3", "2", "1"
+                ], [
+                    "4", "3", "3", "2"
+                ], [
+                    "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "4", "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "4", "3", "2", "1"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "4", "3", "3", "2"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "4", "4", "3", "3"
+                ], [
+                    "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"
+                ]
+            ]
+        },
+        "Scrollmaster Wizard": {
+            "name": "Scrollmaster Wizard",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Arcane Bomber": {
+            "name": "Arcane Bomber",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Siege Mage": {
+            "name": "Siege Mage",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Spellslinger": {
+            "name": "Spellslinger",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Cruoromancer": {
+            "name": "Cruoromancer",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Dhampir"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Spellbinder": {
+            "name": "Spellbinder",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Elf"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Wind Listener": {
+            "name": "Wind Listener",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Sylph"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

@@ -1,0 +1,288 @@
+{    "Rogue": {
+        "name": "Rogue",
+        "type": "Class",
+        "description": "The rogue is a thief and a scout, an opportunist capable of delivering brutal strikes against unwary foes.",
+        "hitDie": "8",
+        "classSkills": [
+            "Acrobatics", "Appraise", "Bluff", "Climb", "Craft", "Diplomacy", "Disable Device", "Disguise", "Escape Artist", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (local)", "Linguistics", "Perception", "Perform", "Profession", "Sense Motive", "Sleight of Hand", "Stealth", "Swim", "Use Magic Device"
+        ],
+        "skillsPerLevel": "8",
+        "progression": {
+            "BAB": [
+                "0", "1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9", "10", "11", "12", "12", "13", "14", "15"
+            ],
+            "Fortitude": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Reflex": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Will": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ]
+        },
+        "Acrobat": {
+            "name": "Acrobat",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Burglar": {
+            "name": "Burglar",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Cutpurse": {
+            "name": "Cutpurse",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Investigator": {
+            "name": "Investigator",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Poisoner": {
+            "name": "Poisoner",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Rake": {
+            "name": "Rake",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Scout": {
+            "name": "Scout",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Sniper": {
+            "name": "Sniper",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Spy": {
+            "name": "Spy",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Swashbuckler": {
+            "name": "Swashbuckler",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Thug": {
+            "name": "Thug",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Trapsmith": {
+            "name": "Trapsmith",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Bandit": {
+            "name": "Bandit",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Chameleon": {
+            "name": "Chameleon",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Charlatan": {
+            "name": "Charlatan",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Driver": {
+            "name": "Driver",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Knife Master": {
+            "name": "Knife Master",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Pirate": {
+            "name": "Pirate",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Roof Runner": {
+            "name": "Roof Runner",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Sanctified Rogue": {
+            "name": "Sanctified Rogue",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Survivalist": {
+            "name": "Survivalist",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Filcher": {
+            "name": "Filcher",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Halfling"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Skulking Slayer": {
+            "name": "Skulking Slayer",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Half-Orc"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Cat Burglar": {
+            "name": "Cat Burglar",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Catfolk"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Deadly Courtesan": {
+            "name": "Deadly Courtesan",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Vishkanya"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Eldritch Raider": {
+            "name": "Eldritch Raider",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Gillman"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Kitsune Trickster": {
+            "name": "Kitsune Trickster",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Kitsune"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Swordmaster": {
+            "name": "Swordmaster",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Tengu"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

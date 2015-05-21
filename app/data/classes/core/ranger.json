@@ -1,0 +1,219 @@
+{    "Ranger": {
+        "name": "Ranger",
+        "type": "Class",
+        "description": "A tracker and hunter, the ranger is a creature of the wild and of tracking down his favored foes.",
+        "hitDie": "10",
+        "classSkills": [
+            "Climb", "Craft", "Handle Animal", "Heal", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (geography)", "Knowledge (nature)", "Perception", "Profession", "Ride", "Spellcraft", "Stealth", "Survival", "Swim"
+        ],
+        "skillsPerLevel": "6",
+        "progression": {
+            "BAB": [
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+            ],
+            "Fortitude": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Reflex": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Will": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "spellsPerDay": [
+                [], [], [], ["0"], ["1"], ["1"], [
+                    "1", "0"
+                ], [
+                    "1", "1"
+                ], [
+                    "2", "1"
+                ], [
+                    "2", "1", "0"
+                ], [
+                    "2", "1", "1"
+                ], [
+                    "2", "2", "1"
+                ], [
+                    "3", "2", "1", "0"
+                ], [
+                    "3", "2", "1", "1"
+                ], [
+                    "3", "2", "2", "1"
+                ], [
+                    "3", "3", "2", "1"
+                ], [
+                    "4", "3", "2", "1"
+                ], [
+                    "4", "3", "2", "2"
+                ], [
+                    "4", "3", "3", "2"
+                ], [
+                    "4", "4", "3", "3"
+                ]
+            ]
+        },
+        "Beast Master": {
+            "name": "Beast Master",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Guide": {
+            "name": "Guide",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Horse Lord": {
+            "name": "Horse Lord",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Infiltrator": {
+            "name": "Infiltrator",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Shapeshifter": {
+            "name": "Shapeshifter",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Skirmisher": {
+            "name": "Skirmisher",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Spirit Ranger": {
+            "name": "Spirit Ranger",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Urban Ranger": {
+            "name": "Urban Ranger",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Trapper": {
+            "name": "Trapper",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Battle Scout": {
+            "name": "Battle Scout",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Deep Walker": {
+            "name": "Deep Walker",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Falconer": {
+            "name": "Falconer",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Trophy Hunter": {
+            "name": "Trophy Hunter",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Warden": {
+            "name": "Warden",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Wild Stalker": {
+            "name": "Wild Stalker",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Dusk Stalker": {
+            "name": "Dusk Stalker",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Fetchling"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Wave Warden": {
+            "name": "Wave Warden",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Merfolk"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Wild Shadow": {
+            "name": "Wild Shadow",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Half-Elf"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

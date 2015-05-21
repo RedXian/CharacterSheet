@@ -1,0 +1,480 @@
+{    "Sorcerer": {
+        "name": "Sorcerer",
+        "type": "Class",
+        "description": "The spellcasting sorcerer is born with an innate knack for magic and has strange, eldritch powers.",
+        "hitDie": "6",
+        "classSkills": [
+            "Appraise", "Bluff", "Craft", "Fly", "Intimidate", "Knowledge (arcana)", "Profession", "Spellcraft", "Use Magic Device"
+        ],
+        "skillsPerLevel": "2",
+        "progression": {
+            "BAB": [
+                "0", "1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10"
+            ],
+            "Fortitude": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Reflex": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Will": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "spellsPerDay": [
+                ["3"], ["4"], ["5"], [
+                    "6", "3"
+                ], [
+                    "6", "4"
+                ], [
+                    "6", "5", "3"
+                ], [
+                    "6", "6", "4"
+                ], [
+                    "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "6", "5", "3"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "6", "6", "4"
+                ], [
+                    "6", "6", "6", "6", "6", "6", "6", "6", "6"
+                ]
+            ],
+            "spellsKnown": [
+                [
+                    "4", "2"
+                ], [
+                    "5", "2"
+                ], [
+                    "5", "3"
+                ], [
+                    "6", "3", "1"
+                ], [
+                    "6", "4", "2"
+                ], [
+                    "7", "4", "2", "1"
+                ], [
+                    "7", "5", "3", "2"
+                ], [
+                    "8", "5", "3", "2", "1"
+                ], [
+                    "8", "5", "4", "3", "2"
+                ], [
+                    "9", "5", "4", "3", "2", "1"
+                ], [
+                    "9", "5", "5", "4", "3", "2"
+                ], [
+                    "9", "5", "5", "4", "3", "2", "1"
+                ], [
+                    "9", "5", "5", "4", "4", "3", "2"
+                ], [
+                    "9", "5", "5", "4", "4", "3", "2", "1"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "2"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "2", "1"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "3", "2"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "3", "2", "1"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "3", "3", "2"
+                ], [
+                    "9", "5", "5", "4", "4", "4", "3", "3", "3", "3"
+                ]
+            ]
+        },
+        "Aberrant": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Abyssal": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Arcane": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Celestial": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Elemental": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Fey": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Infernal": {
+            "name": "Infernal",
+            "type": "Archetype",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Undead": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Core Rulebook",
+                "date": "2009-08-01"
+            }
+        },
+        "Accursed": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Djinni": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Efreeti": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Maestro": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Marid": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Rakshasa": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Shaitan": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Aquatic": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Boreal": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Deepearth": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Dreamspun": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Protean": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Serpentine": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Shadow": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Starsoul": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Stormborn": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Verdant": {
+            "type": "bloodlines",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Kobold Sorcerer": {
+            "name": "Kobold Sorcerer",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Kobold"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Imperious": {
+            "name": "Imperious",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Human"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Crossblooded": {
+            "name": "Crossblooded",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Wildblooded": {
+            "name": "Wildblooded",
+            "type": "Archetype",
+            "Anarchic": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Aerial": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Bedrock": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Brutal": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Empyreal": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Envenomed": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Groveborn": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Karmic": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Linnorm": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Pit-Touched": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Primal": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Rime-Blooded": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Sage": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Sanguine": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Seaborn": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Sylvan": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Umbral": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Visionary": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Void-Touched": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Warped": {
+                "type": "bloodlines",
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Wishcrafter": {
+            "name": "Wishcrafter",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Ifrits"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

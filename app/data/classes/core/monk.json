@@ -1,0 +1,264 @@
+{    "Monk": {
+        "name": "Monk",
+        "type": "Class",
+        "description": "A student of martial arts, the monk trains his body to be his greatest weapon and defense.",
+        "hitDie": "8",
+        "classSkills": [
+            "Acrobatics", "Climb", "Craft", "Escape Artist", "Intimidate", "Knowledge (history)", "Knowledge (religion)", "Perception", "Perform", "Profession", "Ride", "Sense Motive", "Stealth", "Swim"
+        ],
+        "skillsPerLevel": "4",
+        "progression": {
+            "BAB": [
+                "0", "1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9", "10", "11", "12", "12", "13", "14", "15"
+            ],
+            "Fortitude": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Reflex": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Will": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ]
+        },
+        "Drunken Master": {
+            "name": "Drunken Master",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Hungry Ghost Monk": {
+            "name": "Hungry Ghost Monk",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Ki Mystic": {
+            "name": "Ki Mystic",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Monk of the Empty Hand": {
+            "name": "Monk of the Empty Hand",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Monk of the Four Winds": {
+            "name": "Monk of the Four Winds",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Monk of the Healing Hand": {
+            "name": "Monk of the Healing Hand",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Monk of the Lotus": {
+            "name": "Monk of the Lotus",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Monk of the Sacred Mountain": {
+            "name": "Monk of the Sacred Mountain",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Weapon Adept": {
+            "name": "Weapon Adept",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Zen Archer": {
+            "name": "Zen Archer",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Qinggong monk": {
+            "name": "Qinggong monk",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Flowing monk": {
+            "name": "Flowing monk",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Maneuver master": {
+            "name": "Maneuver master",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Martial artist": {
+            "name": "Martial artist",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Master of many styles": {
+            "name": "Master of many styles",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Sensei": {
+            "name": "Sensei",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Sohei": {
+            "name": "Sohei",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Tetori": {
+            "name": "Tetori",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Gray Disciple": {
+            "name": "Gray Disciple",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Duergar"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Ironskin Monk": {
+            "name": "Ironskin Monk",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Hobgoblin"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Nimble Guardian": {
+            "name": "Nimble Guardian",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Catfolk"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Student Of Stone": {
+            "name": "Student Of Stone",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Oread"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Treetop Monk": {
+            "name": "Treetop Monk",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Vanara"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Underfoot Adept": {
+            "name": "Underfoot Adept",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Halfling"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Wanderer": {
+            "name": "Wanderer",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Human"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

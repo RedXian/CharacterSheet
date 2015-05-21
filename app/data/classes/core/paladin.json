@@ -1,0 +1,203 @@
+{    "Paladin": {
+        "name": "Paladin",
+        "type": "Class",
+        "description": "The paladin is the knight in shining armor, a devoted follower of law and good.",
+        "hitDie": "10",
+        "classSkills": [
+            "Craft", "Diplomacy", "Handle Animal", "Heal", "Knowledge (nobility)", "Knowledge (religion)", "Profession", "Ride", "Sense Motive", "Spellcraft"
+        ],
+        "skillsPerLevel": "2",
+        "progression": {
+            "BAB": [
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+            ],
+            "Fortitude": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Reflex": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Will": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "spellsPerDay": [
+                [], [], [], ["0"], ["1"], ["1"], [
+                    "1", "0"
+                ], [
+                    "1", "1"
+                ], [
+                    "2", "1"
+                ], [
+                    "2", "1", "0"
+                ], [
+                    "2", "1", "1"
+                ], [
+                    "2", "2", "1"
+                ], [
+                    "3", "2", "1", "0"
+                ], [
+                    "3", "2", "1", "1"
+                ], [
+                    "3", "2", "2", "1"
+                ], [
+                    "3", "3", "2", "1"
+                ], [
+                    "4", "3", "2", "1"
+                ], [
+                    "4", "3", "2", "2"
+                ], [
+                    "4", "3", "3", "2"
+                ], [
+                    "4", "4", "3", "3"
+                ]
+            ]
+        },
+        "Divine Defender": {
+            "name": "Divine Defender",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Hospitaler": {
+            "name": "Hospitaler",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Sacred Servant": {
+            "name": "Sacred Servant",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Shining Knight": {
+            "name": "Shining Knight",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Undead Scourge": {
+            "name": "Undead Scourge",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Warrior of the Holy Light": {
+            "name": "Warrior of the Holy Light",
+            "type": "Archetype",
+            "source": {
+                "name": "Advanced Player's Guide",
+                "date": "2010-09-01"
+            }
+        },
+        "Oathbound Paladin": {
+            "name": "Oathbound Paladin",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Magic",
+                "date": "2011-04-01"
+            }
+        },
+        "Divine Hunter": {
+            "name": "Divine Hunter",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Empyreal Knight": {
+            "name": "Empyreal Knight",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Holy Gun": {
+            "name": "Holy Gun",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Holy tactician": {
+            "name": "Holy tactician",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Knight of the Sepulcher": {
+            "name": "Knight of the Sepulcher",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Sacred Shield": {
+            "name": "Sacred Shield",
+            "type": "Archetype",
+            "source": {
+                "name": "Ultimate Combat",
+                "date": "2011-09-01"
+            }
+        },
+        "Redeemer": {
+            "name": "Redeemer",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Half-Orc"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Stonelord": {
+            "name": "Stonelord",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Dwarf"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "Tranquil Guardian": {
+            "name": "Tranquil Guardian",
+            "type": "Archetype",
+            "requirements": [
+                {
+                    "race": "Aasimar"
+                }
+            ],
+            "source": {
+                "name": "Advanced Race Guide",
+                "date": "2014-09-01"
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}

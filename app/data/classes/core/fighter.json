@@ -1,0 +1,1574 @@
+{
+    "Fighter": {
+        "name": "Fighter",
+        "type": "Class",
+        "summary": "Brave and stalwart, the fighter is a master of all manner of arms and armor.",
+        "description": "<p>Some take up arms for glory, wealth, or revenge. Others do battle to prove themselves, to protect others, or because they know nothing else. Still others learn the ways of weaponcraft to hone their bodies in battle and prove their mettle in the forge of war. Lords of the battlefield, fighters are a disparate lot, training with many weapons or just one, perfecting the uses of armor, learning the fighting techniques of exotic masters, and studying the art of combat, all to shape themselves into living weapons. Far more than mere thugs, these skilled warriors reveal the true deadliness of their weapons, turning hunks of metal into arms capable of taming kingdoms, slaughtering monsters, and rousing the hearts of armies. Soldiers, knights, hunters, and artists of war, fighters are unparalleled champions, and woe to those who dare stand against them.</p>",
+        "hitDie": "10",
+        "classSkills": [
+            "Climb", "Craft", "Handle Animal", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (engineering)", "Profession", "Ride", "Survival", "Swim"
+        ],
+        "skillsPerLevel": "2",
+        "progression": {
+            "BAB": [
+                "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+            ],
+            "Fortitude": [
+                "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
+            ],
+            "Reflex": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ],
+            "Will": [
+                "0", "0", "1", "1", "1", "2", "2", "2", "3", "3", "3", "4", "4", "4", "5", "5", "5", "6", "6", "6"
+            ]
+        },
+        "Class Features": {
+            "Weapon and Armor Proficiency": {
+                "name": "Weapon and Armor Proficiency",
+                "type": "Class Feature",
+                "description": "<p>A fighter is proficient with all simple and martial weapons and with all armor (heavy, light, and medium) and shields (including tower shields).</p>" "addFeats": [
+                    "Simple Weapons Proficiency", "Martial Weapons Proficiency", "Light Armor Proficiency", "Medium Armor Proficiency", "Shield Proficiency"
+                ]
+            },
+            "Bonus Feats": {
+                "name": "Bonus Feats",
+                "type": "Class Feature",
+                "description": "<p>At 1st level, and at every even level thereafter, a fighter gains a bonus feat in addition to those gained from normal advancement (meaning that the fighter gains a feat at every level). These bonus feats must be selected from those listed as combat feats, sometimes also called \"fighter bonus feats.\"</p><p>Upon reaching 4th level, and every four levels thereafter (8th, 12th, and so on), a fighter can choose to learn a new bonus feat in place of a bonus feat he has already learned. In effect, the fighter loses the bonus feat in exchange for the new one. The old feat cannot be one that was used as a prerequisite for another feat, prestige class, or other ability. A fighter can only change one feat at any given level and must choose whether or not to swap the feat at the time he gains a new bonus feat for the level.</p>"
+            },
+            "Bravery": {
+                "name": "Bravery",
+                "type": "Class Feature",
+                "specialAbilityType": "Extraordinary",
+                "description": "<p>Starting at 2nd level, a fighter gains a +1 bonus on Will saves against fear. This bonus increases by +1 for every four levels beyond 2nd.</p>"
+            },
+            "Armor Training": {
+                "name": "Armor Training",
+                "type": "Class Feature",
+                "specialAbilityType": "Extraordinary",
+                "description": "<p>Starting at 3rd level, a fighter learns to be more maneuverable while wearing armor. Whenever he is wearing armor, he reduces the armor check penalty by 1 (to a minimum of 0) and increases the maximum Dexterity bonus allowed by his armor by 1. Every four levels thereafter (7th, 11th, and 15th), these bonuses increase by +1 each time, to a maximum –4 reduction of the armor check penalty and a +4 increase of the maximum Dexterity bonus allowed.</p><p>In addition, a fighter can also move at his normal speed while wearing medium armor. At 7th level, a fighter can move at his normal speed while wearing heavy armor.</p>"
+            },
+            "Weapon Training": {
+                "name": "Weapon Training",
+                "type": "Class Feature",
+                "specialAbilityType": "Extraordinary",
+                "description": "<p>Starting at 5th level, a fighter can select one group of weapons, as noted below. Whenever he attacks with a weapon from this group, he gains a +1 bonus on attack and damage rolls.</p><p>Every four levels thereafter (9th, 13th, and 17th), a fighter becomes further trained in another group of weapons. He gains a +1 bonus on attack and damage rolls when using a weapon from this group. In addition, the bonuses granted by previous weapon groups increase by +1 each. For example, when a fighter reaches 9th level, he receives a +1 bonus on attack and damage rolls with one weapon group and a +2 bonus on attack and damage rolls with the weapon group selected at 5th level. Bonuses granted from overlapping groups do not stack. Take the highest bonus granted for a weapon if it resides in two or more groups.</p><p>A fighter also adds this bonus to any combat maneuver checks made with weapons from this group. This bonus also applies to the fighter's Combat Maneuver Defense when defending against disarm and sunder attempts made against weapons from this group.</p>",
+                "weaponGroups": {
+                    "Axes": [
+                        "bardiche", "battleaxe", "dwarven waraxe", "greataxe", "handaxe", "heavy pick", "hooked axe", "knuckle axe", "light pick", "mattock", "orc double axe", "pata", "throwing axe"
+                    ],
+                    "Blades, Heavy": [
+                        "bastard sword", "chakram", "double chicken saber", "double walking stick katana", "elven curve blade", "falcata", "falchion", "greatsword", "great terbutje", "katana", "khopesh", "longsword", "nine-ring broadsword", "nodachi", "scimitar", "scythe", "seven-branched sword", "shotel", "temple sword", "terbutje", "two-bladed sword"
+                    ],
+                    "Blades, Light": [
+                        "bayonet", "butterfly sword", "dagger", "gladius", "kama", "kerambit", "kukri", "pata", "quadrens", "rapier", "short sword", "sica", "sickle", "starknife", "swordbreaker dagger", "sword cane", "wakizashi"
+                    ],
+                    "Bows": [
+                        "composite longbow", "composite shortbow", "longbow", "shortbow"
+                    ],
+                    "Close": [
+                        "bayonet", "brass knuckles", "cestus", "dan bong", "emei piercer", "fighting fan", "gauntlet", "heavy shield", "iron brush", "light shield", "madu", "mere club", "punching dagger", "sap", "scizore", "spiked armor", "spiked gauntlet", "spiked shield", "tekko-kagi", "tonfa", "unarmed strike", "wooden stake", "wushu dart"
+                    ],
+                    "Crossbows": [
+                        "double crossbow", "hand crossbow", "heavy crossbow", "heavy repeating crossbow", "light crossbow", "light repeating crossbow", "tube arrow shooter"
+                    ],
+                    "Double": [
+                        "dire flail", "dwarven urgrosh", "gnome hooked hammer", "orc double axe", "quarterstaff", "two-bladed sword"
+                    ],
+                    "Firearms": [
+                        "all one-handed", "two-handed", "siege firearms"
+                    ],
+                    "Flails": [
+                        "chain spear", "dire flail", "double chained kama", "flail", "flying blade", "heavy flail", "kusarigama", "kyoketsu shoge", "meteor hammer", "morningstar", "nine-section whip", "nunchaku", "sansetsukon", "scorpion whip", "spiked chain", "urumi", "whip"
+                    ],
+                    "Hammers": [
+                        "aklys", "battle aspergillum", "club", "greatclub", "heavy mace", "light hammer", "light mace", "mere club", "taiaha", "tetsubo", "wahaika", "warhammer"
+                    ],
+                    "Monk": [
+                        "bo staff", "brass knuckles", "butterfly sword", "cestus", "dan bong", "double chained kama", "double chicken saber", "emei piercer", "fighting fan", "jutte", "kama", "kusarigama", "kyoketsu shoge", "lungshuan tamo", "monk's spade", "nine-ring broadsword", "nine-section whip", "nunchaku", "quarterstaff", "rope dart", "sai", "sansetsukon", "seven-branched sword", "shang gou", "shuriken", "siangham", "tiger fork", "tonfa", "tri-point double-edged sword", "unarmed strike", "urumi", "wushu dart"
+                    ],
+                    "Natural": [
+                        "unarmed strike and all natural weapons", "such as bite", "claw", "gore", "tail", "wing"
+                    ],
+                    "Polearms": [
+                        "bardiche", "bec de corbin", "bill", "glaive", "glaive-guisarme", "guisarme", "halberd", "hooked lance", "lucerne hammer", "mancatcher", "monk's spade", "naginata", "nodachi", "ranseur", "tiger fork"
+                    ],
+                    "Spears": [
+                        "amentum", "boar spear", "javelin", "harpoon", "lance", "longspear", "pilum", "shortspear", "sibat", "spear", "tiger fork", "trident"
+                    ],
+                    "Thrown": [
+                        "aklys", "amentum", "atlatl", "blowgun", "bolas", "boomerang", "chakram", "club", "dagger", "dart", "halfling sling staff", "harpoon", "javelin", "lasso", "kestros", "light hammer", "net", "poisoned sand tube", "rope dart", "shortspear", "shuriken", "sling", "spear", "starknife", "throwing axe", "throwing shield", "trident", "wushu dart"
+                    ],
+                    "Siege Engines": ["all siege engines"]
+                }
+            },
+            "Armor Mastery": {
+                "name": "Armor Mastery",
+                "type": "Class Feature",
+                "specialAbilityType": "Extraordinary",
+                "description": "<p>At 19th level, a fighter gains DR 5/— whenever he is wearing armor or using a shield.</p>"
+            },
+            "Weapon Mastery": {
+                "name": "Weapon Mastery",
+                "type": "Class Feature",
+                "specialAbilityType": "Extraordinary",
+                "description": "<p>At 20th level, a fighter chooses one weapon, such as the longsword, greataxe, or longbow. Any attacks made with that weapon automatically confirm all critical threats and have their damage multiplier increased by 1 (×2 becomes ×3, for example). In addition, he cannot be disarmed while wielding a weapon of this type.</p>"
+            }
+        },
+        "archetypes": {
+            "Archer": {
+                "name": "Archer",
+                "type": "Archetype",
+                "description": "<p>The archer is dedicated to the careful mastery of the bow, perfecting his skills with years of practice honed day after day on ranges and hunting for game, or else on the battlefield, raining destruction down on the enemy lines.</p>",
+                "Hawkeye": {
+                    "name": "Hawkeye",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, an archer gains a +1 bonus on Perception checks, and the range increment for any bow he uses increases by 5 feet. These bonuses increase by +1 and 5 additional feet for every 4 levels beyond 2nd.</p>",
+                    "replaces": ["Bravery"]
+                },
+                "Trick Shot": {
+                    "name": "Trick Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, an archer can choose one of the following combat maneuvers or actions: disarm, feint, or sunder. He can perform this action with a bow against any target within 30 feet, with a –4 penalty to his CMB. Every four levels beyond 3rd, he may choose an additional trick shot to learn. These maneuvers use up arrows as normal.</p><p>At 11th level, he may also choose from the following combat maneuvers: bull rush, grapple, trip. A target grappled by an arrow can break free by destroying the archer's arrow (hardness 5, hit points 1, break DC 13) or with an Escape Artist or CMB check (against the archer's CMD –4).</p>",
+                    "replaces": ["Armor Training"]
+                },
+                "Expert Archer": {
+                    "name": "Expert Archer",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, an archer gains a +1 bonus on attack and damage rolls with bows. This bonus increases by +1 for every four levels beyond 5th.</p>",
+                    "replaces": ["Weapon Training 1"]
+                },
+                "Safe Shot": {
+                    "name": "Safe Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, an archer does not provoke attacks of opportunity when making ranged attacks with a bow.</p>",
+                    "replaces": ["Weapon Training 2"]
+                },
+                "Evasive Archer": {
+                    "name": "Evasive Archer",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, an archer gains a +2 dodge bonus to AC against ranged attacks. This bonus increases to +4 at 17th level.</p>",
+                    "replaces": ["Weapon Training 3"]
+                },
+                "Volley": {
+                    "name": "Volley",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, as a full-round action, an archer can make a single bow attack at his highest base attack bonus against any number of creatures in a 15-foot- radius burst, making separate attack and damage rolls for each creature.</p>",
+                    "replaces": ["Weapon Training 4"]
+                },
+                "Ranged Defense": {
+                    "name": "Ranged Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, an archer gains DR 5/— against ranged attacks. In addition, as an immediate action, he can catch an arrow fired at him and shoot it any target he chooses, as if he had the Snatch Arrows feat.</p>",
+                    "replaces": ["Armor Mastery"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>An archer must choose a type of bow.</p>",
+                    "weaponGroupRestriction": ["!Bows"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Crossbowman": {
+                "name": "Crossbowman",
+                "type": "Archetype",
+                "description": "<p>The crossbowman has perfected the deadly use of the crossbow, a simple but cruelly efficient weapon, as a craftsman mastering a lethal tool.</p>",
+                "Deadshot": {
+                    "name": "Deadshot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, when a crossbowman attacks with a crossbow as a readied action, he may add 1/2 his Dexterity bonus (minimum +1) on his damage roll.</p>",
+                    "replaces": ["Armor Training 1"]
+                },
+                "Crossbow Expert": {
+                    "name": "Crossbow Expert",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a crossbowman gains a +1 bonus on attack and damage rolls with crossbows. This bonus increases by +1 per four levels after 5th.</p>",
+                    "replaces": ["Weapon Training 1"]
+                },
+                "Improved Deadshot": {
+                    "name": "Improved Deadshot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, when a crossbowman attacks with a crossbow as a readied action, his target is denied its Dexterity bonus to its AC.</p>",
+                    "replaces": ["Armor Training 2"]
+                },
+                "Quick Sniper": {
+                    "name": "Quick Sniper",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a crossbowman gains a bonus equal to 1/2 his fighter level on Stealth checks when sniping. When he is hit with a ranged attack, he can shoot his crossbow at his attacker as an immediate action if it is loaded.</p>",
+                    "replaces": ["Weapon Training 2"]
+                },
+                "Greater Deadshot": {
+                    "name": "Greater Deadshot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, when a crossbowman attacks with a crossbow as a readied action, he may add his Dexterity bonus (minimum +1) on his damage roll.</p>",
+                    "replaces": ["Armor Training 3"]
+                },
+                "Safe Shot": {
+                    "name": "Safe Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, a crossbowman does not provoke attacks of opportunity when making ranged attacks with a crossbow.</p>",
+                    "replaces": ["Weapon Training 3"]
+                },
+                "Pinpoint Targeting": {
+                    "name": "Pinpoint Targeting",
+                    "type": "Class Feature",
+                    "description": "<p>At 15th level, a crossbowman gains Pinpoint Targeting as a bonus feat.</p>",
+                    "replaces": ["Armor Training 4"]
+                },
+                "Meteor Shot": {
+                    "name": "Meteor Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, as a standard action, a crossbowman can make one attack with a crossbow at a –4 penalty. If the attack hits, it inflicts damage normally and the target is subject to a bull rush or a trip maneuver using the attack roll as the combat maneuver check. The crossbowman must decide which maneuver to attempt before making his attack roll.</p>",
+                    "replaces": ["Weapon Training 4"]
+                },
+                "Penetrating Shot": {
+                    "name": "Penetrating Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, when a crossbowman confirms a critical hit with a crossbow, the bolt pierces the target and can strike another creature in line behind it. The crossbowman must be able to trace a line starting at his space and passing through both targets to make this additional attack. The secondary attack is made at a –4 penalty, in addition to any modifiers for added range. If this attack is also a critical hit, the bolt can continue to hit another target, but the penalties stack.</p>",
+                    "replaces": ["Armor Mastery"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>A crossbowman must choose a type of crossbow.</p>",
+                    "weaponGroupRestriction": ["!Crossbows"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Free Hand Fighter": {
+                "name": "Free Hand Fighter",
+                "type": "Archetype",
+                "description": "<p>The free hand fighter specializes in the delicate art of handling a single weapon in one hand while using his free hand to balance, block, tip, and distract his opponents. While not a brawler, his open hand is as much a weapon as a bow or blade. His fighting school benefits only apply when he is using a one-handed weapon and carrying nothing in his other hand.</p>",
+                "Deceptive Strike": {
+                    "name": "Deceptive Strike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a free hand fighter gains a +1 bonus to CMB and CMD on disarm checks and on Bluff checks to feint or create a diversion to hide. This bonus increases by +1 for every four levels after 2nd.</p>",
+                    "replaces": ["Bravery"]
+                },
+                "Elusive": {
+                    "name": "Elusive",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a free hand fighter gains a +1 dodge bonus to AC. This bonus increases by +1 for every four levels after 2nd. This bonus does not apply when wearing medium or heavy armor or carrying a medium or heavier load.</p>",
+                    "replaces": [
+                        "Armor Training 1", "Armor Training 2", "Armor Training 3", "Armor Training 4"
+                    ]
+                },
+                "Singleton": {
+                    "name": "Singleton",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a free hand fighter gains a +1 bonus on attack and damage rolls when wielding a melee weapon in one hand and leaving his other hand free. This bonus increases by +1 per six levels after 5th.</p>",
+                    "replaces": [
+                        "Weapon Training 1", "Weapon Training 4"
+                    ]
+                },
+                "Timely Tip": {
+                    "name": "Timely Tip",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a free hand fighter can make a disarm combat maneuver against a target he threatens as a move action to push aside the target's shield. If successful, the target loses its shield bonus to AC against the free hand fighter's next attack.</p>",
+                    "replaces": ["Weapon Training 2"]
+                },
+                "Interference": {
+                    "name": "Interference",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, a free hand fighter can make a disarm or trip combat maneuver against a target he threatens as a move action to push his opponent off balance. If successful, the target becomes flat-footed. This condition lasts until the target takes damage from a melee or ranged attack or until the beginning of the free hand fighter's next turn, whichever comes first.</p>",
+                    "replaces": ["Weapon Training 3"]
+                },
+                "Reversal": {
+                    "name": "Reversal",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, a free hand fighter can make a disarm combat maneuver against a creature he threatens as an immediate action when he is the target of a melee attack from another creature. If successful, the attack changes to target the target of the free hand fighter's maneuver instead of the free hand fighter himself.</p>",
+                    "replaces": ["Armor Mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Mobile Fighter": {
+                "name": "Mobile Fighter",
+                "type": "Archetype",
+                "description": "<p>Where some fighters focus on strength and raw power, the mobile fighter relies on swiftness and mobility, gliding across the battlefield like a steel whirlwind and leaving destruction in his wake.</p>",
+                "Agility": {
+                    "name": "Agility",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a mobile fighter gains a +1 bonus on saving throws made against effects that cause him to become paralyzed, slowed, or entangled. This bonus increases by +1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Leaping Attack": {
+                    "name": "Leaping Attack",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, when a mobile fighter moves at least 5 feet prior to attacking, he gains a +1 bonus on attack and damage rolls. This bonus increases by +1 for every four levels beyond 5th.</p>",
+                    "replaces": ["weapon training 1, 2, 3, and 4"]
+                },
+                "Rapid Attack": {
+                    "name": "Rapid Attack",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, a mobile fighter can combine a full attack action with a single move. He must forgo the attack at his highest bonus but may take the remaining attacks at any point during his movement. This movement provokes attacks of opportunity as normal.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Fleet Footed": {
+                    "name": "Fleet Footed",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, the mobile fighter's speed increases by 10 feet. He can take 10 on Acrobatics checks even while distracted or threatened, and can take 20 on an Acrobatics check once per day for every five fighter levels he possesses.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Whirlwind Blitz": {
+                    "name": "Whirlwind Blitz",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, a mobile fighter can make a full-attack action as a standard action. He may also use the Whirlwind Attack feat as a standard action.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Phalanx Soldier": {
+                "name": "Phalanx Soldier",
+                "type": "Archetype",
+                "description": "<p>The phalanx soldier specializes in defensive tactics, using his shield to guard himself and his allies and forming a shield wall like an unbreakable anvil against which his enemies break.</p>",
+                "Stand Firm": {
+                    "name": "Stand Firm",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a phalanx soldier gains a +1 bonus to CMD against bull rush, overrun, and trip attempts. This bonus also applies on saves against trample attacks. The bonus increases by +1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Phalanx Fighting": {
+                    "name": "Phalanx Fighting",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, when a phalanx soldier wields a shield, he can use any polearm or spear of his size as a one-handed weapon.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Ready Pike": {
+                    "name": "Ready Pike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a phalanx soldier can, once per day, ready a weapon with the brace property as an immediate action, gaining a +1 bonus on attack and damage rolls. For every four levels beyond 5th, this bonus increases by +1, and he can use the ability one additional time per day. He cannot use this ability when flat-footed.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Deft Shield": {
+                    "name": "Deft Shield",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, the armor check penalty from a shield and the attack roll penalty are reduced by –1 for a phalanx soldier using a tower shield. At 11th level, these penalties are reduced by –2.</p>",
+                    "replaces": ["armor training 2 and 3"]
+                },
+                "Shield Ally": {
+                    "name": "Shield Ally",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, when a phalanx fighter is using a heavy or tower shield, he can, as a move action, provide partial cover (+2 cover bonus to AC, +1 bonus on Reflex saves) to himself and all adjacent allies until the beginning of his next turn.</p><p>At 13th level, he can instead provide cover (+4 cover bonus to AC, +2 bonus on Reflex saves) and evasion (as a rogue) to one adjacent ally until the beginning of his next turn. This cover does not allow Stealth checks.</p><p>At 17th level, he can provide cover to himself and all adjacent allies, or he can provide improved cover (+8 cover bonus to AC, +4 bonus on Reflex saves, improved evasion) to a single adjacent ally.</p>",
+                    "replaces": ["weapon training 2, 3, and 4"]
+                },
+                "Irresistible Advance": {
+                    "name": "Irresistible Advance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, a phalanx fighter gains a bonus on bull rush and overrun CMB checks. This bonus depends on the type of shield used: +1 with a buckler, +2 with a light shield, +3 with a heavy shield, or +4 with a tower shield.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Shielded Fortress": {
+                    "name": "Shielded Fortress",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, a phalanx fighter's shield cannot be disarmed or sundered. He gains evasion (as a rogue) when using a shield (improved evasion when using a tower shield). As a move action, a phalanx fighter can provide evasion to all adjacent allies until the beginning of his next turn. As an immediate action, he can provide improved evasion to an adjacent ally against one attack.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Polearm Master": {
+                "name": "Polearm Master",
+                "type": "Archetype",
+                "description": "<p>The polearm master is schooled in the ancient wisdom that enemies are best faced at the end of long striking pole, lashing like a serpent before clumsy swords and axes can even be brought to bear.</p>",
+                "Pole Fighting": {
+                    "name": "Pole Fighting",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, as an immediate action, a polearm master can shorten the grip on his spear or polearm with reach and use it against adjacent targets. This action results in a –4 penalty on attack rolls with that weapon until he spends another immediate action to return to the normal grip. The penalty is reduced by –1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Steadfast Pike": {
+                    "name": "Steadfast Pike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a polearm master gains a +1 bonus on attack rolls with readied attacks and attacks of opportunity made with a spear or polearm. The bonus increases by +1 for every four levels beyond 3rd.</p>",
+                    "replaces": ["armor training 1, 2, 3, and 4"]
+                },
+                "Polearm Training": {
+                    "name": "Polearm Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a polearm master gains a +1 bonus on attack and damage rolls with spears and polearms. The bonus increases by +1 for every four levels beyond 5th.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Flexible Flanker": {
+                    "name": "Flexible Flanker",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a polearm master may choose any square adjacent to him and treat that square as his location for determining who he is flanking, even if that square is occupied by a creature, object, or solid barrier.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Sweeping Fend": {
+                    "name": "Sweeping Fend",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, a polearm master can use any spear or pole arm to make a bull rush or trip maneuver, though he takes a –4 penalty to his CMB when making such attempts. Weapons with the trip property do not incur this penalty on trip maneuvers.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Step Aside": {
+                    "name": "Step Aside",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, when a creature threatened by a polearm master takes a 5-foot step into a square adjacent to him, he can take a 5-foot step as an immediate action. This 5-foot step must be subtracted from his movement on the next turn. He also gains a +2 dodge bonus to his AC against that opponent until the end of his next turn.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Polearm Parry": {
+                    "name": "Polearm Parry",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, when an opponent threatened by a polearm master makes a melee attack against an ally, he may take an immediate action to grant his ally a +2 shield bonus to AC and DR 5/— against that attack. He may use this ability to protect himself, but only if the attacking creature is not adjacent to him.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>A polearm master must choose a spear or polearm.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Roughrider": {
+                "name": "Roughrider",
+                "type": "Archetype",
+                "description": "<p>Roughriders study and practice the fine points of mounted combat, drilling endlessly with warbeasts—from noble thoroughbreds to trained monsters—to form a perfect synergy between rider and steed.</p>",
+                "Steadfast Mount": {
+                    "name": "Steadfast Mount",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, after a roughrider has spent 1 hour practicing with a mount, the mount gains a +1 dodge bonus to AC and a +1 morale bonus on saves, but only while the roughrider is mounted on it or adjacent to it. This bonus increases by +1 for every four levels after 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Armored Charger": {
+                    "name": "Armored Charger",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a roughrider no longer suffers armor check penalties on Ride skill checks. His mount's speed is not reduced when carrying a medium load or wearing medium barding.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Mounted Mettle": {
+                    "name": "Mounted Mettle",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a roughrider and his mount gain a +1 bonus on attack and damage rolls when he is mounted or adjacent to his mount. This bonus increases by +1 for every four levels after 5th.</p>",
+                    "replaces": ["weapon training 1, 2, 3, and 4"]
+                },
+                "Leap from the Saddle": {
+                    "name": "Leap from the Saddle",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, after a roughrider's mount takes a single move, he may attempt a fast dismount (DC 20 Ride check). If he succeeds, he can take a full attack action.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Relentless Steed": {
+                    "name": "Relentless Steed",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, a roughrider's mount does not reduce its speed when wearing heavy barding or carrying a heavy load. The roughrider may also reroll a Ride skill check or a saving throw made by the mount once per day, but must use the second roll even if it is worse. This ability may be used one additional time per day for every four levels beyond 11th.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Ride Them Down": {
+                    "name": "Ride Them Down",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, can spur his mount on while readying an attack. If a roughrider's mount takes a single move, the roughrider can make a full attack, taking his attacks at any point during his mount's movement. If he has the Trample feat, he may substitute an overrun combat maneuver for each of his attacks. This movement provokes attacks of opportunity against the roughrider but not his mount.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Unavoidable Onslaught": {
+                    "name": "Unavoidable Onslaught",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, a roughrider's mounted charge is not blocked by friendly creatures or difficult terrain.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Indomitable Steed": {
+                    "name": "Indomitable Steed",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, a roughrider and his steed gain DR 5/— when mounted.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Savage Warrior": {
+                "name": "Savage Warrior",
+                "type": "Archetype",
+                "description": "<p>Warriors' might is not measured only by their skill with steel, but also by their ability to inflict death with fang and claw, horn and hoof, and every exotic appendage the natural and unnatural world has to offer.</p>",
+                "Spark of Life": {
+                    "name": "Spark of Life",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a savage warrior gains a +1 bonus on saving throws made against energy drain and death effects. This bonus increases by +1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Natural Savagery": {
+                    "name": "Natural Savagery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a savage warrior gains a +1 bonus on attack and damage rolls with natural weapons. This bonus also applies to CMB and CMD for grappling. This bonus increases by +1 for every four levels beyond 5th.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Savage Charge": {
+                    "name": "Savage Charge",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, when a savage warrior attacks with a natural weapon at the end of a charge, he gains a bonus on his natural weapon attack rolls equal to half his fighter level, while suffering a penalty to his AC equal to half his fighter level. These replace the normal attack roll bonus and AC penalty for charging. This bonus also applies to his CMB for a bull rush or overrun combat maneuvers made when charging.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Careful Claw": {
+                    "name": "Careful Claw",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, when using a natural weapon to attack a creature using fire shield or a similar effect that damages creatures attacking it (such as a barbed devil's barbed defense), a savage warrior reduces the damage from such effects by an amount equal to 1/2 his fighter level.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Greater Savage Charge": {
+                    "name": "Greater Savage Charge",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, when using savage charge, the AC penalty is reduced to 1/4 his fighter level instead of 1/2 his fighter level. In addition, a savage warrior can charge through friendly creatures and difficult terrain.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Natural Weapon Mastery": {
+                    "name": "Natural Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, a savage warrior must choose one natural weapon.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Shielded Fighter": {
+                "name": "Shielded Fighter",
+                "type": "Archetype",
+                "description": "<p>A shielded fighter focuses on both offense and defense, blending weapon and shield in perfect balance to impede his enemies while delivering deadly blows, and even turning the shield itself into a formidable weapon. These fighting school benefits apply when wielding a weapon and a shield simultaneously.</p>",
+                "Active Defense": {
+                    "name": "Active Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a shielded fighter gains a +1 dodge bonus to AC when wielding a shield and fighting defensively, using Combat Expertise, or using total defense. This bonus increases by +1 for every four levels beyond 3rd. As a swift action, he may share this bonus with one adjacent ally, or half of the bonus (minimum +0) with all adjacent allies, until the beginning of his next turn.</p>",
+                    "replaces": ["armor training 1, 2, 3, and 4"]
+                },
+                "Shield Fighter": {
+                    "name": "Shield Fighter",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a shielded fighter gains a +1 bonus on attack and damage rolls when making a shield bash. These bonuses increase by +1 every four levels beyond 5th. With a full attack action, a shielded fighter may alternate between using his weapon or his shield for each attack. This action does not grant additional attacks or incur penalties as two-weapon fighting does.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Shield Buffet": {
+                    "name": "Shield Buffet",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, as a move action, a shielded fighter may make a combat maneuver check to use his shield to impede an adjacent enemy. If successful, the target suffers a –2 penalty on its attack rolls against the shielded fighter and a –2 penalty to AC on attacks made by the shielded fighter until the beginning of his next turn.<p></p>At 13th level, a shielded fighter may use this ability as a swift action.</p>",
+                    "replaces": ["weapon training 2 and 3"]
+                },
+                "Shield Guard": {
+                    "name": "Shield Guard",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, as a swift action, a shielded fighter may designate one square adjacent to him. He may designate two squares if using a heavy shield or three squares if using a tower shield, but these squares must be contiguous. Enemies in these squares cannot flank the shielded fighter and do not count for flanking with other creatures. This effect lasts until he moves from his position or uses another swift action to change the affected squares.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Shield Mastery": {
+                    "name": "Shield Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, a shielded fighter gains DR 5/— when wielding a shield.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "Shield Ward": {
+                    "name": "Shield Ward",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, a shielded fighter gains evasion (as a rogue) while wielding a shield, and adds his shield bonus to his AC (not including enhancement bonuses) on Reflex saves and to his touch AC. In addition, his shield cannot be disarmed or sundered.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Two-Handed Fighter": {
+                "name": "Two-Handed Fighter",
+                "type": "Archetype",
+                "description": "<p>Some fighters focus their efforts on finding the biggest, heaviest, most imposing weapon they can find and training to manage and harness the weight of their massive weapons for maximum impact. These fighting school benefits only apply when using two-handed weapons.</p>",
+                "Shattering Strike": {
+                    "name": "Shattering Strike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a two-handed fighter gains a +1 bonus to CMB and CMD on sunder attempts and on damage rolls made against objects. These bonuses increase by +1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Overhand Chop": {
+                    "name": "Overhand Chop",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, when a two-handed fighter makes a single attack (with the attack action or a charge) with a two-handed weapon, he adds double his Strength bonus on damage rolls.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Weapon Training": {
+                    "name": "Weapon Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>As the fighter class feature, but the bonuses only apply when wielding two-handed melee weapons.</p>"
+                },
+                "Backswing": {
+                    "name": "Backswing",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, when a two-handed fighter makes a full attack with a two-handed weapon, he adds double his Strength bonus on damage rolls for all attacks after the first.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Piledriver": {
+                    "name": "Piledriver",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, as a standard action, a two-handed fighter can make a single melee attack with a two-handed weapon. If the attack hits, he may make a bull rush or trip combat maneuver against the target of his attack as a free action that does not provoke an attack of opportunity.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Greater Power Attack": {
+                    "name": "Greater Power Attack",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, when using Power Attack with a two-handed melee weapon, the bonus damage from Power Attack is doubled (+100%) instead of increased by half (+50%).</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Devastating Blow": {
+                    "name": "Devastating Blow",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, as a standard action, a two-handed fighter may make a single melee attack with a two-handed weapon at a –5 penalty. If the attack hits, it is treated as a critical threat. Special weapon abilities that activate only on a critical hit do not activate if this critical hit is confirmed.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Two-Weapon Warrior": {
+                "name": "Two-Weapon Warrior",
+                "type": "Archetype",
+                "description": "<p>Trained under great masters who preached the simple truth that two are better than one when it comes to weapons, the two-weapon warrior is a terror when his hands are full. From paired daggers to exotic double weapons, all combinations come equally alive in his skilled hands.</p>",
+                "Defensive Flurry": {
+                    "name": "Defensive Flurry",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, when a two-weapon warrior makes a full attack with both weapons, he gains a +1 dodge bonus to AC against melee attacks until the beginning of his next turn. This bonus increases by +1 every four levels after 3rd.</p>",
+                    "replaces": ["armor training 1 and 2"]
+                },
+                "Twin Blades": {
+                    "name": "Twin Blades",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a two-weapon warrior gains a +1 bonus on attack and damage rolls when making a full attack with two weapons or a double weapon. This bonus increases by +1 for every four levels after 5th.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Doublestrike": {
+                    "name": "Doublestrike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a two-weapon warrior may, as a standard action, make one attack with both his primary and secondary weapons. The penalties for attacking with two weapons apply normally.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Improved Balance": {
+                    "name": "Improved Balance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, the attack penalties for fighting with two weapons are reduced by –1 for a two-weapon warrior. Alternatively, he may use a one-handed weapon in his off-hand, treating it as if it were a light weapon with the normal light weapon penalties.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Equal Opportunity": {
+                    "name": "Equal Opportunity",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, when a two-weapon warrior makes an attack of opportunity, he may attack once with both his primary and secondary weapons. The penalties for attacking with two weapons apply normally.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Perfect Balance": {
+                    "name": "Perfect Balance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, the penalties for fighting with two weapons are reduced by an additional –1 for a two-weapon warrior. This benefit stacks with improved balance. If he is using a one-handed weapon in his off hand, treating it as a light weapon, he uses the normal light weapon penalties.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Deft Doublestrike": {
+                    "name": "Deft Doublestrike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, when a two-weapon warrior hits an opponent with both weapons, he can make a disarm or sunder attempt (or trip, if one or both weapons can be used to trip) against that opponent as an immediate action that does not provoke attacks of opportunity.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Deadly Defense": {
+                    "name": "Deadly Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, when a two-weapon warrior makes a full attack with both weapons, every creature that hits him with a melee attack before the beginning of his next turn provokes an attack of opportunity from the warrior.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Weapon Master": {
+                "name": "Weapon Master",
+                "type": "Archetype",
+                "description": "<p>Devoted to the perfection of a single weapon, the weapon master's meditations upon his favored weapon border on the obsessive, but none can deny his consummate skill. The weapon master must select a single type of weapon (such as longsword or shortbow). All of his abilities apply to that weapon type.</p>",
+                "Weapon Guard": {
+                    "name": "Weapon Guard",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a weapon master gains a +1 bonus to CMD against disarm and sunder attempts while wielding his chosen weapon. This bonus also applies on saves against any effect that targets his chosen weapon (for example, grease, heat metal, shatter, warp wood). The bonus increases by +1 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Weapon Training": {
+                    "name": "Weapon Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a weapon master gains a +1 bonus on attack and damage rolls with his chosen weapon. The bonus improves by +1 for every four levels beyond 3rd.</p>",
+                    "replaces": ["armor training 1, 2, 3, and 4"]
+                },
+                "Reliable Strike": {
+                    "name": "Reliable Strike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a weapon master may reroll an attack roll, critical hit confirmation roll, miss chance check, or damage roll as an immediate action. He must accept the second roll even if it is worse. He can use this ability once per day at 5th level, plus one additional time per day for every five levels beyond 5th.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Mirror Move": {
+                    "name": "Mirror Move",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a weapon master gains his weapon training bonus as an insight bonus to AC when attacked by his chosen weapon.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Deadly Critical": {
+                    "name": "Deadly Critical",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, when a weapon master confirms a critical hit with his chosen weapon, he can increase the weapon's damage multiplier by +1 as an immediate action. He can use this ability once per day at 13th level, plus one additional time per day for every three levels above 13th.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Critical Specialist": {
+                    "name": "Critical Specialist",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, the save DCs of any effects caused by a critical hit with a weapon master's chosen weapon increase by +4.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Unstoppable Strike": {
+                    "name": "Unstoppable Strike",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, a weapon master can take a standard action to make one attack with his chosen weapon as a touch attack that ignores damage reduction (or hardness, if attacking an object).</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Armor Master": {
+                "name": "Armor Master",
+                "type": "Archetype",
+                "description": "<p>All fighters have two main tools of their trade—weapons and armor. While many fighters hone their weapon skills to a point of inescapable grace and lethality, there are those who live under the maxim that a good offense can be accomplished though an impenetrable defense. To these fighters, proper use of armor and shields ensures that they can fight another day, and that the frustration of enemies who can't seem to crack an armor master's superior defenses is just the first symptom of his foes' eventual defeat.</p>",
+                "Deflective Shield": {
+                    "name": "Deflective Shield",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, an armor master specializes in using his shield to deflect attacks. He gains a +1 bonus to his touch AC, and this bonus increases for every four levels beyond 2nd (to a maximum of +6 at 20th level); however, this bonus cannot exceed the sum of the armor and enhancement bonus to AC provided by the shield that the armor master is currently carrying.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Armored Defense": {
+                    "name": "Armored Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, an armor master gains DR 1/— when wearing light armor, DR 2/— when wearing medium armor, and DR 3/— when wearing heavy armor. At 19th level, this damage reduction increases to DR 4/— when wearing light armor, DR 8/— when wearing medium armor, and DR 12/— when wearing heavy armor. This damage reduction stacks with that provided by adamantine armor, but not with other forms of damage reduction. This damage reduction does not apply if the armor master is stunned, unconscious, or helpless.</p>",
+                    "replaces": ["weapon training 1 and 3, and armor mastery"]
+                },
+                "Fortification": {
+                    "name": "Fortification",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, an armor master can use his armor to shield critical areas from injury. He treats any armor he wears as if it had the light fortification special ability. At 13th level, his armor gains the moderate fortification special ability. This fortification does not stack in any way with armor that has these special abilities. In these cases the armor master takes the better of the two fortifications.</p>",
+                    "replaces": ["weapon training 2 and 4"]
+                },
+                "Indestructible": {
+                    "name": "Indestructible",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, an armor master gains complete immunity to critical hits and sneak attacks while he is wearing armor. In addition, unless his armor has the fragile armor quality, it cannot be sundered while he is wearing it.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Brawler": {
+                "name": "Brawler",
+                "type": "Archetype",
+                "description": "<p>All melee is up close and personal, but some warriors bring it as close as they can get. Brawlers can be found anywhere, among all races and societies. A brawler could be hired muscle in a tavern, a local crime syndicate enforcer, or a hotheaded recruit among the ranks of a baron's guard. Often brawlers' in-your-face attitudes are as powerful as their tactics.</p>",
+                "Close Control": {
+                    "name": "Close Control",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a brawler becomes skilled at forcefully moving his opponent around the battlefield. The brawler gains a +1 bonus on bull rush, drag, and reposition combat maneuver checks. The brawler also gains a +1 bonus to CMD when attacked with the bull rush, drag, and reposition maneuvers. These bonuses increase by +1 for every four levels after 2nd (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Close Combatant": {
+                    "name": "Close Combatant",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a brawler gains a +1 bonus on attack rolls and a +3 bonus on damage rolls with weapons in the close weapon group. Both of these bonuses increase by +1 for every four levels beyond 3rd (to a maximum of +5 on attack rolls and +7 on damage rolls at 19th level).</p>",
+                    "replaces": ["weapon training 1 and 2"]
+                },
+                "Menacing Stance": {
+                    "name": "Menacing Stance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, a brawler constantly harries and distracts his enemies. While adjacent to the brawler, enemies take a –1 penalty on attack rolls and a –4 penalty on concentration checks. These penalties increase by 1 for every four levels after 7th level (to a maximum of –4 on attack rolls and –7 on concentration checks at 19th level). Creatures do not take these penalties if the brawler is dazed, helpless, staggered, stunned, or unconscious.</p>",
+                    "replaces": ["armor training 2, 3, and 4 and armor mastery"]
+                },
+                "No Escape": {
+                    "name": "No Escape",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, taking a 5-foot step out of the area of a brawler's menacing stance or moving out of the area of a brawler's menacing stance with a withdraw action provokes an attack of opportunity from the brawler.</p>",
+                    "replaces": ["weapon training 3 and 4"]
+                },
+                "Stand Still": {
+                    "name": "Stand Still",
+                    "type": "Class Feature",
+                    "description": "<p>At 13th level, a brawler gains Stand Still as a bonus feat, even if he does not have the Combat Reflexes feat. If the brawler already has the Stand Still feat, he can take any other combat feat instead. Furthermore, he gains a bonus equal to 1/2 his fighter level on combat maneuver checks when using the Stand Still feat.</p>"
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>A brawler must select a close weapon for this ability.</p>"
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Cad": {
+                "name": "Cad",
+                "type": "Archetype",
+                "description": "<p>In combat, most fighters have some sort of code of honor. Some believe that one should not kick enemies when they are down, or should limit use of other such dirty tricks to the most dire of circumstances. The cad places no such limitations on himself. Battles are for winning, and anything that gives the cad the upper hand against his enemies is a legitimate tactic. No trick is too treacherous if it leads to victory.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>A cad is not proficient with medium armor, heavy armor, or tower shields.</p>"
+                },
+                "Skills": {
+                    "name": "Skills",
+                    "type": "Class Feature",
+                    "description": "<p>Acrobatics (Dex), Bluff (Cha), Escape Artist (Dex), Sleight of Hand (Dex), and Stealth (Dex) are class skills for a cad.</p>"
+                },
+                "Dirty Maneuvers": {
+                    "name": "Dirty Maneuvers",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a cad becomes skilled at deceiving and discomfiting his opponents. The cad gains a +1 bonus on disarm, dirty trick, and steal combat maneuver checks. The cad also gains a +1 bonus to CMD when attacked with the disarm, dirty trick, and steal combat maneuvers. These bonuses increase by 1 for every four levels after 2nd (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["bravery"]
+                },
+                "Catch Off-Guard": {
+                    "name": "Catch Off-Guard",
+                    "type": "Class Feature",
+                    "description": "<p>At 3rd level, the cad gains the Catch Off-Guard feat.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Payback": {
+                    "name": "Payback",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a cad gains a +1 bonus on attack and damage rolls against any creature that has attacked the cad since the beginning of his last turn. This bonus increases by +1 for every four levels beyond 5th (to a maximum of +4 at 17th level).</p>",
+                    "replaces": ["weapon training 1, 3, and 4"]
+                },
+                "Deadly Surprise": {
+                    "name": "Deadly Surprise",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, when a cad hits an opponent that is denied its Dexterity bonus to AC against him with a weapon or unarmed attack, he may attempt a dirty trick combat maneuver as an immediate action as part of the attack.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Razor-Sharp Chair Leg": {
+                    "name": "Razor-Sharp Chair Leg",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, as a swift action, a cad may alter the type of damage dealt by an improvised weapon to bludgeoning, piercing, or slashing damage. In addition, the cad has a critical threat range of 19–20/×2 with any improvised melee weapon.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Craven Combatant": {
+                    "name": "Craven Combatant",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, when fighting defensively or using Combat Expertise or total defense, a cad cannot be flanked except by a rogue or ninja whose level is four or more higher than the cad's fighter level.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Sweeping Prank": {
+                    "name": "Sweeping Prank",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, as a standard action, a cad can use a dirty trick maneuver against any two adjacent opponents that he can reach, making a separate combat maneuver check against each opponent. He must use the same dirty trick maneuver against each opponent.</p><p>At 17th level, the cad can use this ability as a full-round action to attempt a dirty trick maneuver against a number of enemies equal to 2 + his Dexterity bonus (if any).</p>",
+                    "replaces": ["weapon training 3 and 4"]
+                },
+                "Treacherous Blow": {
+                    "name": "Treacherous Blow",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, when a cad confirms a critical hit, he can attempt a dirty trick combat maneuver as part of that attack as an immediate action.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Ultimate Payback": {
+                    "name": "Ultimate Payback",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, any critical threats a cad makes against an opponent that has attacked him since the beginning of his last turn are automatically confirmed.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Dragoon": {
+                "name": "Dragoon",
+                "type": "Archetype",
+                "description": "<p>These gallant lancers serve in the vanguard of many armies or as knights-errant. They are born leaders and masters of the mounted charge.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>A dragoon is not proficient with tower shields.</p>"
+                },
+                "Skilled Rider": {
+                    "name": "Skilled Rider",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 1st level, a dragoon gains both the Mounted Combat and Skill Focus (Ride) feats as bonus feats.</p>",
+                    "replaces": ["the 1st-level fighter bonus combat feat"]
+                },
+                "Spear Training": {
+                    "name": "Spear Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a dragoon must select weapon training with the spear group. The dragoon's weapon training bonus with spears improves by +1 on attack rolls and +2 on damage rolls for every four levels beyond 5th (to a maximum of +4 on attack rolls and +8 on damage rolls at 17th level). The dragoon does not gain weapon training in any other groups as he increases in level.</p>"
+                },
+                "Spinning Lance": {
+                    "name": "Spinning Lance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, a dragoon may alternate attacks with the piercing head of his lance with reach, or with the butt end (treat as a club) against adjacent targets. Unlike a double weapon, the masterwork quality and magical special abilities apply to both ends of the lance, except for those weapon special abilities that apply only to edged weapons.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Banner": {
+                    "name": "Banner",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a dragoon may attach a banner to his lance. This is identical to the cavalier class feature. The bonuses provided by the dragoon's banner increase by +1 for every five levels beyond 9th (to a maximum of +3 at 19th level). Cavalier levels stack with his dragoon level for determining the effect of his banner, and he can take the better banner progression.</p>",
+                    "replaces": ["weapon training 2, 3, and 4"]
+                },
+                "Piercing Lance": {
+                    "name": "Piercing Lance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, as a standard action or as part of a charge, a dragoon attacking a mounted opponent can make two attacks, one against the mount and the other against the rider, using his highest base attack bonus. Furthermore, if the mount is hit and its rider attempts to negate the hit with the Mounted Combat feat, the dragoon's attack roll is considered 4 higher when calculating the DC of the Ride check to negate the hit.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Leaping Lance": {
+                    "name": "Leaping Lance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, a dragoon and his mount suffer no armor check penalty on Acrobatics checks while mounted. When charging, a dragoon may jump from his mount toward his target. If he jumps 10 feet, his charge modifiers on attack rolls and to AC are doubled and he is still considered mounted for lance damage, mounted combat feats, and so on.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "description": "<p>The dragoon must select the lance for this ability.</p>"
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Gladiator": {
+                "name": "Gladiator",
+                "type": "Archetype",
+                "description": "<p>Most fighters battle out of necessity, with each battle a contest of life and death. Some, however, fight for glory and for the adulation of the crowd. The gladiator is both a cunning warrior and a consummate performer, knowing life and death are balanced not only on a sword's edge, but also on the cheers or jeers of the crowd.</p>",
+                "Skills": {
+                    "name": "Skills",
+                    "type": "Class Feature",
+                    "description": "<p>A gladiator gains Perform (act, comedy, and dance) (Cha) as class skills.</p>"
+                },
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>A gladiator is not proficient with heavy armor or tower shields. Instead he gains the Performance Weapon Mastery feat at 1st level as a bonus feat. This bonus feat is in addition to the bonus feat a fighter gains at 1st level. Furthermore, a gladiator using piecemeal armor is considered to be wearing a suit of armor as long as he wearing two or three armor pieces, gaining the +1 to armor bonus but still taking the +5% chance of arcane spell failure if the pieces are mixed.</p>"
+                },
+                "Bonus Feats": {
+                    "name": "Bonus Feats",
+                    "type": "Class Feature",
+                    "description": "<p>A gladiator may choose to take combat or performance feats as bonus feats.</p>"
+                },
+                "Fame": {
+                    "name": "Fame",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, when a gladiator begins a performance combat, he always starts with at least 1 victory point. If he already has victory points, he gains 1 extra victory point. At 10th level, the gladiator starts out with at least 2 victory points. If he already has victory points, he gains 2 extra victory points.</p>",
+                    "replaces": ["bravery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Tactician": {
+                "name": "Tactician",
+                "type": "Archetype",
+                "description": "<p>While many fighters focus on the fundamentals of melee and ranged combat, there are those who are trained to view the bigger picture on the battlefield. These fighters use their training and tactical acumen to overcome challenges that would overwhelm mere brute strength and skill at arms.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>A tactician is not proficient with heavy armor or tower shields.</p>"
+                },
+                "Strategic Training": {
+                    "name": "Strategic Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>A tactician gains 4 skill points + a number of skill points equal to his Intelligence modifier at each level, instead of the normal 2 skill points + Intelligence modifier at each level. Furthermore, Diplomacy (Cha), Knowledge (geography) (Int), Knowledge (nobility) (Int), Linguistics (Int), and Sense Motive (Wis) are all class skills for the tactician.</p>",
+                    "replaces": ["the bonus fighter combat feat gained at 1st level"]
+                },
+                "Bonus Feats": {
+                    "name": "Bonus Feats",
+                    "type": "Class Feature",
+                    "description": "<p>A tactician may choose Skill Focus or any teamwork feat, in addition to combat feats, as bonus feats.</p>"
+                },
+                "Tactical Awareness": {
+                    "name": "Tactical Awareness",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a tactician gains a +1 bonus on initiative checks. This bonus increases by +1 for every four levels after 2nd level (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["bravery"]
+                },
+                "Tactician": {
+                    "name": "Tactician",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a tactician gains this ability as the cavalier class feature. He may use this ability once per day at 5th level, plus one additional time for every five levels after 5th (to a maximum of four times at 20th level). If the tactician also has cavalier levels, these levels stack for determining the number of uses per day, and he can take the better progression.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Cooperative Combatant": {
+                    "name": "Cooperative Combatant",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, when a tactician uses the aid another special attack, he may affect one additional ally per point of Intelligence bonus. For each ally that a tactician aids, he can pick whether to grant that ally the +2 bonus on its next attack against the opponent or the +2 bonus to AC against the opponent's next attack on that ally, and can grant different allies different bonuses.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Battle Insight": {
+                    "name": "Battle Insight",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, as a swift action, a tactician can grant his Intelligence modifier as an insight bonus on the attack rolls made by a single ally within line of sight that can both see and hear the tactician. That ally gains the bonus until the end of the tactician's next turn. The tactician can use this ability a number of times per day equal to 3 + his Intelligence modifier.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Thunderstriker": {
+                "name": "Thunderstriker",
+                "type": "Archetype",
+                "description": "<p>The thunderstriker adopts an unusual fighting style, gripping a heavy weapon with both hands and switching to a defensive posture with weapon and buckler, lashing out with the shield with surprising speed and power.</p>",
+                "Strapped Shield": {
+                    "name": "Strapped Shield",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a thunderstriker takes no penalty on attack rolls when using a weapon in two hands while wearing a buckler.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Hardbuckler": {
+                    "name": "Hardbuckler",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, a thunderstriker may make shield bash attacks with a buckler as if it were a light shield.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Knockback Smash": {
+                    "name": "Knockback Smash",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, when a thunderstriker uses his buckler to attack, he gains a bonus equal to the enhancement bonus of the buckler on both attack and damage rolls.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Hammer and Anvil": {
+                    "name": "Hammer and Anvil",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, a thunderstriker suffers only half the normal penalties for two-weapon fighting when using a buckler as his off-hand weapon.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Buckler Defense": {
+                    "name": "Buckler Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, a thunderstriker retains partial use of his buckler even when using a weapon in both hands or in each hand (rather than losing his shield bonus until the beginning of his next turn). He gains a +1 shield bonus to AC and may apply the benefits of any feats he knows that require the use of a shield, but does not benefit from any magical properties his shield may possess.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Balanced Bashing": {
+                    "name": "Balanced Bashing",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, a thunderstriker no longer suffers two-weapon fighting penalties when using a buckler as his off-hand weapon.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Improved Buckler Defense": {
+                    "name": "Improved Buckler Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, a thunderstriker does not forfeit his shield bonus to AC from a buckler when fighting two-handed.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Tower Shield Specialist": {
+                "name": "Tower Shield Specialist",
+                "type": "Archetype",
+                "description": "<p>Many fighters believe the tower shield is a tool suitable only for troops on the battlefield, claiming it is too large and bulky to use in skirmishes or within dungeon corridors. Tower shield specialists defy those notions, using their massive shields with startling skill and incredible effect. They use these seemingly clumsy shields to perform deft maneuvers that confound their enemies.</p>",
+                "Burst Barrier": {
+                    "name": "Burst Barrier",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a tower shield specialist can use his shield to screen himself from burst spells and effects, gaining a +1 bonus on Reflex saves against them while employing a tower shield. This bonus increases by +1 for every four levels after 2nd (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["bravery"]
+                },
+                "Tower Shield Training": {
+                    "name": "Tower Shield Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, a tower shield specialist gains armor training as normal, but while he employs a tower shield, the armor penalty is reduced by 3 and the maximum Dexterity bonus allowed by his armor increases by 2. The benefit increases every four levels thereafter as per standard armor training; if the tower shield specialist is not employing a tower shield, the benefits to armor training revert to the normal bonuses.</p>"
+                },
+                "Tower Shield Specialist": {
+                    "name": "Tower Shield Specialist",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, when a tower shield specialist employs a tower shield in combat, he does not take the –2 penalty on attack rolls because of the shield's encumbrance.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Tower Shield Defense": {
+                    "name": "Tower Shield Defense",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, while using a tower shield, a tower shield specialist gains his shield bonus against touch attacks.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Immediate Repositioning": {
+                    "name": "Immediate Repositioning",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, as an immediate action, a tower shield specialist can reposition his tower shield to another facing, but he cannot use this ability to interrupt an attack.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Tower Shield Evasion": {
+                    "name": "Tower Shield Evasion",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 16th level, while using a tower shield, the tower shield specialist gains evasion, as the rogue class ability. At 20th level, the shield specialist gains improved evasion, as the rogue advanced talent, while using a tower shield.</p>",
+                    "replaces": ["both weapon training 4 and weapon mastery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Unarmed Fighter": {
+                "name": "Unarmed Fighter",
+                "type": "Archetype",
+                "description": "<p>Not all fighters need weapons to make their mark on the world. The unarmed fighter picks up a weapon only rarely, and when he does, he prefers the weapons of the monk. There are even those who mistake them for monks, but these fighters enter the fight without ki, and instead have a tough perseverance that few can rival.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>An unarmed fighter is not proficient with medium armor, heavy armor, or shields. An unarmed fighter is proficient with all monk weapons, including exotic monk weapons.</p>"
+                },
+                "Unarmed Style": {
+                    "name": "Unarmed Style",
+                    "type": "Class Feature",
+                    "description": "<p>At 1st level, a unarmed fighter gains the Improved Unarmed Strike feat and any single style feat (see Chapter 3) as a bonus feat. The unarmed fighter need not meet all the prerequisites of the style feat he chooses, but style feats that grant additional uses of the Elemental Fist feat cannot be taken until the unarmed fighter has that feat.</p>",
+                    "replaces": ["the bonus feat at 1st level"]
+                },
+                "Harsh Training": {
+                    "name": "Harsh Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, an unarmed fighter gains a +1 bonus on saving throws against effects that cause the exhausted, fatigued, or staggered conditions or temporary penalties to ability scores. This bonus increases by +1 for every four levels after 2nd (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["bravery"]
+                },
+                "Tough Guy": {
+                    "name": "Tough Guy",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 3rd level, an unarmed fighter gains DR/— equal to half his fighter level against nonlethal damage or damage taken while he is grappled.</p>",
+                    "replaces": ["armor training 1"]
+                },
+                "Weapon Training": {
+                    "name": "Weapon Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, an unarmed fighter gains a +1 bonus on attack and damage rolls with weapons in the monk and natural weapon groups, improving by +1 for every four levels beyond 5th (to a maximum of +4 at 17th level).</p>",
+                    "replaces": ["weapon training 1, 2, 3, and 4"]
+                },
+                "Clever Wrestler": {
+                    "name": "Clever Wrestler",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 7th level, an unarmed fighter takes no penalties to Dexterity or on attack rolls while grappled, and retains his Dexterity bonus to AC while pinning an opponent. The unarmed fighter can make attacks of opportunity even when grappled and even against creatures attempting to grapple him if the opponent has the Improved Grapple feat or the grab ability.</p>",
+                    "replaces": ["armor training 2"]
+                },
+                "Trick Throw": {
+                    "name": "Trick Throw",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, when an unarmed fighter successfully trips an opponent with an unarmed attack, he can attempt a dirty trick combat maneuver against that creature (before the opponent becomes prone) as an immediate action that does not provoke attacks of opportunity.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Takedown": {
+                    "name": "Takedown",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, if an unarmed fighter succeeds on a drag maneuver, he can attempt a trip maneuver against the same target as a swift action that does not provoke attacks of opportunity. At 15th level, he may do so after a successful grapple check.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Eye Gouge": {
+                    "name": "Eye Gouge",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, if an unarmed fighter confirms a critical hit with his unarmed strike or begins his turn grappled, he may attempt a dirty trick maneuver to blind his target as a swift action that does not provoke attacks of opportunity. A target more than one size category larger is unaffected.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Sucker Punch": {
+                    "name": "Sucker Punch",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, when an unarmed fighter strikes a creature that is denied its Dexterity bonus to AC, or that he has successfully pinned with a grapple check, he can attempt a dirty trick or trip combat maneuver against that target as a swift action.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Sheer Toughness": {
+                    "name": "Sheer Toughness",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 19th level, an unarmed fighter becomes immune to nonlethal damage and the exhausted, fatigued, and staggered conditions.</p>",
+                    "replaces": ["armor mastery"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>This ability applies to unarmed strikes only.</p>"
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Unbreakable": {
+                "name": "Unbreakable",
+                "type": "Archetype",
+                "description": "<p>The unbreakable is a warrior of indomitable will, unstoppable and implacable once he has set his mind upon a course of action. The unbreakable endures any trial to do what must be done, and when his mind is set toward a goal, nothing can stop him from achieving it, though many may try. He is a juggernaut and a zealot, supremely confident in his own abilities.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "description": "<p>An unbreakable is not proficient with tower shields.</p>"
+                },
+                "Tough as Nails": {
+                    "name": "Tough as Nails",
+                    "type": "Class Feature",
+                    "description": "<p>An unbreakable gains Endurance and Die Hard as bonus feats.</p>",
+                    "replaces": ["the fighter's 1st-level bonus feat"]
+                },
+                "Unflinching": {
+                    "name": "Unflinching",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, an unbreakable gains a +1 bonus on Will saves against mind-affecting effects. This bonus increases by +1 for every four levels after 2nd level (to a maximum of +5 at 18th level).</p>",
+                    "replaces": ["bravery"]
+                },
+                "Heroic Recovery": {
+                    "name": "Heroic Recovery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, an unbreakable gains the Heroic Recovery feat as a bonus feat, if he does not have it already. If he already has this feat, the unbreakable can choose any combat feat instead. In addition, he may use this feat one additional time per day for every four levels after 5th (to a maximum of 4 times per day at 17th level).</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Heroic Defiance": {
+                    "name": "Heroic Defiance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, an unbreakable gains the Heroic Defiance feat as a bonus feat, if he does not have it already. If he already has this feat, the unbreakable can choose any combat feat instead. In addition, he may use this feat one additional time per day for every four levels after 9th (to a maximum of 3 times per day at 19th level).</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Quick Recovery": {
+                    "name": "Quick Recovery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 11th level, an unbreakable needs only 15 minutes of rest or to be subject to a healing spell or effect to recover from the fatigued condition.</p>",
+                    "replaces": ["armor training 3"]
+                },
+                "Stalwart": {
+                    "name": "Stalwart",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, when an unbreakable succeeds on a Fortitude or Will save against a spell or spell-like ability that has a partial effect even on a successful save, he is completely unaffected by it.</p>",
+                    "replaces": ["weapon training 3"]
+                },
+                "Unlimited Endurance": {
+                    "name": "Unlimited Endurance",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 15th level, when an unbreakable is exhausted, he only suffers the effects of the fatigued condition instead, but does require 1 hour of rest to reduce this condition to the actual fatigued condition.</p>",
+                    "replaces": ["armor training 4"]
+                },
+                "Miraculous Recovery": {
+                    "name": "Miraculous Recovery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 17th level, when an unbreakable makes a saving throw to recover from an ongoing effect, he may roll twice and choose the better roll.</p>",
+                    "replaces": ["weapon training 4"]
+                },
+                "Unbreakable Mind": {
+                    "name": "Unbreakable Mind",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, an unbreakable becomes nearly impossible to sway with honeyed words or magic. He gains immunity to mind-affecting effects.</p>",
+                    "replaces": ["weapon mastery"]
+                },
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Airborne Ambusher": {
+                "name": "Airborne Ambusher",
+                "type": "Archetype",
+                "description": "<p>Driven by suspicion and hatred, strix doggedly guard their territories, making deadly use of their flight. Using swift strikes from above, strix plummet onto their foes with lethal force.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "specialAbilityType": "",
+                    "description": "<p>An airborne ambusher is not proficient with heavy armor or tower shields.</p>"
+                },
+                "Class Skills": {
+                    "name": "Class Skills",
+                    "type": "Class Feature",
+                    "specialAbilityType": "",
+                    "description": "<p>An airborne ambusher adds Fly to his list of class skills and removes Climb from his list of class skills.</p>"
+                },
+                "Combat Flyer": {
+                    "name": "Combat Flyer",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, an airborne ambusher may use his fighter bonus feats to select Flyby Attack and Hover. This replaces bravery.</p>"
+                },
+                "Aerobatics": {
+                    "name": "Aerobatics",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, an airborne ambusher may make a Fly check instead of an Acrobatics check to move through a threatened area or an enemy's space. This replaces weapon training 1.</p>"
+                },
+                "Flying Dodger": {
+                    "name": "Flying Dodger",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, when an airborne ambusher flies at least half its fly speed on its turn, it gains a +1 dodge bonus to AC for 1 round. This bonus increases to +2 at 11th level and +4 at 17th level.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Plummeting Charge": {
+                    "name": "Plummeting Charge",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, if an airborne ambusher flies at least half its fly speed as part of a charge, it gains a +2 racial bonus on the attack roll (in addition to the normal charge bonus) and a +4 bonus on its critical confirmation roll. These bonuses improve to +4 and +6 at 17th level. This replaces weapon training 3 and 4.</p>"
+                },
+                "requirements": [
+                    {
+                        "race": "Strix"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Cavern Sniper": {
+                "name": "Cavern Sniper",
+                "type": "Archetype",
+                "description": "<p>Perfectly at home in the darkness, the cavern sniper capitalizes on stealth and ranged attacks imbued with his spell-like abilities to harass his opponents. The cavern sniper focuses on surprise, his innate magical abilities, and poison to take down unwary foes.</p>",
+                "Class Skills": {
+                    "name": "Class Skills",
+                    "type": "Class Feature",
+                    "specialAbilityType": "",
+                    "description": "<p>The cavern sniper adds Stealth to his list of class skills and removes Intimidate from his list of class skills.</p>"
+                },
+                "Imbued Shot": {
+                    "name": "Imbued Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Su",
+                    "description": "<p>At 1st level, the cavern sniper gains the ability to imbue his arrows or bolts with the effect of one of his drow faerie fire, darkness, or deeper darkness spell-like abilities (provided he has access to the ability) as a swift action. When such an arrow or bolt is fired, the spell's area is centered where the arrow or bolt lands. If the target of the attack has a space larger than 5 feet, the cavern sniper can choose which square of the creature's space is the center of the spell-like ability's effect, as long as that square is within line of sight of the cavern sniper. The cavern sniper can instead choose to target a single square within line of sight with an imbued arrow or bolt, and uses that square as the center of the spell-like ability's area of effect on a hit (AC 5). The arrow must be fired during the round it was imbued, or the spell-like ability is wasted. If the arrow or bolt misses, the use of the spell-like ability is wasted.</p>",
+                    "replaces": ["the 1st-level fighter bonus feat"]
+                },
+                "Silent Shooter": {
+                    "name": "Silent Shooter",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a cavern sniper gains a +2 bonus on Stealth checks made when loading a bow or crossbow, poisoning ammunition, and making sniping attempts. This bonus increases by +2 for every four levels beyond 2nd.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Quick and Deadly": {
+                    "name": "Quick and Deadly",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 4th level, the cavern sniper can move at full speed while using Stealth at no penalty and can apply poison to a single arrow or crossbow bolt as a swift action.</p>",
+                    "replaces": ["the 4th-level fighter bonus feat"]
+                },
+                "Sniper Training": {
+                    "name": "Sniper Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, the cavern sniper chooses the bow or crossbow weapon group and gains a +2 bonus on attack rolls and damage rolls. This bonus increases by +1 for every four levels beyond 5th.</p>",
+                    "replaces": ["weapon training 1, 3, and 4"]
+                },
+                "Greater Imbued Shot": {
+                    "name": "Greater Imbued Shot",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Su",
+                    "description": "<p>At 9th level, the cavern sniper gains two extra uses of both his faerie fire and darkness spell-like abilities, but can only use these extra uses to imbue arrows and bolts with the imbued shot class feature.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Weapon Mastery": {
+                    "name": "Weapon Mastery",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 20th level, when the cavern sniper gains weapon mastery, he must choose a weapon in either the bow or crossbow weapon group.</p>"
+                },
+                "requirements": [
+                    {
+                        "race": "Drow"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Dirty Fighter": {
+                "name": "Dirty Fighter",
+                "type": "Archetype",
+                "description": "<p>The dirty fighter laughs at concepts like honor and fair play. He cares only for victory, no matter how he achieves it, and spends as much time mastering sneaky combat maneuvers as he does drilling with weapons or learning how to wear armor.</p>",
+                "Sidestep": {
+                    "name": "Sidestep",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 2nd level, a dirty fighter learns how to evade his enemies when they react to his combat maneuvers. He gains a +1 dodge bonus to his AC against attacks of opportunity provoked by him while attempting a combat maneuver. This bonus increases by +1 for every four levels beyond 2nd level.</p>",
+                    "replaces": ["bravery"]
+                },
+                "Maneuver Training": {
+                    "name": "Maneuver Training",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 5th level, a dirty fighter becomes a master of dirty tricks. He gains a +2 bonus on dirty trick combat maneuver checks and +2 to his CMD when he is the target of a dirty trick combat maneuver.</p>",
+                    "replaces": ["weapon training 1"]
+                },
+                "Speedy Tricks": {
+                    "name": "Speedy Tricks",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 9th level, a dirty fighter has perfected how to quickly perform dirty tricks. He can make a dirty trick combat maneuver as an attack instead of a standard action.</p>",
+                    "replaces": ["weapon training 2"]
+                },
+                "Double Tricks": {
+                    "name": "Double Tricks",
+                    "type": "Class Feature",
+                    "specialAbilityType": "Extraordinary",
+                    "description": "<p>At 13th level, when a dirty fighter performs a combat maneuver, he may apply two different conditions to his target instead of one. Each penalty condition requires a separate action to remove. At 17th level, he may apply three different conditions.</p>",
+                    "replaces": ["weapon training 3 and 4"]
+                },
+                "requirements": [
+                    {
+                        "race": "Orc"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            }
+        },
+        "source": {
+            "name": "Core Rulebook",
+            "date": "2009-08-01"
+        }
+    }
+}
