@@ -1,4 +1,5 @@
-{    "Monk": {
+{
+    "Monk": {
         "name": "Monk",
         "type": "Class",
         "description": "A student of martial arts, the monk trains his body to be his greatest weapon and defense.",
@@ -21,239 +22,1144 @@
                 "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8", "9", "9", "10", "10", "11", "11", "12"
             ]
         },
-        "Drunken Master": {
-            "name": "Drunken Master",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Hungry Ghost Monk": {
-            "name": "Hungry Ghost Monk",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Ki Mystic": {
-            "name": "Ki Mystic",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Monk of the Empty Hand": {
-            "name": "Monk of the Empty Hand",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Monk of the Four Winds": {
-            "name": "Monk of the Four Winds",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Monk of the Healing Hand": {
-            "name": "Monk of the Healing Hand",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Monk of the Lotus": {
-            "name": "Monk of the Lotus",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Monk of the Sacred Mountain": {
-            "name": "Monk of the Sacred Mountain",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Weapon Adept": {
-            "name": "Weapon Adept",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Zen Archer": {
-            "name": "Zen Archer",
-            "type": "Archetype",
-            "source": {
-                "name": "Advanced Player's Guide",
-                "date": "2010-09-01"
-            }
-        },
-        "Qinggong monk": {
-            "name": "Qinggong monk",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Magic",
-                "date": "2011-04-01"
-            }
-        },
-        "Flowing monk": {
-            "name": "Flowing monk",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Maneuver master": {
-            "name": "Maneuver master",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Martial artist": {
-            "name": "Martial artist",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Master of many styles": {
-            "name": "Master of many styles",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Sensei": {
-            "name": "Sensei",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Sohei": {
-            "name": "Sohei",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Tetori": {
-            "name": "Tetori",
-            "type": "Archetype",
-            "source": {
-                "name": "Ultimate Combat",
-                "date": "2011-09-01"
-            }
-        },
-        "Gray Disciple": {
-            "name": "Gray Disciple",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Duergar"
+        "alignmentRestrictions": ["!Lawful"],
+        "Class Features": {
+            "Weapon and Armor Proficiency": {
+                "name": "Weapon and Armor Proficiency",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>Monks are proficient with the club, crossbow (light or heavy), dagger, handaxe, javelin, kama, nunchaku, quarterstaff, sai, shortspear, short sword, shuriken, siangham, sling, and spear.</p><p>Monks are not proficient with any armor or shields.</p><p>When wearing armor, using a shield, or carrying a medium or heavy load, a monk loses his AC bonus, as well as his fast movement and flurry of blows abilities.</p>"
+            },
+            "AC Bonus": {
+                "name": "AC Bonus",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>When unarmored and unencumbered, the monk adds his Wisdom bonus (if any) to his AC and his CMD. In addition, a monk gains a +1 bonus to AC and CMD at 4th level. This bonus increases by 1 for every four monk levels thereafter, up to a maximum of +5 at 20th level.</p><p>These bonuses to AC apply even against touch attacks or when the monk is flat-footed. He loses these bonuses when he is immobilized or helpless, when he wears any armor, when he carries a shield, or when he carries a medium or heavy load.</p>"
+            },
+            "Flurry of Blows": {
+                "name": "Flurry of Blows",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>Starting at 1st level, a monk can make a flurry of blows as a full-attack action. When doing so, he may make on additional attack, taking a -2 penalty on all of his attack rolls, as if using the Two-Weapon Fighting feat. These attacks can be any combination of unarmed strikes and attacks with a monk special weapon (he does not need to use two weapons to use this ability). For the purpose of these attacks, the monk's base attack bonus from his monk class levels is equal to his monk level. For all other purposes, such as qualifying for a feat or a prestige class, the monk uses his normal base attack bonus.</p><p>At 8th level, the monk can make two additional attacks when he uses flurry of blows, as if using Improved Two-Weapon Fighting (even if the monk does not meet the prerequisites for the feat).</p><p>At 15th level, the monk can make three additional attacks using flurry of blows, as if using Greater Two-Weapon Fighting (even if the monk does not meet the prerequisites for the feat).</p><p>A monk applies his full Strength bonus to his damage rolls for all successful attacks made with flurry of blows, whether the attacks are made with an off-hand or with a weapon wielded in both hands. A monk may substitute disarm, sunder, and trip combat maneuvers for unarmed attacks as part of a flurry of blows. A monk cannot use any weapon other than an unarmed strike or a special monk weapon as part of a flurry of blows. A monk with natural weapons cannot use such weapons as part of a flurry of blows, nor can he make natural attacks in addition to his flurry of blows attacks.</p>"
+            },
+            "Unarmed Strike": {
+                "name": "Unarmed Strike",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>At 1st level, a monk gains Improved Unarmed Strike as a bonus feat. A monk's attacks may be with fist, elbows, knees, and feet. This means that a monk may make unarmed strikes with his hands full. There is no such thing as an off-hand attack for a monk striking unarmed. A monk may thus apply his full Strength bonus on damage rolls for all his unarmed strikes.</p><p>Usually a monk's unarmed strikes deal lethal damage, but he can choose to deal nonlethal damage instead with no penalty on his attack roll. He has the same choice to deal lethal or nonlethal damage while grappling.</p><p>A monk's unarmed strike is treated as both a manufactured weapon and a natural weapon for the purpose of spells and effects that enhance or improve either manufactured weapons or natural weapons.</p>"
+            },
+            "A monk also deals more damage with his unarmed strikes than a normal person woul" + "d, as shown above on Table": {
+                "name": "A monk also deals more damage with his unarmed strikes than a normal person would, as shown above on Table",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>Monk. The unarmed damage values listed on Table: Monk is for Medium monks. A Small monk deals less damage than the amount given there with his unarmed attacks, while a Large monk deals more damage; see Small or Large Monk Unarmed Damage on the table given below.</p><table><caption>Small or Large Monk Unarmed Damage</caption><th><td>Level</td><td>Damage (Small Monk)</td><td>Damage (Large Monk)</td></th><tr><td>1st–3rd</td><td>1d4</td><td>1d8</td></tr><tr><td>4th–7th</td><td>1d6</td><td>2d6</td></tr><tr><td>8th–11th</td><td>1d8</td><td>2d8</td></tr><tr><td>12th–15th</td><td>1d10</td><td>3d6</td></tr><tr><td>16th–19th</td><td>2d6</td><td>3d8</td></tr><tr><td>20th</td><td>2d8</td><td>4d8</td></tr></table>"
+            },
+            "Bonus Feat": {
+                "name": "Bonus Feat",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>At 1st level, 2nd level, and every 4 levels thereafter, a monk may select a bonus feat. These feats must be taken from the following list: Catch Off-Guard, Combat Reflexes, Deflect Arrows, Dodge, Improved Grapple, Scorpion Style, and Throw Anything. At 6th level, the following feats are added to the list: Gorgon's Fist, Improved Bull Rush, Improved Disarm, Improved Feint, Improved Trip, and Mobility. At 10th level, the following feats are added to the list: Improved Critical, Medusa's Wrath, Snatch Arrows, and Spring Attack. A monk need not have any of the prerequisites normally required for these feats to select them.</p>"
+            },
+            "Stunning Fist": {
+                "name": "Stunning Fist",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 1st level, the monk gains Stunning Fist as a bonus feat, even if he does not meet the prerequisites. At 4th level, and every 4 levels thereafter, the monk gains the ability to apply a new condition to the target of his Stunning Fist. This condition replaces stunning the target for 1 round, and a successful saving throw still negates the effect. At 4th level, he can choose to make the target fatigued. At 8th level, he can make the target sickened for 1 minute. At 12th level, he can make the target staggered for 1d6+1 rounds. At 16th level, he can permanently blind or deafen the target. At 20th level, he can paralyze the target for 1d6+1 rounds. The monk must choose which condition will apply before the attack roll is made. These effects do not stack with themselves (a creature sickened by Stunning Fist cannot become nauseated if hit by Stunning Fist again), but additional hits do increase the duration.</p>"
+            },
+            "Evasion": {
+                "name": "Evasion",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 2nd level or higher, a monk can avoid damage from many area-effect attacks. If a monk makes a successful Reflex saving throw against an attack that normally deals half damage on a successful save, he instead takes no damage. Evasion can be used only if a monk is wearing light armor or no armor. A helpless monk does not gain the benefit of evasion.</p>"
+            },
+            "Fast Movement": {
+                "name": "Fast Movement",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 3rd level, a monk gains an enhancement bonus to his land speed, as shown on Table: Monk. A monk in armor or carrying a medium or heavy load loses this extra speed.</p>"
+            },
+            "Maneuver Training": {
+                "name": "Maneuver Training",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 3rd level, a monk uses his monk level in place of his base attack bonus when calculating his Combat Maneuver Bonus. Base attack bonuses granted from other classes are unaffected and are added normally.</p>"
+            },
+            "Still Mind": {
+                "name": "Still Mind",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>A monk of 3rd level or higher gains a +2 bonus on saving throws against enchantment spells and effects.</p>"
+            },
+            "Ki Pool": {
+                "name": "Ki Pool",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>At 4th level, a monk gains a pool of ki points, supernatural energy he can use to accomplish amazing feats. The number of points in a monk's ki pool is equal to 1/2 his monk level + his Wisdom modifier. As long as he has at least 1 point in his ki pool, he can make a ki strike. At 4th level, ki strike allows his unarmed attacks to be treated as magic weapons for the purpose of overcoming damage reduction. At 7th level, his unarmed attacks are also treated as cold iron and silver for the purpose of overcoming damage reduction. At 10th level, his unarmed attacks are also treated as lawful weapons for the purpose of overcoming damage reduction. At 16th level, his unarmed attacks are treated as adamantine weapons for the purpose of overcoming damage reduction and bypassing hardness.</p><p>By spending 1 point from his ki pool, a monk can make one additional attack at his highest attack bonus when making a flurry of blows attack. In addition, he can spend 1 point to increase his speed by 20 feet for 1 round. Finally, a monk can spend 1 point from his ki pool to give himself a +4 dodge bonus to AC for 1 round. Each of these powers is activated as a swift action. A monk gains additional powers that consume points from his ki pool as he gains levels.</p><p>The ki pool is replenished each morning after 8 hours of rest or meditation; these hours do not need to be consecutive.</p>"
+            },
+            "Slow Fall": {
+                "name": "Slow Fall",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 4th level or higher, a monk within arm's reach of a wall can use it to slow his descent. When first gaining this ability, he takes damage as if the fall were 20 feet shorter than it actually is. The monk's ability to slow his fall (that is, to reduce the effective distance of the fall when next to a wall) improves with his monk level until at 20th level he can use a nearby wall to slow his descent and fall any distance without harm.</p>"
+            },
+            "High Jump": {
+                "name": "High Jump",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 5th level, a monk adds his level to all Acrobatics checks made to jump, both for vertical jumps and horizontal jumps. In addition, he always counts as having a running start when making jump checks using Acrobatics. By spending 1 point from his ki pool as a swift action, a monk gains a +20 bonus on Acrobatics checks made to jump for 1 round.</p>"
+            },
+            "Purity of Body": {
+                "name": "Purity of Body",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 5th level, a monk gains immunity to all diseases, including supernatural and magical diseases.</p>"
+            },
+            "Wholeness of Body": {
+                "name": "Wholeness of Body",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>At 7th level or higher, a monk can heal his own wounds as a standard action. He can heal a number of hit points of damage equal to his monk level by using 2 points from his ki pool.</p>"
+            },
+            "Improved Evasion": {
+                "name": "Improved Evasion",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 9th level, a monk's evasion ability improves. He still takes no damage on a successful Reflex saving throw against attacks, but henceforth he takes only half damage on a failed save. A helpless monk does not gain the benefit of improved evasion.</p>"
+            },
+            "Diamond Body": {
+                "name": "Diamond Body",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>At 11th level, a monk gains immunity to poisons of all kinds.</p>"
+            },
+            "Abundant Step": {
+                "name": "Abundant Step",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>At 12th level or higher, a monk can slip magically between spaces, as if using the spell dimension door. Using this ability is a move action that consumes 2 points from his ki pool. His caster level for this effect is equal to his monk level. He cannot take other creatures with him when he uses this ability.</p>"
+            },
+            "Diamond Soul": {
+                "name": "Diamond Soul",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 13th level, a monk gains spell resistance equal to his current monk level + 10. In order to affect the monk with a spell, a spellcaster must get a result on a caster level check (1d20 + caster level) that equals or exceeds the monk's spell resistance.</p>"
+            },
+            "Quivering Palm": {
+                "name": "Quivering Palm",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>Starting at 15th level, a monk can set up vibrations within the body of another creature that can thereafter be fatal if the monk so desires. He can use this quivering palm attack once per day, and he must announce his intent before making his attack roll. Creatures immune to critical hits cannot be affected. Otherwise, if the monk strikes successfully and the target takes damage from the blow, the quivering palm attack succeeds. Thereafter, the monk can try to slay the victim at any later time, as long as the attempt is made within a number of days equal to his monk level. To make such an attempt, the monk merely wills the target to die (a free action), and unless the target makes a Fortitude saving throw (DC 10 + 1/2 the monk's level + the monk's Wis modifier), it dies. If the saving throw is successful, the target is no longer in danger from that particular quivering palm attack, but it may still be affected by another one at a later time. A monk can have no more than 1 quivering palm in effect at one time. If a monk uses quivering palm while another is still in effect, the previous effect is negated.</p>"
+            },
+            "Timeless Body": {
+                "name": "Timeless Body",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>At 17th level, a monk no longer takes penalties to his ability scores for aging and cannot be magically aged. Any such penalties that he has already taken, however, remain in place. Age bonuses still accrue, and the monk still dies of old age when his time is up.</p>"
+            },
+            "Tongue of the Sun and Moon": {
+                "name": "Tongue of the Sun and Moon",
+                "type": "Class Feature",
+                "featureType": "Ex",
+                "description": "<p>A monk of 17th level or higher can speak with any living creature.</p>"
+            },
+            "Empty Body": {
+                "name": "Empty Body",
+                "type": "Class Feature",
+                "featureType": "Su",
+                "description": "<p>At 19th level, a monk gains the ability to assume an ethereal state for 1 minute as though using the spell etherealness. Using this ability is a move action that consumes 3 points from his ki pool. This ability only affects the monk and cannot be used to make other creatures ethereal.</p>"
+            },
+            "Perfect Self": {
+                "name": "Perfect Self",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>At 20th level, a monk becomes a magical creature. He is forevermore treated as an outsider rather than as a humanoid (or whatever the monk's creature type was) for the purpose of spells and magical effects. Additionally, the monk gains damage reduction 10/chaotic, which allows him to ignore the first 10 points of damage from any attack made by a nonchaotic weapon or by any natural attack made by a creature that doesn't have similar damage reduction. Unlike other outsiders, the monk can still be brought back from the dead as if he were a member of his previous creature type.</p>"
+            },
+            "Monk Vows": {
+                "name": "Monk Vows",
+                "type": "Class Feature",
+                "featureType": "",
+                "description": "<p>A monk can discipline his body to hold more ki by upholding the strict tenets of a vow. By adhering to his vow's tenets, the monk's ki pool increases by the amount listed in the vow's description. Every vow comes with a penalty or limitation to offset this increase in ki. A monk can take a vow at any level, but it does not add to his ki pool until he gains a ki pool as a class feature. The ability to take these vows replaces the still mind class feature, even if the monk abandons all his vows.</p><p>If a monk knowingly and willingly breaks his vow, his ki pool is reduced to 0 (as if he had spent all of his ki points) and he cannot replenish his pool or use abilities that require ki or a ki pool until he has redeemed himself. Redemption requires a recommitment to his vow accompanied by an atonement spell. After the redemption, the monk's normal ki pool (without the bonus from the vow) returns. If he upholds the previously broken vow for a full month, his ki pool regains the additional points from taking the vow, and he can decide whether to continue with his vow or forgo his vow without penalty. Once a monk forgoes a vow in this fashion, she can never gain a ki point bonus from that vow.</p><p>A monk may have multiple vows. Their effects and increase to his ki pool stack. If a monk violates a vow, he suffers the loss of ki described above; redemption means the monk regains the extra ki from his unbroken vows, but the extra ki from the broken vow does not return until he finishes the month-long commitment (in effect, violating one vow does not have an effect on the other vows once the monk redeems himself).</p>",
+                "Vow of Celibacy": {
+                    "name": "Vow of Celibacy",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk must abstain from all sexual and intimate physical activity. A monk with this vow takes it to an extreme, refusing to even share a room with another person, or sleeping on the opposite side of a camp from other people in a group. A celibate monk is not allowed to touch others or have others touch him (including touch spells from allies). Striking enemies in battle or being struck by enemies is not prohibited, but the monk shuns all peaceful or pleasurable contact. A monk with this vow increases his ki pool by 1 ki point for every 5 monk levels (minimum +1).</p>"
+                },
+                "Vow of Chains": {
+                    "name": "Vow of Chains",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>Either out of penitence or to bring attention to the suffering of the enslaved, the monk wears shackles on his wrists and legs. This gives the monk a –1 penalty on attack rolls and to AC, and reduces his movement by 10 feet. If temporarily unable to wear his chains, he may carry rocks or some other heavy burden (including medium or heavy armor) to simulate this suffering. A monk with this vow increasing his ki pool by 1 ki point for every 3 monk levels (minimum +1).</p>"
+                },
+                "Vow of Cleanliness": {
+                    "name": "Vow of Cleanliness",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>A monk undertaking this vow must wash daily. He must change into fresh clothes daily or shortly after his robes become dirty. His appearance must be kept immaculate, including either neatly braiding or shaving off his hair (and, for male monks, maintaining a clean-shaven face). His vow forbids him from willingly touching the filthy, diseased, dead, or undead (though he may attempt to cleanse or heal those suffering from disease), though using manufactured weapons to attack these creatures is allowed. A monk with this vow increases his ki pool by 1 ki point for every 5 monk levels (minimum +1).</p>"
+                },
+                "Vow of Fasting": {
+                    "name": "Vow of Fasting",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk eats nothing but rice (or a similar bland, staple food) and drinks nothing but water. On certain days (usually once per month or on a religious holiday), he may eat a small portion of other simple, bland food to maintain proper nutrition. The monk cannot use tobacco, drugs, potions, alchemical items requiring eating or drinking, or any other thing that could be considered a food or beverage. A monk with this vow increases his ki pool by 1 ki point for every 6 monk levels (minimum +1).</p>"
+                },
+                "Vow of Peace": {
+                    "name": "Vow of Peace",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk must strive to attain peace and may only use violence as a last resort. He can never strike the first blow in combat. If attacked, he must use the fight defensively action or the total defense action for the first 2 rounds. He must always give his opponent the option to surrender, and cannot purposely slay another creature that could reasonably be influenced to flee or join a civilized society as a productive member (obviously this excludes many monsters). Many monks who have taken this vow learn how to grapple and pin opponents, tying them with specialized knots that allow them to work themselves free after sufficient effort. Many monks of peace are vegetarians. A monk with this vow increases his ki pool by 1 ki point for every 5 monk levels (minimum +1).</p>"
+                },
+                "Vow of Poverty": {
+                    "name": "Vow of Poverty",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk taking a vow of poverty must never own more than six possessions—a simple set of clothing, a pair of sandals or shoes, a bowl, a sack, a blanket, and any one other item. Five of these items must be of plain and simple make, though one can be of some value (often an heirloom of great personal significance to the monk). The monk can never keep more money or wealth on his person than he needs to feed, bathe, and shelter himself for 1 week in modest accommodations. He cannot borrow or carry wealth or items worth more than 50 gp that belong to others. He is allowed to accept and use curative potions (or similar magical items where the item is consumed and is valueless thereafter) from other creatures. A monk with this vow increases his ki pool by 1 ki point for every monk level he possesses.</p>"
+                },
+                "Vow of Silence": {
+                    "name": "Vow of Silence",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk must speak no words and attempt to be quiet in his actions. Accidental noises and the sounds of battle (such as the sound of a fist or weapon striking an opponent) do not affect his vow, though most monks with this vow choose their weapons and opponents so as to minimize even these sounds. The monk is allowed to make a nonvocal noise to warn another of danger (such as by stomping or clapping). The monk is allowed to use gestures and motions to communicate with others (including sign language) and is allowed to write. A monk with this vow increases his ki pool by 1 ki point for every 6 monk levels (minimum +1).</p>"
+                },
+                "Vow of Truth": {
+                    "name": "Vow of Truth",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>The monk is not allowed to deliberately speak any lies, including bluffing, stating half-truths with the intent to deceive, exaggerating, telling white lies, and so on. This applies to all forms of communication. If presented with circumstances where telling the truth would bring harm to another, the monk remains silent. Many monks of this vow also take a vow of silence to show their commitment. A monk with this vow increases his ki pool by 1 ki point for every 5 monk levels (minimum +1).</p>"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
+            },
+            "Ki Powers": {
+                "name": "Ki Powers",
+                "type": "Monk Vow",
+                "featureType": "",
+                "description": "<p>Ki powers are abilities that draw on the power of a monk's ki. The standard monk has several abilities that count as ki powers, such as wholeness of body, abundant step, and empty body. A qinggong monk can learn additional ki powers, which often replaces a non-ki monk ability such as purity of body. Ki powers are divided into three categories: feats, monk abilities, and spells.</p>",
+                "Feats": {
+                    "name": "Feats",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>These ki powers duplicate the effects of specific feats. A monk does not need to qualify for a feat to select it as a ki power. For example, a qinggong monk can select Spring Attack as a ki power even if she doesn't meet the prerequisites for selecting Spring Attack as a feat. Activating one of these ki powers is a free action on the monk's turn; until the start of her next turn, the monk is treated as if she had that feat. Some of these ki powers that duplicate feats may also be activated as an immediate action; these powers are noted in the ki powers list.</p>"
+                },
+                "Monk Abilities": {
+                    "name": "Monk Abilities",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>Some ki powers are standard monk abilities. Even if a qinggong monk selects a different ki power in place of a standard monk ability, she can select that monk ability later as one of her ki powers.</p>"
+                },
+                "Spells": {
+                    "name": "Spells",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>These ki powers duplicate the effects of a spell, and are spell-like abilities. A qinggong monk's class level is the caster level for these spell-like abilities, and she uses Wisdom to determine her concentration check bonus.</p>"
+                },
+                "Requirements": {
+                    "name": "Requirements",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>All ki powers have a minimum monk level requirement to select them. A monk who does not meet this requirement cannot select that ki power.</p>"
+                },
+                "Activation": {
+                    "name": "Activation",
+                    "type": "Monk Vow",
+                    "featureType": "",
+                    "description": "<p>Most ki powers require the monk to spend ki points; the exact amount is listed after the ki power. Ki powers that cost 0 ki do not require the monk to have any ki points in her ki pool to use the ability.</p><p>The saving throw against a monk's ki power, if any, is equal to 10 + 1/2 the monk's level + the monk's Wisdom bonus.</p><p>Feats marked with a dagger (†) are ki powers that can be activated as an immediate action.</p>"
+                },
+                "4th-Level Ki Powers": [
+                    {
+                        "Acrobatic Steps": "1 ki point"
+                    }, {
+                        "augury": "1 ki point"
+                    }, {
+                        "barkskin": "self only, 1 ki point"
+                    }, {
+                        "Deny Death †": "0 ki points"
+                    }, {
+                        "feather step": "self only, 1 ki point"
+                    }, {
+                        "hydraulic push": "1 ki point"
+                    }, {
+                        "ki arrow": "1 ki point"
+                    }, {
+                        "Ki Stand †": "0 ki points"
+                    }, {
+                        "message": "1 ki point"
+                    }, {
+                        "Power Attack": "1 ki point"
+                    }, {
+                        "Quick Draw": "1 ki point"
+                    }, {
+                        "slow fall": "monk ability, 0 ki points"
+                    }, {
+                        "scorching ray": "2 ki points"
+                    }, {
+                        "Throw Anything": "1 ki point"
+                    }, {
+                        "true strike": "self only, 1 ki point"
+                    }
+                ],
+                "6th-Level Ki Powers": [
+                    {
+                        "cloak of winds": "self only, 2 ki points"
+                    }, {
+                        "gaseous form": "self only, 1 ki point"
+                    }, {
+                        "Heroic Recovery †": "1 ki point"
+                    }, {
+                        "high jump": "1 ki point"
+                    }, {
+                        "hydraulic torrent": "2 ki points"
+                    }, {
+                        "remove disease": "2 ki points"
+                    }, {
+                        "Sidestep †": "1 ki point"
+                    }, {
+                        "Snatch Arrows†": "1 ki point"
+                    }, {
+                        "Spring Attack": "1 ki point"
+                    }
+                ],
+                "8th-Level Ki Powers": [
+                    {
+                        "dragon's breath": "2 ki points"
+                    }, {
+                        "Gliding Steps †": "1 ki point"
+                    }, {
+                        "neutralize poison": "3 ki points"
+                    }, {
+                        "poison": "2 ki points"
+                    }, {
+                        "restoration": "self only, 2 ki points"
+                    }, {
+                        "share memory": "0 ki points"
+                    }, {
+                        "silk to steel": "1 ki point"
+                    }, {
+                        "Spider Step": "1 ki point"
+                    }, {
+                        "Whirlwind Attack": "2 ki points"
+                    }, {
+                        "wholeness of body": "monk ability, 2 ki points"
+                    }
+                ],
+                "10th-Level Ki Powers": [
+                    {
+                        "discordant blast": "2 ki points"
+                    }, {
+                        "Greater Bull Rush": "2 ki points"
+                    }, {
+                        "Greater Disarm": "2 ki points"
+                    }, {
+                        "Greater Feint": "2 ki points"
+                    }, {
+                        "Greater Sunder": "2 ki points"
+                    }, {
+                        "Improved Blind-Fight †": "1 ki point"
+                    }, {
+                        "ki leech": "0 ki points"
+                    }, {
+                        "Lunge": "1 ki point"
+                    }, {
+                        "shadow step": "1 ki point"
+                    }, {
+                        "spit venom": "2 ki points"
+                    }, {
+                        "Step Up and Strike †": "2 ki points"
+                    }, {
+                        "Wind Stance": "2 ki points"
+                    }
+                ],
+                "12th-Level Ki Powers": [
+                    {
+                        "abundant step": "monk ability, 2 ki points"
+                    }, {
+                        "battlemind link": "4 ki points"
+                    }, {
+                        "diamond body": "monk ability"
+                    }, {
+                        "Elemental Fists": "2 ki points"
+                    }, {
+                        "Improvised Weapon Mastery": "2 ki points"
+                    }, {
+                        "Ki Throw": "2 ki points"
+                    }, {
+                        "Punishing Kick": "2 ki points"
+                    }, {
+                        "shadow walk": "3 ki points"
+                    }
+                ],
+                "14th-Level Ki Powers": [
+                    {
+                        "blood crow strike": "2 ki points"
+                    }, {
+                        "Cloud Step": "3 ki points"
+                    }, {
+                        "cold ice strike": "3 ki points"
+                    }, {
+                        "diamond soul": "monk ability"
+                    }, {
+                        "Disarming Strike": "2 ki points"
+                    }, {
+                        "Improved Ki Throw": "2 ki points"
+                    }, {
+                        "ki shout": "3 ki points"
+                    }, {
+                        "sonic thrust": "2 ki points"
+                    }
+                ],
+                "16th-Level Ki Powers": [
+                    {
+                        "Bleeding Critical": "3 ki points"
+                    }, {
+                        "Greater Blind-Fight †": "2 ki points"
+                    }, {
+                        "Improved Vital Strike": "2 ki points"
+                    }, {
+                        "Lightning Stance": "3 ki points"
+                    }, {
+                        "Penetrating Strike": "2 ki points"
+                    }, {
+                        "quivering palm": "monk ability, 2 ki points"
+                    }, {
+                        "strangling hair": "3 ki points"
+                    }
+                ],
+                "18th-Level Ki Powers": [
+                    {
+                        "timeless body": "monk ability, 0 ki points"
+                    }, {
+                        "tongue of the sun and moon": "monk ability, 0 ki points"
+                    }
+                ],
+                "20th-Level Ki Powers": [
+                    {
+                        "Blinding Critical": "3 ki points"
+                    }, {
+                        "Crippling Critical": "3 ki points"
+                    }, {
+                        "Deafening Critical": "3 ki points"
+                    }, {
+                        "empty body": "monk ability, 3 ki points"
+                    }, {
+                        "Greater Penetrating Strike": "3 ki points"
+                    }, {
+                        "perfect self": "monk ability, level 20"
+                    }, {
+                        "Tiring Critical": "3 ki points"
+                    }
+                ]
             }
         },
-        "Ironskin Monk": {
-            "name": "Ironskin Monk",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Hobgoblin"
+        "archetypes": {
+            "Drunken Master": {
+                "name": "Drunken Master",
+                "type": "Archetype",
+                "description": "<p>Most monks lead lives of moderation and quiet contemplation. But the drunken master finds perfection through excess. Powered by strong wine, he uses his intoxication to reach a state where his ki is more potent, if somewhat fleeting.</p>",
+                "Drunken Ki": {
+                    "name": "Drunken Ki",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 3rd level, a drunken master can drink a tankard of ale or strong alcohol and gain one temporary ki point. The act of drinking is a standard action that does not provoke attacks of opportunity. The monk can have a maximum number of drunken ki points equal to 1 plus one additional point for every two levels thereafter (5th, 7th, and so on). The monk can gain this temporary ki even before he gains a ki pool at 4th level. These drunken ki points last for 1 hour or until spent, whichever is shorter. As long as he has at least 1 drunken ki point, the monk can spend 1 ki point as a swift action to move 5 feet without provoking attacks of opportunity. This ability replaces still mind.</p>"
+                },
+                "Drunken Strength": {
+                    "name": "Drunken Strength",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 5th level, a drunken master can spend 1 point of ki as a swift action to inflict 1d6 extra points of damage on a single successful melee attack. The monk can choose to apply the damage after the attack roll is made. At 10th level, the monk may spend 2 drunken ki points to increase the extra damage to 2d6. At 15th level, the monk may spend 3 drunken ki points to increase the extra damage to 3d6. At 20th level, the monk may spend 4 drunken ki points to increase the extra damage to 4d6. The monk must have at least 1 drunken ki point to use this ability. This ability replaces purity of body.</p>"
+                },
+                "Drunken Courage": {
+                    "name": "Drunken Courage",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 11th level, a drunken master is immune to fear as long as he has at least 1 point of drunken ki. This ability replaces diamond body.</p>"
+                },
+                "Drunken Resilience": {
+                    "name": "Drunken Resilience",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 13th level, a drunken master gains DR 1/— as long as he has at least 1 point of drunken ki. At 16th level, the DR increases to 2/—. At 19th level, it increases to 3/—. This ability replaces diamond soul.</p>"
+                },
+                "Firewater Breath": {
+                    "name": "Firewater Breath",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 19th level, a drunken master can take a drink and expel a gout of alcohol-fueled fire in a 30-foot cone. Creatures within the cone take 20d6 points of fire damage. A successful Reflex saving throw (DC 10 + 1/2 the monk's level + the monk's Wis modifier) halves the damage. Using this ability is a standard action that consumes 4 ki points from the monk's ki pool. The monk must have at least 1 drunken ki point to use this ability. This ability replaces empty body.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
-            }
-        },
-        "Nimble Guardian": {
-            "name": "Nimble Guardian",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Catfolk"
+            },
+            "Hungry Ghost Monk": {
+                "name": "Hungry Ghost Monk",
+                "type": "Archetype",
+                "description": "<p>The hungry ghost monk looks to spirits that prey upon the living as models of perfection. He sees the life energy of the universe as a resource to be manipulated, even stealing it from other creatures. It is through this constant influx of energy that the hungry ghost monk reaches his ultimate goal: power—personal, pure, and simple.</p>",
+                "Punishing Kick": {
+                    "name": "Punishing Kick",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 1st level, a hungry ghost monk gains Punishing Kick as a bonus feat, even if he does not meet the prerequisites. At 10th level, and every five levels thereafter, the monk can push the target of his Punishing Kick an additional 5 feet (10 feet at 10th level, 15 feet at 15th level, and 20 feet at 20th level). At 15th level, he can instead choose to push the target 5 feet and knock the target prone with the same attack. The target still gets a saving throw to avoid being knocked prone. This ability replaces Stunning Fist.</p>"
+                },
+                "Steal Ki": {
+                    "name": "Steal Ki",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 5th level, a hungry ghost monk can steal ki from other creatures, though this ability is controversial in some circles of monks, who see it as nothing less than a form of vampirism. If the monk scores a confirmed critical hit against a living enemy or reduces a living enemy to 0 or fewer hit points, he can steal some of that creature's ki. This ability replenishes 1 spent ki point to the monk's ki pool, as long as the monk has at least 1 ki point in his pool. He cannot exceed his ki pool's maximum. At 11th level, each time the monk successfully steals ki, he can make an immediate saving throw against one disease he is suffering from. There is no penalty for failing this saving throw. The monk gains a bonus equal to his Wisdom modifier on the saving throw. This ability replaces purity of body.</p>"
+                },
+                "Life Funnel": {
+                    "name": "Life Funnel",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 7th level, a hungry ghost monk can steal a creature's life force to replenish his own. If the monk has at least 1 ki point in his ki pool and scores a confirmed critical hit against a living enemy or reduces a living enemy to 0 or fewer hit points, he heals a number of hit points equal to his monk level. As with steal ki, some monks believe that life funnel is an unsavory act, no better than what the undead do to the living. A monk with this ability cannot steal both ki and hit points at the same time. This ability replaces wholeness of body.</p>"
+                },
+                "Life from a Stone": {
+                    "name": "Life from a Stone",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 11th level, a hungry ghost monk can steal ki or life force from any creature, not just living creatures. If the monk has at least 1 ki point in his pool, he gains the benefit of life funnel and steal ki when he confirms a critical hit against any creature or reduces any creature to 0 or fewer hit points. This ability replaces diamond body.</p>"
+                },
+                "Sipping Demon": {
+                    "name": "Sipping Demon",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>A 13th level, a hungry ghost monk gains 1 temporary hit point each time he hits an enemy with a melee attack. The monk gains a number of temporary hit points equal to his Wisdom modifier when he scores a critical hit. The maximum number of temporary hit points the monk can have is equal to his monk level. The temporary hit points disappear 1 hour later. The monk can only use this ability when he has at least 1 ki point in his ki pool. This ability is a proscribed manipulation of ki considered by many good monks to be a corruption. The ability replaces diamond soul.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
-            }
-        },
-        "Student Of Stone": {
-            "name": "Student Of Stone",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Oread"
+            },
+            "Ki Mystic": {
+                "name": "Ki Mystic",
+                "type": "Archetype",
+                "description": "<p>The ki mystic believes that violence is sometimes necessary, but knowing and understanding is the true root of perfection. Through meditation and spiritual visions, a ki mystic can see beyond the veil of reality to the underlying truth of all existence. A ki mystic has the following class features.</p>",
+                "Ki Mystic": {
+                    "name": "Ki Mystic",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 3rd level, a ki mystic gains a pool of ki points equal to his Wisdom modifier. The pool increases to 1/2 his monk level + his Wisdom modifier + 2 at level 4. If the monk has at least 1 point of ki in his ki pool, he gains a +2 bonus on all Knowledge skill checks. As a swift action, the monk can spend 1 ki point immediately before making an ability, or skill check to gain a +4 insight bonus on the check. This ability replaces still mind.</p>"
+                },
+                "Mystic Insight": {
+                    "name": "Mystic Insight",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 5th level, a ki mystic becomes apt at giving just the right word of advice in just the nick of time. As an immediate action, the monk can spend 2 ki points to grant an ally within 30 feet the ability to reroll a single attack roll or saving throw. The ally must be able to hear the monk to gain the reroll benefit. This ability replaces purity of body.</p>"
+                },
+                "Mystic Visions": {
+                    "name": "Mystic Visions",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 11th level, a ki mystic may receive mystic visions when he rests. These visions can come as a dream, an epiphany, or even as the voice of an old friend whispering in the monk's mind. The effect is similar to a divination spell with a caster level equal to the monk's level. The divination has no casting time; it is just part of the normal dreams or visions that occur every night. Using this ability costs 2 ki points that are removed from the next day's total. This ability replaces diamond body.</p>"
+                },
+                "Mystic Prescience": {
+                    "name": "Mystic Prescience",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 13th level, a ki mystic gains a +2 insight bonus to AC and CMD. At 20th level, the bonus increases to +4. This ability replaces diamond soul.</p>"
+                },
+                "Mystic Persistence": {
+                    "name": "Mystic Persistence",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 19th level, a ki mystic can create an aura once per day as a swift action at the cost of at least 2 points of ki. The aura emanates out to a 20-foot radius. The monk and all allies within the aura can roll two dice when making an attack roll or a saving throw and take the better result. The aura lasts for 1 round, plus an additional round for every 2 ki points spent when the monk created the aura. The monk can dismiss the aura at any time as a free action, but the ki points for the full duration of the aura are lost. This ability replaces empty body.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
-            }
-        },
-        "Treetop Monk": {
-            "name": "Treetop Monk",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Vanara"
+            },
+            "Monk of the Empty Hand": {
+                "name": "Monk of the Empty Hand",
+                "type": "Archetype",
+                "description": "<p>The monk of the empty hand eschews normal weapons in favor of whatever is lying around—rocks, chair legs, flagons of ale, even a simple quill pen all become deadly weapons in the hands of such a monk. A monk of the empty hand draws on his own ki to infuse his improvised weapons with power, and can transform a broken bottle into a magical weapon.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>Monks of the empty hand are proficient with the shuriken only. A monk of the empty hand treats normal weapons as improvised weapons with the following equivalencies (substituting all of their statistics for the listed weapon): a light weapon functions as a light hammer, a one-handed weapon functions as a club, and a two-handed weapon functions as a quarterstaff. This replaces the normal monk weapon proficiencies.</p>"
+                },
+                "Flurry of Blows": {
+                    "name": "Flurry of Blows",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>Starting at 1st level, a monk of the empty hand can make a flurry of blows using any combination of unarmed strikes or attacks with an improvised weapon. He may not make a flurry of blows with any other weapons, including special monk weapons. A monk of the empty hand's flurry of blows otherwise functions as normal for a monk of his level.</p>"
+                },
+                "Bonus Feat": {
+                    "name": "Bonus Feat",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>A monk of the empty hand adds the following feats to his list of bonus feats at 6th level: Improved Dirty Trick*, Improved Steal*, and Improvised Weapon Mastery.</p>"
+                },
+                "Versatile Improvisation": {
+                    "name": "Versatile Improvisation",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 3rd level, as a swift action, a monk of the empty hand may use an improvised weapon to deal damage as if it were another type (bludgeoning, piercing, or slashing) for 1 round, regardless of the weapon's normal damage type. This ability replaces still mind.</p>"
+                },
+                "Ki Pool": {
+                    "name": "Ki Pool",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 4th level, in addition to the normal abilities of his ki pool, a monk of the empty hand may spend 1 point from his ki pool to increase the range increment for an improvised thrown weapon or shuriken by 20 feet for 1 round.</p>"
+                },
+                "Ki Weapons": {
+                    "name": "Ki Weapons",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 5th level, a monk of the empty hand may spend 1 point from his ki pool as a swift action to deal damage equal to his unarmed strike damage with an improvised weapon for 1 round. At 11th level, the monk may spend ki to grant an enhancement bonus or magical weapon abilities to an improvised weapon for 1 round, at the rate of 1 point of ki per +1 bonus or its equivalent. The monk may not spend more than 3 points of ki at one time for this purpose. For example, a monk can spend 2 points of ki to give his improvised weapon a +1 enhancement bonus and the ki focus quality, or just the flaming burst quality. At 15th level, the limit increases to 5 ki per round. The monk may use this ability to add magical weapon qualities to improvised weapons that could not normally have such a quality, such as adding the disruption quality to a slashing weapon, or the vorpal quality to a bludgeoning weapon. This ability replaces purity of body and diamond body.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
-            }
-        },
-        "Underfoot Adept": {
-            "name": "Underfoot Adept",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Halfling"
+            },
+            "Monk of the Four Winds": {
+                "name": "Monk of the Four Winds",
+                "type": "Archetype",
+                "description": "<p>The monk of the four winds is connected to the natural world in a way few other creatures—even other monks—can hope to match. He can call upon the elements and the spirits of the world in times of need, and as he nears his goal of perfection, he gains the ability to slow down time and even defeat death itself. A monk of the four winds has the following class features.</p>",
+                "Elemental Fist": {
+                    "name": "Elemental Fist",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 1st level, a monk of the four winds gains Elemental Fist as a bonus feat, even if he does not meet the prerequisites. At 5th level, and every five levels thereafter, the monk increases the damage of his Elemental Fist by 1d6 (2d6 at 5th level, 3d6 at 10th level, and so on). This ability replaces Stunning Fist.</p>"
+                },
+                "Slow Time": {
+                    "name": "Slow Time",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 12th level, a monk of the four winds can use his ki to slow time or quicken his movements, depending on the observer. As a swift action, the monk can expend 6 ki points to gain three standard actions during his turn instead of just one. The monk can use these actions to do the following: take a melee attack action, use a skill, use an extraordinary ability, or take a move action. The monk cannot use these actions to cast spells or use spell-like abilities, and cannot combine them to take full-attack actions. Any move actions the monk makes this turn do not provoke attacks of opportunity. This ability replaces abundant step.</p>"
+                },
+                "Aspect Master": {
+                    "name": "Aspect Master",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 17th level, a monk of the four winds must choose an aspect of one of the great spirits of the world. Once made, this choice cannot be changed. This spirit grants the monk a new appearance and new abilities, as well as changing or augmenting the monk's personality in some way. Once this choice is made, it cannot be changed. The monk must abide by the alignment restrictions of the aspect. If the monk ever changes his alignment to something outside the aspect's alignment restrictions, he loses this ability and cannot regain it unless his alignment later changes again to match that of the aspect. This ability replaces timeless body.</p>"
+                },
+                "Aspect of the Carp": {
+                    "name": "Aspect of the Carp",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>The monk's skin becomes a coat of golden, iridescent fish scales, his neck grows gills, and his fingers become webbed. He can breathe water and gains a swim speed equal to his land speed. The carp is heroic and adventurous—a monk must be nonevil to take on the aspect of the carp.</p>"
+                },
+                "Aspect of the Ki-Rin": {
+                    "name": "Aspect of the Ki-Rin",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>The monk's skin takes on a golden luminescence, and a silvery mane that cannot be bound grows atop his head. He gains a fly speed equal to his land speed, but he must end each turn on the ground. If the monk does not land by the end of his turn, he falls from whatever height he has attained. The ki-rin is honorable, honest, and self-sacrificing—a monk must be lawful good to take on the aspect of the ki-rin.</p>"
+                },
+                "Aspect of the Monkey": {
+                    "name": "Aspect of the Monkey",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>The monk's face becomes that of a monkey, and he grows a prehensile tail. The monk can pick up objects and make unarmed attacks with his tail (though the tail does not grant additional unarmed attacks or natural attacks). In addition, the monk gains a climb speed equal to his land speed. The monkey is a creature of whimsy and a lover of pranks—a monk of any alignment can take on the aspect of the monkey.</p>"
+                },
+                "Aspect of the Oni": {
+                    "name": "Aspect of the Oni",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>The monk's skin becomes pitch black, and his hair turns white, black, red, or violet. He can assume gaseous form (as the spell) as a standard action for 1 minute per day per monk level. This duration does not need to be consecutive, but it must be spent in 1-minute increments. The oni is treacherous and deceitful, and it hungers for the pain and death of living creatures—a monk must be evil to take on the aspect of the oni.</p>"
+                },
+                "Aspect of the Owl": {
+                    "name": "Aspect of the Owl",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>The monk grows feathers, and his head becomes avian, with wide, unblinking eyes. He gains a fly speed of 30 feet. The owl is a sage creature, deeply serious, and driven toward a single goal—a monk of any alignment can take on the aspect of the owl.</p>"
+                },
+                "Aspect of the Tiger": {
+                    "name": "Aspect of the Tiger",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>Dark stripes appear on the monk's skin, and his face becomes more feline. His eyes become catlike, with vertical pupils, and his canines enlarge. Once per hour, the monk can move at 10 times his normal land speed when he makes a charge and is treated as if he had the pounce ability. The tiger is swift, fierce, and deadly—a monk of any alignment can take on the aspect of the tiger.</p>"
+                },
+                "Immortality": {
+                    "name": "Immortality",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 20th level, a monk of the four winds no longer ages. He remains in his current age category forever. Even if the monk comes to a violent end, he spontaneously reincarnates (as the spell) 24 hours later in a place of his choosing within 20 miles of the place he died. The monk must have visited the place in which he returns back to life at least once. This ability replaces perfect self.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
-            }
-        },
-        "Wanderer": {
-            "name": "Wanderer",
-            "type": "Archetype",
-            "requirements": [
-                {
-                    "race": "Human"
+            },
+            "Monk of the Healing Hand": {
+                "name": "Monk of the Healing Hand",
+                "type": "Archetype",
+                "description": "<p>Monks of the healing hand seek perfection through helping others. By focusing their meditations on the flow of life within themselves and all creation they gain an understanding of how to share their ki with others, healing wounds and even bringing the dead back to life. For such a monk, sacrificing himself to save another is the surest way to achieve transcendence. A monk of the healing hand has the following class features.</p>",
+                "Ancient Healing Hand": {
+                    "name": "Ancient Healing Hand",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 7th level, a monk of the healing hand can heal another creature's wounds with a touch. As a full-round action, the monk can spend 2 ki points to heal a number of hit points equal to the monk's level. He needs at least one hand free to use this ability, and cannot heal himself. If the action is interrupted, the subject heals no hit points, and the ki points are lost. This ability replaces wholeness of body.</p>"
+                },
+                "Ki Sacrifice": {
+                    "name": "Ki Sacrifice",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 11th level, a monk of the healing hand can use his entire ki pool to bring a person back to life. It takes 1 hour to perform this ritual. At the end of the ritual, the monk sacrifices all of his ki in order to cast raise dead (as the spell) with a caster level equal to his monk level. The ritual uses all of the ki in the monk's ki pool; the monk must have at least 6 points of ki in his ki pool to use this ability. At 15th level, the monk may sacrifice his ki to cast resurrection. The monk must have at least 8 points of ki in his ki pool to use this ability. These rituals do not require material components. When this ability is used, the monk's ki pool is not replenished until 24 hours have passed. This ability replaces both diamond body and quivering palm.</p>"
+                },
+                "True Sacrifice": {
+                    "name": "True Sacrifice",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 20th level, in a final selfless act, a monk of the healing hand can draw in his entire ki, which then explodes outward in a 50-foot-radius emanation. All dead allies within the emanation are brought back to life, as if they were the subject of a true resurrection spell with a caster level equal to the monk's level. When the monk does this, he is truly and utterly destroyed. A monk destroyed in this way can never come back to life, not even by way of a wish or miracle spell or by the power of a deity. Furthermore, the monk's name can never be spoken or written down again. All written mentions of his name become nothing more than a blank space. This ability replaces perfect self.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
                 }
-            ],
-            "source": {
-                "name": "Advanced Race Guide",
-                "date": "2014-09-01"
+            },
+            "Monk of the Lotus": {
+                "name": "Monk of the Lotus",
+                "type": "Archetype",
+                "description": "<p>Monks are warriors who hone their bodies into deadly weapons, but some monks eschew violence in favor of a more peaceful philosophy. While a monk of the lotus realizes that combat cannot always be avoided—and is more than capable in a fight—he understands that all creatures are connected, and to harm another is to harm the self. Instead, he strives to find peaceful resolutions to conflicts, and in doing so, hopes to achieve inner peace. A monk of the lotus has the following class features.</p>",
+                "Touch of Serenity": {
+                    "name": "Touch of Serenity",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 1st level, a monk of the lotus gains Touch of Serenity as a bonus feat, even if he does not meet the prerequisites. At 6th level, and every six levels thereafter, the duration of Touch of Serenity increases by 1 round. Each round on its turn, the target may attempt a new Will save to end the effect. This duration does not stack; only the longest remaining duration applies. This ability replaces Stunning Fist.</p>"
+                },
+                "Touch of Surrender": {
+                    "name": "Touch of Surrender",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 12th level, a monk of the lotus makes a foe into a friend with a single show of mercy. As an immediate action, when one of his melee attacks would reduce a creature to 0 or fewer hit points, the monk can spend 6 ki points to make the target of that attack surrender. When the target surrenders, it is reduced to 0 hit points, becomes disabled, and is charmed, as if the monk had cast charm monster with a caster level equal to the monk's level. The target does not get a saving throw against this effect. This charm lasts until its duration expires, until the monk dismisses it or uses it on another creature, or until the target is again reduced to 0 or fewer hit points, whichever happens first. The monk can only have one creature charmed with touch of surrender at a time. This is a mind-affecting charm effect. This ability replaces abundant step.</p>"
+                },
+                "Touch of Peace": {
+                    "name": "Touch of Peace",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 15th level, a monk of the lotus can set up vibrations within the body of another creature to win over the creature's mind. The monk can use touch of peace once per day, and must announce his intent before making his attack roll. On a successful hit, the attack deals no damage, but the target is charmed as if the monk had cast charm monster with a caster level equal to the monk's level. The target does not get a saving throw against this effect. The creature is charmed for 1 day per level. If the monk or his allies attack the charmed creature, or if the monk asks or commands the charmed creature to take hostile actions, the effect ends. This is a mind-affecting charm effect. This ability replaces quivering palm.</p>"
+                },
+                "Learned Master": {
+                    "name": "Learned Master",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 17th level, a monk of the lotus gains all Knowledge skills and the Linguistics skill as class skills. The monk uses Wisdom instead of Intelligence as the key ability for these skills. This ability replaces tongue of the sun and the moon.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Monk of the Sacred Mountain": {
+                "name": "Monk of the Sacred Mountain",
+                "type": "Archetype",
+                "description": "<p>The monk of the sacred mountain finds strength and power in the earth beneath his feet. Rather than spinning though the battlefield with the fluid motion of the river, he roots himself to the ground, as immovable and unshakable as the stones of the mountain. A monk of the sacred mountain has the following class features.</p>",
+                "Iron Monk": {
+                    "name": "Iron Monk",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 2nd level, a monk of the sacred mountain gains Toughness as a bonus feat. In addition, the monk gains a +1 natural armor bonus. This ability replaces evasion.</p>"
+                },
+                "Bastion Stance": {
+                    "name": "Bastion Stance",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 4th level, a monk of the sacred mountain becomes like stone, nearly impossible to move when he stands his ground. If the monk starts and ends his turn in the same space, he cannot be knocked prone or forcibly moved until the start of his next turn, except by mind-affecting or teleportation effects. At 16th level, he is immune to any attempts to force him to move, even mind-affecting and teleportation effects. This ability replaces slow fall.</p>"
+                },
+                "Iron Limb Defense": {
+                    "name": "Iron Limb Defense",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 5th level, a monk of the sacred mountain can deflect blows with an active defense that complements his bastion stance. If the monk starts and ends his turn in the same space, he gains a +2 shield bonus to AC and CMD until the start of his next turn. As a swift action, he can spend 1 ki point to increase this bonus to +4. This ability replaces high jump.</p>"
+                },
+                "Adamantine Monk": {
+                    "name": "Adamantine Monk",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 9th level, a monk of the sacred mountain has muscles so strong and skin so resilient that he gains DR 1/—. This DR increases by 1 for every three levels thereafter. As a swift action, the monk can spend 1 ki point to double his DR until the beginning of his next turn. This ability replaces improved evasion.</p>"
+                },
+                "Vow of Silence": {
+                    "name": "Vow of Silence",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 17th level, a monk of the sacred mountain becomes as impassive as stone, making a vow of silence in exchange for greater abilities. The monk gains a +2 insight bonus to AC and CMD and a +4 bonus on Sense Motive, Stealth, and Perception checks. The monk does not lose the capacity for speech, but if he ever speaks, he loses this feature for 24 hours. This ability replaces tongue of the sun and the moon.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Weapon Adept": {
+                "name": "Weapon Adept",
+                "type": "Archetype",
+                "description": "<p>While all monks train in both unarmed combat and with weapons, the weapon adept seeks to become one with his weapons, transforming them into perfect extensions of his own body. Through such training, a weapon adept seeks to attain perfection by becoming a living weapon himself. A weapon adept has the following class features.</p>",
+                "Perfect Strike": {
+                    "name": "Perfect Strike",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 1st level, a weapon adept gains Perfect Strike as a bonus feat, even if he does not meet the prerequisites. At 10th level, the monk can roll his attack roll three times and take the higher result. If one of these rolls is a critical threat, he can choose which one of his other two rolls to use as his confirmation roll. This ability replaces Stunning Fist.</p>"
+                },
+                "Way of the Weapon Master": {
+                    "name": "Way of the Weapon Master",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 2nd level, a weapon adept gains Weapon Focus as a bonus feat with one of his monk weapons. At 6th level, the monk gains Weapon Specialization with the same weapon as a bonus feat, even if he does not meet the prerequisites. This ability replaces evasion.</p>"
+                },
+                "Evasion": {
+                    "name": "Evasion",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 9th level, the monk gains evasion. This ability replaces improved evasion.</p>"
+                },
+                "Uncanny Initiative": {
+                    "name": "Uncanny Initiative",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 17th level, a weapon adept does not need to roll for initiative. He always treats his initiative roll as if it resulted in any number of his choosing (from 1 to 20). This ability replaces timeless body.</p>"
+                },
+                "Pure Power": {
+                    "name": "Pure Power",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>At 20th level, a weapon adept forsakes the ideals of the perfect self to become a bastion of the physical and mental virtues monks hold dear. The monk gains a +2 bonus to Strength, Dexterity, and Wisdom. This ability replaces perfect self.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Zen Archer": {
+                "name": "Zen Archer",
+                "type": "Archetype",
+                "description": "<p>Some monks seek to become one with another weapon entirely—the bow. The zen archer takes a weapon most other monks eschew and seeks perfection in the pull of a taut bowstring, the flex of a bow's limbs, and the flight of an arrow fired true.</p>",
+                "Weapon and Armor Proficiency": {
+                    "name": "Weapon and Armor Proficiency",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>Zen archers are proficient with longbows, shortbows, composite longbows, and composite shortbows in addition to their normal weapon proficiencies.</p>"
+                },
+                "Flurry of Blows": {
+                    "name": "Flurry of Blows",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>Starting at 1st level, a zen archer can make a flurry of blows as a full-attack action, but only when using a bow (even though it is a ranged weapon). He may not make a flurry of blows with his unarmed attacks or any other weapons. A zen archer does not apply his Strength bonus on damage rolls made with flurry of blows unless he is using a composite bow with a Strength rating. A zen archer's flurry of blows otherwise functions as normal for a monk of his level.</p><p>A zen archer cannot use Rapid Shot or Manyshot when making a flurry of blows with his bow.</p>"
+                },
+                "Bonus Feats": {
+                    "name": "Bonus Feats",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>A zen archer's bonus feats must be taken from the following list: Combat Reflexes, Deflect Arrows, Dodge, Far Shot, Point-Blank Shot, Precise Shot, and Rapid Shot. At 6th level, the following feats are added to the list: Focused Shot*, Improved Precise Shot, Manyshot, Mobility, and Parting Shot*. At 10th level, the following feats are added to the list: Improved Critical, Pinpoint Targeting, Shot on the Run, and Snatch Arrows. A monk need not have any of the prerequisites normally required for these feats to select them. These feats replace the monk's normal bonus feats.</p>"
+                },
+                "Perfect Strike": {
+                    "name": "Perfect Strike",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 1st level, a zen archer gains Perfect Strike as a bonus feat, even if he does not meet the prerequisites. A zen archer can use Perfect Strike with any bow. At 10th level, the monk can roll his attack roll three times and take the highest result. If one of these rolls is a critical threat, the monk must choose one of his other two rolls to use as his confirmation roll. This ability replaces Stunning Fist.</p>"
+                },
+                "Way of the Bow": {
+                    "name": "Way of the Bow",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 2nd level, a zen archer gains Weapon Focus as a bonus feat with one type of bow. At 6th level, the monk gains Weapon Specialization with the same weapon as a bonus feat, even if he does not meet the prerequisites. This ability replaces evasion.</p>"
+                },
+                "Zen Archery": {
+                    "name": "Zen Archery",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 3rd level, a zen archer may use his Wisdom modifier instead of his Dexterity modifier on ranged attack rolls when using a bow. This ability replaces maneuver training.</p>"
+                },
+                "Point Blank Master": {
+                    "name": "Point Blank Master",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 3rd level, a zen archer gains Point Blank Master* as a bonus feat, even if he does not meet the prerequisites. This ability replaces still mind.</p>"
+                },
+                "Ki Pool": {
+                    "name": "Ki Pool",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 4th level, in addition to the normal abilities of his ki pool, a zen archer may spend 1 point from his ki pool to increase the range increment for his bow by 50 feet for 1 round.</p>"
+                },
+                "Ki Arrows": {
+                    "name": "Ki Arrows",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 5th level, a zen archer may spend 1 point from his ki pool as a swift action to change the damage dice of arrows he shoots to that of his unarmed strikes. This lasts until the start of his next turn. For example, a Medium zen archer's short bow normally deals 1d6 damage; using this ability, his arrows deal 1d8 damage until the start of his next turn. This ability replaces purity of body.</p>"
+                },
+                "Reflexive Shot": {
+                    "name": "Reflexive Shot",
+                    "type": "Class Feature",
+                    "featureType": "Ex",
+                    "description": "<p>At 9th level, a zen archer can make attacks of opportunity with arrows from his bow. The monk still threatens squares he could reach with unarmed strikes, and can still only make one attack of opportunity per round (unless he has Combat Reflexes). This ability replaces improved evasion.</p>"
+                },
+                "Trick Shot": {
+                    "name": "Trick Shot",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 11th level, a zen archer may hit targets that he might otherwise miss. By spending 1 point from his ki pool as a swift action, the zen archer can ignore concealment. By spending 2 points, he can ignore total concealment or cover. By spending 3 points, he can ignore total cover, even firing arrows around corners. The arrow must still be able to reach the target; a target inside a closed building with no open doors or windows cannot be attacked. These effects last for 1 round. This ability replaces diamond body.</p>"
+                },
+                "Ki Focus Bow": {
+                    "name": "Ki Focus Bow",
+                    "type": "Class Feature",
+                    "featureType": "Su",
+                    "description": "<p>At 17th level, as long as he has at least 1 point of ki in his ki pool, a zen archer may treat arrows fired from his bow as if they were ki focus weapons, allowing him to use his special ki attacks as if his arrows were unarmed attacks. This ability replaces tongue of the sun and moon.</p>"
+                },
+                "source": {
+                    "name": "Advanced Player's Guide",
+                    "date": "2010-09-01"
+                }
+            },
+            "Qinggong monk": {
+                "name": "Qinggong monk",
+                "type": "Archetype",
+                "description": "<p>The qinggong monk is a master of her ki, using it to perform superhuman stunts or even blast opponents with supernatural energy. Some achieve their power over ki through extreme discipline, while others attain this power by intentionally or accidentally ingesting rare herbs or strange mystical fruits, and a few are gifted these abilities by a dying qinggong master.</p>",
+                "Ki Power": {
+                    "name": "Ki Power",
+                    "type": "Class Feature",
+                    "featureType": "",
+                    "description": "<p>A qinggong monk can select a ki power (see below) for which she qualifies in place of the following monk class abilities: slow fall (4th), high jump (5th), wholeness of body (7th), diamond body (11th), abundant step (12th), diamond soul (13th), quivering palm (15th), timeless body (17th), tongue of the sun and moon (17th), empty body (19th), and perfect self (20th). This replaces the monk class ability the qinggong monk gives up for this ki power.</p>"
+                },
+                "source": {
+                    "name": "Ultimate Magic",
+                    "date": "2011-04-01"
+                }
+            },
+            "Flowing monk": {
+                "name": "Flowing monk",
+                "type": "Archetype",
+                "description": "<p>The flowing monk is the wind and the river. He knows how the world flows, and forces his enemies to flow with it. Even the most powerful stone breaks under the graceful and persistent pressure of wind and water.</p>",
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>A flowing monk replaces the normal monk bonus feats with the following: Agile Maneuvers, Combat Reflexes, Deflect Arrows, Dodge, Improved Reposition, Improved Trip, Nimble Moves, and Weapon Finesse. At 6th level, the following feats are also available: Acrobatic Steps, Bodyguard, Improved Disarm, Improved Feint, Ki Throw, Mobility, Second Chance, and Sidestep. At 10th level, the following feats are added: In Harm's Way, Repositioning Strike, Snatch Arrows, Spring Attack, and Tripping Strike.</p>"},
+                "Redirection": {"name": "Redirection", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, as an immediate action, a flowing monk can attempt a reposition or trip combat maneuver against a creature that the flowing monk threatens and that attacks him. If the combat maneuver is successful, the attacker is sickened for 1 round (Reflex DC = 10 + 1/2 the monk's level + monk's Wisdom modifier to halve the duration), plus 1 additional round at 4th level and for every four levels afterward (to a maximum of 6 rounds at 20th level). The monk gains a +2 bonus on the reposition or trip combat maneuver check and the save DC for redirection increases by 2 if the attacker is using Power Attack or is charging when attacking him. The benefit increases to a +4 bonus and an increase of the saving throw by 4 if both apply.</p><p>At 4th level, a flowing monk can use redirection against an opponent that the flowing monk threatens and that attacks an ally with a melee attack. At 8th level, a flowing monk can make both a reposition and a trip maneuver as part of a single immediate action with this ability. At 12th level, a flowing monk can use redirection against any opponent that attacks him in melee, even if the flowing monk is not threatening the opponent who attacks him. A flowing monk can use this ability once per day per monk level, but no more than once per round. This ability replaces stunning fist.</p>"},
+                "Unbalancing Counter": {"name": "Unbalancing Counter", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 2nd level, a flowing monk's attacks of opportunity render a struck creature flat-footed until the end of the flowing monk's next turn (Reflex DC 10 + 1/2 the monk's level + Wisdom modifier negates). This ability replaces the bonus feat gained at 2nd level.</p>"},
+                "Flowing Dodge": {"name": "Flowing Dodge", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, a flowing monk gains a +1 dodge bonus to AC for each enemy adjacent to him, up to a maximum bonus equal to his Wisdom modifier (minimum 1). This ability replaces fast movement.</p>"},
+                "Elusive Target": {"name": "Elusive Target", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, as an immediate action, a flowing monk may spend 2 points from his ki pool to attempt a Reflex save opposed by an attacker's attack roll to halve damage from that attack. At 11th level and above, the flowing monk suffers no damage on a successful save, or half damage on a failed save. If the attacker is flanking the monk, the flanking opponent who is not attacking becomes the target of the attack. Use the same attack roll, and if the attack hits the new target, that creatures takes half damage (or full damage if the attack is completely avoided). Any associated effects from the attack (such as bleed, poison, or spell effects) apply fully even if the attack deals only half damage. This ability replaces purity of body and diamond body.</p>"},
+                "Volley Spell": {"name": "Volley Spell", "type": "Class Feature", "featureType": "Su", "description": "<p>At 15th level, when a targeted spell or spell-like ability fails to overcome a flowing monk's spell resistance, he may reflect the effect onto its caster as spell turning by spending a number of points from his ki pool equal to 1/2 the spell's level (minimum 1). This ability replaces quivering palm.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Maneuver master": {
+                "name": "Maneuver master",
+                "type": "Archetype",
+                "description": "<p>The maneuver master specializes in more complicated moves than simple damage-dealing strikes.</p>",
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>In addition to normal monk bonus feats, a maneuver master may select any Improved combat maneuver feat (such as Improved Overrun) as a bonus feat. At 6th level and above, he may select any Greater combat maneuver feat (such as Greater Grapple) as a bonus feat. At 10th level and above, he may select any maneuver Strike feat (such as Tripping Strike) as a bonus feat.</p>"},
+                "Flurry of Maneuvers": {"name": "Flurry of Maneuvers", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, as part of a full-attack action, a maneuver master can make one additional combat maneuver, regardless of whether the maneuver normally replaces a melee attack or requires a standard action. The maneuver master uses his monk level in place of his base attack bonus to determine his CMB for the bonus maneuvers, though all combat maneuver checks suffer a –2 penalty when using a flurry. At 8th level, a maneuver master may attempt a second additional combat maneuver, with an additional –3 penalty on combat maneuver checks. At 15th level, a maneuver master may attempt a third additional combat maneuver, with an additional –7 penalty on combat maneuver checks. This ability replaces flurry of blows.</p>"},
+                "Maneuver Defense": {"name": "Maneuver Defense", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, if a maneuver master has an Improved combat maneuver feat, any creature attempting that maneuver against the maneuver master provokes an attack of opportunity, even if it would not normally do so. This ability replaces still mind.</p>"},
+                "Reliable Maneuver": {"name": "Reliable Maneuver", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 4th level, as a swift action, a maneuver master may spend 1 point from his ki pool before attempting a combat maneuver. He can roll his combat maneuver check for that maneuver twice and use the better result. This ability replaces slow fall.</p>"},
+                "Meditative Maneuver": {"name": "Meditative Maneuver", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, as a swift action, a maneuver master can add his Wisdom modifier on any combat maneuver check he makes before the beginning of his next turn. He must choose which combat maneuver check to grant the bonus to before making the combat maneuver check. This ability replaces purity of body.</p>"},
+                "Sweeping Maneuver": {"name": "Sweeping Maneuver", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 11th level, a maneuver master can make two combat maneuvers as a standard action, as long as neither maneuver requires the maneuver master to move. He may perform two identical maneuvers against two adjacent enemies, or he may perform two different combat maneuvers against the same target. This ability replaces diamond body.</p>"},
+                "Whirlwind Maneuver": {"name": "Whirlwind Maneuver", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 15th level, once per day as a full-round action, a maneuver master can attempt a single combat maneuver against every opponent he threatens, as long as the combat maneuver does not require movement. He makes a single combat maneuver check, and it applies to all targets. This ability replaces quivering palm.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Martial artist": {
+                "name": "Martial artist",
+                "type": "Archetype",
+                "description": "<p>The martial artist pursues a mastery of pure martial arts without the monastic traditions. He is a master of form, but lacks the ability to harness his ki.</p>",
+                "Alignment": {"name": "Alignment", "type": "Class Feature", "featureType": "", "description": "<p>A martial artist may be of any alignment.</p>"},
+                "Pain Points": {"name": "Pain Points", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, a martial artist's advanced knowledge of humanoid anatomy grants a +1 bonus on critical hit confirmation rolls and increases the DC of his stunning fist and quivering palm by 1. This ability replaces still mind.</p>"},
+                "Martial Arts Master": {"name": "Martial Arts Master", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 4th level, a martial artist may use his monk level to qualify for feats with a fighter level prerequisite when those feats are applied to unarmed strikes or weapons with the monk special quality. This ability replaces slow fall.</p>"},
+                "Exploit Weakness": {"name": "Exploit Weakness", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 4th level, as a swift action, a martial artist can observe a creature or object to find its weak point by making a Wisdom check and adding his monk level against a DC of 10 + the object's hardness or the target's CR. If the check succeeds, the martial artist gains a +2 bonus on attack rolls until the end of his turn, and any attacks he makes until the end of his turn ignore the creature or object's DR or hardness.</p><p>A martial artist may instead use this ability as a swift action to analyze the movements and expressions of one creature within 30 feet, granting a bonus on Sense Motive checks and Reflex saves and a dodge bonus to AC against that opponent equal to 1/2 his monk level until the start of his next turn.</p><p>This ability replaces ki pool.</p>"},
+                "Extreme Endurance": {"name": "Extreme Endurance", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, a martial artist gains immunity to fatigue. At 10th level, he also gains immunity to exhaustion. At 15th level, he gains immunity to stunning. At 20th level, he gains immunity to death effects and energy drain. This ability replaces purity of body, diamond body, and perfect self.</p>"},
+                "Physical Resistance": {"name": "Physical Resistance", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 7th level, if a martial artist suffers any effect that causes ability damage, ability drain, or temporary ability score penalties, the effect is reduced by 1 point. This reduction increases by 1 for every three levels beyond 7th (to a maximum reduction of 5 at 19th level). This ability replaces wholeness of body, timeless body, and tongue of sun and moon.</p>"},
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>At 12th level, a martial artist gains an additional bonus feat, selected from those available in the monk class feature. This ability replaces abundant step.</p>"},
+                "Defensive Roll": {"name": "Defensive Roll", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 13th level, a martial artist may use the defensive roll advanced rogue talent once per day, plus once per three levels beyond 13th (to a maximum of 3 times a day at 19th level). This ability replaces diamond soul.</p>"},
+                "Quivering Palm": {"name": "Quivering Palm", "type": "Class Feature", "featureType": "", "description": "<p>A martial artist may use this ability one additional time per day per level above 15th, but may not have more than one in effect at a time.</p>"},
+                "Greater Defensive Roll": {"name": "Greater Defensive Roll", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 19th level, a martial artist suffers no damage on a successful defensive roll, and only half damage if the Reflex saving throw fails. This ability replaces empty body.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Master of Many Styles": {
+                "name": "Master of Many Styles",
+                "type": "Archetype",
+                "description": "<p>The master of many styles is a collector. For every move, he seeks a counter. For every style, he has a riposte. Ultimately, he seeks perfection through the fusion of styles.</p>",
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>At 1st level, 2nd level, and every four levels thereafter, a master of many styles may select a bonus style feat or the Elemental Fist feat. He does not have to meet the prerequisites of that feat, except the Elemental Fist feat. Alternatively, a master of many styles may choose a feat in that style's feat path (such as Earth Child Topple) as one of these bonus feats if he already has the appropriate style feat (such as Earth Child Style). The master of many styles does not need to meet any other prerequisite of the feat in the style's feat path. This ability replaces a monk's standard bonus feats.</p>"},
+                "Fuse Style": {"name": "Fuse Style", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, a master of many styles can fuse two of the styles he knows into a more perfect style. The master of many styles can have two style feat stances active at once. Starting a stance provided by a style feat is still a swift action, but when the master of many styles switches to another style feat, he can choose one style whose stance is already active to persist. He may only have two style feat stances active at a time.</p><p>At 8th level, the master of many styles can fuse three styles at once. He can have the stances of three style feats active at the same time. Furthermore, he can enter up to three stances as a swift action.</p><p>At 15th level, the master of many styles can fuse four styles at once. He can have the stances of four style feats active at the same time. Furthermore, he can enter up to four stances as a free action by spending 1 point from his ki pool.</p><p>This ability replaces flurry of blows.</p>"},
+                "Perfect Style": {"name": "Perfect Style", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 20th level, a master of many styles can have the stances of five style feats active at once, and can change those stances as a free action. This ability replaces perfect self.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Sensei": {
+                "name": "Sensei",
+                "type": "Archetype",
+                "description": "<p>The sensei is a revered teacher who imparts lessons on the oneness of mind, body, and spirit, along with occasional correction that is subtle and swift. Rather than using wisdom for his own benefit alone, he uses it to better those around him.</p>",
+                "Skills": {"name": "Skills", "type": "Class Feature", "featureType": "", "description": "<p>A sensei gains Diplomacy, Linguistics, and all Knowledge skills as class skills.</p>"},
+                "Advice": {"name": "Advice", "type": "Class Feature", "featureType": "Ex", "description": "<p>A sensei's advice is identical to bardic performance (using oratory), allowing him to inspire courage at 1st level, inspire competence at 3rd level, and inspire greatness at 9th level, as a bard of the sensei's level, usable a total number of rounds per day equal to his level + his Wisdom modifier (minimum 1). This ability replaces flurry of blows, fast movement, and improved evasion.</p>"},
+                "Insightful Strike": {"name": "Insightful Strike", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 2nd level, a sensei may use his Wisdom bonus in lieu of his Strength or Dexterity on attack rolls and combat maneuver checks with unarmed strikes or monk weapons. This ability replaces evasion and the bonus feat gained at 2nd level.</p>"},
+                "Mystic Wisdom": {"name": "Mystic Wisdom", "type": "Class Feature", "featureType": "Su", "description": "<p>At 6th level, a sensei may use his advice ability when spending points from his ki pool to activate a class ability (using the normal actions required for each) in order to have that ability affect one ally within 30 feet rather than the sensei himself. At 12th level, a sensei may affect all allies within 30 feet rather than himself (spending points from his ki pool only once, not once for each target).</p><p>At 12th level, a sensei may instead spend 1 point from his ki pool (as a swift action) while using advice to provide a single ally within 30 feet with evasion, fast movement, high jump, purity of body, or slow fall. At 18th level, a sensei may spend 2 points to grant one of the abilities listed above to all allies within 30 feet, or diamond body, diamond soul, or improved evasion to a single ally within 30 feet. These abilities function at the sensei's level and last 1 round. This ability replaces the bonus feats at 6th, 12th, and 18th level.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Sohei": {
+                "name": "Sohei",
+                "type": "Archetype",
+                "description": "<p>The sohei are masters of the horse and the hunt. A monastic soldier, the sohei is equally adept at combat afoot or on horseback. While skilled in unarmed techniques, many sohei favor weapons they can use while mounted on horseback or against others' horses.</p>",
+                "Skills": {"name": "Skills", "type": "Class Feature", "featureType": "", "description": "<p>A sohei gains Handle Animal as a class skill.</p>"},
+                "Weapon and Armor Proficiency": {"name": "Weapon and Armor Proficiency", "type": "Class Feature", "featureType": "", "description": "<p>A sohei is proficient with all simple and martial weapons and with light armor.</p>"},
+                "Bonus Feats": {"name": "Bonus Feats", "type": "Class Feature", "featureType": "", "description": "<p>A sohei may select mounted combat feats as bonus feats.</p>"},
+                "Devoted Guardian": {"name": "Devoted Guardian", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, a sohei can always act in a surprise round even if he does not notice his enemies, though he remains flat-footed until he acts. In addition, a sohei gains a bonus on initiative rolls equal to 1/2 his monk level. At 20th level, a sohei's initiative roll is automatically a natural 20. This ability replaces stunning fist.</p>"},
+                "Unarmed Strike": {"name": "Unarmed Strike", "type": "Class Feature", "featureType": "", "description": "<p>A sohei's unarmed strike damage does not increase at 4th level and above.</p>"},
+                "Monastic Mount": {"name": "Monastic Mount", "type": "Class Feature", "featureType": "Su", "description": "<p>At 4th level, a sohei may spend 1 point from his ki pool to grant his mount temporary hit points equal to twice his level for 1 hour per level. In addition, as long as the sohei and his mount are adjacent, including when mounted, the mount gains any of the following abilities the sohei possesses: AC bonus, diamond soul, evasion, high jump, improved evasion, ki strike (as long as the sohei has at least 1 point in his ki pool), perfect self, and still mind. When a sohei spends points from his ki pool, his mount gains the same benefits as the sohei. This ability replaces fast movement and increased unarmed damage.</p>"},
+                "Ki Weapon": {"name": "Ki Weapon", "type": "Class Feature", "featureType": "Su", "description": "<p>At 4th level, as a swift action, a sohei may spend 1 point from his ki pool to grant any weapon he wields (including his unarmed strike) a +1 enhancement bonus on attack and damage rolls, increasing by +1 per four levels after 4th to a maximum bonus of +5 at 20th level, until the end of his next turn. This ability replaces slow fall and abundant step.</p>"},
+                "Weapon Training": {"name": "Weapon Training", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 6th level, a sohei gains weapon training in one of the following weapon groups, as the fighter class feature: bows, crossbows, monk weapons, polearms, spears, or thrown weapons. He may select an additional group of weapons for every six levels after 6th, to a maximum of three at 18th level. A sohei may use flurry of blows and ki strike with any weapon in which he has weapon training. This ability replaces purity of body, diamond body, quivering palm, timeless body, and tongue of sun and moon.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Tetori": {
+                "name": "Tetori",
+                "type": "Archetype",
+                "description": "<p>The style of the tetori is that of the majestic wrestler—a warrior with a dizzying array of grabs, holds, and locks with which to bewilder and incapacitate his foes.</p>",
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>A tetori gains the following bonus feats: 1st level—Improved Grapple, 2nd level—Stunning Pin, 6th level—Greater Grapple, 10th level—Pinning Knockout, 14th level—Choke Hold, 18th level—Neckbreaker. These feats replace a monk's normal bonus feats.</p>"},
+                "Graceful Grappler": {"name": "Graceful Grappler", "type": "Class Feature", "featureType": "Ex", "description": "<p>A tetori uses his monk level in place of his base attack bonus to determine CMB and CMD for grappling. At 4th level, he suffers no penalties on attack rolls, can make attacks of opportunity while grappling, and retains his Dexterity bonus to AC when pinning an opponent or when grappled. At 8th level, a tetori gains the grab special attack when using unarmed strikes (Pathfinder RPG Bestiary 301), and can use this ability against creatures his own size or smaller by spending 1 point from his ki pool, or against larger creatures by spending 2 points from his ki pool. At 15th level, a tetori gains the constrict special attack (Bestiary 298), inflicting his unarmed strike damage on any successful grapple check. This ability replaces flurry of blows.</p>"},
+                "Counter-Grapple": {"name": "Counter-Grapple", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 4th level, a tetori wrestler may make an attack of opportunity against a creature attempting to grapple him. This ability does not allow the tetori to make an attack of opportunity against a creature with the Greater Grapple feat. At 6th level, he may use counter-grapple even if his attacker has concealment or total concealment, at 8th level even if he is flat-footed, and at 10th level even if his attacker has exceptional reach. This ability replaces slow fall.</p>"},
+                "Break Free": {"name": "Break Free", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, a tetori adds his monk level on combat maneuver or Escape Artist checks made to escape a grapple. If a tetori fails a save against an effect that causes him to become entangled, paralyzed, slowed, or staggered, he may spend 1 point from his ki pool as an immediate action to attempt a new save. This ability replaces high jump.</p>"},
+                "Inescapable Grasp": {"name": "Inescapable Grasp", "type": "Class Feature", "featureType": "Su", "description": "<p>At 9th level, a tetori can spend 1 point from his ki pool to suppress his opponents' freedom of movement and magical bonuses to Escape Artist or on checks to escape a grapple. At 13th level, this ability also duplicates the effect of dimensional anchor. At 17th level, the tetori's unarmed strike gains the ghost touch special ability, and an incorporeal creature that he strikes gains the grappled condition (Reflex negates, DC 10 + 1/2 the wrestler's level + his Wisdom modifier). Inescapable grasp is a swift action and lasts until the beginning of the wrestler's next turn. This ability replaces abundant step, improved evasion, timeless body, and tongue of sun and moon.</p>"},
+                "Form Lock": {"name": "Form Lock", "type": "Class Feature", "featureType": "Su", "description": "<p>At 13th level, a tetori can negate a polymorph effect by touch with a Wisdom check, adding a bonus equal to his monk level, against a DC of 11 + the caster level of the effect (or HD of the creature, for supernatural polymorph effects). This is a standard action requiring 2 points from the tetori's ki pool, or an immediate action if a creature the tetori is grappling attempts to use a polymorph effect. This ability replaces diamond soul.</p>"},
+                "Iron Body": {"name": "Iron Body", "type": "Class Feature", "featureType": "Su", "description": "<p>At 19th level, as a move action, a tetori can make his tissues ultra-dense for 1 minute as the iron body spell by spending 3 points from his ki pool. This ability replaces empty body.</p>"},
+                "source": {
+                    "name": "Ultimate Combat",
+                    "date": "2011-09-01"
+                }
+            },
+            "Gray Disciple": {
+                "name": "Gray Disciple",
+                "type": "Archetype",
+                "description": "<p>The gray disciple contemplates the inner voice of duergar magic and the silent eternity of stone, mastering these dual mysteries and combining them to deadly effect.</p>",
+                "Fade from Sight": {"name": "Fade from Sight", "type": "Class Feature", "featureType": "Sp", "description": "<p>At 4th level, as a swift action, the gray disciple can become invisible (as the invisibility spell) for 1 round by spending 1 ki point. To use this ability, the gray disciple must already have invisibility as a spell-like ability. This ability replaces slow fall and still mind.</p>"},
+                "Gray Heart": {"name": "Gray Heart", "type": "Class Feature", "featureType": "Sp", "description": "<p>At 6th level, as a swift action, the gray disciple can enlarge himself (as the enlarge person spell) for 1 minute by spending 1 ki point. To use this ability, the gray disciple must already have enlarge person available as a spell-like ability. This ability replaces high jump and the bonus feat gained at 6th level.</p>"},
+                "Born in Darkness": {"name": "Born in Darkness", "type": "Class Feature", "featureType": "Sp", "description": "<p>At 7th level, as a standard action, the gray disciple can radiate darkness (as the spell, except originating from the disciple's person) for 1 round per level by spending 1 ki point. This ability replaces wholeness of body.</p>"},
+                "Earth Glide": {"name": "Earth Glide", "type": "Class Feature", "featureType": "Su", "description": "<p>At 12th level, as a swift action, the gray disciple can spend a ki point to walk through solid stone for 1 round. This functions as the earth glide universal monster ability. The gray disciple may continue earth gliding as long as he spends 1 ki point every round as a swift action. If he ceases earth gliding within a solid object, he is violently ejected and takes 5d6 points of damage. The gray disciple is not harmed by damage caused to material he is earth gliding through, but a stone to flesh spell cast upon it causes violent ejection as described above. This ability replaces abundant step.</p>"},
+                "Entomb": {"name": "Entomb", "type": "Class Feature", "featureType": "Su", "description": "<p>At 15th level, a gray disciple can phase a foe into solid rock, killing it instantly. To use this ability, he expends 1 ki point as part of a bull rush or reposition combat maneuver against a creature adjacent to unworked earth or stone. If the attempt succeeds, the gray disciple pushes his foe inside the rock using his earth glide ability. If the creature succeeds at a Reflex save (DC 10 + 1/2 the gray disciple's monk level + the gray disciple's Wisdom modifier), it is ejected in the nearest open space and takes 5d6 points of damage. If it fails, it dies instantly as its body merges with the surrounding stone. Entomb is usable once per day, but a failed bull rush or reposition attempt does not count as a use of the ability. Entomb has no effect on creatures that can earth glide, are incorporeal, or can otherwise can survive merging with a solid object. This ability replaces quivering palm.</p>"},
+                "Earthen Thrall": {"name": "Earthen Thrall", "type": "Class Feature", "featureType": "Sp", "description": "<p>At 17th level, a gray disciple can attempt to control a creature with the earth subtype once per day. This ability is treated as dominate monster (DC 10 + 1/2 the gray disciple's monk level + the gray disciple's Wisdom modifier), but is only effective against creatures with the earth subtype, and the gray disciple can keep only a single creature enthralled. If he attempts to control a second creature with this ability, the first creature is automatically released from domination whether or not the second attempt succeeds. This ability replaces tongue of the sun and moon and empty body.</p>"},
+                "requirements": [
+                    {
+                        "race": "Duergar"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Ironskin Monk": {
+                "name": "Ironskin Monk",
+                "type": "Archetype",
+                "description": "<p>Through discipline and training, an ironskin monk hardens his body to withstand punishing blows. Though slow on his feet, his calloused hands and feet can shatter stone and stagger foes.</p>",
+                "Iron Skin": {"name": "Iron Skin", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, an ironskin monk gains a +1 bonus to his natural armor. This bonus stacks with any existing natural armor the ironskin monk already has. At 4th level, and every 4 levels thereafter, this bonus increases by +1. This ability replaces the monk's AC bonus ability and the ability to add his Wisdom bonus to his AC.</p>"},
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>At 1st level, an ironskin monk adds Power Attack to his list of bonus feats. At 6th level, he adds Improved Sunder to the list. At 10th level, he adds Greater Sunder to the list. These bonus feat choices replace Dodge, Mobility, and Spring Attack on his bonus feat list.</p>"},
+                "Resilience": {"name": "Resilience", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 2nd level, an ironskin monk can shake off the physical effects of certain attacks. If he makes a Fortitude saving throw against an attack that has a reduced effect on a successful save, he instead avoids the effect entirely. This ability can be used only if the monk is wearing light armor or no armor. A helpless monk does not gain the benefits of resilience. This ability replaces evasion.</p>"},
+                "Ki Pool": {"name": "Ki Pool", "type": "Class Feature", "featureType": "Su", "description": "<p>At 4th level, an ironskin monk can spend 1 point from his ki pool to gain a damage bonus equal to 1/2 his level against objects and constructs for 1 round. This replaces the ability to increase speed with ki.</p>"},
+                "Staggering Blow": {"name": "Staggering Blow", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, an ironskin monk attacking with an unarmed strike can spend 1 point from his ki pool as a free action after a successful critical hit to stagger the creature struck for 1 round (Fort DC 10 + 1/2 the ironskin monk's level + the ironskin monk's Wisdom modifier negates). This ability replaces high jump.</p>"},
+                "Tough as Nails": {"name": "Tough as Nails", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 6th level, an ironskin monk gains DR 1/—. Subtract 1 point from the damage the ironskin monk takes each time he is dealt damage from a weapon or a natural attack. This damage reduction increases by 1 point at 9th level and every 3 levels thereafter. Damage reduction can reduce damage to 0 but not below 0. This ability replaces fast movement and slow fall.</p>"},
+                "Evasion": {"name": "Evasion", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 9th level, an ironskin monk gains evasion. This ability replaces improved evasion.</p>"},
+                "Surefooted": {"name": "Surefooted", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 17th level, an ironskin monk's speed is not reduced by difficult terrain. This ability replaces tongue of the sun and moon.</p>"},
+                "Unbreakable": {"name": "Unbreakable", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 20th level, an ironskin monk sets aside many of the frailties of mortal flesh. He becomes immune to death effects and stunning. He is not subject to ability damage or ability drain, and has a 75% chance of ignoring the extra damage dealt by critical hits and sneak attacks. This ability replaces perfect self.</p>"},
+                "requirements": [
+                    {
+                        "race": "Hobgoblin"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Nimble Guardian": {
+                "name": "Nimble Guardian",
+                "type": "Archetype",
+                "description": "<p>Some catfolk monks dedicate their graceful prowess to the defense of others, especially those dedicated to a similar ethos or who prove themselves as stalwart allies of the monk's cause. A nimble guardian has the following class features.</p>",
+                "Defensive Aid": {"name": "Defensive Aid", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 2nd level, a number of times per day equal to his Wisdom bonus, a nimble guardian can interpose herself between one adjacent ally and an attack or damage dealt in an area of effect. If an adjacent ally is the target of the attack or is required to make a Reflex saving throw against a damaging effect, as an immediate action the nimble guardian can grant that ally a +4 circumstance bonus to AC or on the saving throw against the effect. The nimble guardian must use this ability before the attack roll or saving throw is made. The nimble guardian can only use this ability if he is wearing light or no armor. This ability replaces evasion.</p>"},
+                "Nimble Reflexes": {"name": "Nimble Reflexes", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, a nimble guardian gains a +2 bonus on all Reflex saving throws. This ability replaces still mind.</p>"},
+                "Defensive Mastery": {"name": "Defensive Mastery", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, a nimble guardian gains 3 additional uses of her defensive aid ability per day. Furthermore, if an ally that gained the benefit of a use of defensive aid succeeds her Reflex saving throw, and the effect still deals damage on a successful saving throw, the nimble guardian can spend 1 ki point to negate that damage. Doing so is not an action. This ability replaces purity of body.</p>"},
+                "Guardian Feline": {"name": "Guardian Feline", "type": "Class Feature", "featureType": "Su", "description": "<p>At 7th level, a nimble guardian can transform himself into a feline creature by spending 2 ki points. The effect lasts for 1 hour or until the nimble guardian changes back. Changing form (to animal or back) is a standard action and does not provoke an attack of opportunity. The chosen form must be some form of feline (cheetah, lion, etc.). This ability is otherwise identical to beast shape II. At 9th level, this ability functions as beast shape III. This ability replaces wholeness of body.</p>"},
+                "Evasion": {"name": "Evasion", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 9th level, a nimble guardian gains evasion. This ability replaces improved evasion.</p>"},
+                "requirements": [
+                    {
+                        "race": "Catfolk"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Student Of Stone": {
+                "name": "Student Of Stone",
+                "type": "Archetype",
+                "description": "<p>By following the path of the stone, students of stone give up much of monks' mobility in favor of sheer resilience. A student of stone has the following class features.</p>",
+                "Hard as Stone": {"name": "Hard as Stone", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 2nd level, whenever an opponent rolls to confirm a critical hit against a student of stone, treat the student of stone's AC as +4 higher than normal. This ability replaces evasion.</p>"},
+                "Strength of Stone": {"name": "Strength of Stone", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, a student of stone learns to draw strength from the earth. So long as both he and his opponent are touching the ground, the student of stone gains a +1 bonus on attack rolls, damage rolls, bull rush and trip combat maneuver rolls, and to his CMD when resisting a bull rush or trip attempt. This ability replaces fast movement.</p>"},
+                "Bonus Feat": {"name": "Bonus Feat", "type": "Class Feature", "featureType": "", "description": "<p>At 6th level, a student of stone adds Elemental Fist to his list of available bonus feats. If the student of stone selects Elemental Fist as a bonus feat, he may only deal acid damage when using the feat. At 10th level, the student of stone adds Shaitan Style to his list of bonus feats, at 14th level, he adds Shaitan Skin , and at 18th level, he adds Shaitan Earthblast. This otherwise functions as and alters the bonus feat ability.</p>"},
+                "Bones of Stone": {"name": "Bones of Stone", "type": "Class Feature", "featureType": "Su", "description": "<p>At 7th level, as a swift action, a student of stone can spend 1 ki point to gain DR 2/magic until the beginning of his next turn. At 10th level, he can spend 1 ki point to gain DR 2/chaotic until his next turn. At 15th level, he can spend 1 ki point to gain DR 5/chaotic until his next turn. This ability replaces high jump.</p>"},
+                "Body of Stone": {"name": "Body of Stone", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 9th level, a student of stone gains the benefits of the light fortification armor property . This ability replaces improved evasion.</p>"},
+                "Soul of Stone": {"name": "Soul of Stone", "type": "Class Feature", "featureType": "Su", "description": "<p>At 12th level, as a swift action, a student of stone can spend 1 ki point to gain tremorsense 15 feet until his next turn. At 16th level, the range of this tremorsense increases to 30 feet. This ability replaces abundant step.</p>"},
+                "Stone Self": {"name": "Stone Self", "type": "Class Feature", "featureType": "", "description": "<p>At 20th level, a student of stone becomes an earth outsider. He gains the earth subtype, as well as DR 5/chaotic, burrow speed 20 feet, and tremorsense 20 feet.</p>"},
+                "requirements": [
+                    {
+                        "race": "Oread"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Treetop Monk": {
+                "name": "Treetop Monk",
+                "type": "Archetype",
+                "description": "<p>While many vanaras follow traditional monastic training and traditions, others learn to blend exotic combat and the mysterious forces of ki with the natural world, allowing them to move through trees and overgrowth to deliver devastating attacks. A treetop monk has the following class features.</p>",
+                "Branch Runner": {"name": "Branch Runner", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, a treetop monk adds half the base speed bonus from his fast movement ability to his racial climb speed. This ability replaces still mind.</p>"},
+                "Wood Affinity": {"name": "Wood Affinity", "type": "Class Feature", "featureType": "Su", "description": "<p>At 5th level, a treetop monk may expend 1 point from his ki pool as a free action to treat a wooden object as if it were not broken for 1 minute (this includes a weapon with a wooden haft such as an axe or spear). At 8th level, as a free action, a treetop monk can expend 1 point from his ki pool to use the Lunge feat with any wooden or wood-hafted melee weapon. This ability replaces purity of body.</p>"},
+                "Freedom of Movement": {"name": "Freedom of Movement", "type": "Class Feature", "featureType": "Su", "description": "<p>At 12th level, a treetop may expend 1 point from his ki pool as a swift action to gain the effects of freedom of movement for 1 round. This ability replaces abundant step.</p>"},
+                "requirements": [
+                    {
+                        "race": "Vanara"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Underfoot Adept": {
+                "name": "Underfoot Adept",
+                "type": "Archetype",
+                "description": "<p>An underfoot adept turns his diminutive stature and unorthodox footwork into a powerful weapon. Effortlessly moving across the battlefield, he ducks under the legs of larger creatures and then topples them with surprising attacks. An underfoot adept has the following class features.</p>",
+                "Underfoot Grace": {"name": "Underfoot Grace", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, an underfoot adept uses his size and grace to avoid the attacks of those he passes. When using the Acrobatics skill to avoid attacks of opportunity by moving through a threatened area or an enemy's space, he only takes a –5 penalty when doing so at full speed, instead of the normal –10 penalty. This ability replaces the bonus feat gained at 1st level.</p>"},
+                "Underfoot Trip": {"name": "Underfoot Trip", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, an underfoot adept learns a number of maneuvers and grabs that can cause even the largest opponents to stumble and fall. He gains Improved Trip as a bonus feat, even if he does not meet the requirements. At 4th level, and every four levels thereafter, he acts as if he is one size larger for the purposes of determining the maximum size of creatures he can trip and when determining his CMB and CMD for purposes of a trip combat maneuver. This ability replaces stunning fist.</p>"},
+                "Improved Underfoot Grace": {"name": "Improved Underfoot Grace", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 5th level, an underfoot adept's ability to avoid attacks of opportunity against those he passes improves. When using the Acrobatics skill to avoid attacks of opportunity, while moving through a threatened area or through an enemy's space, he takes no penalty when doing so at full speed. This ability replaces high jump.</p>"},
+                "requirements": [
+                    {
+                        "race": "Halfling"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
+            },
+            "Wanderer": {
+                "name": "Wanderer",
+                "type": "Archetype",
+                "description": "<p>Some monks wander the world in humility to learn and to share wisdom and philosophy from their teachers with those they meet, often aiding those who are in need. A wanderer has the following class features.</p>",
+                "Class Skills": {"name": "Class Skills", "type": "Class Feature", "featureType": "", "description": "<p>The wanderer adds Diplomacy, Knowledge (geography), Knowledge (local), Linguistics, and Survival to his list of class skills.</p>"},
+                "Far Traveler": {"name": "Far Traveler", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 1st level, the wanderer gains either one additional language known or proficiency in one exotic or martial weapon. At 4th level and every four levels thereafter, the wanderer may gain an additional language known or may retrain her weapon proficiency from this ability to a different exotic or martial weapon. This ability replaces the bonus feat gained at 1st level.</p>"},
+                "Long Walk": {"name": "Long Walk", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 3rd level, the wanderer gains Endurance as a bonus feat, and the feat bonus doubles when he makes Constitution checks because of a forced march. In addition, a wanderer gains a +2 bonus on saving throws against spells and effects that cause exhaustion and fatigue. This ability replaces still mind.</p>"},
+                "Light Step": {"name": "Light Step", "type": "Class Feature", "featureType": "Su", "description": "<p>At 5th level, a wanderer leaves no trail and cannot be tracked, though he can leave a trail if desired. By spending 1 point from his ki pool, he can use ant haul, feather step, longstrider, pass without trace, or tireless pursuit as a spell-like ability (with a caster level equal to his monk level). This ability replaces slow fall.</p>"},
+                "Inscrutable": {"name": "Inscrutable", "type": "Class Feature", "featureType": "Su", "description": "<p>At 5th level, the wanderer gains a supernatural air of mystery. The DC to gain information or insight into the wanderer with Diplomacy, Knowledge skills, or Sense Motive increases by 5. In addition, by spending 1 point from his ki pool, the wanderer gains nondetection for 24 hours with a caster level equal to his monk level. This ability replaces high jump.</p>"},
+                "Wanderer's Wisdom": {"name": "Wanderer's Wisdom", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 7th level, the wanderer can dispense excellent advice in the form of philosophical proverbs and parables. As a swift action, the wanderer can inspire courage or inspire competence as a bard of his monk level by spending 2 points from his ki pool. This affects one creature within 30 feet and lasts a number of rounds equal to the wanderer's Wisdom modifier (minimum 1 round). This ability is language-dependent. This ability replaces wholeness of body.</p>"},
+                "Disappear Unnoticed": {"name": "Disappear Unnoticed", "type": "Class Feature", "featureType": "Ex", "description": "<p>At 12th level, the wanderer may use Stealth to hide even while being directly observed or when no cover or concealment is available, as long as he is adjacent to at least one creature of his size or larger, by spending 1 point from his ki pool. This effect lasts until the beginning of the wanderer's next turn and may be continued in consecutive rounds by spending 1 ki point each round. This ability replaces abundant step.</p>"},
+                "Free Step": {"name": "Free Step", "type": "Class Feature", "featureType": "Su", "description": "<p>At 13th level, the wanderer gains continuous freedom of movement as a continuous spell-like ability. This ability replaces diamond soul.</p>"},
+                "requirements": [
+                    {
+                        "race": "Human"
+                    }
+                ],
+                "source": {
+                    "name": "Advanced Race Guide",
+                    "date": "2014-09-01"
+                }
             }
         },
         "source": {
