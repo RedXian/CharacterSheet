@@ -1,0 +1,39 @@
+<section>
+    <aside style="float:left">
+        <h2 style="clear:left">Level</h2>
+        <div style="float:left:clear:left" ng-repeat="aClass in character.classes">
+            <span class="glyphicon" ng-class="{'glyphicon-unchecked' : !isFavoredClass(aClass), 'glyphicon-check' : isFavoredClass(aClass)}" ng-click="toggleFavoredClass(aClass)" style="float:left;clear:left;"></span>
+            <span class="glyphicon glyphicon-minus" ng-click="removeClass(aClass)"></span>
+            <span>{{displayClassAndLevel(aClass)}}</span>
+            <span class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass)"></span>
+        </div>
+        <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
+            <div style="float:left;clear:left;" ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
+                <strong style="float:left;clear:left;" ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Class Bonus</strong>
+                <select style="float:left;clear:left;" ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
+                    <option hidden>Select Bonus</option>
+                </select>
+        </div>
+    </aside>
+    <aside ng-show="addClassList" style="float:left">
+        <h2 style="clear:left">Class</h2>
+        <ul ng-repeat="classSource in classSourceList | orderBy:'date' | unique:'name'">
+            <strong style="margin:0">{{classSource.name}}</strong>
+            <li ng-repeat="aClass in classList | filter:{source: classSource.name}:true | filter:availableClasses()" ng-mouseover="setSelectedClass(aClass)" ng-click="addClass(selectedClass)">
+                <div>{{aClass.name}}
+                    <span ng-if="hasArchetypes(aClass)" class="glyphicon glyphicon-menu-right" style="float:right"></span>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <aside ng-show="newClassSelected" style="float:left">
+        <h2 style="clear:left">Archetypes</h2>
+        <ul>
+            <li ng-click="addClass(selectedClass)" ng-mouseover="setArchetype({})">No Archetype</li>
+        </ul>
+        <ul ng-repeat="archetypeSource in archetypeSourceList | orderBy:'date' | unique:'name'">
+            <strong style="margin:0">{{archetypeSource.name}}</strong>
+            <li ng-repeat="archetype in archetypeList | filter:{type:'Archetype', source: archetypeSource.name}:true" ng-mouseenter="setSelectedArchetype(archetype)" ng-click="addClassAndArchetype(selectedClass, archetype)">{{archetype.name}}</li>
+        </ul>
+    </aside>
+</section>

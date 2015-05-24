@@ -29,22 +29,32 @@ angular.module("characterSheet.classes", [])
                 $scope.character = CharacterFactory;
                 $scope.newClassSelected = false;
                 $scope.addClassList = false;
-                $scope.selectedClass = {};
-                $scope.selectedArchetype = {};
                 $scope.classSourceList = [];
                 $scope.archetypeSourceList = [];
                 $scope.archetypeList = [];
+                $scope.selected = -1;
 
-                $scope.favoredBonusSelection = [{name:"+1 Skill Point", value: "Skill"}, {name:"+1 Hit Point", value: "HP"}];
+                $scope.favoredBonusSelection = [{
+                    name: "+1 Skill Point",
+                    value: "Skill"
+                }, {
+                    name: "+1 Hit Point",
+                    value: "HP"
+                }];
 
-                $scope.displayClassAndLevel = function(aClass) {
+                $scope.select = function(index, aClass) {
+                    $scope.selectedClass = aClass;
+                    $scope.selected = index;
+                };
+
+                $scope.displayClass = function(aClass) {
                     var archetype = "";
                     for (var key in aClass) {
                         if (aClass[key].type === "Archetype") {
                             archetype = aClass[key].name;
                         }
                     }
-                    return aClass.name + (archetype.length ? (" (" + archetype + ")") : " ") + ": " + aClass.level;
+                    return aClass.name + (archetype.length ? (" (" + archetype + ")") : " ");
                 };
 
                 $scope.addNewClassButton = function() {
@@ -59,11 +69,11 @@ angular.module("characterSheet.classes", [])
                     }
                 };
 
-                $scope.isFavoredClass = function (aClass) {
+                $scope.isFavoredClass = function(aClass) {
                     return CharacterFactory.classes[aClass.name].favoredClass;
                 };
 
-                $scope.toggleFavoredClass = function (aClass) {
+                $scope.toggleFavoredClass = function(aClass) {
                     if (aClass.favoredClass) {
                         CharacterFactory.removeFavoredClass(aClass);
                     } else {
@@ -81,6 +91,8 @@ angular.module("characterSheet.classes", [])
                     CharacterFactory.addClass(aClass);
                     $scope.addClassList = false;
                     $scope.newClassSelected = false;
+                    $scope.selected = -1;
+                    $scope.selectedClass = {};
                 };
 
                 $scope.addClassAndArchetype = function(aClass, archetype) {

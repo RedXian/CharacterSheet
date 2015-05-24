@@ -1,0 +1,54 @@
+/* Stat Blocks */
+
+.monster-header {
+  font: normal 36px 'PT Serif', serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+.stat-block-title, .stat-block-breaker {
+  font: normal 16px 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+.stat-block-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  margin: 25px 0 5px 0;
+  padding: 2px 0 2px 5px;
+}
+.stat-block-breaker {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 8px 0;
+}
+.flavor-text {
+  font-style: italic;
+}
+.stat-block * {
+  width: 100%;
+}
+.stat-block, .stat-block-1, .stat-block-2 {
+  font: normal 13px 'Lato', sans-serif;
+  line-height: 1.5em;
+  margin: 5px 0;
+  width: 100%;
+}
+.stat-block-2 {
+  text-indent: 25px;
+}
+.stat-block-xp {
+  font: normal 14px 'Lato', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+.stat-block-cr {
+  float: right;
+  padding: 0 5px 0 0;
+}
+.stat-block-rp {
+  padding: 0 0 0 10px;
+  font-weight: bold;
+  font-style: italic;
+}

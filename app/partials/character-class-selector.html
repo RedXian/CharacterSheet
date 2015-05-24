@@ -1,38 +1,44 @@
-<section>
-    <aside style="float:left">
-        <h2 style="clear:left">Level</h2>
-        <div style="float:left:clear:left" ng-repeat="aClass in character.classes">
-            <div class="glyphicon" ng-class="{'glyphicon-unchecked' : !isFavoredClass(aClass), 'glyphicon-check' : isFavoredClass(aClass)}" ng-click="toggleFavoredClass(aClass)" style="float:left;clear:left;"></div>
-            <div class="glyphicon glyphicon-minus" ng-click="removeClass(aClass)"></div>{{displayClassAndLevel(aClass)}}
-            <div class="glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass)"></div>
+<section class="tab">
+    <aside class="class-levels">
+        <h1>Level</h1>
+        <div class="class" ng-repeat="aClass in character.classes">
+            <span class="left glyphicon" ng-class="{'glyphicon-unchecked' : !isFavoredClass(aClass), 'glyphicon-check' : isFavoredClass(aClass)}" ng-click="toggleFavoredClass(aClass)"></span>
+            <span ng-bind="displayClass(aClass)"></span>
+            <span class="right glyphicon glyphicon-plus" ng-show="newLevelAvailable()" ng-click="addClass(aClass)"></span>
+            <span class="right level" ng-bind="aClass.level"></span>
+            <span class="right glyphicon glyphicon-minus" ng-click="removeClass(aClass)"></span>
         </div>
-        <button style="float:left;clear:left;" ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
-            <div style="float:left;clear:left;" ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
-                <strong style="float:left;clear:left;" ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Class Bonus</strong>
-                <select style="float:left;clear:left;" ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
-                    <option hidden>Select Bonus</option>
-                </select>
+        <div>
+            <button ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
+        </div>
+        <div ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
+            <strong ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Points</strong>
+            <select ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
+                <option hidden>Select Bonus</option>
+            </select>
         </div>
     </aside>
-    <aside ng-show="addClassList" style="float:left">
-        <h2 style="clear:left">Class</h2>
-        <ul ng-repeat="classSource in classSourceList | orderBy:'date' | unique:'name'">
-            <strong style="margin:0">{{classSource.name}}</strong>
-            <li ng-repeat="aClass in classList | filter:{source: classSource.name}:true | filter:availableClasses()" ng-mouseover="setSelectedClass(aClass)" ng-click="addClass(selectedClass)">
-                <div>{{aClass.name}}
-                    <span ng-if="hasArchetypes(aClass)" class="glyphicon glyphicon-menu-right" style="float:right"></span>
-                </div>
-            </li>
-        </ul>
+    <aside ng-show="addClassList" style="float:left;width:100px">
+        <h1 style="clear:left">Class</h1>
+        <input style="width:100%;" ng-model="classSearch" placeholder="Search">
+        <li ng-repeat="aClass in classList | orderBy:'name' | filter:{name:classSearch} | filter:availableClasses()">
+            <div ng-class="{highlight: spotlight, selected: $index === selected}" ng-mouseenter="spotlight = true" ng-mouseleave="spotlight = false" ng-init="spotlight = false" ng-click="select($index, aClass)">{{aClass.name}}
+                <span ng-if="$index === selected" class="glyphicon glyphicon-plus" style="float: right" ng-click="addClass(selectedClass)"></span>
+            </div>
+        </li>
     </aside>
-    <aside ng-show="newClassSelected" style="float:left">
-        <h2 style="clear:left">Archetypes</h2>
-        <ul>
-            <li ng-click="addClass(selectedClass)" ng-mouseover="setArchetype({})">No Archetype</li>
-        </ul>
-        <ul ng-repeat="archetypeSource in archetypeSourceList | orderBy:'date' | unique:'name'">
-            <strong style="margin:0">{{archetypeSource.name}}</strong>
-            <li ng-repeat="archetype in archetypeList | filter:{type:'Archetype', source: archetypeSource.name}:true" ng-mouseenter="setSelectedArchetype(archetype)" ng-click="addClassAndArchetype(selectedClass, archetype)">{{archetype.name}}</li>
-        </ul>
+    <aside style="float:left;width:100%" ng-if="selectedClass">
+        <h1 style="clear:left" ng-bind="selectedClass.name"></h1>
+        <div ng-bind-html="selectedClass.description | sanitize">
+            <span style="float:right" ng-bind="selectedClass.source.name"></span>
+        </div>
+        <div ng-repeat="element in selectedClass['Class Features'] | orderObjectBy:level">
+            <h2 ng-if="$first">Class Features</h2>
+            <div ng-click="showDescription=!showDescription" ng-init="showDescription=false">
+                <strong style="float:left" ng-bind="'Level ' + element.level + ':' + element.name + ':'"></strong>
+                <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !showDescription, 'glyphicon-triangle-bottom' : showDescription}"></span>
+            </div>
+            <div ng-show="showDescription" ng-bind-html="element.description | sanitize"></div>
+        </div>
     </aside>
 </section>

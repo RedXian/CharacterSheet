@@ -10,6 +10,8 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor:default;
+
 }
 p {
   font-family: 'Lato', sans;
@@ -19,13 +21,16 @@ p {
 input {
   border-radius: 5px;
 }
-h1, h2, h3 {
-  text-transform: uppercase;
+h1 {
   font: normal 32px 'PT Serif', serif;
-  margin: 30px 0 0 0;
-}
-h1, h2 {
   text-transform: uppercase;
+}
+h2 {
+  font: normal 24px 'PT Serif', serif;
+  text-transform: uppercase;
+}
+h3 {
+  font: normal 16px 'PT Serif', serif;
 }
 div {
   vertical-align: top;
@@ -37,6 +42,9 @@ hr {
   margin: 5px auto;
   border: 0;
   border-top: 1px solid #bbb;
+}
+input {
+  cursor:text;
 }
 input[type=text], input[type=number], select, label {
   font-family: 'Lato', sans;
@@ -63,7 +71,7 @@ footer {
 sup {
   line-height: 0;
 }
-label, p {
+label {
   font-weight: bold;
   width: 200px;
   bottom: 100%;
@@ -77,7 +85,6 @@ input[type=number]:disabled::-webkit-inner-spin-button, input[type=number]:disab
   margin: 0;
 }
 section {
-  float: left;
   clear: left;
   margin: 10px;
 }
@@ -91,6 +98,9 @@ input:disabled:not(.result) {
   background: none;
   width: 35px;
   border-bottom: 1px solid black;
+}
+.tab {
+    width:100%;
 }
 input[type=text]:not(.result) {
   outline: none;
@@ -134,57 +144,25 @@ input[type=text], input[type=number] {
   border-radius: 0;
   width: 200px;
 }
-/* Stat Blocks */
+div.highlight {
+  background-color: #99FF99;
+}
+div.selected {
+  background-color: #00CC66;
+}
 
-.monster-header {
-  font: normal 36px 'PT Serif', serif;
-  font-variant: small-caps;
-  font-weight: 600;
-  margin: 20px 0 10px 0;
+.class-levels {
+    font-family: 'Lato', sans;
+    float:left;
+    width:150px;
 }
-.stat-block-title, .stat-block-breaker {
-  font: normal 16px 'Lato', sans-serif;
-  text-transform: uppercase;
+.class {
+    width:100%;
 }
-.stat-block-title {
-  font-weight: bold;
-  letter-spacing: 1px;
-  background-color: black;
-  color: white;
-  margin: 25px 0 5px 0;
-  padding: 2px 0 2px 5px;
+.class .right {
+    padding-left: 5px;
+    float:right;
 }
-.stat-block-breaker {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin: 8px 0;
-}
-.flavor-text {
-  font-style: italic;
-}
-.stat-block * {
-  width: 100%;
-}
-.stat-block, .stat-block-1, .stat-block-2 {
-  font: normal 13px 'Lato', sans-serif;
-  line-height: 1.5em;
-  margin: 5px 0;
-  width: 100%;
-}
-.stat-block-2 {
-  text-indent: 25px;
-}
-.stat-block-xp {
-  font: normal 14px 'Lato', sans-serif;
-  font-weight: bold;
-  margin: 0;
-}
-.stat-block-cr {
-  float: right;
-  padding: 0 5px 0 0;
-}
-.stat-block-rp {
-  padding: 0 0 0 10px;
-  font-weight: bold;
-  font-style: italic;
+.class .left {
+    float:left;
 }
