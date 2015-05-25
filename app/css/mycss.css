@@ -159,10 +159,19 @@ div.selected {
 .class {
     width:100%;
 }
-.class .right {
+.right {
     padding-left: 5px;
     float:right;
 }
-.class .left {
+.left {
     float:left;
+}
+.middle {
+    vertical-align:middle;
+}
+
+.info {
+    display:table;
+    width:initial;
+    float:initial;
 }

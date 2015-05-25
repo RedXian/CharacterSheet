@@ -25,11 +25,7 @@ angular.module("characterSheet.races", [])
         return {
             restrict: 'E',
             templateUrl: "partials/character-race-selector.html",
-            controller: function($scope, CharacterFactory) {//, RaceFactory) {
-                // RaceFactory.getRaceList().then(function(data) {
-                //     $scope.races = data;
-                // });
-
+            controller: function($scope, CharacterFactory) {
                 $scope.character = CharacterFactory;
                 $scope.setRace = CharacterFactory.setRace;
 

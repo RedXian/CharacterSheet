@@ -35,12 +35,24 @@ angular.module("characterSheet.classes", [])
                 $scope.selected = -1;
 
                 $scope.favoredBonusSelection = [{
-                    name: "+1 Skill Point",
-                    value: "Skill"
+                    name: "Skill Point",
+                    value: "Skill",
+                    points: 0
                 }, {
-                    name: "+1 Hit Point",
-                    value: "HP"
+                    name: "Hit Point",
+                    value: "HP",
+                    points: 0
                 }];
+
+                $scope.pointsSpent = function() {
+                    var tally = 0;
+                    var bonuses = $scope.favoredBonusSelection;
+                    for (var i = 0; i < bonuses.length; i++) {
+                        tally += bonuses[i].points;
+                    }
+                    console.log(bonuses);
+                    return tally;
+                };
 
                 $scope.select = function(index, aClass) {
                     $scope.selectedClass = aClass;

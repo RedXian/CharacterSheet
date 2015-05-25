@@ -17,6 +17,14 @@
                 <option hidden>Select Bonus</option>
             </select>
         </div>
+        <div ng-if="character.getFavoredClassLevels()>0" ng-repeat="bonus in favoredBonusSelection">
+            <strong ng-if="$first">{{ pointsSpent() + '/' + character.getFavoredClassLevels() }} Points</strong>
+            <div>
+            <span ng-if="bonus.points > 0" class="left glyphicon glyphicon-minus" ng-click="bonus.points=bonus.points-1"></span>
+            <span class="middle">{{bonus.points | signedNumber}} {{bonus.name}}</span>
+            <span ng-if="pointsSpent() < character.getFavoredClassLevels()" class="right glyphicon glyphicon-plus" ng-click="bonus.points=bonus.points+1"></span>
+        </div>
+        </div>
     </aside>
     <aside ng-show="addClassList" style="float:left;width:100px">
         <h1 style="clear:left">Class</h1>
@@ -27,11 +35,12 @@
             </div>
         </li>
     </aside>
-    <aside style="float:left;width:100%" ng-if="selectedClass">
-        <h1 style="clear:left" ng-bind="selectedClass.name"></h1>
-        <div ng-bind-html="selectedClass.description | sanitize">
-            <span style="float:right" ng-bind="selectedClass.source.name"></span>
-        </div>
+    <aside ng-if="selectedClass.name" class="info">
+        <h1 style="clear:left" ng-bind="selectedClass.name"><span style="float:right" ng-bind="selectedClass.source.name"></span></h1>
+        <div ng-bind-html="selectedClass.description | sanitize"></div>
+        <div><strong>Hit Dice: </strong>{{ "d" + selectedClass.hitDie }}.</div>
+        <p>The <span ng-bind="selectedClass.name | lowercase"></span>'s class skills are <span>{{ selectedClass.classSkills | serialComma }}</span></p>
+        <div><strong>Skill Ranks per Level: </strong>{{ selectedClass.skillsPerLevel }} + Int modifier</p>
         <div ng-repeat="element in selectedClass['Class Features'] | orderObjectBy:level">
             <h2 ng-if="$first">Class Features</h2>
             <div ng-click="showDescription=!showDescription" ng-init="showDescription=false">

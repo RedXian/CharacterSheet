@@ -6893,11 +6893,11 @@
         "name": "Hunter",
         "type": "Class",
         "description": "Though both the druid and ranger can have animal companions, the hunter takes this bond to the next level, forming a deadly duo with her savage ally.",
-        "hitDie": "",
+        "hitDie": "8",
         "classSkills": [
             "Climb", "Craft", "Handle Animal", "Heal", "Intimidate", "Knowledge (dungeoneering)", "Knowledge (geography)", "Knowledge (nature)", "Perception", "Profession", "Ride", "Spellcraft", "Stealth", "Survival", "Swim"
         ],
-        "skillsPerLevel": "",
+        "skillsPerLevel": "6",
         "progression": {
             "BAB": [
                 "0", "1", "2", "3", "3", "4", "5", "6", "6", "7", "8", "9", "9", "10", "11", "12", "12", "13", "14", "15"
