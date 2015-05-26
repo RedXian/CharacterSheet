@@ -49,7 +49,7 @@ angular.module("characterSheet.races", [])
 
                 $scope.selectRace = function(race) {
                     CharacterFactory.setRace(race);
-                    $scope.selectedRace=race;
+                    $scope.selectedRace = race;
                     $scope.selectedRaceName = race.name;
                 };
 
