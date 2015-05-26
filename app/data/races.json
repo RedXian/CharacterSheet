@@ -197,7 +197,27 @@
             "Old": "188",
             "Venerable": "250",
             "maximumAge": "450"
-        }
+        },
+        "favoredOptions":{
+            "Alchemist": {"name": "/4 mutagen natural armor bonus", "class": "Alchemist", "description": "Add +1/4 to the alchemist's natural armor bonus when using his mutagen."},
+            "Barbarian": {"name": "rage rounds per day", "class": "Barbarian", "description": "Add +1 to the barbarian's total number of rage rounds per day."},
+            "Bard": {"name": "% Spell failure reduction", "class": "Bard", "description": "Reduce arcane spell failure chance for casting bard spells when wearing medium armor by +1%. Once the total reaches 10%, the bard also receives Medium Armor Proficiency, if he does not already possess it."},
+            "Cavalier": {"name": "/2 to the cavalier's bonus", "class": "Cavalier", "description": "Add +1/2 to the cavalier's bonus to damage against targets of his challenge."},
+            "Cleric": {"name": "/2 uses to one Cleric domain power", "class": "Cleric", "description": "Select one domain power granted at 1st level that is normally usable a number of times per day equal to 3 + the cleric's Wisdom modifier. The cleric adds +1/2 to the number of uses per day of that domain power."},
+            "Druid": {"name": "/2 uses to one Druid domain power", "class": "Druid", "description": "Select one domain power granted at 1st level that is normally usable a number of times per day equal to 3 + the druid's Wisdom modifier. The druid adds +1/2 to the number of uses per day of that domain power."},
+            "Fighter": {"name": " vs. bullrush or trip.", "class": "Fighter", "description": "Add +1 to the fighter's CMD when resisting a bull rush or trip."},
+            "Gunslinger": {"name": "/4 misfire chance reduction", "class": "Gunslinger", "description": "Reduce the misfire chance for one type of firearm by 1/4. You cannot reduce the misfire chance of a firearm below 1."},
+            "Inquisitor": {"name": "/2 to judgment effect", "class": "Inquisitor", "description": "Add +1/2 to the inquisitor's level for the purpose of determining the effects of one type of judgment."},
+            "Magus": {"name": "/6 uses to one magus power", "class": "Magus", "description": "Select one known magus arcana usable only once per day. The magus adds +1/6 to the number of times it can be used per day. Once that magus arcana is usable twice per day, the magus must select a different magus arcana."},
+            "Monk": {"name": " object hardness reduction", "class": "Monk", "description": "Reduce the Hardness of any object made of clay, stone, or metal by 1 whenever the object is struck by the monk's unarmed strike (minimum of 0)."},
+            "Oracle": {"name": " nonproficiency penalty reduction for one weapon", "class": "Oracle", "description": "Reduce the penalty for not being proficient with one weapon by 1. When the nonproficiency penalty for a weapon becomes 0 because of this ability, the oracle is treated as having the appropriate Martial or Exotic Weapon Proficiency feat with that weapon."},
+            "Paladin": {"name": " paladin speel concentration check", "class": "Paladin", "description": "Add a +1 bonus on concentration checks when casting paladin spells."},
+            "Ranger": {"name": "/2 wild empathy checks", "class": "Ranger", "description": "Add a +1/2 bonus on wild empathy checks to influence animals and magical beasts that live underground."},
+            "Rogue": {"name": "/2 vs. stone traps", "class": "Rogue", "description": "Add a +1/2 bonus on Disable Device checks regarding stone traps and a +1/2 bonus to trap sense regarding stone traps."},
+            "Sorcerer": {"name": "/2 to acid and earth spell damage", "class": "Sorcerer", "description": "Add +1/2 to acid and earth spell or spell-like ability damage."},
+            "Summoner": {"name": "/4 natural armor to eidolon", "class": "Summoner", "description": "Add a +1/4 natural armor bonus to the AC of the summoner's eidolon."},
+            "Witch": {"name": "/4 natural armor bonus to familiar", "class": "Witch", "description": "Add +1/4 natural armor bonus to the AC of the witch's familiar."},
+            "Wizard": {"name": "*200gp item creation progress", "class": "Wizard", "description": "Select one item creation feat known by the wizard. Whenever he crafts an item using that feat, the amount of progress he makes in an 8-hour period increases by 200 gp (50 gp if crafting while adventuring). This does not reduce the cost of the item; it just increases the rate at which the item is crafted.", "race": "dwarf"}}
     },
     "Elf": {
         "name": "Elf",
@@ -829,7 +849,27 @@
             "Old": "93",
             "Venerable": "125",
             "maximumAge": "185"
-        }
+        },
+        "favoredOptions": {
+            "Alchemist": {"name": " range increment", "class": "Alchemist", "description": "Add +1 foot to the range increment of the alchemist's thrown splash weapons (including the alchemist's bombs). This option has no effect unless the alchemist has selected it 5 times (or another increment of 5); a range increment of 24 feet is effectively the same as a range increment of 20 feet, for example."},
+            "Barbarian": {"name": "/4 Reflex & Dodge vs traps", "class": "Barbarian", "description": "Add +1/4 to the bonus on Reflex saves and dodge bonus to AC against attacks made by traps granted by trap sense."},
+            "Bard": {"name": " bardic performance rounds", "class": "Bard", "description": "Add +1 to the bard's total number of bardic performance rounds per day."},
+            "Cavalier": {"name": "foot to mount's base speed", "class": "Cavalier", "description": "Add +1 foot to the cavalier's mount's base speed. This option has no effect unless the cavalier has selected it 5 times (or another increment of 5); a speed of 54 feet is effectively a speed of 50 feet, for example. If the cavalier ever replaces his mount, the new companion gains this base speed bonus."},
+            "Cleric": {"name": "/3 channel energy damage & healing", "class": "Cleric", "description": "Add +1/3 to the amount of damage dealt or damage healed when the cleric uses channel energy."},
+            "Druid": {"name": "/2 uses for one Druid domain power", "class": "Druid", "description": "Select one cleric domain power at 1st level that is normally usable a number of times per day equal to 3 + the druid's Wisdom modifier. The druid adds +1/2 to the number of uses per day of that domain power. For druids whose nature bond gives them an animal companion, add +1 skill rank to the animal companion. If the druid ever replaces her animal companion, the new companion gains these bonus skill ranks."},
+            "Fighter": {"name": " CMD vs. disarm or overrun", "class": "Fighter", "description": "Add +1 to the fighter's CMD when resisting a disarm or overrun combat maneuver."},
+            "Gunslinger": {"name": "/4 grit points", "class": "Gunslinger", "description": "Add +1/4 to the number of grit points in the gunslinger's grit pool."},
+            "Inquisitor": {"name": "/4 teamwork feat changes", "class": "Inquisitor", "description": "Add +1/4 to the number of times per day the inquisitor can change her most recent teamwork feat."},
+            "Magus": {"name": "/4 to the magus's arcane pool", "class": "Magus", "description": "Add +1/4 to the magus's arcane pool."},
+            "Monk": {"name": "/2 on Escape Artist checks", "class": "Monk", "description": "Add +1/2 on Escape Artist checks and on Acrobatics checks to cross narrow surfaces."},
+            "Oracle": {"name": " spells known", "class": "Oracle", "description": "Add one spell known from the oracle spell list. This spell must be at least one level below the highest spell level the oracle can cast."},
+            "Paladin": {"name": " foot radius to paladin's aura", "class": "Paladin", "description": "Add +1 foot to the size of all the paladin's aura class features. This option has no effect unless the paladin has selected it 5 times (or another increment of 5); an aura of 14 feet is effectively the same as a 10-foot aura, for example."},
+            "Ranger": {"name": " skill rank to the ranger's animal companion", "class": "Ranger", "description": "Add +1 skill rank to the ranger's animal companion. If the ranger ever replaces his companion, the new companion gains these bonus skill ranks."},
+            "Rogue": {"name": "/2 bonus on feint & gather information", "class": "Rogue", "description": "Add a +1/2 bonus on Bluff checks to feint and Diplomacy checks to gather information."},
+            "Sorcerer": {"name": "/2 uses of that bloodline power", "class": "Sorcerer", "description": "Select one bloodline power at 1st level that is normally usable a number of times per day equal to 3 + the sorcerer's Charisma modifier. The sorcerer adds +1/2 to the number of uses per day of that bloodline power."},
+            "Summoner": {"name": "/4 to the eidolon's evolution pool", "class": "Summoner", "description": "Add +1/4 to the eidolon's evolution pool."},
+            "Witch": {"name": "spell from the witch spell list to the witch's familiar", "class": "Witch", "description": "Add one spell from the witch spell list to the witch's familiar. This spell must be at least one level below the highest spell level she can cast. If the witch ever replaces her familiar, the new familiar knows these bonus spells."},
+            "Wizard": {"name": "/3 caster level to calculate spell duration", "class": "Wizard", "description": "When casting wizard enchantment spells, add +1/3 to the effective caster level of the spell, but only to determine the spell's duration."}}
     },
     "Half-orc": {
         "name": "Half-orc",

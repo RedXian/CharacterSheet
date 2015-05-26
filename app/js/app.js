@@ -106,13 +106,22 @@
         $scope.character = CharacterFactory;
 
         $scope.raceList = [];
+        $scope.raceSourceList = [];
         RaceFactory.getRaceList().then(function(data) {
             $scope.raceList = data;
+            for (var key in data) {
+                $scope.raceSourceList.push(data[key].source);
+            }
         });
 
         $scope.classList = [];
+        $scope.classSourceList = [];
         ClassFactory.getClassList().then(function(data) {
             $scope.classList = data;
+            for (var key in data) {
+            $scope.classSourceList.push(data[key].source);
+        }
+
         });
 
         $scope.skillList = [];

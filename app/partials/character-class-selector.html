@@ -11,43 +11,47 @@
         <div>
             <button ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
         </div>
-        <!-- <div ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
-            <strong ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Points</strong>
-            <select ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
-                <option hidden>Select Bonus</option>
-            </select>
-        </div> -->
         <div ng-if="character.getFavoredClassLevels()" ng-repeat="bonus in character.favoredBonuses">
             <strong ng-if="$first">{{ favoredBonusPointsSpent() + '/' + character.getFavoredClassLevels() }} Favored Bonuses</strong>
-            <div>
-            <span ng-if="bonus.points > 0" class="left glyphicon glyphicon-minus" ng-click="removeFavoredBonusPoint(bonus)"></span>
-            <span class="middle">{{bonus.points | signedNumber}} {{bonus.name}}s</span></span>
-            <span ng-if="favoredBonusPointsSpent() < character.getFavoredClassLevels()" class="right glyphicon glyphicon-plus" ng-click="addFavoredBonusPoint(bonus)"></span>
-        </div>
+            <div ng-if="elligibleForFavoredBonus(bonus)">
+                <span class="left glyphicon glyphicon-minus" ng-click="removeFavoredBonusPoint(bonus)" ng-if="bonus.points"></span>
+                <span class="middle">{{bonus.points | signedNumber}} {{bonus.name}}</span>
+                <span class="right glyphicon glyphicon-plus" ng-click="addFavoredBonusPoint(bonus)" ng-if="favoredBonusPointsSpent() < character.getFavoredClassLevels()"></span>
+            </div>
         </div>
     </aside>
-    <aside ng-show="addClassList" style="float:left;width:110px">
+    <aside class="selectMenu" ng-show="addClassList">
         <h1 style="clear:left">Class</h1>
         <input style="width:100%;" ng-model="classSearch" placeholder="Search">
-        <li ng-repeat="aClass in classList | orderBy:'name' | filter:{name:classSearch} | filter:availableClasses()">
-            <div ng-class="{highlight: spotlight, selected: $index === selected}" ng-mouseenter="spotlight = true" ng-mouseleave="spotlight = false" ng-init="spotlight = false" ng-click="select($index, aClass)">{{aClass.name}}
-                <span ng-if="$index === selected" class="glyphicon glyphicon-plus" style="float: right" ng-click="addClass(selectedClass)"></span>
+        <div ng-repeat="source in classSourceList | unique:'name'">
+        <div ng-repeat="aClass in classList | orderBy:'name' | filter:availableClasses() | filter:{name:classSearch, source:source}">
+            <strong ng-if="$first">{{source.name}}</strong>
+            <div ng-class="{highlight: spotlight, selected: aClass.name === selectedClassName}" ng-mouseenter="spotlight = true" ng-mouseleave="spotlight = false" ng-init="spotlight = false" ng-click="selectClass($index, aClass)">
+                <span>{{aClass.name}}</span>
+                <span ng-if="aClass.name === selectedClassName" class="glyphicon glyphicon-plus" style="float: right" ng-click="addClass(selectedClass)"></span>
             </div>
-        </li>
+        </div>
     </aside>
     <aside ng-if="selectedClass.name" class="info">
-        <h1 style="clear:left" ng-bind="selectedClass.name"><span style="float:right" ng-bind="selectedClass.source.name"></span></h1>
+        <h1 style="clear:left" ng-bind="selectedClass.name">
+            <span style="float:right" ng-bind="selectedClass.source.name"></span>
+        </h1>
         <div ng-bind-html="selectedClass.description | sanitize"></div>
-        <div><strong>Hit Dice: </strong>{{ "d" + selectedClass.hitDie }}.</div>
-        <p>The <span ng-bind="selectedClass.name | lowercase"></span>'s class skills are <span>{{ selectedClass.classSkills | serialComma }}</span></p>
-        <div><strong>Skill Ranks per Level: </strong>{{ selectedClass.skillsPerLevel }} + Int modifier</p>
-        <div ng-repeat="element in selectedClass['Class Features'] | orderObjectBy:level">
-            <h2 ng-if="$first">Class Features</h2>
-            <div ng-click="showDescription=!showDescription" ng-init="showDescription=false">
-                <strong style="float:left" ng-bind="'Level ' + element.level + ':' + element.name + ':'"></strong>
-                <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !showDescription, 'glyphicon-triangle-bottom' : showDescription}"></span>
+        <div>
+            <strong>Hit Dice: </strong>{{ "d" + selectedClass.hitDie }}.</div>
+        <p>The
+            <span ng-bind="selectedClass.name | lowercase"></span>'s class skills are
+            <span>{{ selectedClass.classSkills | serialComma }}</span>
+        </p>
+        <div>
+            <strong>Skill Ranks per Level: </strong>{{ selectedClass.skillsPerLevel }} + Int modifier</p>
+            <div ng-repeat="element in selectedClass['Class Features'] | orderObjectBy:level">
+                <h2 ng-if="$first">Class Features</h2>
+                <div ng-click="showDescription=!showDescription" ng-init="showDescription=false">
+                    <strong style="float:left" ng-bind="'Level ' + element.level + ':' + element.name + ':'"></strong>
+                    <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : !showDescription, 'glyphicon-triangle-bottom' : showDescription}"></span>
+                </div>
+                <div ng-show="showDescription" ng-bind-html="element.description | sanitize"></div>
             </div>
-            <div ng-show="showDescription" ng-bind-html="element.description | sanitize"></div>
-        </div>
     </aside>
 </section>

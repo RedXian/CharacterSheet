@@ -5,8 +5,16 @@ angular.module("characterSheet.character", [])
             abilities: {},
             classes: {},
             favoredClasses: 1,
-            favoredBonuses: {"Skill": { name: "Skill Point", points: 0 },
-                            "HP":    { name: "Hit Point", points: 0 }},
+            favoredBonuses: {
+                "Skill": {
+                    name: "Skill Point",
+                    points: 0
+                },
+                "HP": {
+                    name: "Hit Point",
+                    points: 0
+                }
+            },
             skills: {},
             traits: {},
             level: function(track) {
@@ -87,6 +95,13 @@ angular.module("characterSheet.character", [])
             },
 
             setRace: function(race) {
+                for (var key in character.favoredBonuses) {
+                    if (character.favoredBonuses[key].race) {
+                        if (character.favoredBonuses[key].race == character.race.name) {
+                            delete character.favoredBonuses[key];
+                        }
+                    }
+                }
                 delete character.race;
                 character.race = {};
 
@@ -105,6 +120,12 @@ angular.module("characterSheet.character", [])
                         }
                     } else character.race[key] = element;
                 };
+
+                for (var key in race.favoredOptions) {
+                    character.favoredBonuses[key] = race.favoredOptions[key];
+                    character.favoredBonuses[key].race = race.name;
+                    character.favoredBonuses[key].points = 0;
+                }
 
                 //Set Age Groups
                 character.race.ageGroups = [];
@@ -129,9 +150,6 @@ angular.module("characterSheet.character", [])
             addClass: function(aClass, archetype) {
                 if (character.classes[aClass.name]) {
                     character.classes[aClass.name].level++;
-                    if (character.classes[aClass.name].favoredClass) {
-                        character.favoredClassLevelBonuses.push("");
-                    }
                 } else {
                     character.classes[aClass.name] = {};
                     for (var key in aClass) {

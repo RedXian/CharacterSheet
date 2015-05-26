@@ -175,3 +175,9 @@ div.selected {
     width:initial;
     float:initial;
 }
+
+.selectMenu {
+    overflow: scroll;
+    float:left;
+    width:150px
+}

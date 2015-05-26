@@ -28,7 +28,8 @@ angular.module("characterSheet.races", [])
             controller: function($scope, CharacterFactory) {
                 $scope.character = CharacterFactory;
                 $scope.setRace = CharacterFactory.setRace;
-
+                $scope.spotlightRace = false;
+                $scope.selectedRaceName = "";
 
                 $scope.elligibleRacialTraits = function (item) {
                     var elligible = true;
@@ -43,8 +44,13 @@ angular.module("characterSheet.races", [])
                             elligible = elligible && $scope.character.traits[item.replaces[i]];
                         }
                     }
-
                     return elligible;
+                };
+
+                $scope.selectRace = function(race) {
+                    CharacterFactory.setRace(race);
+                    $scope.selectedRace=race;
+                    $scope.selectedRaceName = race.name;
                 };
 
                 // Returns an array of alternate racial traits of the selected Race.

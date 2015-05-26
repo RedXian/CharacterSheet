@@ -43,16 +43,22 @@ angular.module("characterSheet.classes", [])
                     return tally;
                 };
 
+                $scope.elligibleForFavoredBonus = function(bonus) {
+                    // returns true if no class is specified OR if the class specified is a favored class
+                    return !bonus.class || CharacterFactory.classes[bonus.class].favoredClass;
+                };
+
                 $scope.addFavoredBonusPoint = function(bonus) {
                     bonus.points++;
-                }
+                };
 
                 $scope.removeFavoredBonusPoint = function(bonus) {
                     bonus.points--;
-                }
+                };
 
-                $scope.select = function(index, aClass) {
+                $scope.selectClass = function(index, aClass) {
                     $scope.selectedClass = aClass;
+                    $scope.selectedClassName = aClass.name;
                     $scope.selected = index;
                 };
 
@@ -144,16 +150,7 @@ angular.module("characterSheet.classes", [])
                 $scope.availableClasses = function() {
                     return function(item) {
                         // Check if item is a class.
-                        if (item.type === "Class") {
-                            // Check if Class has already been selected.
-                            for (var key in $scope.character.classes) {
-                                if ($scope.character.classes[key].name == item.name) {
-                                    return false;
-                                }
-                            }
-                            return true;
-                        }
-                        return false;
+                        return item.type === "Class" && !CharacterFactory.classes[item.name];
                     }
                 }
 

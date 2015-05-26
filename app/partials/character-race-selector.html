@@ -1,29 +1,43 @@
 <section>
-
+    <!--
   <aside style="float:left">
     <h2 style="float:left">Race</h2>
-    <select style="float:left;clear:left;" id="race" size="43" ng-model="selectedRace" ng-change="character.setRace(selectedRace)" ng-options="race.name group by race.source.name for race in raceList">
+    <select style="float:left;clear:left;" id="race" size="43" ng-model="selectedRace" ng-change="" ng-options="race.name group by race.source.name for race in raceList">
       <option value="" selected disabled hidden>Select Race</option>
     </select>
-  </aside>
+  </aside> -->
+    <aside class="selectMenu">
+        <h1 style="clear:left">Race</h1>
+        <input style="width:100%;" ng-model="raceSearch" placeholder="Search">
+        <div ng-repeat="source in raceSourceList | unique:'name'">
+            <div ng-repeat="race in raceList | orderBy:'name' | filter:{name:raceSearch, source:source}">
+                <strong ng-if="$first">{{source.name}}</strong>
+                <div ng-class="{highlight: spotlightRace, selected: race.name === selectedRaceName}" ng-mouseenter="spotlightRace = true" ng-mouseleave="spotlightRace = false" ng-click="selectRace(race)">
+                    <span>{{race.name}}</span>
+                    <!-- <span ng-if="$index === selected" class="glyphicon glyphicon-plus" style="float: right" ng-click=""></span> -->
+                </div>
+            </div>
+        </div>
+    </aside>
 
-  <div ng-repeat="trait in character.traits">
-    <h3 ng-show="$first">Racial Traits</h3>
-    <div class="glyphicon glyphicon-minus" ng-show="isAlternateTrait(trait)" ng-click="removeAlternateRacialTrait(trait)"></div>
-    <strong>{{ trait.name }}:</strong> {{ trait.description }}
-    <span ng-show="trait.default">
-      <strong>Starting Languages:</strong> {{ trait.default | serialComma }}. </span>
-    <span ng-show="trait.list">
-      <strong>Language list:</strong> {{ trait.list | serialComma : 'or' }}. </span>
-  </div>
 
-  <div ng-repeat="trait in listAlternateRacialTraits() | filter: elligibleRacialTraits">
-    <h3 ng-show="$first">Alternate Racial Traits</h3>
-    <div>
-      <div class="glyphicon glyphicon-plus" ng-click="addAlternateRacialTrait(trait)"></div>
-      <strong>{{ trait.name }}:</strong>{{ trait.description }}</div>
-    <div ng-show="trait.replaces">
-      <strong>Replaces:</strong> {{trait.replaces | serialComma }}</div>
-  </div>
+    <div ng-repeat="trait in character.traits">
+        <h3 ng-show="$first">Racial Traits</h3>
+        <div class="glyphicon glyphicon-minus" ng-show="isAlternateTrait(trait)" ng-click="removeAlternateRacialTrait(trait)"></div>
+        <strong>{{ trait.name }}:</strong> {{ trait.description }}
+        <span ng-show="trait.default">
+            <strong>Starting Languages:</strong> {{ trait.default | serialComma }}. </span>
+        <span ng-show="trait.list">
+            <strong>Language list:</strong> {{ trait.list | serialComma : 'or' }}. </span>
+    </div>
+
+    <div ng-repeat="trait in listAlternateRacialTraits() | filter: elligibleRacialTraits">
+        <h3 ng-show="$first">Alternate Racial Traits</h3>
+        <div>
+            <div class="glyphicon glyphicon-plus" ng-click="addAlternateRacialTrait(trait)"></div>
+            <strong>{{ trait.name }}:</strong>{{ trait.description }}</div>
+        <div ng-show="trait.replaces">
+            <strong>Replaces:</strong> {{trait.replaces | serialComma }}</div>
+    </div>
 
 </section>
