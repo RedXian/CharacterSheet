@@ -66,13 +66,14 @@ angular.module("characterSheet.skills", [])
                 }
             };
 
-            for (var i = 0; i < CharacterFactory.favoredClassLevelBonuses.length; i++) {
-                points += (CharacterFactory.favoredClassLevelBonuses[i].value=="Skill")? 1 : 0;
-            };
+            points += $scope.getFavoredBonusSkill();
 
-            // Need to add any Favored Class bonuses.
             return points;
         };
+
+        $scope.getFavoredBonusSkill = function() {
+            return CharacterFactory.favoredBonuses["Skill"].points;
+        }
 
         $scope.getSkillsPointsSpent = function() {
             var characterSkills = ($scope.character.skills);

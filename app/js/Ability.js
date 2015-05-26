@@ -68,7 +68,7 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
             return Math.round($scope.character.level() / 4, 0);
         };
 
-        $scope.pointsSpent = function() {
+        $scope.bonusAbilityPointsSpent = function() {
             var points = 0;
             for (var key in $scope.abilityList) {
                 if ($scope.character.abilities[$scope.abilityList[key].name])
@@ -78,7 +78,7 @@ angular.module("characterSheet.abilities", ['characterSheet.roller'])
         };
 
         $scope.pointsLeft = function(ability) {
-            if ($scope.bonusAbilityPoints() > $scope.pointsSpent()) {
+            if ($scope.bonusAbilityPoints() > $scope.bonusAbilityPointsSpent()) {
                 return $scope.bonusAbilityPoints();
             } else {
                 return $scope.character.abilities[ability.name].bonusPoints;

@@ -16,7 +16,7 @@
     </div>
     <div ng-show="bonusAbilityPoints()">
         <p>
-            <strong>Bonus Points: </strong>{{ pointsSpent() + "/" + bonusAbilityPoints() }}</p>
+            <strong>Bonus Points: </strong>{{ bonusAbilityPointsSpent() + "/" + bonusAbilityPoints() }}</p>
     </div>
     <div ng-repeat="ability in abilityList | orderObjectBy:'id'">
         <label>{{ ability.name }}</label>

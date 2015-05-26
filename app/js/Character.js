@@ -5,7 +5,8 @@ angular.module("characterSheet.character", [])
             abilities: {},
             classes: {},
             favoredClasses: 1,
-            favoredClassLevelBonuses: [],
+            favoredBonuses: {"Skill": { name: "Skill Point", points: 0 },
+                            "HP":    { name: "Hit Point", points: 0 }},
             skills: {},
             traits: {},
             level: function(track) {
@@ -165,9 +166,6 @@ angular.module("characterSheet.character", [])
                     }
                     if (favoredClassCount < maxFavoredClasses) {
                         character.classes[aClass.name].favoredClass = true;
-                        for (var i = 0; i < character.classes[aClass.name].level; i++) {
-                            character.favoredClassLevelBonuses.push("");
-                        }
                         return true;
                     }
                 }
@@ -187,18 +185,12 @@ angular.module("characterSheet.character", [])
             removeFavoredClass: function(aClass) {
                 if (character.classes[aClass.name].favoredClass) {
                     delete character.classes[aClass.name].favoredClass;
-                    for (var i = 0; i < character.classes[aClass.name].level; i++) {
-                        character.favoredClassLevelBonuses.pop();
-                    }
                     return true;
                 }
                 return false;
             },
 
             removeClass: function(aClassName) {
-                if (character.classes[aClassName].favoredClass) {
-                    character.favoredClassLevelBonuses.pop();
-                };
                 if (character.classes[aClassName].level == 1) {
                     delete character.classes[aClassName];
                 } else {
@@ -206,6 +198,7 @@ angular.module("characterSheet.character", [])
                 };
             },
 
+            // TODO: Maybe move to Class.js as this is only required there.
             getClassLevels: function() {
                 var totalLevels = 0;
                 for (var key in character.classes) {

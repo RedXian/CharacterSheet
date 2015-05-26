@@ -11,22 +11,22 @@
         <div>
             <button ng-show="newLevelAvailable()" ng-click="addNewClassButton()">Add New Class</button>
         </div>
-        <div ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
+        <!-- <div ng-repeat="favoredLevel in character.favoredClassLevelBonuses track by $index">
             <strong ng-if="$first">{{ character.getFavoredClassLevels() }} Favored Points</strong>
             <select ng-model="character.favoredClassLevelBonuses[$index]" ng-options="bonus.name for bonus in favoredBonusSelection">
                 <option hidden>Select Bonus</option>
             </select>
-        </div>
-        <div ng-if="character.getFavoredClassLevels()>0" ng-repeat="bonus in favoredBonusSelection">
-            <strong ng-if="$first">{{ pointsSpent() + '/' + character.getFavoredClassLevels() }} Points</strong>
+        </div> -->
+        <div ng-if="character.getFavoredClassLevels()" ng-repeat="bonus in character.favoredBonuses">
+            <strong ng-if="$first">{{ favoredBonusPointsSpent() + '/' + character.getFavoredClassLevels() }} Favored Bonuses</strong>
             <div>
-            <span ng-if="bonus.points > 0" class="left glyphicon glyphicon-minus" ng-click="bonus.points=bonus.points-1"></span>
-            <span class="middle">{{bonus.points | signedNumber}} {{bonus.name}}</span>
-            <span ng-if="pointsSpent() < character.getFavoredClassLevels()" class="right glyphicon glyphicon-plus" ng-click="bonus.points=bonus.points+1"></span>
+            <span ng-if="bonus.points > 0" class="left glyphicon glyphicon-minus" ng-click="removeFavoredBonusPoint(bonus)"></span>
+            <span class="middle">{{bonus.points | signedNumber}} {{bonus.name}}s</span></span>
+            <span ng-if="favoredBonusPointsSpent() < character.getFavoredClassLevels()" class="right glyphicon glyphicon-plus" ng-click="addFavoredBonusPoint(bonus)"></span>
         </div>
         </div>
     </aside>
-    <aside ng-show="addClassList" style="float:left;width:100px">
+    <aside ng-show="addClassList" style="float:left;width:110px">
         <h1 style="clear:left">Class</h1>
         <input style="width:100%;" ng-model="classSearch" placeholder="Search">
         <li ng-repeat="aClass in classList | orderBy:'name' | filter:{name:classSearch} | filter:availableClasses()">

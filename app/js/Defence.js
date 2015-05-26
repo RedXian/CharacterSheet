@@ -91,11 +91,7 @@ angular.module("characterSheet.defence", [])
                 };
 
                 $scope.favoredBonusHP = function() {
-                    var bonus = 0;
-                    for (var i = 0; i < CharacterFactory.favoredClassLevelBonuses.length; i++) {
-                        bonus += (CharacterFactory.favoredClassLevelBonuses[i].value=="HP")? 1 : 0;
-                    };
-                    return bonus;
+                    return CharacterFactory.favoredBonuses["HP"].points;
                 }
 
                 $scope.conBonusHP = function() {

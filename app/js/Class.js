@@ -34,25 +34,22 @@ angular.module("characterSheet.classes", [])
                 $scope.archetypeList = [];
                 $scope.selected = -1;
 
-                $scope.favoredBonusSelection = [{
-                    name: "Skill Point",
-                    value: "Skill",
-                    points: 0
-                }, {
-                    name: "Hit Point",
-                    value: "HP",
-                    points: 0
-                }];
-
-                $scope.pointsSpent = function() {
+                $scope.favoredBonusPointsSpent = function() {
                     var tally = 0;
-                    var bonuses = $scope.favoredBonusSelection;
-                    for (var i = 0; i < bonuses.length; i++) {
-                        tally += bonuses[i].points;
+                    var bonuses = CharacterFactory.favoredBonuses;
+                    for (var key in bonuses) {
+                        tally += bonuses[key].points;
                     }
-                    console.log(bonuses);
                     return tally;
                 };
+
+                $scope.addFavoredBonusPoint = function(bonus) {
+                    bonus.points++;
+                }
+
+                $scope.removeFavoredBonusPoint = function(bonus) {
+                    bonus.points--;
+                }
 
                 $scope.select = function(index, aClass) {
                     $scope.selectedClass = aClass;
