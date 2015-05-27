@@ -105,14 +105,14 @@
     app.filter("feet", function(){
         return function(height) {
             var feet = Math.round(height/12);
-            var inches = height % 12);
+            var inches = height % 12;
             return feet + " ft. " + inches + " in.";
         }
     });
 
     app.filter("lbs", function() {
         return function(weight) {
-            return weight + "lbs."
+            return weight + " lbs.";
         }
     });
 
