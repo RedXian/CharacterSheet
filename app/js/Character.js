@@ -145,6 +145,15 @@ angular.module("characterSheet.character", [])
                         group: group
                     });
                 }
+
+                //set Height Weight array.
+                character.race.dimensions = {male: [], female: []};
+                var spread = character.race.HeightWeight.male.rollModifier.split('d')[0] * character.race.HeightWeight.male.rollModifier.split('d')[1];
+                for (var i=0; i< spread; i++) {
+                    character.race.dimensions.male.push(character.race.HeightWeight.male.baseHeight + i);
+                    character.race.dimensions.female.push(character.race.HeightWeight.female.baseHeight + i);
+                }
+                
             },
 
             addClass: function(aClass, archetype) {

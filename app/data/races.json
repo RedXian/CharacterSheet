@@ -180,16 +180,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 9 in.",
-                "baseWeight": "150 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "7 lbs."
+                "baseHeight": "45",
+                "baseWeight": "150",
+                "rollModifier": "2d4",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "3 ft. 7 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "7 lbs."
+                "baseHeight": "43",
+                "baseWeight": "120",
+                "rollModifier": "2d4",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -361,16 +361,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "100 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "3 lbs."
+                "baseHeight": "64",
+                "baseWeight": "100",
+                "rollModifier": "2d8",
+                "weightIncrement": "3"
             },
             "female": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "64",
+                "baseWeight": "90",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             }
         },
         "agingEffects": {
@@ -527,16 +527,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 0 in.",
-                "baseWeight": "35 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "36",
+                "baseWeight": "35",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 10 in.",
-                "baseWeight": "30 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "34",
+                "baseWeight": "30",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -688,16 +688,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "2 ft. 8 in.",
-                "baseWeight": "30 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "32",
+                "baseWeight": "30",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 6 in.",
-                "baseWeight": "25 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "30",
+                "baseWeight": "25",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -832,16 +832,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "62",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 0 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "60",
+                "baseWeight": "90",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1018,16 +1018,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "150 lbs.",
-                "Modifier": "2d12",
-                "weightModifier": "7 lbs."
+                "baseHeight": "58",
+                "baseWeight": "150",
+                "rollModifier": "2d12",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d12",
-                "weightModifier": "7 lbs."
+                "baseHeight": "53",
+                "baseWeight": "110",
+                "rollModifier": "2d12",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -1174,16 +1174,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1256,16 +1256,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "62",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 0 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "60",
+                "baseWeight": "90",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1339,16 +1339,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1437,16 +1437,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1540,16 +1540,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "64",
+                "baseWeight": "90",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             },
             "female": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "100 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "3 lbs."
+                "baseHeight": "64",
+                "baseWeight": "100",
+                "rollModifier": "2d8",
+                "weightIncrement": "3"
             }
         },
         "agingEffects": {
@@ -1633,16 +1633,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "64",
+                "baseWeight": "90",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             },
             "female": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "80 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "62",
+                "baseWeight": "80",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             }
         },
         "agingEffects": {
@@ -1706,16 +1706,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "2 ft. 8 in.",
-                "baseWeight": "30 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "32",
+                "baseWeight": "30",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 6 in.",
-                "baseWeight": "25 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "30",
+                "baseWeight": "25",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -1778,16 +1778,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 2 in.",
-                "baseWeight": "165 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "50",
+                "baseWeight": "165",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 0 in.",
-                "baseWeight": "145 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "48",
+                "baseWeight": "145",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1861,16 +1861,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "62",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 0 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "60",
+                "baseWeight": "90",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -1944,16 +1944,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "2 ft. 6 in.",
-                "baseWeight": "25 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "30",
+                "baseWeight": "25",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 4 in.",
-                "baseWeight": "20 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "28",
+                "baseWeight": "20",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -2028,16 +2028,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 1 in.",
-                "baseWeight": "160 lbs.",
-                "Modifier": "2d12",
-                "weightModifier": "7 lbs."
+                "baseHeight": "61",
+                "baseWeight": "160",
+                "rollModifier": "2d12",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "4 ft. 9 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d12",
-                "weightModifier": "7 lbs."
+                "baseHeight": "47",
+                "baseWeight": "120",
+                "rollModifier": "2d12",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -2111,16 +2111,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 0 in.",
-                "baseWeight": "150 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "7 lbs."
+                "baseHeight": "48",
+                "baseWeight": "150",
+                "rollModifier": "2d6",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "3 ft. 9 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "7 lbs."
+                "baseHeight": "45",
+                "baseWeight": "120",
+                "rollModifier": "2d6",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -2194,16 +2194,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 7 in.",
-                "baseWeight": "65 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "3 lbs."
+                "baseHeight": "43",
+                "baseWeight": "65",
+                "rollModifier": "2d4",
+                "weightIncrement": "3"
             },
             "female": {
-                "baseHeight": "3 ft. 4 in.",
-                "baseWeight": "50 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "3 lbs."
+                "baseHeight": "40",
+                "baseWeight": "50",
+                "rollModifier": "2d4",
+                "weightIncrement": "3"
             }
         },
         "agingEffects": {
@@ -2277,16 +2277,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "62",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 0 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "60",
+                "baseWeight": "90",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -2365,16 +2365,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 0 in.",
-                "baseWeight": "65 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "48",
+                "baseWeight": "65",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             },
             "female": {
-                "baseHeight": "3 ft. 10 in.",
-                "baseWeight": "55 lbs.",
-                "Modifier": "2d6",
-                "weightModifier": "3 lbs."
+                "baseHeight": "46",
+                "baseWeight": "55",
+                "rollModifier": "2d6",
+                "weightIncrement": "3"
             }
         },
         "agingEffects": {
@@ -2453,16 +2453,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -2537,16 +2537,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -2633,16 +2633,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 2 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "5 lbs."
+                "baseHeight": "50",
+                "baseWeight": "85",
+                "rollModifier": "2d4",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 2 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "5 lbs."
+                "baseHeight": "50",
+                "baseWeight": "85",
+                "rollModifier": "2d4",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -2721,16 +2721,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 9 in.",
-                "baseWeight": "150 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "7 lbs."
+                "baseHeight": "45",
+                "baseWeight": "150",
+                "rollModifier": "2d4",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "3 ft. 7 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "7 lbs."
+                "baseHeight": "43",
+                "baseWeight": "120",
+                "rollModifier": "2d4",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -2800,16 +2800,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -2883,16 +2883,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "1 ft. 7 in.",
-                "baseWeight": "25 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "19",
+                "baseWeight": "25",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "1 ft. 5 in.",
-                "baseWeight": "20 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "17",
+                "baseWeight": "20",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -2970,16 +2970,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "100 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "100",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3054,16 +3054,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 10 in.",
-                "baseWeight": "145 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "70",
+                "baseWeight": "145",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 8 in.",
-                "baseWeight": "135 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "68",
+                "baseWeight": "135",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3137,16 +3137,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 9 in.",
-                "baseWeight": "180 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "7 lbs."
+                "baseHeight": "69",
+                "baseWeight": "180",
+                "rollModifier": "2d10",
+                "weightIncrement": "7"
             },
             "female": {
-                "baseHeight": "5 ft. 6 in.",
-                "baseWeight": "160 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "7 lbs."
+                "baseHeight": "66",
+                "baseWeight": "160",
+                "rollModifier": "2d10",
+                "weightIncrement": "7"
             }
         },
         "agingEffects": {
@@ -3215,16 +3215,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "64",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 6 in.",
-                "baseWeight": "110 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "66",
+                "baseWeight": "110",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3303,16 +3303,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 4 in.",
-                "baseWeight": "125 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "64",
+                "baseWeight": "125",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 2 in.",
-                "baseWeight": "115 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "62",
+                "baseWeight": "115",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3386,16 +3386,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 10 in.",
-                "baseWeight": "120 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "58",
+                "baseWeight": "120",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 5 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d10",
-                "weightModifier": "5 lbs."
+                "baseHeight": "53",
+                "baseWeight": "85",
+                "rollModifier": "2d10",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3484,16 +3484,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 0 in.",
-                "baseWeight": "35 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "36",
+                "baseWeight": "35",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 10 in.",
-                "baseWeight": "30 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "34",
+                "baseWeight": "30",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {
@@ -3563,16 +3563,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "4 ft. 8 in.",
-                "baseWeight": "105 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "56",
+                "baseWeight": "105",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "4 ft. 2 in.",
-                "baseWeight": "90 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "50",
+                "baseWeight": "90",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3666,16 +3666,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "5 ft. 3 in.",
-                "baseWeight": "85 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "63",
+                "baseWeight": "85",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             },
             "female": {
-                "baseHeight": "5 ft. 1 in.",
-                "baseWeight": "75 lbs.",
-                "Modifier": "2d8",
-                "weightModifier": "5 lbs."
+                "baseHeight": "61",
+                "baseWeight": "75",
+                "rollModifier": "2d8",
+                "weightIncrement": "5"
             }
         },
         "agingEffects": {
@@ -3760,16 +3760,16 @@
         },
         "HeightWeight": {
             "male": {
-                "baseHeight": "3 ft. 0 in.",
-                "baseWeight": "35 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "36",
+                "baseWeight": "35",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             },
             "female": {
-                "baseHeight": "2 ft. 10 in.",
-                "baseWeight": "30 lbs.",
-                "Modifier": "2d4",
-                "weightModifier": "1 lb."
+                "baseHeight": "34",
+                "baseWeight": "30",
+                "rollModifier": "2d4",
+                "weightIncrement": "1"
             }
         },
         "agingEffects": {

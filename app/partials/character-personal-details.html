@@ -36,7 +36,7 @@
     </div>
     <div>
         <label>Height:</label>
-        <select ng-model="character.height">
+        <select ng-model="character.height" ng-options="height in character.race.dimensions.male">
         </select>
     </div>
     <div>
