@@ -104,7 +104,8 @@
 
     app.filter("feet", function(){
         return function(height) {
-            var feet = Math.round(height/12);
+            height = parseInt(height);
+            var feet = Math.floor(height/12,0);
             var inches = height % 12;
             return feet + " ft. " + inches + " in.";
         }
@@ -112,7 +113,7 @@
 
     app.filter("lbs", function() {
         return function(weight) {
-            return weight + " lbs.";
+            return parseInt(weight)? parseInt(weight) + " lbs.": " \u2014 ";
         }
     });
 
@@ -142,6 +143,8 @@
         SkillFactory.getSkillList().then(function(data) {
             $scope.skillList = data;
         });
+
+        $scope.dimensions = {male: [], female: []};
 
     });
 })();

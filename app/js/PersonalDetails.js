@@ -30,9 +30,12 @@ angular.module("characterSheet.personal", [])
                 }
 
                 $scope.getCharacterWeight = function() {
-                    var raceGender = character.race.HeightWeight[$scope.gender];
-                    var heightIndex = character.height - raceGender.baseHeight;
-                    return raceGender.baseWeight + (heightIndex * raceGender.weightIncrement);
+                    if(CharacterFactory.race && $scope.character.gender) {
+                    var raceGender = CharacterFactory.race["HeightWeight"][$scope.character.gender];
+                    var heightIndex = parseInt($scope.character.height) - parseInt(raceGender.baseHeight);
+                    return parseInt(raceGender.baseWeight) + (heightIndex * parseInt(raceGender.weightIncrement));
+                }
+                return "";
                 };
 
                 $scope.getAgingEffect = function() {

@@ -49,6 +49,14 @@ angular.module("characterSheet.races", [])
 
                 $scope.selectRace = function(race) {
                     CharacterFactory.setRace(race);
+                    $scope.dimensions = {male: [], female: []};
+                    var minHeight = parseInt(race.HeightWeight.male.rollModifier.split('d')[0])
+                    var maxHeight = minHeight * parseInt(race.HeightWeight.male.rollModifier.split('d')[1]);
+                    for (var i=minHeight; i< maxHeight; i++) {
+                        $scope.dimensions.male.push(parseInt(race.HeightWeight.male.baseHeight) + i);
+                        $scope.dimensions.female.push(parseInt(race.HeightWeight.female.baseHeight) + i);
+                    }
+
                     $scope.selectedRace = race;
                     $scope.selectedRaceName = race.name;
                 };

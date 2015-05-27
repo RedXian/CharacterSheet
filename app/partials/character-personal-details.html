@@ -6,11 +6,11 @@
     </div>
     <div>
         <label>Sex:</label>
-        <select ng-model="character.gender">
-            <option value="none" disabled hidden style="display: none">Select Sex</option>
+        <select ng-model="character.gender" ng-change="character.height=dimensions[character.gender][0]">
+            <option value="" style="display:none" selected>Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="other">Other</option>
+            <option value="male">Other</option>
         </select>
     </div>
     <div>
@@ -27,7 +27,7 @@
     </div>
     <div>
         <label>Skin:</label>
-        <input type=text ng-model="character.Skin">
+        <input type=text ng-model="character.skinColor">
     </div>
     <div>
         <label>Alignment:</label>
@@ -36,12 +36,13 @@
     </div>
     <div>
         <label>Height:</label>
-        <select ng-model="character.height" ng-options="height in character.race.dimensions.male">
+        <select ng-model="character.height" ng-options="height as (height | feet) for height in dimensions[character.gender]">
+            <option value="" selected ng-if="false">Select Height</option>
         </select>
     </div>
     <div>
         <label>Weight:</label>
-        <input type=text value=" {{ getCharacterWeight() }}">
+        <input type=text value=" {{ getCharacterWeight() | lbs }}">
     </div>
     <div>
         <label>Age:</label>
