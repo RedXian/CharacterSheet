@@ -78,7 +78,7 @@ angular.module("characterSheet.races", [])
                             group: group
                         });
                     }
-                    CharacterFactory.age = $scope.ageGroups[0].age;
+                    CharacterFactory.age = race.Age.Adulthood;
 
                     $scope.selectedRace = race;
                     $scope.selectedRaceName = race.name;
