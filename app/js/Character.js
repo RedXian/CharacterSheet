@@ -126,34 +126,6 @@ angular.module("characterSheet.character", [])
                     character.favoredBonuses[key].race = race.name;
                     character.favoredBonuses[key].points = 0;
                 }
-
-                //Set Age Groups
-                // character.race.ageGroups = [];
-                // for (var i = character.race.Age.Adulthood; i <= character.race.agingEffects.maximumAge; i++) {
-                //     var group = "Adulthood";
-                //     if (i >= parseInt(character.race.agingEffects["Middle Age"])) {
-                //         group = "Middle Age";
-                //         if (i >= parseInt(character.race.agingEffects.Old)) {
-                //             group = "Old Age";
-                //             if (i >= parseInt(character.race.agingEffects.Venerable)) {
-                //                 group = "Venerable";
-                //             }
-                //         }
-                //     }
-                //     character.race.ageGroups.push({
-                //         age: i,
-                //         group: group
-                //     });
-                // }
-
-                //set Height Weight array.
-                // character.race.dimensions = {male: [], female: []};
-                // var spread = character.race.HeightWeight.male.rollModifier.split('d')[0] * character.race.HeightWeight.male.rollModifier.split('d')[1];
-                // for (var i=0; i< spread; i++) {
-                //     character.race.dimensions.male.push(character.race.HeightWeight.male.baseHeight + i);
-                //     character.race.dimensions.female.push(character.race.HeightWeight.female.baseHeight + i);
-                // }
-                //
             },
 
             addClass: function(aClass, archetype) {

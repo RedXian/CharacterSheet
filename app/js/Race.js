@@ -61,7 +61,7 @@ angular.module("characterSheet.races", [])
 
                     // Set AgeGroups
                     $scope.ageGroups = [];
-                     // Set Chracter Age to minimum age.
+                     // Set Character Age to minimum age.
                     for (var i = race.Age.Adulthood; i <= race.agingEffects.maximumAge; i++) {
                         var group = "Adulthood";
                         if (i >= parseInt(race.agingEffects["Middle Age"])) {
