@@ -45,7 +45,7 @@ angular.module("characterSheet.classes", [])
 
                 $scope.elligibleForFavoredBonus = function(bonus) {
                     // returns true if no class is specified OR if the class specified is a favored class
-                    return !bonus.class || CharacterFactory.classes[bonus.class].favoredClass;
+                    return !bonus.class || (CharacterFactory.classes[bonus.class] && CharacterFactory.classes[bonus.class].favoredClass);
                 };
 
                 $scope.addFavoredBonusPoint = function(bonus) {

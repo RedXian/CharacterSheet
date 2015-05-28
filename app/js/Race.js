@@ -49,6 +49,8 @@ angular.module("characterSheet.races", [])
 
                 $scope.selectRace = function(race) {
                     CharacterFactory.setRace(race);
+
+                    // Set Height & Weight formulas
                     $scope.dimensions = {male: [], female: []};
                     var minHeight = parseInt(race.HeightWeight.male.rollModifier.split('d')[0])
                     var maxHeight = minHeight * parseInt(race.HeightWeight.male.rollModifier.split('d')[1]);
@@ -56,6 +58,27 @@ angular.module("characterSheet.races", [])
                         $scope.dimensions.male.push(parseInt(race.HeightWeight.male.baseHeight) + i);
                         $scope.dimensions.female.push(parseInt(race.HeightWeight.female.baseHeight) + i);
                     }
+
+                    // Set AgeGroups
+                    $scope.ageGroups = [];
+                     // Set Chracter Age to minimum age.
+                    for (var i = race.Age.Adulthood; i <= race.agingEffects.maximumAge; i++) {
+                        var group = "Adulthood";
+                        if (i >= parseInt(race.agingEffects["Middle Age"])) {
+                            group = "Middle Age";
+                            if (i >= parseInt(race.agingEffects.Old)) {
+                                group = "Old Age";
+                                if (i >= parseInt(race.agingEffects.Venerable)) {
+                                    group = "Venerable";
+                                }
+                            }
+                        }
+                        $scope.ageGroups.push({
+                            age: i,
+                            group: group
+                        });
+                    }
+                    CharacterFactory.age = $scope.ageGroups[0].age;
 
                     $scope.selectedRace = race;
                     $scope.selectedRaceName = race.name;

@@ -17,35 +17,35 @@ angular.module("characterSheet.personal", [])
                     return size;
                 };
 
-                $scope.results = function () {
+                $scope.results = function() {
                     return RollerFactory.getResult($scope.sum);
                 };
-                $scope.getSum = function () {
+                $scope.getSum = function() {
                     var sum = 0;
                     var result = $scope.results();
-                    for(var i = 0 ; i < result.length; i++) {
+                    for (var i = 0; i < result.length; i++) {
                         sum += result[i].value;
                     }
                     return sum;
                 }
 
                 $scope.getCharacterWeight = function() {
-                    if(CharacterFactory.race && $scope.character.gender) {
-                    var raceGender = CharacterFactory.race["HeightWeight"][$scope.character.gender];
-                    var heightIndex = parseInt($scope.character.height) - parseInt(raceGender.baseHeight);
-                    return parseInt(raceGender.baseWeight) + (heightIndex * parseInt(raceGender.weightIncrement));
-                }
-                return "";
+                    if (CharacterFactory.race && CharacterFactory.gender) {
+                        var raceGender = CharacterFactory.race["HeightWeight"][$scope.character.gender];
+                        var heightIndex = parseInt($scope.character.height) - parseInt(raceGender.baseHeight);
+                        return parseInt(raceGender.baseWeight) + (heightIndex * parseInt(raceGender.weightIncrement));
+                    }
+                    return "";
                 };
 
                 $scope.getAgingEffect = function() {
                     var ageGroup = "Adulthood";
                     if (CharacterFactory.race) {
-                        if ($scope.character.age >= parseInt(CharacterFactory.race.agingEffects["Middle Age"])) {
+                        if (CharacterFactory.age >= parseInt(CharacterFactory.race.agingEffects["Middle Age"])) {
                             ageGroup = "Middle Age";
-                            if ($scope.character.age >= parseInt(CharacterFactory.race.agingEffects["Old"])) {
+                            if (CharacterFactory.age >= parseInt(CharacterFactory.race.agingEffects["Old"])) {
                                 ageGroup = "Old Age";
-                                if ($scope.character.age >= parseInt(CharacterFactory.race.agingEffects["Venerable"])) {
+                                if (CharacterFactory.age >= parseInt(CharacterFactory.race.agingEffects["Venerable"])) {
                                     ageGroup = "Venerable";
                                 }
                             }
@@ -53,6 +53,27 @@ angular.module("characterSheet.personal", [])
                     }
                     return ageGroup;
                 };
+
+                $scope.randomizeAge = function() {
+                    if (CharacterFactory.race && CharacterFactory.classes) {
+                        CharacterFactory.age = parseInt(CharacterFactory.race.Age.Adulthood);
+                        var ageCat = "";
+                        for (var key in CharacterFactory.classes) {
+                            if (ageCat == "") {
+                                ageCat = CharacterFactory.classes[key].ageCategory;
+                                CharacterFactory.age += RollerFactory.parseRollNotation(CharacterFactory.race.Age[ageCat]);
+                            }
+                        }
+                    }
+                }
+
+                $scope.randomizeHeight = function() {
+                    if (CharacterFactory.race && CharacterFactory.gender) {
+                        var raceGender = CharacterFactory.race["HeightWeight"][CharacterFactory.gender];
+                        CharacterFactory.height = parseInt(raceGender.baseHeight);
+                        CharacterFactory.height += RollerFactory.parseRollNotation(raceGender.rollModifier);
+                    }
+                }
 
                 $scope.getMovementSpeed = function(type) {
                     var speed = 30;

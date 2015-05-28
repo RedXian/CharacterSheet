@@ -1,11 +1,4 @@
 <section>
-    <!--
-  <aside style="float:left">
-    <h2 style="float:left">Race</h2>
-    <select style="float:left;clear:left;" id="race" size="43" ng-model="selectedRace" ng-change="" ng-options="race.name group by race.source.name for race in raceList">
-      <option value="" selected disabled hidden>Select Race</option>
-    </select>
-  </aside> -->
     <aside class="selectMenu">
         <h1 style="clear:left">Race</h1>
         <input style="width:100%;" ng-model="raceSearch" placeholder="Search">
@@ -14,12 +7,10 @@
                 <strong ng-if="$first">{{source.name}}</strong>
                 <div ng-class="{highlight: spotlightRace, selected: race.name === selectedRaceName}" ng-mouseenter="spotlightRace = true" ng-mouseleave="spotlightRace = false" ng-click="selectRace(race)">
                     <span>{{race.name}}</span>
-                    <!-- <span ng-if="$index === selected" class="glyphicon glyphicon-plus" style="float: right" ng-click=""></span> -->
                 </div>
             </div>
         </div>
     </aside>
-
 
     <div ng-repeat="trait in character.traits">
         <h3 ng-show="$first">Racial Traits</h3>

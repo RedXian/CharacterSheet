@@ -128,23 +128,23 @@ angular.module("characterSheet.character", [])
                 }
 
                 //Set Age Groups
-                character.race.ageGroups = [];
-                for (var i = character.race.Age.Adulthood; i <= character.race.agingEffects.maximumAge; i++) {
-                    var group = "Adulthood";
-                    if (i >= parseInt(character.race.agingEffects["Middle Age"])) {
-                        group = "Middle Age";
-                        if (i >= parseInt(character.race.agingEffects.Old)) {
-                            group = "Old Age";
-                            if (i >= parseInt(character.race.agingEffects.Venerable)) {
-                                group = "Venerable";
-                            }
-                        }
-                    }
-                    character.race.ageGroups.push({
-                        age: i,
-                        group: group
-                    });
-                }
+                // character.race.ageGroups = [];
+                // for (var i = character.race.Age.Adulthood; i <= character.race.agingEffects.maximumAge; i++) {
+                //     var group = "Adulthood";
+                //     if (i >= parseInt(character.race.agingEffects["Middle Age"])) {
+                //         group = "Middle Age";
+                //         if (i >= parseInt(character.race.agingEffects.Old)) {
+                //             group = "Old Age";
+                //             if (i >= parseInt(character.race.agingEffects.Venerable)) {
+                //                 group = "Venerable";
+                //             }
+                //         }
+                //     }
+                //     character.race.ageGroups.push({
+                //         age: i,
+                //         group: group
+                //     });
+                // }
 
                 //set Height Weight array.
                 // character.race.dimensions = {male: [], female: []};
@@ -153,7 +153,7 @@ angular.module("characterSheet.character", [])
                 //     character.race.dimensions.male.push(character.race.HeightWeight.male.baseHeight + i);
                 //     character.race.dimensions.female.push(character.race.HeightWeight.female.baseHeight + i);
                 // }
-                // 
+                //
             },
 
             addClass: function(aClass, archetype) {

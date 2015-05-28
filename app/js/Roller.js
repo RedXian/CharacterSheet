@@ -8,12 +8,14 @@ angular.module("characterSheet.roller", [])
                 if (validation.test(notation)) {
                     var array = notation.replace(/[+]?-![L]/, '+-').split(/[+]/);
                     for (var i = 0; i < array.length; i++) {
-                        var roll = roller.parseRollNotation(array[i]);
-                        result.push({
-                            name: array[i],
-                            value: roll
-                        });
-                        sum += roll;
+                        if (array[i]) {
+                            var roll = roller.parseRollNotation(array[i]);
+                            result.push({
+                                name: array[i],
+                                value: roll
+                            });
+                            sum += roll;
+                        }
                     }
                 };
                 result.push({

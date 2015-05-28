@@ -36,6 +36,7 @@
     </div>
     <div>
         <label>Height:</label>
+        <button ng-click="randomizeHeight()" class="glyphicon glyphicon-repeat"></button>
         <select ng-model="character.height" ng-options="height as (height | feet) for height in dimensions[character.gender]">
             <option value="" selected ng-if="false">Select Height</option>
         </select>
@@ -46,8 +47,9 @@
     </div>
     <div>
         <label>Age:</label>
-        <select ng-model="character.age" ng-options="age.age as age.age group by age.group for age in character.race.ageGroups">
-            <option hidden disabled>Select Age</option>
+        <button ng-click="randomizeAge()" class="glyphicon glyphicon-repeat"></button>
+        <select ng-model="character.age" ng-options="age.age as age.age group by age.group for age in ageGroups">
+            <option value="" hidden disabled>Select Age</option>
             <input type=text disabled value="{{ getAgingEffect() }}">
         </select>
     </div>
