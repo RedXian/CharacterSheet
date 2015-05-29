@@ -1,0 +1,1545 @@
+{
+    "classes": {
+        "Barbarian": {
+            "Archetypes": {
+                "Feral Gnasher": {
+                    "name": "Feral Gnasher",
+                    "type": "Archetype",
+                    "description": "<p>Feral gnashers grow up in the wild, either raised by animals or scraping by on their own, and soon learn to fend for themselves. These barbarians often utilize pieced-together armor and fight with their sharp teeth and whatever improvised weapons are within reach.</p>",
+                    "Weapon and Armor Proficiency": {
+                        "name": "Weapon and Armor Proficiency",
+                        "type": "Rage Power",
+                        "specialAbilityType": "",
+                        "description": "<p>A feral gnasher loses all martial weapon proficiencies except for greatclub and loses proficiency with medium armor.</p>"
+                    },
+                    "Savage Bite": {
+                        "name": "Savage Bite",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 1st level, a feral gnasher gains a savage bite attack. This is a primary natural attack that deals 1d4 points of damage. If the goblin already has the hard head, big teeth racial trait, the damage increases to 1d6. At 10th level, the damage from a feral gnasher's bite increases to 1d6 (or 1d8 if the goblin has the hard head, big teeth racial trait) and deals ×3 damage on a critical hit.</p>",
+                        "replaces": ["Fast Movement"]
+                    },
+                    "Impromptu Armament": {
+                        "name": "Impromptu Armament",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, a feral gnasher gains Throw Anything as a bonus feat and can pick up an unattended object that can be wielded in one hand as a free action. Additionally, the feral gnasher can take Catch Off-Guard in place of a rage power. This replaces the rage power gained at second level.</p>"
+                    },
+                    "Lockjaw": {
+                        "name": "Lockjaw",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 3rd level, a feral gnasher gains the grab ability with her bite attack. A feral gnasher can use this ability on a creature up to one size category larger than she is. This replaces trap sense +1.</p>"
+                    },
+                    "Improvised Weapon Mastery": {
+                        "name": "Improvised Weapon Mastery",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 5th level, a feral gnasher gains Improvised Weapon Mastery as a bonus feat. This replaces improved uncanny dodge.</p>"
+                    },
+                    "Improved Lockjaw": {
+                        "name": "Improved Lockjaw",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 6th level, as long as a feral gnasher is controlling the grapple with her lockjaw attack, she does not gain the grappled condition, but is unable to move or use her mouth for anything other than grappling.</p>",
+                        "replaces": ["trap sense +2"]
+                    },
+                    "Greater Lockjaw": {
+                        "name": "Greater Lockjaw",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 9th level and again at 15th level, the size of a creature a feral gnasher is able to use her lockjaw's grab ability on increases by one size increment.</p>",
+                        "replaces": ["trap sense +3 and trap sense +5"]
+                    },
+                    "Wicked Improvisation": {
+                        "name": "Wicked Improvisation",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 12th level, a feral gnasher becomes more capable with improvised weapons and natural attacks. The feral gnasher gains a +1 competence bonus on damage rolls when using natural attacks or improvised weapons while raging. At 14th level and every two levels thereafter, the damage bonus increases by +1. This increase is not precision damage and is thus multiplied on a critical hit.</p>",
+                        "replaces": ["trap sense +4"]
+                    },
+                    "requirements": [
+                        {
+                            "race": "Goblin"
+                        }
+                    ]
+                },
+                "Hateful Rager": {
+                    "name": "Hateful Rager",
+                    "type": "Archetype",
+                    "description": "<p>From a young age, many half-orcs are treated cruelly, bullied, ridiculed, and made outcasts. While some hide their shame, others foster a deep, burning hatred that they channel into a raw fury and unleash against their enemies. These half-orcs are called hateful ragers.</p>",
+                    "Reduced Rage": {
+                        "name": "Reduced Rage",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level and every level thereafter, a hateful rager only gains 1 additional round of rage per day instead of the normal 2 additional rounds of rage per day.</p>"
+                    },
+                    "Favored Enemy": {
+                        "name": "Favored Enemy",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, a hateful rager selects a favored enemy. This ability works identically to the ranger ability of the same name. At 8th, 14th, and 20th level, the hateful rager selects another favored enemy and increases her bonus against one favored enemy type, as described in the ranger class.</p><p>While raging, the hateful rager makes every effort to fight a favored enemy rather than other opponents. If aware of the presence of a favored enemy, the hateful rager must make a DC 20 Will save each round to attack another creature; failure means the barbarian must attack the favored enemy or move closer to that enemy. She may freely attack creatures preventing her from reaching that favored enemy (regardless of whether they are actively trying to prevent her attacks or merely in the way). She can avoid harmful obstacles normally in her attempts to reach the target and is not forced to take the shortest route.</p><p>This ability replaces the barbarian's rage power gained at 2nd level. At 8th, 14th, and 20th levels, in place of a rage power she gains another favored enemy and increases her bonus against one favored enemy type.</p>"
+                    },
+                    "Feed the Rage": {
+                        "name": "Feed the Rage",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 5th level, a hateful rager gains 1 additional round of rage for each favored enemy she knocks unconscious or kills in combat. These current rounds of rage can only be used to add to the duration of her rage, and disappear when the rage ends.</p>",
+                        "replaces": ["Improved Uncanny Dodge"]
+                    },
+                    "Amplified by Hate": {
+                        "name": "Amplified by Hate",
+                        "type": "Rage Power",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 9th level, a hateful rager adds half her favored enemy bonus to the DC of any rage power she uses against a favored enemy.</p>",
+                        "replaces": ["trap sense +3"]
+                    },
+                    "requirements": [
+                        {
+                            "race": "Half-orc"
+                        }
+                    ]
+                }
+            }
+        },
+        "Bard": {
+            "archetypes": {
+                "Prankster": {
+                    "name": "Prankster",
+                    "type": "Archetype",
+                    "description": "<p>The prankster sees humor as the highest form or art, and pranks as the highest form of humor. In addition to setting friends up for light-hearted pranks, the prankster can use his quick wit and cruel sense of humor to enrage foes before incapacitating them with a clever turn of phrase.</p>",
+                    "Bardic Performance": {
+                        "name": "Bardic Performance",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>A prankster's bardic performance functions like a bard's, but some of its performances are exchanged for those listed below.</p>",
+                        "Mock": {
+                            "name": "Mock",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Su",
+                            "description": "<p>At 1st level, the prankster can use his performance to cause one or more creatures to become furious with him. Each creature to be mocked must be within 90 feet, able to see, hear, and understand the prankster, and capable of paying attention to him. The prankster must also be able to see the creatures affected. For every three levels the prankster has attained beyond 1st, he can target one additional creature with this ability.</p><p>Each creature within range receives a Will save (DC 10 + 1/2 the prankster's level + the prankster's Charisma modifier) to negate the effect. If a creature's saving throw succeeds, the prankster cannot successfully mock that creature for 24 hours. If its saving throw fails, the creature is angered by the performance and seeks to harm the prankster. While the prankster maintains the mocking, the target takes a –2 penalty on all attack rolls and skill checks until it has successfully attacked the prankster with a melee or ranged attack, or has harmed the creature with a spell that deals damage.</p><p>Mock is an enchantment (compulsion) mind-affecting ability. Mock relies on audible and visual components in order to function. This ability replaces fascinate.</p>"
+                        },
+                        "Punchline": {
+                            "name": "Punchline",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>At 6th level, the prankster can use his performance to tell a punchline to amuse a creature he has already mocked (see above), goading it into hideous laughter (as the spell). Using this ability does not disrupt the mock effect, but it does require a standard action to activate (in addition to the free action to continue the mock effect). A prankster can use this ability more than once against an individual creature during an individual performance.</p><p>Telling a punchline does not count against a prankster's daily use of bardic performance. A Will saving throw (DC 10 + 1/2 the bard's level + the bard's Charisma modifier) negates the effect. This ability affects only a single creature. Punchline is an enchantment (compulsion), mind affecting, language-dependent ability and relies on audible components. This ability replaces the suggestion ability.</p>"
+                        },
+                        "Mass Punchline": {
+                            "name": "Mass Punchline",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>This ability functions just like punchline, but allows a prankster of 18th level or higher to use hideous laughter simultaneously against any number of creatures that he has mocked. This ability replaces the mass suggestion ability.</p>"
+                        },
+                        "Swap": {
+                            "name": "Swap",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Ex",
+                            "description": "<p>A prankster can steal an object from a creature and replace it with another object of the same size or smaller that the prankster has in his hand. This functions as the steal combat maneuver, but the prankster does not provoke an attack of opportunity, and may use his Sleight of Hand check in place of his combat maneuver check. If the prankster's check exceeds the target's CMD by 10 or more, the target is unaware the swap has been made until it tries to use the swapped object or the end of its next turn (whichever happens first). This ability replaces lore master.</p>"
+                        }
+                    },
+                    "requirements": [
+                        {
+                            "race": "Gnome"
+                        }
+                    ]
+                },
+                "Shadow Puppeteer": {
+                    "name": "Shadow Puppeteer",
+                    "type": "Archetype",
+                    "description": "<p>A shadow puppeteer invokes amazing and terrifying shadow puppet shows, producing supernatural effects by creating and manipulating shadow. A shadow puppeteer has the following class feature.</p>",
+                    "Bardic Performance": {
+                        "name": "Bardic Performance",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>A shadow puppeteer gains the following types of bardic performance. The character must be able to perform shadow puppetry in order to activate any of these abilities. Shadow puppetry uses Perform (act), and requires a light source. These abilities replace all levels of inspire courage and inspire competence.</p>",
+                        "Shadow Servant": {
+                            "name": "Shadow Servant",
+                            "type": "Bardic Performance",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>At 1st level, the puppeteer can create a shadow servant to perform simple tasks. The shadow servant is identical to an unseen servant (caster level equal to the shadow puppeteer's bard level), except it appears as a formless shadow. Shadow servant relies on visual components.</p>"
+                        },
+                        "Shadow Puppets": {
+                            "name": "Shadow Puppets",
+                            "type": "Bardic Performance",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>At 1st level, a shadow puppeteer can use bardic performance to create one quasi-real shadowy creature resembling a monster from the summon monster I list. These shadowy creatures otherwise work like shadow conjuration, and targets interacting with them get a Will saving throw (DC 10 + 1/2 your bard level + your Charisma bonus) to treat them as only 20% real. At 4th level and every three levels thereafter, this ability acts like the next higher version of summon monster (summon monster II at 4th level and so on).</p>"
+                        }
+                    },
+                    "requirements": [
+                        {
+                            "race": "Wayangs"
+                        }
+                    ]
+                },
+                "Watersinger": {
+                    "name": "Watersinger",
+                    "type": "Archetype",
+                    "description": "<p>The watersinger's song reaches from the depths of his soul into the elemental waters from which life first sprang. His voice commands water, bending and shaping it to his desire.</p>",
+                    "Bardic Performance": {
+                        "name": "Bardic Performance",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>A watersinger has some unique bardic performances, which replace some of the standard bardic performances as listed in each entry. These bardic performances follow all the general rules and restrictions of a bard's bardic performances.</p>",
+                        "Watersong": {
+                            "name": "Watersong",
+                            "type": "Bardic Performance",
+                            "specialAbilityType": "Su",
+                            "description": "<p>At 1st level, a watersinger can use bardic performance to manipulate and control the shape of water within 30 feet. A successful Perform check allows the bard to animate and control a 5-foot-cube of water. The watersinger can command the water to take various forms, bend, rise, fall, or sustain a shape, and can make it support weight as if it were solid ice. For example, the watersinger could create a pillar of water (to provide cover), ladder, channel, bridge, stairs, slide, and so on. The manipulated water is as slippery as normal ice. This ability cannot create forms more fragile or complex than what could be carved in normal ice. While under the bard's control, the water has hardness 0 and 3 hit points per inch of thickness. At level 3, the manipulated water gains hardness 1, and this increases by +1 for every 3 bard levels beyond that. At 5th, 10th, 15th, and 20th level, the volume affected increases by an additional 5-foot cube (these cubes must be adjacent to each other). The manipulated water retains its shape for 1 round after the bard stops spending bardic performance rounds to maintain it. This ability replaces fascinate, suggestion, and mass suggestion.</p>"
+                        },
+                        "Waterstrike": {
+                            "name": "Waterstrike",
+                            "type": "Bardic Performance",
+                            "specialAbilityType": "Su",
+                            "description": "<p>At 3rd level, the watersinger can spend 1 round of bardic performance to command any water he is currently manipulating with his watersong performance to lash out and strike an opponent with a slam attack. The watersinger uses his base attack bonus and Charisma bonus to make this attack, and deals 1d6 points of bludgeoning damage plus his Charisma bonus. The attack can originate from any square of water the bard is manipulating, and the water can get a flanking bonus or help a combatant get one, but cannot make attacks of opportunity. The water can make multiple attacks per round if your base attack bonus allows you to do so. At 10th level, the water's slam damage increases to 1d8 points and the water gains a reach of 10 feet. At 15th level, the water's slam damage increases to 2d6 points. At 20th level, the water's slam damage increases to 2d8 points. This performance replaces inspire competence.</p>"
+                        },
+                        "Lifewater": {
+                            "name": "Lifewater",
+                            "type": "Bardic Performance",
+                            "specialAbilityType": "Su",
+                            "description": "<p>At 5th level, the watersinger can spend 1 round of bardic performance as a standard action to manipulate the water, blood, and other fluids within a creature's body, causing the target to become sickened for 1d4 rounds. Alternatively, he may use this ability to attempt a reposition combat maneuver , using his base attack bonus and his Charisma modifier as his CMB. This ability has a range of 30 feet, only works on creatures whose bodies contain fluid, and does not affect creatures that are immune to critical hits. This performance replaces the use of lore master gained at 5th level (though a watersinger still gains the use of lore master once per day at 11th level and twice per day at 17th).</p>"
+                        }
+                    },
+                    "Watersinger Spells": {
+                        "name": "Watersinger Spells",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>A watersinger adds certain water-themed spells to his spell list. He adds these abilities to his spell list as soon as his bard level allows him to cast spells of that spell level. 0—create water; 1st—hydraulic push , slipstream 2nd—aqueous orb , hydraulic torrent , water walk; 3rd—fluid form , ride the waves ; 4th—control water, communal water walk ; 5th—vortex 6th—seamantle.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Undine"
+                        }
+                    ]
+                }
+            }
+        },
+        "Fighter": {
+            "Class Features": {},
+            "archetypes": {
+                "Airborne Ambusher": {
+                    "name": "Airborne Ambusher",
+                    "type": "Archetype",
+                    "description": "<p>Driven by suspicion and hatred, strix doggedly guard their territories, making deadly use of their flight. Using swift strikes from above, strix plummet onto their foes with lethal force.</p>",
+                    "Weapon and Armor Proficiency": {
+                        "name": "Weapon and Armor Proficiency",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>An airborne ambusher is not proficient with heavy armor or tower shields.</p>"
+                    },
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>An airborne ambusher adds Fly to his list of class skills and removes Climb from his list of class skills.</p>"
+                    },
+                    "Combat Flyer": {
+                        "name": "Combat Flyer",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, an airborne ambusher may use his fighter bonus feats to select Flyby Attack and Hover. This replaces bravery.</p>"
+                    },
+                    "Aerobatics": {
+                        "name": "Aerobatics",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 5th level, an airborne ambusher may make a Fly check instead of an Acrobatics check to move through a threatened area or an enemy's space. This replaces weapon training 1.</p>"
+                    },
+                    "Flying Dodger": {
+                        "name": "Flying Dodger",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 9th level, when an airborne ambusher flies at least half its fly speed on its turn, it gains a +1 dodge bonus to AC for 1 round. This bonus increases to +2 at 11th level and +4 at 17th level.</p>",
+                        "replaces": ["weapon training 2"]
+                    },
+                    "Plummeting Charge": {
+                        "name": "Plummeting Charge",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 13th level, if an airborne ambusher flies at least half its fly speed as part of a charge, it gains a +2 racial bonus on the attack roll (in addition to the normal charge bonus) and a +4 bonus on its critical confirmation roll. These bonuses improve to +4 and +6 at 17th level. This replaces weapon training 3 and 4.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Strix"
+                        }
+                    ]
+                },
+                "Cavern Sniper": {
+                    "name": "Cavern Sniper",
+                    "type": "Archetype",
+                    "description": "<p>Perfectly at home in the darkness, the cavern sniper capitalizes on stealth and ranged attacks imbued with his spell-like abilities to harass his opponents. The cavern sniper focuses on surprise, his innate magical abilities, and poison to take down unwary foes.</p>",
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "specialAbilityType": "",
+                        "description": "<p>The cavern sniper adds Stealth to his list of class skills and removes Intimidate from his list of class skills.</p>"
+                    },
+                    "Imbued Shot": {
+                        "name": "Imbued Shot",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Su",
+                        "description": "<p>At 1st level, the cavern sniper gains the ability to imbue his arrows or bolts with the effect of one of his drow faerie fire, darkness, or deeper darkness spell-like abilities (provided he has access to the ability) as a swift action. When such an arrow or bolt is fired, the spell's area is centered where the arrow or bolt lands. If the target of the attack has a space larger than 5 feet, the cavern sniper can choose which square of the creature's space is the center of the spell-like ability's effect, as long as that square is within line of sight of the cavern sniper. The cavern sniper can instead choose to target a single square within line of sight with an imbued arrow or bolt, and uses that square as the center of the spell-like ability's area of effect on a hit (AC 5). The arrow must be fired during the round it was imbued, or the spell-like ability is wasted. If the arrow or bolt misses, the use of the spell-like ability is wasted.</p>",
+                        "replaces": ["the 1st-level fighter bonus feat"]
+                    },
+                    "Silent Shooter": {
+                        "name": "Silent Shooter",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, a cavern sniper gains a +2 bonus on Stealth checks made when loading a bow or crossbow, poisoning ammunition, and making sniping attempts. This bonus increases by +2 for every four levels beyond 2nd.</p>",
+                        "replaces": ["bravery"]
+                    },
+                    "Quick and Deadly": {
+                        "name": "Quick and Deadly",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 4th level, the cavern sniper can move at full speed while using Stealth at no penalty and can apply poison to a single arrow or crossbow bolt as a swift action.</p>",
+                        "replaces": ["the 4th-level fighter bonus feat"]
+                    },
+                    "Sniper Training": {
+                        "name": "Sniper Training",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 5th level, the cavern sniper chooses the bow or crossbow weapon group and gains a +2 bonus on attack rolls and damage rolls. This bonus increases by +1 for every four levels beyond 5th.</p>",
+                        "replaces": ["weapon training 1, 3, and 4"]
+                    },
+                    "Greater Imbued Shot": {
+                        "name": "Greater Imbued Shot",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Su",
+                        "description": "<p>At 9th level, the cavern sniper gains two extra uses of both his faerie fire and darkness spell-like abilities, but can only use these extra uses to imbue arrows and bolts with the imbued shot class feature.</p>",
+                        "replaces": ["weapon training 2"]
+                    },
+                    "Weapon Mastery": {
+                        "name": "Weapon Mastery",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 20th level, when the cavern sniper gains weapon mastery, he must choose a weapon in either the bow or crossbow weapon group.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Drow"
+                        }
+                    ]
+                },
+                "Dirty Fighter": {
+                    "name": "Dirty Fighter",
+                    "type": "Archetype",
+                    "description": "<p>The dirty fighter laughs at concepts like honor and fair play. He cares only for victory, no matter how he achieves it, and spends as much time mastering sneaky combat maneuvers as he does drilling with weapons or learning how to wear armor.</p>",
+                    "Sidestep": {
+                        "name": "Sidestep",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, a dirty fighter learns how to evade his enemies when they react to his combat maneuvers. He gains a +1 dodge bonus to his AC against attacks of opportunity provoked by him while attempting a combat maneuver. This bonus increases by +1 for every four levels beyond 2nd level.</p>",
+                        "replaces": ["bravery"]
+                    },
+                    "Maneuver Training": {
+                        "name": "Maneuver Training",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 5th level, a dirty fighter becomes a master of dirty tricks. He gains a +2 bonus on dirty trick combat maneuver checks and +2 to his CMD when he is the target of a dirty trick combat maneuver.</p>",
+                        "replaces": ["weapon training 1"]
+                    },
+                    "Speedy Tricks": {
+                        "name": "Speedy Tricks",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 9th level, a dirty fighter has perfected how to quickly perform dirty tricks. He can make a dirty trick combat maneuver as an attack instead of a standard action.</p>",
+                        "replaces": ["weapon training 2"]
+                    },
+                    "Double Tricks": {
+                        "name": "Double Tricks",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 13th level, when a dirty fighter performs a combat maneuver, he may apply two different conditions to his target instead of one. Each penalty condition requires a separate action to remove. At 17th level, he may apply three different conditions.</p>",
+                        "replaces": ["weapon training 3 and 4"]
+                    },
+                    "requirements": [
+                        {
+                            "race": "Orc"
+                        }
+                    ]
+                }
+            }
+        },
+        "Cleric": {
+            "Class Features": {},
+            "archetypes": {
+                "Demonic Apostle": {
+                    "name": "Demonic Apostle",
+                    "type": "Archetype",
+                    "description": "<p></p>",
+                    "requirements": [
+                        {
+                            "race": "Drow"
+                        }
+                    ]
+                },
+                "Fiendish Vessel": {
+                    "name": "Fiendish Vessel",
+                    "type": "Archetype",
+                    "description": "<p></p>",
+                    "requirements": [
+                        {
+                            "race": "Tiefling"
+                        }
+                    ]
+                },
+                "Forgemaster": {
+                    "name": "Forgemaster",
+                    "type": "Archetype",
+                    "description": "<p></p>",
+                    "requirements": [
+                        {
+                            "race": "Dwarf"
+                        }
+                    ]
+                }
+            }
+        },
+        "Druid": {
+            "Class Features": {},
+            "archetypes": {
+                "Feral Child": {
+                    "name": "Feral Child",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Human"
+                        }
+                    ]
+                },
+                "Naga Aspirant": {
+                    "name": "Naga Aspirant",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Nagaji"
+                        }
+                    ]
+                },
+                "Sky Druid": {
+                    "name": "Sky Druid",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Sylph"
+                        }
+                    ]
+                },
+                "Treesinger": {
+                    "name": "Treesinger",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Elf"
+                        }
+                    ]
+                },
+                "Undine Adept": {
+                    "name": "Undine Adept",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Undine"
+                        }
+                    ]
+                }
+            }
+        },
+        "Monk": {
+            "Class Features": {},
+            "archetypes": {
+                "Gray Disciple": {
+                    "name": "Gray Disciple",
+                    "type": "Archetype",
+                    "description": "<p>The gray disciple contemplates the inner voice of duergar magic and the silent eternity of stone, mastering these dual mysteries and combining them to deadly effect.</p>",
+                    "Fade from Sight": {
+                        "name": "Fade from Sight",
+                        "type": "Class Feature",
+                        "featureType": "Spell-like",
+                        "description": "<p>At 4th level, as a swift action, the gray disciple can become invisible (as the invisibility spell) for 1 round by spending 1 ki point. To use this ability, the gray disciple must already have invisibility as a spell-like ability. This ability replaces slow fall and still mind.</p>"
+                    },
+                    "Gray Heart": {
+                        "name": "Gray Heart",
+                        "type": "Class Feature",
+                        "featureType": "Spell-like",
+                        "description": "<p>At 6th level, as a swift action, the gray disciple can enlarge himself (as the enlarge person spell) for 1 minute by spending 1 ki point. To use this ability, the gray disciple must already have enlarge person available as a spell-like ability. This ability replaces high jump and the bonus feat gained at 6th level.</p>"
+                    },
+                    "Born in Darkness": {
+                        "name": "Born in Darkness",
+                        "type": "Class Feature",
+                        "featureType": "Spell-like",
+                        "description": "<p>At 7th level, as a standard action, the gray disciple can radiate darkness (as the spell, except originating from the disciple's person) for 1 round per level by spending 1 ki point. This ability replaces wholeness of body.</p>"
+                    },
+                    "Earth Glide": {
+                        "name": "Earth Glide",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 12th level, as a swift action, the gray disciple can spend a ki point to walk through solid stone for 1 round. This functions as the earth glide universal monster ability. The gray disciple may continue earth gliding as long as he spends 1 ki point every round as a swift action. If he ceases earth gliding within a solid object, he is violently ejected and takes 5d6 points of damage. The gray disciple is not harmed by damage caused to material he is earth gliding through, but a stone to flesh spell cast upon it causes violent ejection as described above. This ability replaces abundant step.</p>"
+                    },
+                    "Entomb": {
+                        "name": "Entomb",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 15th level, a gray disciple can phase a foe into solid rock, killing it instantly. To use this ability, he expends 1 ki point as part of a bull rush or reposition combat maneuver against a creature adjacent to unworked earth or stone. If the attempt succeeds, the gray disciple pushes his foe inside the rock using his earth glide ability. If the creature succeeds at a Reflex save (DC 10 + 1/2 the gray disciple's monk level + the gray disciple's Wisdom modifier), it is ejected in the nearest open space and takes 5d6 points of damage. If it fails, it dies instantly as its body merges with the surrounding stone. Entomb is usable once per day, but a failed bull rush or reposition attempt does not count as a use of the ability. Entomb has no effect on creatures that can earth glide, are incorporeal, or can otherwise can survive merging with a solid object. This ability replaces quivering palm.</p>"
+                    },
+                    "Earthen Thrall": {
+                        "name": "Earthen Thrall",
+                        "type": "Class Feature",
+                        "featureType": "Spell-like",
+                        "description": "<p>At 17th level, a gray disciple can attempt to control a creature with the earth subtype once per day. This ability is treated as dominate monster (DC 10 + 1/2 the gray disciple's monk level + the gray disciple's Wisdom modifier), but is only effective against creatures with the earth subtype, and the gray disciple can keep only a single creature enthralled. If he attempts to control a second creature with this ability, the first creature is automatically released from domination whether or not the second attempt succeeds. This ability replaces tongue of the sun and moon and empty body.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Duergar"
+                        }
+                    ]
+                },
+                "Ironskin Monk": {
+                    "name": "Ironskin Monk",
+                    "type": "Archetype",
+                    "description": "<p>Through discipline and training, an ironskin monk hardens his body to withstand punishing blows. Though slow on his feet, his calloused hands and feet can shatter stone and stagger foes.</p>",
+                    "Iron Skin": {
+                        "name": "Iron Skin",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 1st level, an ironskin monk gains a +1 bonus to his natural armor. This bonus stacks with any existing natural armor the ironskin monk already has. At 4th level, and every 4 levels thereafter, this bonus increases by +1. This ability replaces the monk's AC bonus ability and the ability to add his Wisdom bonus to his AC.</p>"
+                    },
+                    "Bonus Feat": {
+                        "name": "Bonus Feat",
+                        "type": "Class Feature",
+                        "featureType": "",
+                        "description": "<p>At 1st level, an ironskin monk adds Power Attack to his list of bonus feats. At 6th level, he adds Improved Sunder to the list. At 10th level, he adds Greater Sunder to the list. These bonus feat choices replace Dodge, Mobility, and Spring Attack on his bonus feat list.</p>"
+                    },
+                    "Resilience": {
+                        "name": "Resilience",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 2nd level, an ironskin monk can shake off the physical effects of certain attacks. If he makes a Fortitude saving throw against an attack that has a reduced effect on a successful save, he instead avoids the effect entirely. This ability can be used only if the monk is wearing light armor or no armor. A helpless monk does not gain the benefits of resilience. This ability replaces evasion.</p>"
+                    },
+                    "Ki Pool": {
+                        "name": "Ki Pool",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 4th level, an ironskin monk can spend 1 point from his ki pool to gain a damage bonus equal to 1/2 his level against objects and constructs for 1 round. This replaces the ability to increase speed with ki.</p>"
+                    },
+                    "Staggering Blow": {
+                        "name": "Staggering Blow",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 5th level, an ironskin monk attacking with an unarmed strike can spend 1 point from his ki pool as a free action after a successful critical hit to stagger the creature struck for 1 round (Fort DC 10 + 1/2 the ironskin monk's level + the ironskin monk's Wisdom modifier negates). This ability replaces high jump.</p>"
+                    },
+                    "Tough as Nails": {
+                        "name": "Tough as Nails",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 6th level, an ironskin monk gains DR 1/—. Subtract 1 point from the damage the ironskin monk takes each time he is dealt damage from a weapon or a natural attack. This damage reduction increases by 1 point at 9th level and every 3 levels thereafter. Damage reduction can reduce damage to 0 but not below 0. This ability replaces fast movement and slow fall.</p>"
+                    },
+                    "Evasion": {
+                        "name": "Evasion",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 9th level, an ironskin monk gains evasion. This ability replaces improved evasion.</p>"
+                    },
+                    "Surefooted": {
+                        "name": "Surefooted",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 17th level, an ironskin monk's speed is not reduced by difficult terrain. This ability replaces tongue of the sun and moon.</p>"
+                    },
+                    "Unbreakable": {
+                        "name": "Unbreakable",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 20th level, an ironskin monk sets aside many of the frailties of mortal flesh. He becomes immune to death effects and stunning. He is not subject to ability damage or ability drain, and has a 75% chance of ignoring the extra damage dealt by critical hits and sneak attacks. This ability replaces perfect self.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Hobgoblin"
+                        }
+                    ]
+                },
+                "Nimble Guardian": {
+                    "name": "Nimble Guardian",
+                    "type": "Archetype",
+                    "description": "<p>Some catfolk monks dedicate their graceful prowess to the defense of others, especially those dedicated to a similar ethos or who prove themselves as stalwart allies of the monk's cause. A nimble guardian has the following class features.</p>",
+                    "Defensive Aid": {
+                        "name": "Defensive Aid",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 2nd level, a number of times per day equal to his Wisdom bonus, a nimble guardian can interpose herself between one adjacent ally and an attack or damage dealt in an area of effect. If an adjacent ally is the target of the attack or is required to make a Reflex saving throw against a damaging effect, as an immediate action the nimble guardian can grant that ally a +4 circumstance bonus to AC or on the saving throw against the effect. The nimble guardian must use this ability before the attack roll or saving throw is made. The nimble guardian can only use this ability if he is wearing light or no armor. This ability replaces evasion.</p>"
+                    },
+                    "Nimble Reflexes": {
+                        "name": "Nimble Reflexes",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 3rd level, a nimble guardian gains a +2 bonus on all Reflex saving throws. This ability replaces still mind.</p>"
+                    },
+                    "Defensive Mastery": {
+                        "name": "Defensive Mastery",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 5th level, a nimble guardian gains 3 additional uses of her defensive aid ability per day. Furthermore, if an ally that gained the benefit of a use of defensive aid succeeds her Reflex saving throw, and the effect still deals damage on a successful saving throw, the nimble guardian can spend 1 ki point to negate that damage. Doing so is not an action. This ability replaces purity of body.</p>"
+                    },
+                    "Guardian Feline": {
+                        "name": "Guardian Feline",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 7th level, a nimble guardian can transform himself into a feline creature by spending 2 ki points. The effect lasts for 1 hour or until the nimble guardian changes back. Changing form (to animal or back) is a standard action and does not provoke an attack of opportunity. The chosen form must be some form of feline (cheetah, lion, etc.). This ability is otherwise identical to beast shape II. At 9th level, this ability functions as beast shape III. This ability replaces wholeness of body.</p>"
+                    },
+                    "Evasion": {
+                        "name": "Evasion",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 9th level, a nimble guardian gains evasion. This ability replaces improved evasion.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Catfolk"
+                        }
+                    ]
+                },
+                "Student Of Stone": {
+                    "name": "Student Of Stone",
+                    "type": "Archetype",
+                    "description": "<p>By following the path of the stone, students of stone give up much of monks' mobility in favor of sheer resilience. A student of stone has the following class features.</p>",
+                    "Hard as Stone": {
+                        "name": "Hard as Stone",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 2nd level, whenever an opponent rolls to confirm a critical hit against a student of stone, treat the student of stone's AC as +4 higher than normal. This ability replaces evasion.</p>"
+                    },
+                    "Strength of Stone": {
+                        "name": "Strength of Stone",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 3rd level, a student of stone learns to draw strength from the earth. So long as both he and his opponent are touching the ground, the student of stone gains a +1 bonus on attack rolls, damage rolls, bull rush and trip combat maneuver rolls, and to his CMD when resisting a bull rush or trip attempt. This ability replaces fast movement.</p>"
+                    },
+                    "Bonus Feat": {
+                        "name": "Bonus Feat",
+                        "type": "Class Feature",
+                        "featureType": "",
+                        "description": "<p>At 6th level, a student of stone adds Elemental Fist to his list of available bonus feats. If the student of stone selects Elemental Fist as a bonus feat, he may only deal acid damage when using the feat. At 10th level, the student of stone adds Shaitan Style to his list of bonus feats, at 14th level, he adds Shaitan Skin , and at 18th level, he adds Shaitan Earthblast. This otherwise functions as and alters the bonus feat ability.</p>"
+                    },
+                    "Bones of Stone": {
+                        "name": "Bones of Stone",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 7th level, as a swift action, a student of stone can spend 1 ki point to gain DR 2/magic until the beginning of his next turn. At 10th level, he can spend 1 ki point to gain DR 2/chaotic until his next turn. At 15th level, he can spend 1 ki point to gain DR 5/chaotic until his next turn. This ability replaces high jump.</p>"
+                    },
+                    "Body of Stone": {
+                        "name": "Body of Stone",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 9th level, a student of stone gains the benefits of the light fortification armor property . This ability replaces improved evasion.</p>"
+                    },
+                    "Soul of Stone": {
+                        "name": "Soul of Stone",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 12th level, as a swift action, a student of stone can spend 1 ki point to gain tremorsense 15 feet until his next turn. At 16th level, the range of this tremorsense increases to 30 feet. This ability replaces abundant step.</p>"
+                    },
+                    "Stone Self": {
+                        "name": "Stone Self",
+                        "type": "Class Feature",
+                        "featureType": "",
+                        "description": "<p>At 20th level, a student of stone becomes an earth outsider. He gains the earth subtype, as well as DR 5/chaotic, burrow speed 20 feet, and tremorsense 20 feet.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Oread"
+                        }
+                    ]
+                },
+                "Treetop Monk": {
+                    "name": "Treetop Monk",
+                    "type": "Archetype",
+                    "description": "<p>While many vanaras follow traditional monastic training and traditions, others learn to blend exotic combat and the mysterious forces of ki with the natural world, allowing them to move through trees and overgrowth to deliver devastating attacks. A treetop monk has the following class features.</p>",
+                    "Branch Runner": {
+                        "name": "Branch Runner",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 3rd level, a treetop monk adds half the base speed bonus from his fast movement ability to his racial climb speed. This ability replaces still mind.</p>"
+                    },
+                    "Wood Affinity": {
+                        "name": "Wood Affinity",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 5th level, a treetop monk may expend 1 point from his ki pool as a free action to treat a wooden object as if it were not broken for 1 minute (this includes a weapon with a wooden haft such as an axe or spear). At 8th level, as a free action, a treetop monk can expend 1 point from his ki pool to use the Lunge feat with any wooden or wood-hafted melee weapon. This ability replaces purity of body.</p>"
+                    },
+                    "Freedom of Movement": {
+                        "name": "Freedom of Movement",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 12th level, a treetop may expend 1 point from his ki pool as a swift action to gain the effects of freedom of movement for 1 round. This ability replaces abundant step.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Vanara"
+                        }
+                    ]
+                },
+                "Underfoot Adept": {
+                    "name": "Underfoot Adept",
+                    "type": "Archetype",
+                    "description": "<p>An underfoot adept turns his diminutive stature and unorthodox footwork into a powerful weapon. Effortlessly moving across the battlefield, he ducks under the legs of larger creatures and then topples them with surprising attacks. An underfoot adept has the following class features.</p>",
+                    "Underfoot Grace": {
+                        "name": "Underfoot Grace",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 1st level, an underfoot adept uses his size and grace to avoid the attacks of those he passes. When using the Acrobatics skill to avoid attacks of opportunity by moving through a threatened area or an enemy's space, he only takes a –5 penalty when doing so at full speed, instead of the normal –10 penalty. This ability replaces the bonus feat gained at 1st level.</p>"
+                    },
+                    "Underfoot Trip": {
+                        "name": "Underfoot Trip",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 1st level, an underfoot adept learns a number of maneuvers and grabs that can cause even the largest opponents to stumble and fall. He gains Improved Trip as a bonus feat, even if he does not meet the requirements. At 4th level, and every four levels thereafter, he acts as if he is one size larger for the purposes of determining the maximum size of creatures he can trip and when determining his CMB and CMD for purposes of a trip combat maneuver. This ability replaces stunning fist.</p>"
+                    },
+                    "Improved Underfoot Grace": {
+                        "name": "Improved Underfoot Grace",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 5th level, an underfoot adept's ability to avoid attacks of opportunity against those he passes improves. When using the Acrobatics skill to avoid attacks of opportunity, while moving through a threatened area or through an enemy's space, he takes no penalty when doing so at full speed. This ability replaces high jump.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Halfling"
+                        }
+                    ]
+                },
+                "Wanderer": {
+                    "name": "Wanderer",
+                    "type": "Archetype",
+                    "description": "<p>Some monks wander the world in humility to learn and to share wisdom and philosophy from their teachers with those they meet, often aiding those who are in need. A wanderer has the following class features.</p>",
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "featureType": "",
+                        "description": "<p>The wanderer adds Diplomacy, Knowledge (geography), Knowledge (local), Linguistics, and Survival to his list of class skills.</p>"
+                    },
+                    "Far Traveler": {
+                        "name": "Far Traveler",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 1st level, the wanderer gains either one additional language known or proficiency in one exotic or martial weapon. At 4th level and every four levels thereafter, the wanderer may gain an additional language known or may retrain her weapon proficiency from this ability to a different exotic or martial weapon. This ability replaces the bonus feat gained at 1st level.</p>"
+                    },
+                    "Long Walk": {
+                        "name": "Long Walk",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 3rd level, the wanderer gains Endurance as a bonus feat, and the feat bonus doubles when he makes Constitution checks because of a forced march. In addition, a wanderer gains a +2 bonus on saving throws against spells and effects that cause exhaustion and fatigue. This ability replaces still mind.</p>"
+                    },
+                    "Light Step": {
+                        "name": "Light Step",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 5th level, a wanderer leaves no trail and cannot be tracked, though he can leave a trail if desired. By spending 1 point from his ki pool, he can use ant haul, feather step, longstrider, pass without trace, or tireless pursuit as a spell-like ability (with a caster level equal to his monk level). This ability replaces slow fall.</p>"
+                    },
+                    "Inscrutable": {
+                        "name": "Inscrutable",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 5th level, the wanderer gains a supernatural air of mystery. The DC to gain information or insight into the wanderer with Diplomacy, Knowledge skills, or Sense Motive increases by 5. In addition, by spending 1 point from his ki pool, the wanderer gains nondetection for 24 hours with a caster level equal to his monk level. This ability replaces high jump.</p>"
+                    },
+                    "Wanderer's Wisdom": {
+                        "name": "Wanderer's Wisdom",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 7th level, the wanderer can dispense excellent advice in the form of philosophical proverbs and parables. As a swift action, the wanderer can inspire courage or inspire competence as a bard of his monk level by spending 2 points from his ki pool. This affects one creature within 30 feet and lasts a number of rounds equal to the wanderer's Wisdom modifier (minimum 1 round). This ability is language-dependent. This ability replaces wholeness of body.</p>"
+                    },
+                    "Disappear Unnoticed": {
+                        "name": "Disappear Unnoticed",
+                        "type": "Class Feature",
+                        "featureType": "Extraordinary",
+                        "description": "<p>At 12th level, the wanderer may use Stealth to hide even while being directly observed or when no cover or concealment is available, as long as he is adjacent to at least one creature of his size or larger, by spending 1 point from his ki pool. This effect lasts until the beginning of the wanderer's next turn and may be continued in consecutive rounds by spending 1 ki point each round. This ability replaces abundant step.</p>"
+                    },
+                    "Free Step": {
+                        "name": "Free Step",
+                        "type": "Class Feature",
+                        "featureType": "Supernatural",
+                        "description": "<p>At 13th level, the wanderer gains continuous freedom of movement as a continuous spell-like ability. This ability replaces diamond soul.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Human"
+                        }
+                    ]
+
+                }
+            }
+        },
+        "Paladin": {
+            "Class Features": {},
+            "archetypes": {
+                "Redeemer": {
+                    "name": "Redeemer",
+                    "type": "Archetype",
+                    "description": "<p>As most half-orcs are outcasts, a half-orc paladin recognizes that often those who are monstrous are not necessarily evil and that sometimes even those who are evil became that way because of circumstances and misfortune. Some half-orc paladins take up these misunderstood creatures as their cause, standing up for the monstrous creatures and, when possible, leading them to the light. These paladins are called redeemers. A redeemer has the following class features.</p>",
+                    "Merciful Smite": {
+                        "name": "Merciful Smite",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 1st level, when a redeemer chooses to smite a creature, she can have all of her attacks against the target deal nonlethal damage. She does not take the normal –4 attack roll penalty for using a lethal weapon to deal nonlethal damage. She cannot use this ability to deal nonlethal damage to outsiders with the evil subtype, evil-aligned dragons, or undead creatures (these creatures take lethal damage from her smite). This otherwise works like and replaces the standard paladin's smite evil.</p>"
+                    },
+                    "Monstrous Rapport": {
+                        "name": "Monstrous Rapport",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 1st level, redeemers gain a +2 bonus on Diplomacy checks to influence creatures who are commonly considered monstrous. This includes but is not limited to \"monstrous\" races such as goblins and orcs, monstrous humanoids, and other intelligent non-humanoid monsters. This ability replaces detect evil.</p>"
+                    },
+                    "Pact of Peace": {
+                        "name": "Pact of Peace",
+                        "type": "Class Feature",
+                        "featureType": "Sp",
+                        "description": "<p>At 8th level, a redeemer can force a defeated creature to accept a binding pact of peace as a condition of its surrender, as if using lesser geas. Her caster level for this ability is equal to her paladin level. Rather than assigning a mission or task, the redeemer gives the creature a simple set of prohibitions to protect others. Example geas include \"Leave this city and do not return\" or \"Do not attack caravans.\" The prohibition must be against an area no larger than 300 square miles or one specific group of people (such as a tribe or citizens of a particular city). This ability lasts 1 month per paladin level. This replaces aura of resolve.</p>"
+                    },
+                    "Aura of Mercy": {
+                        "name": "Aura of Mercy",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 11th level, a redeemer can expend two uses of her merciful smite ability to grant the merciful smite ability to all allies within 10 feet, using her bonuses. Allies must use this merciful smite ability by the start of the paladin's next turn and the bonuses last for 1 minute. Using this ability is a free action. Evil creatures gain no benefit from this ability. This replaces aura of justice.</p>"
+                    },
+                    "Associates": {
+                        "name": "Associates",
+                        "type": "Class Feature",
+                        "featureType": "",
+                        "description": "<p>A redeemer may ally with an evil creature as long as she feels the creature is capable of redemption. A redeemer may accept henchmen, followers, or cohorts who are not lawful good provided they demonstrate they are willing to follow her and seek betterment under her tutelage.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Half-Orc"
+                        }
+                    ]
+                },
+                "Stonelord": {
+                    "name": "Stonelord",
+                    "type": "Archetype",
+                    "description": "<p>A stonelord is a devoted sentinel of dwarven enclaves, drawing the power of the earth and ancient stone to protect her people.</p>",
+                    "Stonestrike": {
+                        "name": "Stonestrike",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>Once per day per paladin level, a stonelord can draw upon the power of the living rock. As a swift action, she treats her melee attacks until the beginning of her next turn (whether armed or unarmed) as magical and adamantine, including ignoring hardness up to twice her paladin level, with a +1 bonus on attack and damage rolls, as well as on combat maneuver checks. This bonus also applies to her CMD if she or her target is touching the ground or a stone structure. This bonus increases by +1 at 5th level and every 5 levels thereafter. This ability replaces smite evil.</p>"
+                    },
+                    "Heartstone": {
+                        "name": "Heartstone",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 2nd level, a stonelord's flesh becomes progressively rockier. She gains a +1 natural armor bonus to AC and DR/adamantine equal to 1/2 her paladin level. The natural armor bonus increases by +1 at 6th level, and every four levels thereafter, to a maximum of +5 at 18th level. These benefits are halved when not touching the ground or a stone structure. This ability replaces divine grace.</p>"
+                    },
+                    "Stoneblood": {
+                        "name": "Stoneblood",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 3rd level, a stonelord's vitals begin to calcify and her blood transforms into liquid stone. She adds her paladin level on checks to stabilize at negative hit points and gains a 25% chance to ignore a critical hit or precision damage. This does not stack with fortification armor or similar effects. At 9th level, this chance increases to 50% and she becomes immune to petrification. At 15th level, this chance increases to 75% and she becomes immune to bleed and blood drain effects. This ability replaces divine health and her mercies gained at 3rd, 9th, and 15th level.</p>"
+                    },
+                    "Defensive Stance": {
+                        "name": "Defensive Stance",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 4th level, a stonelord gains the defensive stance ability, as a stalwart defender (Advanced Player's Guide 277), and may select one defensive power at 8th level and every four levels thereafter. Levels of stalwart defender stack with her paladin levels when determining the total number of rounds that she can maintain her defensive stance per day. A stonelord does not gain any spells or spellcasting abilities, does not have a caster level, and cannot use spell trigger or spell completion magic items.</p>"
+                    },
+                    "Earth Channel": {
+                        "name": "Earth Channel",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 4th level, a stonelord gains Elemental Channel (earth) as a bonus feat, which she may activate by spending two uses of her lay on hands ability, using her paladin level as her effective cleric level. This ability replaces channel positive energy.</p>"
+                    },
+                    "Stone Servant": {
+                        "name": "Stone Servant",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 5th level, a stonelord may call a Small earth elemental to her side, as a paladin calls her mount. This earth elemental is Lawful Good in alignment and possesses the celestial template, and it increases in size as the stonelord gains levels, becoming Medium at 8th level, Large at 11th level, Huge at 14th level, Greater at 17th level, and Elder at 20th level. This ability replaces divine bond.</p>"
+                    },
+                    "Stonebane": {
+                        "name": "Stonebane",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 11th level, when using stonestrike, a stonelord's attack gains the bane weapon special ability against creatures with the earth subtype and constructs or objects made of earth or stone. This ability replaces aura of justice.</p>"
+                    },
+                    "Phase Strike": {
+                        "name": "Phase Strike",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 12th level, a stonelord's stonestrike may pass through stone and metal as if they weren't there. By spending 2 uses of her stonestrike ability, she may ignore any cover less than total cover provided by stone or metal, and she ignores any AC bonus from stone or metal armor or shields as if wielding a brilliant energy weapon. A phase strike cannot damage constructs, objects, or creatures with the earth subtype, but unlike a brilliant energy weapon, it can harm undead. This ability replaces her 12th-level mercy.</p>"
+                    },
+                    "Mobile Defense": {
+                        "name": "Mobile Defense",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 18th level, a stonelord can make one 5-foot step per round while maintaining her defensive stance. This ability replaces her 18th-level mercy.</p>"
+                    },
+                    "Stone Body": {
+                        "name": "Stone Body",
+                        "type": "Class Feature",
+                        "featureType": "Ex",
+                        "description": "<p>At 20th level, a stonelord's body transforms into living stone. She no longer needs to eat, drink, breathe, or sleep, and she becomes immune to paralysis, poison, and stunning. She is also no longer subject to critical hits or precision-based damage. This ability replaces holy champion.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Dwarf"
+                        }
+                    ]
+                },
+                "Tranquil Guardian": {
+                    "name": "Tranquil Guardian",
+                    "type": "Archetype",
+                    "description": "<p>A tranquil guardian is a missionary of peace and tranquility, a soothing voice of succor in a violent and dangerous world. A tranquil guardian gains the following class features.</p>",
+                    "Touch of Serenity": {
+                        "name": "Touch of Serenity",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 1st level, a tranquil guardian gains Touch of Serenity as a bonus feat, even if she does not meet the prerequisites. At 6th level, and every six levels thereafter, the duration of a tranquil guardian's Touch of Serenity increases by 1 round. Each round on its turn, the target may attempt a new Will save to end the effect. The duration does not stack; only the longest remaining duration applies. This ability replaces smite evil.</p>"
+                    },
+                    "Serene Strike": {
+                        "name": "Serene Strike",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 3rd level, when a tranquil guardian confirms a critical hit, she may convert all damage from her attack to nonlethal damage, and when she does, she can activate Touch of Serenity through her weapon or unarmed strike. Using serene strike is a free action. This ability replaces aura of courage.</p>"
+                    },
+                    "Divine Bond": {
+                        "name": "Divine Bond",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>A tranquil guardian who chooses a weapon as her divine bond may only increase her weapon's enhancement bonus or add the following properties to her weapon: conductive, defending, disruptive, grayflame , or merciful.</p>"
+                    },
+                    "Aura of Calm": {
+                        "name": "Aura of Calm",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 8th level, a tranquil guardian is immune to all spells and spell-like abilities with the emotion descriptor, as well as all fear effects. Each ally within 10 feet of her gains a +4 morale bonus on saving throws against these effects.</p><p>This ability functions only while the tranquil guardian is conscious, not if she is unconscious or dead. This ability replaces aura of resolve.</p>"
+                    },
+                    "Waves of Peace": {
+                        "name": "Waves of Peace",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 11th level, a tranquil guardian may expend 2 uses of her Touch of Serenity to affect each opponent within 5 feet of her with that effect. She does not need to touch the creature for the effect to take hold. This ability replaces aura of justice.</p>"
+                    },
+                    "Apostle of Peace": {
+                        "name": "Apostle of Peace",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 20th level, a tranquil guardian's DR increases to 10/evil, and whenever she channels positive energy or uses lay on hands to heal, she heals the maximum possible amount. In addition, any creature struck by her Touch of Serenity, even if it saves, must make an additional Will save (DC 10 + 1/2 her tranquil guardian level + her Charisma modifier) the next time it tries to attack. If it fails this save, the attack (including spells or special abilities) automatically fails. This ability replaces holy champion.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Aasimar"
+                        }
+                    ]
+                }
+            }
+        },
+        "Ranger": {
+            "Class Features": {},
+            "archetypes": {
+                "Dusk Stalker": {
+                    "name": "Dusk Stalker",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Fetchling"
+                        }
+                    ]
+                },
+                "Wave Warden": {
+                    "name": "Wave Warden",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Merfolk"
+                        }
+                    ]
+                },
+                "Wild Shadow": {
+                    "name": "Wild Shadow",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Half-Elf"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rogue": {
+            "Class Features": {},
+            "archetypes": {
+                "Filcher": {
+                    "name": "Filcher",
+                    "type": "Archetype",
+                    "description": "<p>A filcher steals valuables without their owners even realizing it. Whether cutting purses in the midst of combat or replacing prized items with fakes under the noses of their owners, the filcher is the master of the quick and quiet steal. A filcher has the following class features.</p>",
+                    "Quicker than the Eye": {
+                        "name": "Quicker than the Eye",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 2nd level, a filcher develops an amazingly swift and delicate touch. When she uses Sleight of Hand, creatures take a penalty on their Perception checks to notice the attempt equal to half the filcher's class level. The filcher also subtracts her class level from the normal –20 penalty when attempting to make a Sleight of Hand check as a move action instead of as a standard action. Lastly, the filcher can withdraw an object hidden on her person, including a weapon, as a move action instead of the usual standard action.</p>",
+                        "replaces": ["evasion"]
+                    },
+                    "Rummage": {
+                        "name": "Rummage",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 3rd level, a filcher learns how to assess the value of items at the quickest glance. She can even make startlingly accurate guesses about particular items merely by observing the bulges they make in pouches, backpacks, or similar containers. She gains a +1 bonus on Appraise checks and an additional +1 bonus every three levels thereafter.</p><p>As a swift action, a filcher can make an Appraise check in order to determine the relative value of each object carried by her target (DC = 10 + 1 for every object the filcher is trying to ascertain the relative value of). Though she never learns the actual prices of items when using rummage, she does gain enough information to list these items in order, from the most valuable to the least valuable. She can, by taking a –20 penalty on the check, add to this assessment any items carried by her target that she cannot see.</p>",
+                        "replaces": ["trap sense +1, +2, +3, +4, +5, and +6"]
+                    },
+                    "Filch": {
+                        "name": "Filch",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 4th level, a filcher learns how pluck items off her opponents even in combat. She gains Improved Steal as a bonus feat and can use her Sleight of Hand bonus instead of her CMB when performing a steal combat maneuver. If the filcher gains bonuses on combat maneuver checks from any feats, spells, magic items, or similar effects, they are added to the Sleight of Hand bonus when using the steal maneuver.</p>",
+                        "replaces": ["uncanny dodge"]
+                    },
+                    "Superior Filching": {
+                        "name": "Superior Filching",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 8th level, a filcher becomes a master at separating owners from their property. She gains Greater Steal as a bonus feat, and opponents do not gain a +5 bonus to their CMD when she tries to remove items fastened to them.</p>",
+                        "replaces": ["improved uncanny dodge"]
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the filcher archetype: fast stealth, slow reactions; fast fingers, fast getaway ; black market connections, deft palm.</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the filcher archetype: skill mastery; fast tumble ; weapon snatcher.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Halfling"
+                        }
+                    ]
+                },
+                "Skulking Slayer": {
+                    "name": "Skulking Slayer",
+                    "type": "Archetype",
+                    "description": "<p>Pushed into a life of crime by the society around them, half-orcs gravitate toward criminal activities that suit them best. Half-orc rogues leave subtle tactics and finesse to halflings and elves, and rely on brute strength and thuggery when they go about making mischief. Skulking slayers have turned the use of raw strength and surprise into an art form.</p>",
+                    "Weapon and Armor Proficiency": {
+                        "name": "Weapon and Armor Proficiency",
+                        "type": "Class Feature",
+                        "description": "<p>The skulking slayer gains proficiency with greatclubs and whips, but loses proficiency with rapiers and hand crossbows.</p>"
+                    },
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "description": "<p>The skulking slayer does not gain Disable Device, Linguistics, and Sleight of Hand as class skills.</p>"
+                    },
+                    "Skill Ranks per Level": {
+                        "name": "Skill Ranks per Level",
+                        "type": "Class Feature",
+                        "description": "<p>6 + Int modifier.</p>"
+                    },
+                    "Pass for Human": {
+                        "name": "Pass for Human",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 1st level, when trying to conceal her half-orc heritage, a skulking slayer gains a bonus on Disguise checks equal to half her level. When using disguise to appear as a specific individual, skulking stalkers ignore the normal –2 penalty to appear as another race.</p>"
+                    },
+                    "Underhanded Maneuvers": {
+                        "name": "Underhanded Maneuvers",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 1st level, when she could normally make a sneak attack, a slayer may instead make a dirty trick or steal combat maneuver with a bonus on her roll. This bonus is equal to her number of sneak attack dice for a dirty trick combat maneuver, or 1-1/2 × her number of sneak attack dice for a steal combat maneuver.</p>",
+                        "replaces": ["trapfinding"]
+                    },
+                    "Bonus Feats": {
+                        "name": "Bonus Feats",
+                        "type": "Class Feature",
+                        "description": "<p>At 2nd level, a skulking slayer can select the Surprise Follow-Through feat (see below) in place of a rogue talent. At 10th level, she can select the Improved Surprise Follow-Through feat in place of an advanced rogue talent.</p>"
+                    },
+                    "Bold Strike": {
+                        "name": "Bold Strike",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 3rd level, when a skulking slayer charges and makes a sneak attack with a two-handed weapon, she rolls d8s instead of d6s for her sneak attack damage.</p>",
+                        "replaces": ["trap sense +1 and +4"]
+                    },
+                    "Shifty": {
+                        "name": "Shifty",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 6th level, a skulking slayer gains a bonus on Bluff checks to feint equal to half her level.</p>",
+                        "replaces": ["trap sense +2"]
+                    },
+                    "Unexpected Charge": {
+                        "name": "Unexpected Charge",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 9th level, a skulking slayer can make a Bluff check to feint as a swift action before a charge.</p>",
+                        "replaces": ["trap sense +3"]
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the skulking slayer archetype: combat trick, surprise attack; combat swipe, powerful sneak ; terrain mastery.</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the skulking slayer archetype: crippling strike; deadly sneak ; unwitting ally.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Half-Orc"
+                        }
+                    ]
+                },
+                "Cat Burglar": {
+                    "name": "Cat Burglar",
+                    "type": "Archetype",
+                    "description": "<p>Gifted with finesse and stealth, catfolk make excellent burglars. Cat burglars are masters of breaking and entering, using their feline grace to make it seem as though no crime was ever committed in the first place. Few locks can withstand skilled cat burglars, and such nimble rogues are capable of bypassing traps without activating them and enabling associates to do the same.</p>",
+                    "Phantom Presence": {
+                        "name": "Phantom Presence",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 4th level, a cat burglar masters stealthy movement and leaves no trace of her passing in dungeons and cities. While in dungeon and urban environments, she leaves no trail and cannot be tracked, though she can choose to leave behind a trail if she so desires. Furthermore, she can always choose to take 10 when making a Stealth check.</p>",
+                        "replaces": ["uncanny dodge"]
+                    },
+                    "Trap Saboteur": {
+                        "name": "Trap Saboteur",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Supernatural",
+                        "description": "<p>At 8th level, a cat burglar becomes a master of avoiding and manipulating traps and locks. She can attempt to open a lock as a standard action and takes 1/2 the normal amount of time to disable traps (minimum 1 round) . When she has bypassed a trap without disarming it, she can also choose to suppress its trigger for up to 1 minute. If she does, she can also choose to end this suppression prematurely as a free action.</p>",
+                        "replaces": ["uncanny dodge"]
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the cat burglar archetype: fast stealth, quick disable ; convincing fakes, dodge trap ; fast picks terrain mastery .</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the cat burglar archetype: another day, fast tumble hide in plain sight .</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Catfolk"
+                        }
+                    ]
+                },
+                "Deadly Courtesan": {
+                    "name": "Deadly Courtesan",
+                    "type": "Archetype",
+                    "description": "<p>Skilled at manipulation and diversion, the deadly courtesan builds up those around her and periodically takes them down. She can be a spy, entertainer, assassin, bodyguard, or just an intimate to someone who needs it most. A deadly courtesan has the following class features.</p>",
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "description": "<p>At 1st level, a deadly courtesan adds Knowledge (history) and Knowledge (nobility) to her list of class skills and removes Knowledge (dungeoneering) from her list of class skills.</p>"
+                    },
+                    "Bardic Performance": {
+                        "name": "Bardic Performance",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Supernatural",
+                        "description": "<p>At 2nd level, a deadly courtesan gains the bardic performance ability and the fascinate bardic performance. Her fascinate DC is 10 + 1/2 her rogue level + her Charisma modifier. She can use this bardic performance for a number of rounds per day equal to 1 + her Charisma modifier. At each level after 2nd, she can use bardic performance for 1 additional round per day. If the courtesan also has bard levels, she may use these rounds for either class's fascinate bardic performance, and her bard and rogue levels stack for determining her fascinate DC.</p>",
+                        "replaces": ["the rogue trick gained at 2nd level"]
+                    },
+                    "Inspire Competence": {
+                        "name": "Inspire Competence",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Supernatural",
+                        "description": "<p>At 3rd level, a deadly courtesan can use her bardic performance to inspire competence. The bonus begins at +2 and increases by +1 for every six levels the courtesan has attained beyond 3rd (+3 at 9th and +4 at 15th).</p>",
+                        "replaces": ["all levels of trap sense"]
+                    },
+                    "Performance Strike": {
+                        "name": "Performance Strike",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Spell-like",
+                        "description": "<p>At 8th level, as a swift action, a deadly courtesan may expend rounds of bardic performance to gain a morale bonus on one attack roll. The amount of the bonus is equal to the number of bardic performance rounds expended (maximum bonus equal to 1/2 her deadly courtesan level).</p>",
+                        "replaces": ["improved uncanny dodge"]
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the deadly courtesan archetype: finesse rogue, stand up (Core Rulebook); charmer, coax information, fast fingers, honeyed words ; convincing lie, deft palm.</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the deadly courtesan archetype: slippery mind (Core Rulebook); master of disguise ; rumormonger, unwitting ally.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Vishkanya"
+                        }
+                    ]
+                },
+                "Eldritch Raider": {
+                    "name": "Eldritch Raider",
+                    "type": "Archetype",
+                    "description": "<p>An eldritch raider is a rogue who seeks to unravel the mysteries of the destruction of the gillmen's homeland. They explore old ruins that date back to the days of the old human empire and track down relics and lore from its glory days. An eldritch raider has the following class features.</p>",
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "description": "<p>An eldritch raider adds Knowledge (arcana), Knowledge (history), and Spellcraft to her list of class skills and removes Disguise, Perform, and Sleight of Hand from her list of class skills.</p>"
+                    },
+                    "Skill Ranks per Level": {
+                        "name": "Skill Ranks per Level",
+                        "type": "Class Feature",
+                        "description": "<p>6 + Int modifier.</p>"
+                    },
+                    "Detect Magic": {
+                        "name": "Detect Magic",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Spell-like",
+                        "description": "<p>At 2nd level, an eldritch raider gains the ability to use detect magic at will. The eldritch raider treats her rogue level as her caster level for this ability. This ability counts as the minor magic rogue talent for purposes of qualifying for other rogue talents.</p>",
+                        "replaces": ["the rogue talent rogues gained at 2nd level"]
+                    },
+                    "Eldritch Intuition": {
+                        "name": "Eldritch Intuition",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 3rd level, an eldritch raider gains an intuitive sense that allows her to more easily activate sorcerer and wizard spell completion and spell trigger items. She gains a +1 bonus on Use Magic Device checks for this purpose. This bonus increases to +2 at 6th level, +3 at 9th level, +4 at 12th level, +5 at 15th level, and +6 at 18th level.</p>",
+                        "replaces": ["the trap sense class feature"]
+                    },
+                    "New Talents": {
+                        "name": "New Talents",
+                        "type": "Class Feature",
+                        "description": "<p>An eldritch raider has access to the following new advanced talents when selecting rogue advanced talents.</p>",
+                        "Major Eldritch Magic": {
+                            "name": "Major Eldritch Magic",
+                            "type": "Advanced Rogue Talent",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>The eldritch raider gains the ability to cast a 3rd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is equal to her rogue level. The save DC for this spell is 13 + her Intelligence modifier. The eldritch raider must have an Intelligence of at least 13 to select this talent. The eldritch raider must have the major magic, minor eldritch magic, and minor magic rogue talents before choosing this talent.</p>"
+                        },
+                        "Minor Eldritch Magic": {
+                            "name": "Minor Eldritch Magic",
+                            "type": "Advanced Rogue Talent",
+                            "specialAbilityType": "Spell-like",
+                            "description": "<p>The eldritch raider gains the ability to cast a 2nd-level spell from the sorcerer/wizard spell list two times per day as a spell-like ability. The caster level for this ability is equal to her rogue level. The save DC for this spell is 12 + her Intelligence modifier. The eldritch raider must have an Intelligence of at least 12 to select this talent. The eldritch raider must have the major magic and minor magic rogue talents before choosing this talent.</p>"
+                        }
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the eldritch raider archetype: major magic, minor magic, quick disable, trap spotter (Core Rulebook); fast picks ; black market connections, esoteric scholar, ninja trick (slow metabolism, wall climber).</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the eldritch raider archetype: dispelling attack, improved evasion, slippery mind (Core Rulebook); major eldritch magic, minor eldritch magic; thoughtful reexamination ; familiar, hard to fool.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Gillman"
+                        }
+                    ]
+                },
+                "Kitsune Trickster": {
+                    "name": "Kitsune Trickster",
+                    "type": "Archetype",
+                    "description": "<p>The kitsune trickster combines her sharpened wit with minor arcane powers of charm and persuasion. She uses her talents to spin convincing lies, riddles, and stories.</p>",
+                    "Kitsune's Guile": {
+                        "name": "Kitsune's Guile",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 1st level, a trickster relies on her intellect as much as her personality. She adds her Intelligence modifier on Bluff, Diplomacy, Disguise, and Sense Motive checks.</p>",
+                        "replaces": ["trapfinding"]
+                    },
+                    "Kitsune's Charm": {
+                        "name": "Kitsune's Charm",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Spell-like",
+                        "description": "<p>At 3rd level, a kitsune trickster can use charm person once per day as a spell-like ability (caster level equal to her rogue level – 2). At 6th level, and every three levels thereafter, the kitsune trickster gains an additional daily use of this ability.</p>",
+                        "replaces": ["trap sense"]
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the kitsune trickster archetype: major magic, minor magic (Core Rulebook); false friend, obfuscate story, steal the story (see below); charmer, coax information, honeyed words ; convincing lie.</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the kitsune trickster archetype: skill mastery, slippery mind (Core Rulebook); master of disguise ; rumormonger.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Kitsune"
+                        }
+                    ]
+                },
+                "Swordmaster": {
+                    "name": "Swordmaster",
+                    "type": "Archetype",
+                    "description": "<p>A swordmaster meditates to strengthen her spiritual connection to her blade. She strives to perfect her skills by mastering six deadly trances</p>",
+                    "Class Skills": {
+                        "name": "Class Skills",
+                        "type": "Class Feature",
+                        "description": "<p>The swordmaster adds Knowledge (nature) and Survival to her list of class skills and removes Disguise and Knowledge (dungeoneering) from her list of class skills.</p>"
+                    },
+                    "Trance": {
+                        "name": "Trance",
+                        "type": "Class Feature",
+                        "specialAbilityType": "Extraordinary",
+                        "description": "<p>At 3rd level, a swordmaster learns to focus her martial prowess using an intense meditative trance. Under the influence of a trance, the swordmaster can perform fantastic martial feats. Entering a trance is a full-round action that provokes attacks of opportunity. The swordmaster can maintain the trance for a number of rounds per day equal to 4 + her Wisdom modifier. At each level beyond 3rd, she can remain in the trance for 1 additional round. She can end her trance as a free action. Following a trance, the swordmaster is fatigued for a number of rounds equal to 2 × the number of rounds she spent in the trance. A swordmaster cannot enter a new trance while fatigued but can otherwise enter a trance multiple times during a single encounter or combat. If a swordmaster falls unconscious, her trance immediately ends.</p><p>At 3rd level, the swordmaster chooses one trance from the list below. She chooses another trance at 6th, 9th, 12th, 15th, and 18th level. She can only use one type of trance at a time.</p>",
+                        "Crane Trance": {
+                            "name": "Crane Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>The swordmaster's blade rises and falls with the graceful sweeping arcs of the mountain crane. When in this trance, a swordmaster gains the benefits of the Crane Style feat .</p>"
+                        },
+                        "Dragon Trance": {
+                            "name": "Dragon Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>Like the dragon, the swordmaster has honed the steadiness of her mind and body. When in this trance, a swordmaster gains the benefits of the Dragon Style feat .</p>"
+                        },
+                        "Leopard Trance": {
+                            "name": "Leopard Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>Using the swiftness of the leopard, a swordmaster's evasive footwork confuses her opponents. When in this trance, a swordmaster gains the benefits of the Mobility feat.</p>"
+                        },
+                        "Monkey Trance": {
+                            "name": "Monkey Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>As the monkey springs, the swordmaster leaps from the reach of her enemies. While in this trance, a swordmaster can make an Acrobatics check opposed by an opponent's CMD. If she succeeds, she may move 5 feet as a swift action within the opponent's threatened area; this movement does not provoke attacks of opportunity and does not count as a 5-foot step.</p>"
+                        },
+                        "Serpent Trance": {
+                            "name": "Serpent Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>Like the serpent, the swordmaster's quick movements allow her to catch her opponent unawares. While in this trance, a swordmaster receives a +4 bonus on Bluff checks made to feint during combat.</p>"
+                        },
+                        "Tiger Trance": {
+                            "name": "Tiger Trance",
+                            "type": "Class Feature",
+                            "specialAbilityType": "Extraordinary",
+                            "description": "<p>The swordmaster pounces upon her opponents, striking with the ferocity and brute force of a wild tiger. While in this trance, a swordmaster can make a combat maneuver check against an opponent within charge range. If she succeeds, she may charge that opponent and make a full attack against that opponent.</p><p>This ability replaces all increments of trap sense.</p>"
+                        }
+                    },
+                    "Rogue Talents": {
+                        "name": "Rogue Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following rogue talents complement the swordmaster archetype: combat trick, stand up, surprise attack, weapon training ; befuddling strike, positioning strike.</p>"
+                    },
+                    "Advanced Talents": {
+                        "name": "Advanced Talents",
+                        "type": "Class Feature",
+                        "description": "<p>The following advanced rogue talents complement the swordmaster archetype: crippling strike, defensive roll ; hunter's surprise, redirect attack confounding blade.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Tengu"
+                        }
+                    ]
+                }
+            }
+        },
+        "Sorcerer": {
+            "Class Features": {},
+            "archetypes": {
+                "Kobold Sorcerer": {
+                    "name": "Kobold Sorcerer",
+                    "type": "Archetype",
+                    "description": "<p>While many kobold sorcerers tout their purely draconic bloodline, over generations of eldritch training, some such spellcasters have created a bloodline that, while tinged with some draconic magic, is the embodiment of the race's virtue distilled into arcane form. Many practitioners of this bloodline go on to lead powerful kobold tribes.</p>",
+                    "Class Skill": {
+                        "name": "Class Skill",
+                        "type": "Class Feature",
+                        "description": "<p>Disable Device.</p>"
+                    },
+                    "Bonus Spells": {
+                        "name": "Bonus Spells",
+                        "type": "Class Feature",
+                        "description": "<p>alarm (3rd), create pit (5th), explosive runes (7th), dragon's breath (9th), transmute rock to mud (11th), guards and wards (13th), delayed blast fireball (15th), form of the dragon III (17th), imprisonment (19th).</p>"
+                    },
+                    "Bonus Feats": {
+                        "name": "Bonus Feats",
+                        "type": "Class Feature",
+                        "description": "<p>Alertness, Combat Casting, Defensive Combat Training, Dodge, Improved Initiative, Lightning Reflexes, Silent Spell.</p>"
+                    },
+                    "Bloodline Arcana": {
+                        "name": "Bloodline Arcana",
+                        "type": "Class Feature",
+                        "description": "<p>Whenever you cast a spell against a creature that is denied its Dexterity bonus to AC, increase that spell's DC by +2.</p>"
+                    },
+                    "Bloodline Powers": {
+                        "name": "Bloodline Powers",
+                        "type": "Class Feature",
+                        "description": "<p>Like all kobolds, you have a natural talent for ambushing, creating traps, and mining. As your power increases, you discover ever more useful ways to blend your magic with these instinctive talents.</p>",
+                        "Trap Rune": {
+                            "name": "Trap Rune",
+                            "type": "Bloodline Power",
+                            "featureType": "Sp",
+                            "description": "<p>At 1st level, as a standard action, you can sketch a single, nearly invisible magical rune on any 5-foot-square solid surface. When you create a rune, pick one of the following energy types: acid, cold, electricity, or fire. While the rune is active, the next creature other than you who steps on or touches the rune's area causes the rune to explode. The rune's explosion deals a number of points of energy damage equal to 1d8 + 1 per sorcerer level you possess to anything in its square. A Reflex saving throw halves the damage (DC 10 + 1/2 your sorcerer level + your Charisma modifier). The rune is considered a magical trap for the purpose of perceiving it or disabling it. The DC for both Perception and Disable Device checks is the same as the Reflex saving throw to halve the damage. You can use this ability a number of times per day equal to 3 + your Charisma modifier. Each rune lasts for 24 hours or until discharged.</p>"
+                        },
+                        "Trap Sense": {
+                            "name": "Trap Sense",
+                            "type": "Bloodline Power",
+                            "featureType": "Ex",
+                            "description": "<p>At 3rd level, you develop a sixth sense that helps you avoid traps. You gain a +2 bonus on Perception checks made to notice traps. You also gain a +1 bonus on Reflex saves to avoid traps and a +1 dodge bonus to AC against attacks made by traps. These bonuses increase by +1 at 7th level and for every four sorcerer levels you gain thereafter (to a maximum of +5 at 19th level). This bonus stacks with that provided by a rogue's trap sense and similar abilities.</p>"
+                        },
+                        "Arcane Ambush": {
+                            "name": "Arcane Ambush",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 9th level, as a swift action, you can expend a spell slot in order to grant you and your allies a bonus on attack and damage rolls. This bonus lasts 1 round, is equal to the level of the spell expended, and only applies to opponents your allies are flanking or opponents denied their Dexterity bonus against your allies. You grant this bonus to yourself plus up to one ally for every four sorcerer levels you possess (to a maximum of five allies at 20th level). The allies must be within 30 feet of you and you must have line of effect to each affected ally.</p>"
+                        },
+                        "Earth Glide": {
+                            "name": "Earth Glide",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 15th level, you gain the earth glide universal monster ability with a speed equal to your base speed. This does not give you the ability to breathe while passing through earth, so you must hold your breath or use some alternate method to breathe while using this ability.</p>"
+                        },
+                        "Nimble Walker": {
+                            "name": "Nimble Walker",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 20th level, you gain a +5 racial bonus on Reflex saving throws and on Acrobatics checks made to move through a creature's threatened area or through its space. You also gain the ability to breathe while passing through earth using your earth glide ability.</p>"
+                        }
+                    },
+                    "requirements": [
+                        {
+                            "race": "Kobold"
+                        }
+                    ]
+                },
+                "Imperious": {
+                    "name": "Imperious",
+                    "type": "Bloodline",
+                    "description": "<p>A scion of forgotten kings, with a lineage rich with the dust of ancient empires spanning every golden age of humanity's history, an imperious embodies the apex of human potential, as well as human temerity and uninhibited hubris.</p>",
+                    "Class Skill": {
+                        "name": "Class Skill",
+                        "type": "Class Feature",
+                        "description": "<p>Perform (oratory).</p>"
+                    },
+                    "Bonus Spells": {
+                        "name": "Bonus Spells",
+                        "type": "Class Feature",
+                        "description": "<p>moment of greatness , eagle's splendor (5th), heroism (7th), threefold aspect (9th), greater command (11th), pure strain (13th), greater age resistance, prediction of failure , overwhelming presence (19th).</p>"
+                    },
+                    "Bonus Feats": {
+                        "name": "Bonus Feats",
+                        "type": "Class Feature",
+                        "description": "<p>Diehard, Endurance, Heroic Defiance, Heroic Recovery, Improved Initiative, Lingering Spell, Magical Aptitude, Persuasive.</p>"
+                    },
+                    "Bloodline Arcana": {
+                        "name": "Bloodline Arcana",
+                        "type": "Class Feature",
+                        "description": "<p>Whenever you cast a harmful spell, you gain a bonus equal to the spell's level on Intimidate checks made against any creature adversely effected by that spell until the end of your next turn. Adversely effected typically means damage, but it can also mean debilitating effects or conditions.</p>"
+                    },
+                    "Bloodline Powers": {
+                        "name": "Bloodline Powers",
+                        "type": "Class Feature",
+                        "description": "<p>You draw upon ancestors both legendary and forgotten.</p>",
+                        "Student of Humanity": {
+                            "name": "Student of Humanity",
+                            "type": "Bloodline Power",
+                            "featureType": "Ex",
+                            "description": "<p>At 1st level, you gain Diplomacy, Knowledge (history), Knowledge (local), Knowledge (nobility), and Linguistics as class skills. In addition, when using these skills to learn, study, or gather information about humans, you add an insight bonus equal to your Charisma bonus on such checks.</p>"
+                        },
+                        "Heroic Echo": {
+                            "name": "Heroic Echo",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 3rd level, when you receive a morale bonus from any spell, spell-like ability, or magic item, including those you cast on yourself, that bonus increases by +1. At 9th level, this ability also applies to competence bonuses. If you receive a morale effect (or a competence effect at 9th level) that affects an area or multiple targets, as an immediate action you can share your increased bonus with all other recipients. This increase to other participants lasts a number of rounds equal to your Charisma bonus. You can use this ability once per day, plus one time per three levels after 3rd.</p>"
+                        },
+                        "Take Your Best Shot": {
+                            "name": "Take Your Best Shot",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 9th level, if you are targeted by a harmful spell, spell-like ability, or supernatural ability and suffer no harm from it, whether because of a successful saving throw, spell resistance, the attack missing, or some other protection, as an immediate action you can make an Intimidate check to demoralize the creature that produced the effect, but only if the creature that used the harmful effect is within 30 feet and can clearly see and hear you.</p><p>At 13th level, you can use this ability after succeeding at a saving throw to reduce the effects of an attack (if no save is allowed, you cannot use this ability).</p>"
+                        },
+                        "Heroic Legends": {
+                            "name": "Heroic Legends",
+                            "type": "Bloodline Power",
+                            "featureType": "Su",
+                            "description": "<p>At 15th level, you may inspire greatness or inspire heroics as a bard of your sorcerer level by sacrificing a spell slot as a swift or move action. The effect lasts a number of rounds equal to the sacrificed spell's level; this duration is doubled for human recipients.</p>"
+                        },
+                        "Immortal Legend": {
+                            "name": "Immortal Legend",
+                            "type": "Bloodline Power",
+                            "featureType": "Ex",
+                            "description": "<p>At 20th level, you cease aging; no longer need to eat, drink, or sleep; and gain immunity to death effects and energy drain.</p>"
+                        }
+                    },
+                    "requirements": [
+                        {
+                            "race": "Human"
+                        }
+                    ]
+                },
+                "Wishcrafter": {
+                    "name": "Wishcrafter",
+                    "type": "Archetype",
+                    "description": "<p>Wishcrafters are born with a talent for manipulating reality inherited from their efreeti ancestors. However, like the genies they are descended from, wishcrafters can only draw upon this power to fulfill the desires of others. A wishcrafter has the following class features.</p>",
+                    "Wishbound Arcana": {
+                        "name": "Wishbound Arcana",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 1st level, the wishcrafter can use the wishes of non-genie creatures other than herself in place of the normal verbal components of her spells. A creature can make a wish as a free action at any time, even during the wishcrafter's turn. The wishcrafter must be able to hear and understand a wish in order to use it as a spell component. A spell that doesn't normally have a verbal component gains one when cast using this ability. A wish doesn't need to mention the name of a specific spell, but must describe an outcome that can be accomplished by casting a spell the wishcrafter knows (for example, wishing to be bigger could supply the verbal component for enlarge person). A wishcrafter gains a +1 bonus to her caster level when using a creature's wish as a verbal component in this manner, but cannot include herself as a target of such spells. She can be affected by such a spell if it affects an area rather than a target or targets. A wishcrafter is under no compulsion to grant a creature's wish. Once the wishcrafter grants a creature's wish using this ability, she cannot use this ability to grant that creature any further wishes for 24 hours. This ability replaces bloodline arcana.</p>"
+                    },
+                    "Expanded Wishcraft": {
+                        "name": "Expanded Wishcraft",
+                        "type": "Class Feature",
+                        "description": "<p>At 3rd level and every 2 levels thereafter, the wishcrafter grows more adept at altering reality to fit the whims of others. She may add an additional spell selected from the sorcerer/wizard spell list to her list of spells known. This spell must be one level lower than the highest-level spell she can cast. A wishcrafter can only use these spells in conjunction with her wishbound arcana ability. For example, if she used this ability to learn cat's grace, she can only cast it when another creature wishes for it, and can't cast it on herself because it is a targeted spell. She cannot use these spells to craft or recharge magic items. These bonus spells replace the bloodline spells gained by the sorcerer's bloodline.</p>"
+                    },
+                    "Heart's Desire": {
+                        "name": "Heart's Desire",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 7th level, as a swift action, a wishcrafter can force a single creature within 30 feet to confess its deepest desire. The target receives a Will save to negate this effect (DC 10 + 1/2 the wishcrafter's level + the wishcrafter's Charisma modifier). On a failed save, the creature must immediately wish aloud in a clear voice for something it truly desires, allowing the wishcrafter to activate her wishbound arcana ability if she knows a spell that can fulfill that wish. This is a mind-affecting effect. Regardless of whether the save is successful, a creature cannot be the target of the same wishcrafter's heart's desire ability again for 24 hours. The wishcrafter can use this ability a number of times per day equal to her Charisma bonus. This ability replaces the bloodline bonus feat gained at 7th level.</p>"
+                    },
+                    "Twisted Wish": {
+                        "name": "Twisted Wish",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 13th level, a wishcrafter becomes adept at corrupting wishes to negatively affect the creature that wished them. When a wishcrafter affects a creature with a spell using its wish as a spell component, she may twist the wish, applying a –4 penalty to the creature's saving throws against the spell. The effects of wishes twisted this way are difficult to remove; the DC of caster level checks to dispel them increases by 5. This ability replaces the bloodline bonus feat gained at 13th level.</p>"
+                    },
+                    "Perfect Wishcraft": {
+                        "name": "Perfect Wishcraft",
+                        "type": "Class Feature",
+                        "featureType": "Su",
+                        "description": "<p>At 19th level, the wishcrafter perfects her ability to manipulate reality. Once per day, she may cast any spell on the sorcerer/wizard spell list as if it were on her list of spells known. Using this ability otherwise has all of the benefits and limitations of the wishbound arcana ability. This ability replaces the bloodline bonus feat gained at 19th level.</p>"
+                    },
+                    "requirements": [
+                        {
+                            "race": "Ifrits"
+                        }
+                    ]
+                }
+
+            }
+        },
+        "Wizard": {
+            "Class Features": {},
+            "archetypes": {
+                "Cruoromancer": {
+                    "name": "Cruoromancer",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Dhampir"
+                        }
+                    ]
+                },
+                "Spellbinder": {
+                    "name": "Spellbinder",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Elf"
+                        }
+                    ]
+                },
+                "Wind Listener": {
+                    "name": "Wind Listener",
+                    "type": "Archetype",
+                    "requirements": [
+                        {
+                            "race": "Sylph"
+                        }
+                    ]
+                }    
+            }
+        }
+    },
+    "source": {
+        "name": "Advanced Race Guide",
+        "date": "2014-09-01"
+    }
+}

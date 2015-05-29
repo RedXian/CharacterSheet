@@ -1,4 +1,5 @@
-{    "Wizard": {
+{
+    "Wizard": {
         "name": "Wizard",
         "type": "Class",
         "description": "The wizard masters magic through constant study that gives him incredible magical power.",
