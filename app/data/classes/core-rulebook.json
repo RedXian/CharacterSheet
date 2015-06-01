@@ -921,8 +921,8 @@
                         "4", "4", "4", "4", "4", "4", "4", "4", "4", "4"
                     ]
                 ]
-            }
-            ,"Class Features": {}
+            },
+            "Class Features": {}
         },
         "Monk": {
             "name": "Monk",
@@ -1320,8 +1320,8 @@
                         "4", "4", "3", "3"
                     ]
                 ]
-            }
-            ,"Class Features": {}
+            },
+            "Class Features": {}
         },
         "Rogue": {
             "name": "Rogue",

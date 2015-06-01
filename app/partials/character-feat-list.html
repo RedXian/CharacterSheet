@@ -1,0 +1,21 @@
+<section>
+    <h1>Feats - {{ featsSelected() + '/' + totalFeats() }}</h1>
+    <input ng-model="featSearch" placeholder="Search">
+    <aside ng-repeat="feat in featList | filter:featSearch">
+        <h2>{{ feat.name }}<span ng-bind="' (' + feat.featType + ')'" ng-if="feat.featType"></span>
+        </h2>
+        <div ng-bind-html="feat.description | sanitize"></div>
+        <div ng-if="feat.requires"><b style="float:left">Requirements:</b>
+            <div ng-bind="feat.requires | serialComma"></div>
+        </div>
+        <div ng-if="feat.benefit"><b style="float:left">Benefit:</b>
+            <div ng-bind-html="feat.benefit | sanitize"></div>
+        </div>
+        <div ng-if="feat.normal"><b style="float:left">Normal:</b>
+            <div ng-bind-html="feat.normal | sanitize"></div>
+        </div>
+        <div ng-if="feat.special"><b style="float:left">Special:</b>
+            <div ng-bind-html="feat.special | sanitize"></div>
+        </div>
+    </aside>
+</section>

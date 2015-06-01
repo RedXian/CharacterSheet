@@ -6,6 +6,7 @@
         'ngResource',
         'characterSheet.character',
         'characterSheet.skills',
+        'characterSheet.feats',
         'characterSheet.races',
         'characterSheet.classes',
         'characterSheet.abilities',
@@ -102,10 +103,10 @@
         }
     });
 
-    app.filter("feet", function(){
+    app.filter("feet", function() {
         return function(height) {
             height = parseInt(height);
-            var feet = Math.floor(height/12,0);
+            var feet = Math.floor(height / 12, 0);
             var inches = height % 12;
             return feet + " ft. " + inches + " in.";
         }
@@ -113,11 +114,11 @@
 
     app.filter("lbs", function() {
         return function(weight) {
-            return parseInt(weight)? parseInt(weight) + " lbs.": " \u2014 ";
+            return parseInt(weight) ? parseInt(weight) + " lbs." : " \u2014 ";
         }
     });
 
-    app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory, SkillFactory) {
+    app.controller('MainController', function($scope, CharacterFactory, ClassFactory, RaceFactory, SkillFactory, FeatFactory) {
         $scope.character = CharacterFactory;
 
         $scope.raceList = [];
@@ -134,9 +135,8 @@
         ClassFactory.getClassList().then(function(data) {
             $scope.classList = data;
             for (var key in data) {
-            $scope.classSourceList.push(data[key].source);
-        }
-
+                $scope.classSourceList.push(data[key].source);
+            }
         });
 
         $scope.skillList = [];
@@ -144,7 +144,15 @@
             $scope.skillList = data;
         });
 
-        $scope.dimensions = {male: [], female: []};
+        $scope.featList = [];
+        FeatFactory.getFeatList().then(function(data) {
+            $scope.featList = data;
+        });
+
+        $scope.dimensions = {
+            male: [],
+            female: []
+        };
 
     });
 })();
