@@ -25,7 +25,8 @@
     <button type="button" class="btn btn-default" ng-click="tab=6">Combat</button>
     <button type="button" class="btn btn-default" ng-click="tab=7">Equipment</button>
     <button type="button" class="btn btn-default" ng-click="tab=8">Personal Details</button>
-    <button type="button" class="btn btn-default" ng-click="tab=9">Stat Block</button>
+    <button type="button" class="btn btn-default" ng-click="tab=9">Background</button>
+    <button type="button" class="btn btn-default" ng-click="tab=10">Stat Block</button>
 </section>
 <main>
     <race-selector ng-hide="tab!=1"></race-selector>
@@ -36,7 +37,8 @@
     <combat-section ng-hide="tab!=6"></combat-section>
     <defence-section ng-hide="tab!=6"></defence-section>
     <personal-details ng-hide="tab!=8"></personal-details>
-    <stat-block ng-hide="tab!=9"></stat-block>
+    <background ng-hide="tab!=9"></background>
+    <stat-block ng-hide="tab!=10"></stat-block>
 </main>
 <footer>
     <p class="footer">This character sheet uses trademarks and/or copyrights owned by Paizo Inc., which are used under Paizo's Community Use Policy. We are expressly prohibited from charging you to use or access this content. This character sheet is not published, endorsed,

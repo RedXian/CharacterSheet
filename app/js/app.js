@@ -13,6 +13,7 @@
         'characterSheet.combat',
         'characterSheet.defence',
         'characterSheet.personal',
+        'characterSheet.background',
         'characterSheet.statBlock',
         'characterSheet.roller'
     ]);
@@ -22,6 +23,12 @@
             if (!input) input = 0;
             return (input < 0 ? "\u2212" : "\u002B") + Math.abs(input);
         };
+    });
+
+    app.filter('regionOption', function() {
+        return function(region) {
+            return region.lower + "-" + region.upper + " " + region.name;
+        }
     });
 
     app.filter('orderObjectBy', function() {
@@ -35,6 +42,12 @@
             });
             if (reverse) filtered.reverse();
             return filtered;
+        };
+    });
+
+    app.filter('capitalize', function() {
+        return function(str) {
+            return str.charAt(0).toUpperCase() + str.slice(1);
         };
     });
 
