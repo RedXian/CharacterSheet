@@ -10,21 +10,13 @@
     </div>
     <section ng-show="selectedRace && selectedClass">
     <section>
+        <p><strong>Suggested Trait{{ suggestedTraits.length != 1 ? 's' : '' }}:</strong>{{ suggestedTraits | serialComma }}</p>
         <h3><span class="glyphicon" ng-class="{'glyphicon-triangle-right' : step!=1, 'glyphicon-triangle-bottom' : step==1 }" ng-click="step=(step==1)?0:1"></span>Step 1 — Homeland, Family, and Childhood</h3>
 
-        <h4>{{ selectedRace | capitalize }} Homeland <button class="glyphicon icon-refresh" ng-click="rerollHomeland()">.</button></h4>
-        <select ng-show="selectedHomeland[0]" ng-model="selectedHomeland[0]" size=6 ng-options="region.name as (region | regionOption) for region in raceTables[selectedRace].homeland"></select>
-        <select ng-show="selectedHomeland[1]" ng-model="selectedHomeland[1]" size=6 ng-options="region.name as (region | regionOption) for region in raceTables[selectedHomeland[0].reroll].homeland"></select>
-        <select ng-show="selectedHomeland[2]" ng-model="selectedHomeland[2]" size=6 ng-options="region.name as (region | regionOption) for region in raceTables[selectedHomeland[1].reroll].homeland"></select>
-        <h4>{{ selectedRace | capitalize }} Parents</h4>
-        <h4>{{ selectedRace | capitalize }} Siblings</h4>
-        <h4>Circumstance of Birth</h4>
-
-        <div ng-repeat="homelands in homelandMatrix track by $index">
+        <div ng-repeat="homelands in homelandMatrix track by $index" style="float:left">
             <h4>{{ homelands.race | capitalize }} Homeland <button ng-show="$first" class="glyphicon icon-refresh" ng-click="rerollHomeland()">.</button></h4>
-            <div ng-repeat="homeland in homelands.matrix"><p>{{ homeland.display }}</p></div>
+            <div ng-repeat="homeland in homelands.matrix"><p ng-click="selectRegion($parent.$index, homeland.region)">{{ homeland.display }}</p></div>
         </div>
-
 
     </section>
     <section>

@@ -53,7 +53,7 @@
 
     app.filter('serialComma', function() {
         return function(arrayList, conjunction) {
-            if (arrayList) {
+            if (arrayList.length) {
                 var list = arrayList.slice(0);
                 conjunction = (conjunction || "and") + " "; // set default list type to "and"
                 if (list.length < 3) {

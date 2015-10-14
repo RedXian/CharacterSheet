@@ -9,8 +9,8 @@ angular.module("characterSheet.background", [])
                 $scope.raceList = ["dwarf", "elf", "gnome", "half-elf", "half-orc", "halfling", "human"];
                 $scope.classList = ["alchemist", "barbarian", "bard", "cavelier", "cleric", "druid", "fighter", "gunslinger", "inquisitor", "magus", "monk", "oracle", "paladin", "ranger", "rogue", "sorcerer", "summoner", "witch", "wizard"];
 
-                $scope.selectedRace = "half-elf";
-                $scope.selectedClass = "alchemist";
+                $scope.selectedRace = "";
+                $scope.selectedClass = "";
                 $scope.selectedRegion = "";
                 $scope.selectedHomeland = [];
                 $scope.suggestedTraits = [];
@@ -659,22 +659,31 @@ angular.module("characterSheet.background", [])
                 var testHomelands = {
                     "numberOfHomelands": 0,
                     "addHomeland": function(race) {
-                        console.log("addHomeland");
+                        console.log("addHomeland("+race+")");
                         var that = this;
                         this.numberOfHomelands++;
                         this["homeland" + that.numberOfHomelands] = {
-                            "index": that.numberOfHomelands,
+                            "ind": that.numberOfHomelands,
                             "race": race,
                             "selectedRegion": "",
                             "selectRegion": function(region) {
-                                console.log("homeland" + this.index + ".selectRegion");
-                                this.selectedRegion = region;
-                                if (testHomelands.numberOfHomelands > this.index) {
-                                    for (var i = this.index + 1; i <= that.numberOfHomelands; i++) {
+                                console.log("homeland" + this.ind + ".selectRegion("+region.name+")");
+                                console.log(region);
+
+                                if (that.numberOfHomelands > this.ind) {
+                                    for (var i = this.ind + 1; i <= that.numberOfHomelands; i++) {
                                         delete that["homeland" + i];
                                     }
-                                    that.numberOfHomelands = this.index;
+                                    that.numberOfHomelands = this.ind;
                                 }
+                                this.selectedRegion = region;
+
+                                //Add new race table.
+                                if (angular.isDefined(region.reroll)) {
+                                    that.addHomeland(region.reroll);
+                                }
+
+
                             }
                         }
                     },
@@ -683,21 +692,47 @@ angular.module("characterSheet.background", [])
                         var that = this;
                         result = [];
                         for (var i = 1; i <= that.numberOfHomelands; i++) {
-                            result[i-1] = {"race": that["homeland" + i].race, matrix: []};
+                            result[i - 1] = {
+                                "race": that["homeland" + i].race,
+                                matrix: []
+                            };
                             var race = that["homeland" + i].race;
                             var homelands = $scope.raceTables[race].homeland;
-                            console.log(race);
                             for (var region in homelands) {
-                                result[i-1].matrix.push({
-                                    "name": homelands[region].name,
-                                    "display": homelands[region].lower + "-" + homelands[region].upper + " " + homelands[region].name
+                                result[i - 1].matrix.push({
+                                    "region": homelands[region],
+                                    "display": homelands[region].lower + "-" + homelands[region].upper + " " + homelands[region].name,
+                                    "select": function(ind) {
+                                        console.log("that.homeland" + (ind+1) + ".selectRegion(" + this.region.name + ");");
+                                        that["homeland" + (ind+1)].selectRegion(this.region);
+
+                                    }
                                 });
                             }
                         };
                         return result;
                     },
+                    "getSuggestedTraits": function (race) {
+                        console.log("resetHomelands(" + race + ")");
+                        var that = this;
+                        var result = [];
+
+                        for (var i = 1; i <= that.numberOfHomelands; i++) {
+                            var selectedRegion = that["homeland" + i].selectedRegion;
+
+                            if (angular.isDefined(selectedRegion.addTrait) && angular.isDefined(selectedRegion.addTrait["any"])) {
+                                result = result.concat(selectedRegion.addTrait["any"]);
+                            }
+                            //Add race specific traits
+                            if (angular.isDefined(selectedRegion.addTrait) && jQuery.isArray(selectedRegion.addTrait[race])) {
+                                result = result.concat(selectedRegion.addTrait[race]);
+                            }
+                        }
+
+                        return result;
+                    },
                     "resetHomelands": function(race) {
-                        console.log("resetHomelands");
+                        console.log("resetHomelands(" + race + ")");
                         var that = this;
                         for (var i = 1; i <= that.numberOfHomelands; i++) {
                             delete that["homeland" + i];
@@ -711,11 +746,13 @@ angular.module("characterSheet.background", [])
                     console.log("changeRace");
                     console.log(testHomelands);
                     console.log($scope.homelandMatrix);
-
-
+                    
+                    if($scope.selectedRace.length) {
                     $scope.homelandMatrix = [];
                     testHomelands.resetHomelands($scope.selectedRace);
+                    $scope.suggestedTraits = testHomelands.getSuggestedTraits($scope.selectedRace);
                     $scope.homelandMatrix = testHomelands.getHomelands();
+                }
                     console.log("homelandMatrix");
                     console.log($scope.homelandMatrix);
                 };
@@ -728,10 +765,16 @@ angular.module("characterSheet.background", [])
                 // console.log("Homelands Matrix");
                 // console.log(testHomelands.homelandMatrix);
 
+                $scope.selectRegion = function(ind, region) {
+                    console.log("$scope.selectRegion");
+                    testHomelands["homeland" + (ind + 1)].selectRegion(region);
+                    $scope.suggestedTraits = testHomelands.getSuggestedTraits($scope.selectedRace);
+                    $scope.homelandMatrix = testHomelands.getHomelands();
+                }
 
-                $scope.getHomelandRace = function (i) {
+                $scope.getHomelandRace = function(i) {
                     console.log("getHomelandRace " + i);
-                    return testHomelands["homeland" + (i+1)].race;
+                    return testHomelands["homeland" + (i + 1)].race;
                 };
 
                 var randomHomeland = function(x, race) {
