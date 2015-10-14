@@ -25,9 +25,9 @@
         };
     });
 
-    app.filter('regionOption', function() {
-        return function(region) {
-            return region.lower + "-" + region.upper + " " + region.name;
+    app.filter('rollOption', function() {
+        return function(roll) {
+            return roll.lower + "-" + roll.upper + " " + roll.name;
         }
     });
 

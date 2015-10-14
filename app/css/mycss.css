@@ -184,10 +184,15 @@ input[type=number] {
     width: 200px;
 }
 
+
+
+div.even {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 div.highlight {
     background-color: #99FF99;
 }
-
 div.selected {
     background-color: #00CC66;
 }
