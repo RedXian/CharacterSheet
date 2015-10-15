@@ -13,7 +13,7 @@
             <p>
                 <strong>Suggested Trait{{ suggestedTraits.length != 1 ? 's' : '' }}:</strong>{{ suggestedTraits | serialComma:'or' }}</p>
             <h3>
-                <span class="glyphicon" ng-class="{'glyphicon-triangle-right' : step!=1, 'glyphicon-triangle-bottom' : step==1 }" ng-click="step=(step==1)?0:1"></span>Step 1 — Homeland, Family, and Childhood</h3>
+                <span class="glyphicon" ng-class="{ 'glyphicon-triangle-right' : step!=1, 'glyphicon-triangle-bottom' : step==1 }" ng-click="step=(step==1)?0:1"></span>Step 1 — Homeland, Family, and Childhood</h3>
 
             <div ng-repeat="homelands in homelandMatrix track by $index" style="float:left">
                 <h4 ng-show="$first">{{ homelands.race | capitalize }}
@@ -23,27 +23,28 @@
                 </h4>
                 <div ng-class="{'even' : $even, 'selected' : homeland.selected}" ng-click="selectRegion($parent.$index, homeland.region)" ng-repeat="homeland in homelands.matrix">
                     {{ homeland.region | rollOption }}
+                    <span stype="float:right" class="glyphicon" ng-class="{ 'glyphicon-triangle-right': homeland.region.reroll && homeland.selected}"></span>
                 </div>
             </div>
 
-            <div ng-repeat="parent in parentsMatrix" style="clear:left">
-                <h4 ng-show="$first">{{ selectedRace | capitalize }}
+            <div ng-repeat="parent in parentsMatrix.parentsTable" style="clear:left">
+                <h4 ng-show="$first">
                     Parents
-                    <span class="glyphicon glyphicon-refresh" ng-click=""></span>
-                    <span class="glyphicon glyphicon-random" ng-click=""></span>
+                    <span class="glyphicon glyphicon-refresh" ng-click="parentsMatrix.reset()"></span>
+                    <span class="glyphicon glyphicon-random" ng-click="parentsMatrix.selectRandomly()"></span>
                 </h4>
-                <div ng-class="{'even' : $even, 'selected' : selectedParents == parent}" ng-click="selectParents(parent)">
+                <div ng-class="{'even' : $even, 'selected' : parentsMatrix.selected == parent}" ng-click="selectParents(parent.lower)">
                     {{ parent | rollOption }}
                 </div>
             </div>
 
-            <div ng-repeat="sibling in siblingsMatrix" style="clear:left">
-                <h4 ng-show="$first">{{ selectedRace | capitalize }}
-                    Siblings
-                    <span class="glyphicon glyphicon-refresh" ng-click=""></span>
-                    <span class="glyphicon glyphicon-random" ng-click=""></span>
+            <div ng-repeat="sibling in siblingsMatrix.matrix" style="clear:left">
+                <h4 ng-show="$first">
+                    Number of Siblings
+                    <span class="glyphicon glyphicon-refresh" ng-click="siblingsMatrix.reset()"></span>
+                    <span class="glyphicon glyphicon-random" ng-click="siblingsMatrix.selectRandomly()"></span>
                 </h4>
-                <div ng-class="{'even' : $even, 'selected' : selectedSiblings == sibling}" ng-click="selectSiblings(sibling)">
+                <div ng-class="{'even' : $even, 'selected' : siblingsMatrix.selected == sibling}" ng-click="selectSiblings(sibling.lower)">
                     {{ sibling | rollOption }}
                 </div>
             </div>

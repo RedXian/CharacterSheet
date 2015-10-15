@@ -6,7 +6,7 @@ angular.module("characterSheet.roller", [])
                 var validation = /([+-]?\d+(d\d+(-L)+)?)+/;
                 var sum = 0;
                 if (validation.test(notation)) {
-                    var array = notation.replace(/[+]?-![L]/, '+-').split(/[+]/);
+                    var array = notation.replace(/\+?-(?=[^L])/, '+-').split(/\+/);
                     for (var i = 0; i < array.length; i++) {
                         if (array[i]) {
                             var roll = roller.parseRollNotation(array[i]);

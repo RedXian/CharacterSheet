@@ -5,12 +5,15 @@ var DiceRoller = function() {
 
         if (validation.test(notation)) {
             var sum = 0;
-            var array = notation.replace(/[+]?-![L]/, '+-').split(/[+]/);
-            for (var i = 0; i < array.length; i++) {
-                if (array[i]) {
-                    var roll = parseRollNotation(array[i]);
+
+            var rollArray = notation.replace(/\+?-(?=[^L])/, '+-').split('+');
+
+            for (var i = 0; i < rollArray.length; i++) {
+                console.logger
+                if (rollArray[i].length) {
+                    var roll = parseRollNotation(rollArray[i]);
                     result.push({
-                        name: array[i],
+                        name: rollArray[i],
                         value: roll
                     });
                     sum += roll;
@@ -33,7 +36,7 @@ var DiceRoller = function() {
 
     var parseRollNotation = function(notation) {
         var dropLowest = false;
-        var result = parseInt(notation);
+        var result = Integer.parseInt(notation);
         if (notation.indexOf('d') > -1) {
             result = 0;
             if (notation.indexOf('-L') > -1) {
