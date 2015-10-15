@@ -880,9 +880,15 @@ angular.module("characterSheet.background", [])
                                 var raceType = option.action[key];
                                 // Roll notations that begin with a '-' means that it is a subset of the current number of siblings.
                                 if(raceType.charAt(0)=='-') { raceType=raceType.slice(1);
+
                                     var rollArray = RollerFactory.getResult(raceType);
-                                    var roll = raceArray.length - rollArray[rollArray.length-1].value;
-                                    raceArray = raceArray.slice(roll+1);
+                                    console.log(raceArray);
+                                    var roll = rollArray[rollArray.length-1].value;
+                                    console.log(raceArray.length + " - " + rollArray[rollArray.length-1].value + " = " + (raceArray.length - rollArray[rollArray.length-1].value) );
+                                    console.log(-roll);
+                                    //raceArray = raceArray.slice(-roll);
+                                    raceArray.length = (raceArray.length - rollArray[rollArray.length-1].value);
+                                    console.log(raceArray);
                                 } else {
                                     var rollArray = RollerFactory.getResult(raceType);
                                     var roll = rollArray[rollArray.length-1].value;
@@ -902,10 +908,12 @@ angular.module("characterSheet.background", [])
                                             console.log("Adopted: " + raceArray.length);
                                             var randomIndex = Math.floor((Math.random() * 100) + 1);
                                             for (var j = 0; j < adoptedSiblingTable.length; j++) {
-                                                if (adoptedSiblingTable[j].index <= randomIndex) {
-                                                    siblingRace = adoptedSiblingTable[j].name;
+                                                if (adoptedSiblingTable[j].index > randomIndex) {
+                                                    siblingRace += "Adopted " + adoptedSiblingTable[j-1].name;
+                                                    break;
                                                 }
                                             }
+
                                         break;
                                         case "half":
                                             if(race == "human") {
@@ -914,6 +922,8 @@ angular.module("characterSheet.background", [])
                                                 siblingRace = (half == "orc") ? "human" : half;
                                             } else if (race == "half-orc") {
                                                 siblingRace = (half == "elf") ? "human" : half;
+                                            } else if (race == "elf") {
+                                                siblingRace = "half-elf"
                                             }
                                         break;
                                         case "default":
