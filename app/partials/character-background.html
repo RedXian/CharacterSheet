@@ -47,6 +47,11 @@
                 <div ng-class="{'even' : $even, 'selected' : siblingsMatrix.selected == sibling}" ng-click="selectSiblings(sibling.lower)">
                     {{ sibling | rollOption }}
                 </div>
+
+            </div>
+
+            <div ng-show="siblingList.length" ng-repeat="sib in siblingList" style="clear:left;">
+                <div>{{ sib.relativeAge + " " + sib.relation + " - " + sib.race }}</div>
             </div>
 
         </section>

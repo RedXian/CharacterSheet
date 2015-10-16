@@ -1,0 +1,10 @@
+<div ng-repeat="item in table.items">
+    <h4 ng-show="$first">
+        {{ tableMatrix.name }}
+        <span class="glyphicon glyphicon-refresh" ng-click="table.reset()"></span>
+        <span class="glyphicon glyphicon-random" ng-click="table.selectRandomly()"></span>
+    </h4>
+    <div ng-class="{'even' : $even, 'selected' : table.selected == item}" ng-click="table.select(item)">
+        {{ item.description }}
+    </div>
+</div>
