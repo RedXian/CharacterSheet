@@ -75,19 +75,19 @@ angular.module("characterSheet.background", [])
                     "upper": "80",
                     "name": "1d4 biological siblings",
                     "action": { "biological": "1d4" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "81",
                     "upper": "90",
                     "name": "1d4+1 biological siblings",
                     "action": { "biological": "1d4+1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "91",
                     "upper": "95",
                     "name": "1d3–1 biological siblings and 1d3–1 adopted siblings",
                     "action": { "biological": "1d3-1", "adopted": "1d3-1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] },
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] },
                     "roll": "adoptedSiblingsTable"
                 }, {
                     "lower": "96",
@@ -170,19 +170,19 @@ angular.module("characterSheet.background", [])
                     "upper": "80",
                     "name": "1d2 biological siblings",
                     "action": { "biological": "1d2"},
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "81",
                     "upper": "85",
                     "name": "1d4+1 biological siblings",
                     "action": { "biological": "1d4+1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "86",
                     "upper": "90",
                     "name": "1d4+1 biological siblings, 1d3–1 of these siblings are half-elves, adopted, or a mix of the two (your choice)",
                     "action": { "biological": "1d4+1", "mixed": "-1d3-1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "91",
                     "upper": "100",
@@ -250,13 +250,13 @@ angular.module("characterSheet.background", [])
                     "upper": "50",
                     "name": "1d4 biological siblings",
                     "action": { "biological": "1d4"},
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "51",
                     "upper": "60",
                     "name": "1d4–1 biological siblings and one adopted sibling",
                     "action": { "biological": "1d4+1", "adopted": "1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "61",
                     "upper": "100",
@@ -313,13 +313,13 @@ angular.module("characterSheet.background", [])
                     "upper": "20",
                     "name": "1d2 half-siblings (either elf or human, your choice)",
                     "action": { "half": "1d2"},
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "21",
                     "upper": "30",
                     "name": "One half-elf sibling",
                     "action": { "half-elf": "1"},
-                    "addTrait": { "condition": "numSiblings", "1+": ["Kin Bond"] }
+                    "addTrait": { "condition": "numberOfSiblings", "1+": ["Kin Bond"] }
                 }, {
                     "lower": "31",
                     "upper": "100",
@@ -392,13 +392,13 @@ angular.module("characterSheet.background", [])
                     "upper": "60",
                     "name": "1d6+1 orc siblings",
                     "action": { "orc": "1d6+1"},
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "61",
                     "upper": "70",
                     "name": "1d4 human siblings",
                     "action": { "human": "1d4"},
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "71",
                     "upper": "80",
@@ -472,13 +472,13 @@ angular.module("characterSheet.background", [])
                     "upper": "30",
                     "name": "1d2 siblings",
                     "action": { "biological": "1d2" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "31",
                     "upper": "90",
                     "name": "1d4+1 siblings",
                     "action": { "biological": "1d4+1" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "91",
                     "upper": "100",
@@ -554,19 +554,19 @@ angular.module("characterSheet.background", [])
                     "upper": "40",
                     "name": "1d2 siblings",
                     "action": { "biological": "1d2" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "41",
                     "upper": "70",
                     "name": "1d2 siblings and 1d2 half-siblings",
                     "action": { "biological": "1d2", "half": "1d2" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "71",
                     "upper": "90",
                     "name": "2d4 siblings",
                     "action": { "biological": "2d4" },
-                    "addTrait": { "condition": "numSiblings", "2+": ["Kin Guardian"] }
+                    "addTrait": { "condition": "numberOfSiblings", "requirement": ">1", "trait": ["Kin Guardian"] }
                 }, {
                     "lower": "91",
                     "upper": "100",
@@ -689,7 +689,7 @@ angular.module("characterSheet.background", [])
                 }]
             }
         }
-        var adoptedSiblingTable = [
+        var adoptedSibling = [
             { "index": "01", "name": "aasimar" },
             { "index": "02", "name": "catfolk" },
             { "index": "04", "name": "changeling" },
@@ -1064,26 +1064,26 @@ angular.module("characterSheet.background", [])
             {"lower": "96", "upper": "100", "name": "Well-Connected Friend", "action": "In your circle of disparate associates, there was someone everyone knew. This person collected friends like trophies, and she had contacts in every social or professional circle. Through this connection, you continue to meet and associate with a wide variety of people in every walk of life. You gain access to the Well- Informed halfling race trait (which you may take regardless of your race).regardless of your race)."}
         ];
         var conflicts = [
-        	{"index": "1", "name": "Minor Failure", "action": "You failed a friend, family member, or loved one who depended on you to fulfill an important task." "points": "1"},
-        	{"index": "2", "name": "Petty Crime", "action": "You committed a minor crime, like vandalism, trespassing, or mischief." "points": "1"},
-        	{"index": "3", "name": "Told a Lie", "action": "You deliberately made someone believe something that was not true to further your own goals." "points": "1"},
-        	{"index": "4", "name": "Broke a Promise", "action": "You swore an oath or vow that was important to someone else, but you did not keep your promise." "points": "1"},
-        	{"index": "5", "name": "Humiliation", "action": "You publicly humiliated or scandalized someone with either true or slanderous information." "points": "2"},
-        	{"index": "6", "name": "Negligence", "action": "You caused someone else to suffer by your own inaction, disregard, or excessive recklessness." "points": "2"},
-        	{"index": "7", "name": "Minor Theft", "action": "You stole several small or inexpensive items that belonged to someone else." "points": "2"},
-        	{"index": "8", "name": "Seducer", "action": "You tempted or manipulated someone to act in accordance with your whim, careless of whether it was in their own best interests." "points": "3"},
-        	{"index": "9", "name": "Cheater", "action": "You broke a rule, law, contract, or agreement for your own gain." "points": "3"},
-        	{"index": "10", "name": "Betrayal", "action": "You betrayed someone who trusted you." "points": "4"},
-        	{"index": "11", "name": "Malign Associates", "action": "You allied with a destructive creature, organization, or individual." "points": "4"},
-        	{"index": "12", "name": "Destroyed a Reputation", "action": "You deliberately ruined the honor, reputation, or fortunes of another individual or group." "points": "5"},
-        	{"index": "13", "name": "Major Theft", "action": "You stole expensive items." "points": "5"},
-        	{"index": "14", "name": "Corrupted an Innocent", "action": "You counseled an otherwise innocent person who trusted you, toward adverse choices." "points": "6"},
-        	{"index": "15", "name": "Blackmailed", "action": "You used sensitive knowledge or threats to force someone’s cooperation." "points": "6"},
-        	{"index": "16", "name": "Destruction", "action": "You destroyed someone else’s property." "points": "6"},
-        	{"index": "17", "name": "Armed Robbery", "action": "You robbed someone with the threat of violence." "points": "6"},
-        	{"index": "18", "name": "Violent Crime", "action": "You beat, assaulted, or mutilated someone." "points": "7"},
-        	{"index": "19", "name": "Murder", "action": "You killed someone." "points": "8"},
-        	{"index": "20", "name": "Mass Murder", "action": "You killed several sentient beings." "points": "12"}
+        	{"index": "1", "name": "Minor Failure", "action": "You failed a friend, family member, or loved one who depended on you to fulfill an important task.", "points": "1"},
+        	{"index": "2", "name": "Petty Crime", "action": "You committed a minor crime, like vandalism, trespassing, or mischief.", "points": "1"},
+        	{"index": "3", "name": "Told a Lie", "action": "You deliberately made someone believe something that was not true to further your own goals.", "points": "1"},
+        	{"index": "4", "name": "Broke a Promise", "action": "You swore an oath or vow that was important to someone else, but you did not keep your promise.", "points": "1"},
+        	{"index": "5", "name": "Humiliation", "action": "You publicly humiliated or scandalized someone with either true or slanderous information.", "points": "2"},
+        	{"index": "6", "name": "Negligence", "action": "You caused someone else to suffer by your own inaction, disregard, or excessive recklessness.", "points": "2"},
+        	{"index": "7", "name": "Minor Theft", "action": "You stole several small or inexpensive items that belonged to someone else.", "points": "2"},
+        	{"index": "8", "name": "Seducer", "action": "You tempted or manipulated someone to act in accordance with your whim, careless of whether it was in their own best interests.", "points": "3"},
+        	{"index": "9", "name": "Cheater", "action": "You broke a rule, law, contract, or agreement for your own gain.", "points": "3"},
+        	{"index": "10", "name": "Betrayal", "action": "You betrayed someone who trusted you.", "points": "4"},
+        	{"index": "11", "name": "Malign Associates", "action": "You allied with a destructive creature, organization, or individual.", "points": "4"},
+        	{"index": "12", "name": "Destroyed a Reputation", "action": "You deliberately ruined the honor, reputation, or fortunes of another individual or group.", "points": "5"},
+        	{"index": "13", "name": "Major Theft", "action": "You stole expensive items.", "points": "5"},
+        	{"index": "14", "name": "Corrupted an Innocent", "action": "You counseled an otherwise innocent person who trusted you, toward adverse choices.", "points": "6"},
+        	{"index": "15", "name": "Blackmailed", "action": "You used sensitive knowledge or threats to force someone’s cooperation.", "points": "6"},
+        	{"index": "16", "name": "Destruction", "action": "You destroyed someone else’s property.", "points": "6"},
+        	{"index": "17", "name": "Armed Robbery", "action": "You robbed someone with the threat of violence.", "points": "6"},
+        	{"index": "18", "name": "Violent Crime", "action": "You beat, assaulted, or mutilated someone.", "points": "7"},
+        	{"index": "19", "name": "Murder", "action": "You killed someone.", "points": "8"},
+        	{"index": "20", "name": "Mass Murder", "action": "You killed several sentient beings.", "points": "12"}
         ];
         var conflictSubject = [
         	{"index": "1", "name": "Commoner"},
@@ -1316,8 +1316,8 @@ angular.module("characterSheet.background", [])
                     }
                 }
             },
-
             "addSiblings": function(race) {
+                var that= this;
                 this.siblings = {
                     "matrix": raceTables[race].siblings,
                     "numberOfSiblings": 0,
@@ -1372,9 +1372,9 @@ angular.module("characterSheet.background", [])
                                         break;
                                         case "adopted":
                                             var randomIndex = Math.floor((Math.random() * 100) + 1);
-                                            for (var j = 0; j < adoptedSiblingTable.length; j++) {
-                                                if (adoptedSiblingTable[j].index > randomIndex) {
-                                                    siblingRace = adoptedSiblingTable[j-1].name;
+                                            for (var j = 0; j < adoptedSibling.length; j++) {
+                                                if (adoptedSibling[j].index > randomIndex) {
+                                                    siblingRace = adoptedSibling[j-1].name;
                                                     break;
                                                 }
                                             }
@@ -1440,21 +1440,34 @@ angular.module("characterSheet.background", [])
                     },
                     "getSuggestedTraits": function() {
                         var result = [];
-                        result = this.selected.addTrait || [];
+                        var trait = this.selected.addTrait;
+                        if (angular.isDefined(trait)) {
+                            if(angular.isDefined(trait.condition)) {
+                                var requirement = that.siblings[trait.condition] + trait.requirement;
+                                if (eval(requirement)) {
+                                    result = trait.trait;
+                                }
+                            }
+                            else {
+                                result = trait;
+                            }
+                        }
                         return result;
                     }
                 }
             },
-
             "getSuggestedTraits": function(race) {
                 var traits = [];
                 traits = traits.concat(this.getSuggestedHomelandTraits(race));
-                if (this.parents.getSuggestedTraits().length) {
-                    traits = traits.concat(this.parents.getSuggestedTraits());
-                }
-                if (this.siblings.getSuggestedTraits().length) {
-                    traits = traits.concat(this.siblings.getSuggestedTraits());
-                }
+                traits = traits.concat(this.parents.getSuggestedTraits()) || traits;
+                traits = traits.concat(this.siblings.getSuggestedTraits()) || traits;
+                // if (this.parents.getSuggestedTraits().length) {
+                //     traits = traits.concat(this.parents.getSuggestedTraits());
+                // }
+                // if (this.siblings.getSuggestedTraits().length) {
+                //     traits = traits.concat(this.siblings.getSuggestedTraits());
+                // }
+
                 return traits;
             }
         };
@@ -1472,7 +1485,6 @@ angular.module("characterSheet.background", [])
 
                 $scope.changeRace = function() {
                     if ($scope.selectedRace.length) {
-                        // BackgroundFactory.siblings.reset();
                         BackgroundFactory.addParents($scope.selectedRace);
                         BackgroundFactory.addSiblings($scope.selectedRace);
                         BackgroundFactory.resetHomelands($scope.selectedRace);
@@ -1518,19 +1530,22 @@ angular.module("characterSheet.background", [])
             }
         };
     })
-    .directive("backgroundTable", function() {
+    .directive("rollTable", function() {
         return {
             restrict: 'E',
-            require: 'ngModel',
-            templateUrl: "partials/character-background-table.html",
+            scope: {
+                name: '=',
+                rollItems: '='
+            },
+            templateUrl: "partials/elements/roll-table.html",
             controller: function($scope, BackgroundFactory) {
-                $scope.table = {
+                scope.table = {
                     "name" : "Table Name",
                     "items": [
-                        {"description": "This", ""}
+                        {"description": "This"}
                     ],
                     "reset": function () { alert("reset");},
-                    "select": ""
+                    "select": function () { alert("select");},
 
                 }
             }
