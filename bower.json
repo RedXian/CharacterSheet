@@ -6,11 +6,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "angular": "1.2.x",
-    "angular-resource": "1.2.x",
-    "angular-route": "1.2.x",
-    "angular-loader": "1.2.x",
-    "bootstrap": "3.3.4",
-    "html5-boilerplate": "~4.3.0"
+    "angular": "~1.2",
+    "angular-resource": "~1.2",
+    "angular-route": "~1.2",
+    "angular-loader": "~1.2",
+    "bootstrap": "~3.3",
+    "html5-boilerplate": "~4.3"
   }
 }

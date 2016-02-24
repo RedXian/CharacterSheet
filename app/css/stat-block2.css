@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic);
+main {
+  font: normal 14px 'PT Serif', serif;
+  background-color: #fffdf8;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin: 30px 0 0 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  margin: 5px 0 10px 0;
+}
+
+sup {
+  line-height: 0;
+  font-size: 8px;
+}
+
+a {
+  color: #33337C;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  text-decoration: underline;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+/* Stat Blocks */
+
+.monster-header {
+  font: normal 36px 'PT Serif', serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+
+.flavor-text {
+  font-style: italic;
+}
+
+.skill {
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.spell {
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.stat-block * {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  line-height: 1.5em;
+  margin: 5px 0;
+}
+
+.stat-block>h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: black;
+  color: white;
+  margin: 25px 0 5px 0;
+  padding: 2px 0 2px 5px;
+}
+
+.stat-block>h1>span {
+  float: right;
+  padding: 0 5px 0 0;
+}
+
+.stat-block>h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 8px 0;
+}
+
+.stat-block li {
+  list-style: none;
+  text-indent: 25px;
+}
+
+.stat-block .indent {
+  text-indent: 25px;
+}
+
+.stat-block>.xp {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.stat-block>.rp {
+  padding: 0 0 0 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
